@@ -1,0 +1,55 @@
+Hyphae are what content units called in MycorrhizaWiki. Each hypha has a text and binary part. Either of them may be empty.
+
+## Hypha names
+Hypha names are case-insensitive. It means that names `amanita muscaria` and `Amanita Muscaria` are same. Also, space and underscore are also the same. Canonical names are all lowercased and have underscores.
+
+There are some characters that cannot be part of a hypha name: ?!:#@><*|"\'&% Others can be used.
+
+If a hypha has a slash in its name, the hypha is a subhypha of some other hypha. For example, `amanita/muscaria` and `amanita/regalis` are both subhyphae of hypha `amanita`. `Amanita` is not a subhypha of any hypha.
+
+## Text part
+For now, only gemtext can be rendered.
+=> gemtext
+Other types of text will be displayed in plain text. In the future more languages may be supported.
+
+### Editing text
+When you visit edit-pages of hyphae, you can use the forms there. You can also edit files directly but it's not safe.
+
+In the future there may be other ways of editing pages and, perhaps, text editors integration or contenteditable wysiwyg editor.
+=> wysiwyg
+
+## Binary part
+Every type of data can be stored as binary part, but only some of them will render in the browser. Others can still be downloaded.
+
+### Supported image formats
+* .jpg
+* .gif
+* .png
+* .webp
+* .svg
+* .ico
+If there's demand on other image formats, they can be added. The problem is that there is no significant support for other image formats in the browsers.
+
+### Supported video formats
+* .ogg
+* .webm
+* .mp4
+
+### Supported audio formats
+* .ogg
+* .webm
+* .mp3
+
+### Uploading binary data
+There's a form at end of every page.
+
+## Storage
+All hyphae are stored on file system. They are named according to this grammar:
+```
+filename         ::= canonical_hypha_name "&." (binary_ext | text_ext)
+binary_ext ::= "jpg" | "gif" | "png" | "webp" | "svg" | "ico"
+             | "ogg" | "webm" | "mp4" | "mp3"
+text_ext   ::= "gmi"
+```
+
+MycorrhizaWiki indexes all those files on start or when `/reindex` is requested. For every existing hypha there must be a binary file, a text file or both. If there are several binary files for the same hypha, only one of them is used.

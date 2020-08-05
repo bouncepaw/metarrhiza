@@ -1,0 +1,28 @@
+## Hypha actions
+All of them are already implemented. More coming soon.
+
+### /page/Page
+Display Page
+
+### /text/Page
+See unrendered text content of Page
+
+### /binary/Page
+See binary content of Page
+
+### /edit/Page
+Edit Page form
+
+### POST /upload-binary/Page
+Upload a binary part to Page
+
+### POST /upload-text/Page
+Upload text to Page
+
+## Util urls
+
+### /list
+List of all hyphae with some metainfo about them
+
+### /reindex
+Reindex all hyphae on disk. This is helpful when you edit them manually

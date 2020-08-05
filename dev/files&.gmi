@@ -1,0 +1,15 @@
+We have these files in the project.
+
+geminiparser.go has things related to the gemtext parser.
+
+name.go has clear functions related to name handling.
+
+hypha.go has things related to hypha management.
+
+mime.go has things related to mime types and other content type discrimination mechanisms.
+
+http_readers.go has http handlers that do not modify hyphae when used.
+
+http_mutators.go has http handlers that modify hyphae when used and may have other side effects.
+
+main.go has the rest.

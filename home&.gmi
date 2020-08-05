@@ -1,0 +1,11 @@
+This is MycorrhizaWiki, new generation!
+
+=> design Main design principles
+=> hypha What is hypha
+=> wikilink How to link
+=> transclusion About transclusions
+=> urls What urls are possible
+
+Press `Edit` link on top of each page to edit it. History of changes is not stored by the engine because it is not implemented yet.
+
+=> /list List of all hyphae on this wiki

@@ -1,0 +1,12 @@
+Perhaps, one day, I'll add wysiwyg editor for gemtext to MycorrhizaWiki.
+
+There will be buttons on top:
+* Add list item
+* Add quote
+* Add link
+* Add header 1
+* Add header 2
+* Add header 3
+* Transclude
+
+I think this editor won't work without enabled JS, so text-browsers are left-aside.
