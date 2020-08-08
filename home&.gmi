@@ -1,5 +1,7 @@
-This is MycorrhizaWiki, new generation!
+Welcome to Metarrhiza, the meta wiki about MycorrhizaWiki, the wiki engine this wiki runs on.
+=> https://github.com/bouncepaw/mycorrhiza MycorrhizaWiki GitHub repo
 
+## Some interesting pages
 => design Main design principles
 => hypha What is hypha
 => wikilink How to link
