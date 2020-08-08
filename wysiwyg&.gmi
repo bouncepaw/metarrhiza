@@ -10,3 +10,5 @@ There will be buttons on top:
 * Transclude
 
 I think this editor won't work without enabled JS, so text-browsers are left-aside.
+
+I guess it will be implemented using the contenteditable property.

@@ -2,6 +2,7 @@ We have these files in the root directory of the project.
 
 * metarrhiza/ is this wiki.
 * gemtext/ directory has things related to gemtext and transclusion.
+* history/ directory has things related to history. It's available on one branch only.
 * name.go has pure functions related to name handling.
 * hypha.go has things related to hypha management.
 * mime.go has things related to mime types and other content type discrimination mechanisms. mime_test.go has tests to it.
