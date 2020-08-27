@@ -1,0 +1,24 @@
+MycorrhizaWiki keeps track of all changes made on a wiki using git back-end. Every mutable operation result in a commit being made in the wiki repository.
+
+## Commiter and author
+Git distinguishes between commiter and author. Author is a person who has created the changes for the commit and commiter is a person who has commited these changes into the repository. It fits MycorrhizaWiki well: usual users are authors and wikimind, the user that represents the wiki engine itself, is commiter of all edits made through wiki engine.
+
+If you edit wiki files directly, don't forget to commit with proper commiter and author values. You may want to set commiter to your real email and author to fake email used by MycorrhizaWiki.
+
+### Emails used
+Git wants both names and emails for commits. Mycorrhiza sets the name to anon (because authorization is not implemented yet; when it will be implemented, the name will be set to your username) and email to anon@mycorrhiza.
+
+## Checking history
+Every hypha page has History link. If you follow it, you'll see list of all commits associated with this hypha. This is history of this hypha:
+=> /history/history
+
+By clicking on commit hashes, you can see how hypha looked on this revision. For now, only text part is supported. Binary part viewing is trickier to implement because file names change. There is a notice about that on every revision page.
+
+## Supported operations
+* Edit text part
+* Edit binary part
+
+### Planned supported operations
+* Delete hypha
+* Rename hypha
+* Create hypha
