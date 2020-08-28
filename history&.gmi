@@ -9,7 +9,7 @@ If you edit wiki files directly, don't forget to commit with proper commiter and
 Git wants both names and emails for commits. Mycorrhiza sets the name to anon (because authorization is not implemented yet; when it will be implemented, the name will be set to your username) and email to anon@mycorrhiza.
 
 ## Checking history
-Every hypha page has History link. If you follow it, you'll see list of all commits associated with this hypha. This is history of this hypha:
+Every hypha page has History link. If you follow it, you'll see a table of all commits associated with this hypha. This is history of this hypha:
 => /history/history
 
 By clicking on commit hashes, you can see how hypha looked on this revision. For now, only text part is supported. Binary part viewing is trickier to implement because file names change. There is a notice about that on every revision page.
