@@ -1,7 +1,7 @@
 MycorrhizaWiki keeps track of all changes made on a wiki using git back-end. Every mutable operation result in a commit being made in the wiki repository.
 
 ## Commiter and author
-Git distinguishes between commiter and author. Author is a person who has created the changes for the commit and commiter is a person who has commited these changes into the repository. It fits MycorrhizaWiki well: usual users are authors and wikimind, the user that represents the wiki engine itself, is commiter of all edits made through wiki engine.
+Git distinguishes between commiter and author. Author is a person who has created the changes for the commit and commiter is a person who has commited these changes into the repository. It fits MycorrhizaWiki well: usually users are authors and wikimind, the user that represents the wiki engine itself, is commiter of all edits made through wiki engine.
 
 If you edit wiki files directly, don't forget to commit with proper commiter and author values. You may want to set commiter to your real email and author to fake email used by MycorrhizaWiki.
 
