@@ -1,7 +1,12 @@
 Hyphae are what content units called in MycorrhizaWiki. Each hypha has a text and binary part. Either of them may be empty.
 
 ## Hypha names
-Hypha names are case-insensitive. It means that names `amanita muscaria` and `Amanita Muscaria` are same. Also, space and underscore are also the same. Canonical names are all lowercased and have underscores.
+Hypha names are case-insensitive. It means that names `amanita muscaria` and `Amanita Muscaria` are same. Also, space and underscore are also the same. Canonical names are all lowercased and have underscores. These are links to the same hypha:
+=> test_page
+=> Test_page
+=> Test_Page
+=> TEST_PAGE
+=> test%20page
 
 There are some characters that cannot be part of a hypha name: ?!:#@><*|"\'&% Others can be used.
 
