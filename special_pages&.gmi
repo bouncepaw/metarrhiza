@@ -1,0 +1,8 @@
+=> /list
+See list of all hyphae and a total count of them.
+
+=> /random
+Go to a random hypha.
+
+=> /reindex
+Make the engine reindex all hypha files. It is helpful when you add hyphae manually and want the new files to be seen on the wiki.
