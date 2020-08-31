@@ -13,16 +13,16 @@ See binary content of Page
 ### /edit/Page
 Edit Page form
 
+### /history/Page
+See Page's history
+
+### /rev/Hash/Page
+See how Page looked with given Hash as revision id.
+
 ### POST /upload-binary/Page
 Upload a binary part to Page
 
 ### POST /upload-text/Page
 Upload text to Page
 
-## Util urls
-
-### /list
-List of all hyphae with some metainfo about them
-
-### /reindex
-Reindex all hyphae on disk. This is helpful when you edit them manually
+=> special_pages Also see list of special pages
