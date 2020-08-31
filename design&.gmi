@@ -2,7 +2,7 @@ MycorrhizaWiki supports these features:
 * Extended gemtext support
 * History
 * Web-form editing
-* Image hosting
+* Media files hosting
 * Transclusion
 * No DB
 
