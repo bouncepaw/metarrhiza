@@ -12,3 +12,4 @@ Welcome to Metarrhiza, the meta wiki about MycorrhizaWiki, the wiki engine this 
 Press `Edit` link on top of each page to edit it. History of changes is not stored by the engine because it is not implemented yet.
 
 => /list List of all hyphae on this wiki
+=> /recent-changes Recent changes on this wiki
