@@ -1,4 +1,0 @@
-# Metarrhiza
-This is an example and, simultaneosly, a metawiki for [[https://github.com/bouncepaw/mycorrhiza|MycorrhizaWiki]] engine.
-
-You can browse around if you want.

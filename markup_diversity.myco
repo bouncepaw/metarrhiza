@@ -1,0 +1,10 @@
+For now, MycorrhizaWiki is shipped with support for one markup language only — modified gemtext. Here is a list of reasons why supporting other markups is not a top priority:
+
+* For most use-cases gemtext is enough. It kinda fits the Pareto principle
+=> https://en.wikipedia.org/wiki/Pareto_principle
+* Most other markups are so complex that it'd be quite time consuming to create a proper parser for them that supports all extra MycorrhizaWiki features like auto-indexing of paragraphs or transclusion.
+* Markdown simply drives me insane. And it's so hard to get right.
+* Using a ready parser and then modify HTML output seems to be a good choice tho. The problem is that there is no good Creole parser written in Go. Good Markdown parser do not exist by definiton because the language itself is broken.
+* Maintaining more than one markup while the engine itself is so young and unstable is not a good idea.
+
+One day, of course, more languages will be supported. The list of supported languages will start with Creole (because it's good) and Markdown (because it's popular).
