@@ -1,10 +1,13 @@
 MycorrhizaWiki supports these features:
-* Extended gemtext support
-* History
-* Web-form editing
+* [[Mycomarkup]]
+* [[History]]
+* Web-form [[editing]]
 * Media files hosting
-* Transclusion
+* [[Transclusion]]
 * No DB
+* [[Page trees]]
+* Special pages: [[random page]], [[list of pages]]
+* Hypha [[renaming]] and [[deletion]]
 
 ## Gemtext deviations
 
