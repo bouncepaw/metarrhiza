@@ -47,12 +47,6 @@ If there's demand on other image formats, they can be added. The problem is that
 There's a form at end of every page.
 
 ## Storage
-All hyphae are stored on file system. They are named according to this grammar:
-```
-filename         ::= canonical_hypha_name "&." (binary_ext | text_ext)
-binary_ext ::= "jpg" | "gif" | "png" | "webp" | "svg" | "ico"
-             | "ogg" | "webm" | "mp4" | "mp3"
-text_ext   ::= "gmi"
-```
+All hyphae are stored on file system. Text parts have the `.myco` extension, binary parts have any extension they need.
 
 MycorrhizaWiki indexes all those files on start or when `/reindex` is requested. For every existing hypha there must be a binary file, a text file or both. If there are several binary files for the same hypha, only one of them is used.
