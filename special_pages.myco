@@ -1,6 +1,9 @@
 => /list
 See list of all hyphae and a total count of them.
 
+=> /recent-changes
+See list of recent changes.
+
 => /random
 Go to a random hypha.
 
