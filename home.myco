@@ -9,7 +9,8 @@ Welcome to Metarrhiza, the meta wiki about MycorrhizaWiki, the wiki engine this 
 => urls What urls are possible
 => special_pages Special pages
 
-Press `Edit` link on top of each page to edit it. History of changes is not stored by the engine because it is not implemented yet.
+Press `Edit` link on top of each hypha page to edit it. You can also access the list of changes of the hypha by clicking on the `History` link.
 
 => /list List of all hyphae on this wiki
 => /recent-changes Recent changes on this wiki
+=> /random Go to a random page!
