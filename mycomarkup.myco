@@ -20,6 +20,12 @@ There are six levels of headings:
 ##### level 5
 ###### level 6
 ```
+# level 1
+## level 2
+### level 3
+#### level 4
+##### level 5
+###### level 6
 
 You'll rarely need more than 3.
 
@@ -46,6 +52,8 @@ You //must// put a space after the asterisk (*).
 > quote 1
 > quote 2
 ```
+> quote 1
+> quote 2
 
 ### Preformatted blocks
 ```
