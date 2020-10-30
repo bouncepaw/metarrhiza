@@ -11,12 +11,17 @@
 I'm planning to keep this section up-to-date with all implemented features of Mycomarkup. For now, the list is not very large.
 
 ### Headings
-There are three levels of headings:
+There are six levels of headings:
 ```
 # level 1
 ## level 2
 ### level 3
+#### level 4
+##### level 5
+###### level 6
 ```
+
+You'll rarely need more than 3.
 
 You //must// put a space after the octothrops (#).
 
@@ -50,7 +55,7 @@ You //must// put a space after the asterisk (*).
 ```
 
 ### Paragraphs
-Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highligted!!, ^lifted^ or ,,lowered,, text. You can also !!//combine//!! them!
+Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^ or ,,lowered,, text. You can also !!//combine//!! them!
 ```
-Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highligted!!, ^lifted^ or ,,lowered,, text. You can also !!//combine//!! them!
+Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^ or ,,lowered,, text. You can also !!//combine//!! them!
 ```
