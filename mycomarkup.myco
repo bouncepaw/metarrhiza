@@ -79,15 +79,26 @@ Other lines are considered to be paragraphs. You can use //italic//, **bold**, `
 img {
 Apple
 
-Apple: 300
+Apple: 200
 
-Apple: 50*400 { A picture of an //apple// }
+Apple: 50*20 { A picture of an //apple// }
+Apple: *100 {
+Multiparagraph
+
+description
+}
 }
 ```
+
 img {
 Apple
 
-Apple: 300
+Apple: 200
 
-Apple: 50*400 { A picture of an //apple// }
+Apple: 50*20 { A picture of an //apple// }
+Apple: *100 {
+Multiparagraph
+
+description
+}
 }
