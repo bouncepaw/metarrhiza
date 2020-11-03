@@ -34,11 +34,23 @@ You //must// put a space after the octothrops (#).
 ### Lists
 You can use unordered lists:
 ```
-* list element 1
-* list element 2
+* list element a
+* list element b
 ```
+* list element a
+* list element b
 
 You //must// put a space after the asterisk (*).
+
+There are also numbered lists:
+```
+*. list element 1
+*. list element 2
+```
+*. list element 1
+*. list element 2
+
+You //must// put a space after the dot (.).
 
 ### Rocket links
 ```
