@@ -67,3 +67,9 @@ Other lines are considered to be paragraphs. You can use //italic//, **bold**, `
 ```
 Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^ or ,,lowered,, text. You can also !!//combine//!! them!
 ```
+
+### Horizontal bar
+```
+----
+```
+----
