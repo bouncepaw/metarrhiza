@@ -73,3 +73,21 @@ Other lines are considered to be paragraphs. You can use //italic//, **bold**, `
 ----
 ```
 ----
+
+### Image galleries
+```
+img {
+Apple
+
+Apple: 300
+
+Apple: 50*400 { A picture of an //apple// }
+}
+```
+img {
+Apple
+
+Apple: 300
+
+Apple: 50*400 { A picture of an //apple// }
+}
