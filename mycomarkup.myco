@@ -81,12 +81,11 @@ Apple
 
 Apple: 200
 
-Apple: 50*20 { A picture of an //apple// }
-Apple: *100 {
-Multiparagraph
+Apple: *100 { Multiparagraph
 
-description
+//description//
 }
+https://upload.wikimedia.org/wikipedia/commons/7/70/A.png
 }
 ```
 
@@ -95,10 +94,9 @@ Apple
 
 Apple: 200
 
-Apple: 50*20 { A picture of an //apple// }
-Apple: *100 {
-Multiparagraph
+Apple: *100 { Multiparagraph
 
-description
+//description//
 }
+https://upload.wikimedia.org/wikipedia/commons/7/70/A.png
 }
