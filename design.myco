@@ -6,7 +6,7 @@ MycorrhizaWiki supports these features:
 * [[Transclusion]]
 * No DB
 * [[Page trees]]
-* Special pages: [[random page]], [[list of pages]]
+* Special pages: [[random page]], [[list of pages]], [[recent changes]]
 * Hypha [[renaming]] and [[deletion]]
 
 ## Gemtext deviations
