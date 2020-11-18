@@ -8,4 +8,10 @@ See list of recent changes.
 Go to a random hypha.
 
 => /reindex
-Make the engine reindex all hypha files. It is helpful when you add hyphae manually and want the new files to be seen on the wiki.
+Make the engine reindex all hypha files. It is helpful when you add hyphae manually and want the new files to be seen on the wiki. Accessible to admins only if an authorization method is available.
+
+=> /login
+Log in to your account.
+
+=> /logout
+Log out of your account
