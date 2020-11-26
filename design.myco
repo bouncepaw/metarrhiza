@@ -6,60 +6,7 @@ MycorrhizaWiki supports these features:
 * [[Transclusion]]
 * No DB
 * [[Page trees]]
-* Special pages: [[random page]], [[list of pages]], [[recent changes]]
+* Special pages: [[/random]], [[/list]], [[/recent-changes]]
 * Hypha [[renaming]] and [[deletion]]
 
-## Gemtext deviations
-
-* Relative links are processed according to Wikilink rules.
-```
-=> Home
-This will render as
-<a href="/Home">Home</a>
-```
-=> wikilink
-
-* Documents support transclusion of other parts documents
-```
-File 1:
-This shall be transcluded
-
-File 2:
-Let's transclude!
-<= File 1
-
-Render File 2:
-<p>Let's transclude!</p>
-<div class="transclusion">
-<a class="transclusion__notice" href="/page/file_1">Transcluded from File 1</a>
-<p>This shall be transcluded</p>
-</div>
-```
-=> transclusion
-
-## Indexing
-
-Every significant part of document has indices/ids.
-
-```
-1	This is an example paragraph
-
-2	* List item are indexed together
-	* It's actually hard to tell when actual list begins and ends
-4	## Headers be like
-
-5	some text
-6	```
-	some ascii art
-	()
-	/\
-	```
-7	Transclusions can also be indexed
-8	<= Some page
-9	You can also transclude parts of documents only
-10	<= Some page #2
-11	<= Some page #2..26
-```
-
-=> design#4 Go to fourth element of this page
 
