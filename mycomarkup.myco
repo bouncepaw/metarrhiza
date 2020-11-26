@@ -75,9 +75,9 @@ You //must// put a space after the dot (.).
 ```
 
 ### Paragraphs
-Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^ or ,,lowered,, text. You can also !!//combine//!! them!
+Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^, ,,lowered,, or ~~striked-through~~ text. You can also !!//combine//!! them!
 ```
-Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^ or ,,lowered,, text. You can also !!//combine//!! them!
+Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^, ,,lowered,, or ~~striked-through~~ text. You can also !!//combine//!! them!
 ```
 
 ### Horizontal bar
