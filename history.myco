@@ -13,12 +13,3 @@ Every hypha page has History link. If you follow it, you'll see a table of all c
 => /history/history
 
 By clicking on commit hashes, you can see how hypha looked on this revision. For now, only text part is supported. Binary part viewing is trickier to implement because file names change. There is a notice about that on every revision page.
-
-## Supported operations
-* Edit text part
-* Edit binary part
-
-### Planned supported operations
-* Delete hypha
-* Rename hypha
-* Create hypha
