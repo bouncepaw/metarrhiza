@@ -1,17 +1,14 @@
-Welcome to Metarrhiza, the meta wiki about MycorrhizaWiki, the wiki engine this wiki runs on.
-=> https://github.com/bouncepaw/mycorrhiza MycorrhizaWiki GitHub repo
+img { /favicon.ico }
 
-## Some interesting pages
-=> design Main design principles
-=> hypha What is hypha
-=> mycomarkup About mycomarkup
-=> wikilink How to link
-=> transclusion About transclusions
-=> urls What urls are possible
-=> special_pages Special pages
+Welcome to MycorrhizaWiki! [[/recent-changes|Recent changes]], [[/list|All hyphae]], [[/random|Random hypha]]
 
-Press `Edit` link on top of each hypha page to edit it. You can also access the list of changes of the hypha by clicking on the `History` link.
+## Introduction
+**MycorrhizaWiki** is an open-source wiki engine developed by [[u/bouncepaw]]. You can follow the development on [[https://github.com/bouncepaw/mycorrhiza|GitHub]].
 
-=> /list List of all hyphae on this wiki
-=> /recent-changes Recent changes on this wiki
-=> /random Go to a random page!
+Here are some features of the engine:
+* **No database required**, everything is stored as simple files. It simplifies installation and make it easy to modify the content with other means such as direct file editing.
+* **Everything is hyphae.** A [[hypha]] is a unit of content such as a picture, video or a text article. Hyphae can [[transclusion|transclude]] and [[link|link]] each other resulting in a tight network of hypertext pages.
+* **Nesting of hyphae** is also supported. There is also a tree of related hyphae displayed on every page.
+* **History of changes** for text parts of hyphae. Every change is saved to [[git]], the most popular version control system.
+* **[[Mycomarkup]], a custom-made markup language.**
+* **Optional basic [[authorization]].**
