@@ -12,3 +12,5 @@ Here are some features of the engine:
 * **History of changes** for text parts of hyphae. Every change is saved to [[git]], the most popular version control system.
 * **[[Mycomarkup]], a custom-made markup language.**
 * **Optional basic [[authorization]].**
+
+Want to try it? Surf this wiki or learn how to [[deploy]] your own.
