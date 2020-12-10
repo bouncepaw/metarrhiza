@@ -4,20 +4,22 @@ The rest of the instruction assumes you're using a UNIX-compatible operating sys
 
 ## Building
 ### Dependencies
-MycorrhizaWiki is a compiled program. You will need a recent compiler of Go. Get a recent version for your operating system on Go's site:
-=> https://golang.org/dl/
+MycorrhizaWiki depends on several 
+other programs in order to work.
 
-You will need the `quicktemplate` compiler. Follow the instructions on the project's repo:
-=> https://github.com/valyala/quicktemplate
+#### Go
+Go is a compiled programming language MycorrhizaWiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
 
-You will also need `git`. You probably have it installed. If not, consult your OS' repos or download from here:
-=> https://git-scm.com/downloads
+#### Git
+Git is the most popular version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads|Git website]].
 
-You will also need `make`. You are really likely to have it installed. If not, consult your OS' repos. You can also avoid using it by invoking the Go compiler directly.
+#### Other dependencies
+There is a Makefile in the source code. If you want to use it, you will need `make` which you probably have installed. If not, consult your OS' repos. You can also avoid using it by invoking the Go compiler directly.
+
+The rest of the dependences will be fetched by the Go compiler automatically. Don't forget to put `$GOPATH/bin` into your `$PATH`.
 
 ### Getting the source code
-Visit the GitHub repository:
-=> https://github.com/bouncepaw/mycorrhiza
+Visit the [[https://github.com/bouncepaw/mycorrhiza|GitHub repository]]
 
 You can download a .zip archive by clicking Code » Download ZIP or use this command (recommended):
 ```sh
@@ -47,7 +49,15 @@ The only runtime dependency for MycorrhizaWiki is git. It won't start without it
 git init
 ```
 
+Run this command to see a short summary of [[configuration]] options:
+```sh
+~/src/mycorrhiza/mycorrhiza -help
+```
+
 ### What wiki folders should look like?
 You can just base of the default wiki, `metarrhiza`. This way, you will have handy help built-in. The other option is to run the wiki on an empty repo. An interesting option is to run the wiki on any of your image collections. They'll appear as hyphae!
 
 If you have a subfolder called `static`, you can customize the wiki behaviour. File `static/favicon.ico` is used as a favicon for the site. File `static/common.css` is used for styling. Both are optional.
+
+### How to setup authorization?
+//See [[authorization]]//
