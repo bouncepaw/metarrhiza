@@ -10,4 +10,4 @@ All of them are already implemented. More coming soon.
 * **POST [[/upload-binary/Apple]]** Upload a binary part to Apple
 * **POST [[/upload-text/Apple]]** Upload text to Apple
 
-<= special_pages : 2..
+<= special_pages
