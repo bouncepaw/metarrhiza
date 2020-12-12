@@ -85,10 +85,12 @@ They can't be nested for now.
 ```
 
 ### Paragraphs
-Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^, ,,lowered,, or ~~striked-through~~ text. You can also !!//combine//!! them!
 ```
 Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^, ,,lowered,, or ~~striked-through~~ text. You can also !!//combine//!! them!
 ```
+Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^, ,,lowered,, or ~~striked-through~~ text. You can also !!//combine//!! them!
+
+The same formatting can be used in list items, headings and image descriptions.
 
 ### Horizontal bar
 ```
@@ -101,10 +103,7 @@ Other lines are considered to be paragraphs. You can use //italic//, **bold**, `
 img {
 Apple
 Apple| 200
-Apple| *100 { Multiline
-
-//description//
-}
+Apple| *100 { A //description// }
 https://upload.wikimedia.org/wikipedia/commons/7/70/A.png
 }
 ```
@@ -112,10 +111,7 @@ https://upload.wikimedia.org/wikipedia/commons/7/70/A.png
 img {
 Apple
 Apple| 200
-Apple| *100 { Multiline
-
-//description//
-}
+Apple| *100 { A //description// }
 https://upload.wikimedia.org/wikipedia/commons/7/70/A.png
 }
 
