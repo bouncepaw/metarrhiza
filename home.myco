@@ -3,7 +3,7 @@ img { https://mycorrhiza.lesarbr.es/favicon.ico }
 Welcome to MycorrhizaWiki! [[/recent-changes|Recent changes]], [[/list|All hyphae]], [[/random|Random hypha]]
 
 ## Introduction
-**MycorrhizaWiki** is an open-source wiki engine developed by [[u/bouncepaw]]. You can follow the development on [[https://github.com/bouncepaw/mycorrhiza|GitHub]].
+**MycorrhizaWiki** is an open-source wiki engine developed by [[u/bouncepaw]]. You can follow the development on [[https://github.com/bouncepaw/mycorrhiza|GitHub]] or on [[https://pinophyta.lesarbr.es/bouncepaw/mycorrhiza|a mirror hosted on this server]].
 
 Here are some features of the engine:
 * **No database required**, everything is stored as simple files. It simplifies installation and make it easy to modify the content with other means such as direct file editing.
@@ -14,3 +14,8 @@ Here are some features of the engine:
 * **Optional basic [[authorization]].**
 
 Want to try it? Surf this wiki or learn how to [[deploy]] your own.
+
+## Community
+There isn't a lot of action going but there is a group in Telegram [[https://t.me/mycorrhizadev|@mycorrhizadev]]. Consider supporting the development on [[https://boosty.to/bouncepaw|boosty]].
+
+See [[instances]] for a list of publicly hosted wikis running MycorrhizaWiki.
