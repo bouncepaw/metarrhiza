@@ -1,28 +1,13 @@
 ## Hypha actions
 All of them are already implemented. More coming soon.
 
-### [[/page/Apple]]
-Display Apple
+* **[[/page/Apple]]** Display Apple
+* **[[/text/Apple]]** See unrendered text content of Apple
+* **[[/binary/Apple]]** See binary content of Apple
+* **[[/edit/Apple]]** Apple editor
+* **[[/history/Apple]]** See Apple's history
+* **[[/rev/Hash/Apple]]** See how Appple looked with given Hash as revision id.
+* **POST [[/upload-binary/Apple]]** Upload a binary part to Apple
+* **POST [[/upload-text/Apple]]** Upload text to Apple
 
-### [[/text/Apple]]
-See unrendered text content of Apple
-
-### [[/binary/Apple]]
-See binary content of Apple
-
-### [[/edit/Apple]]
-Apple editor
-
-### [[/history/Apple]]
-See Apple's history
-
-### [[/rev/Hash/Apple]]
-See how Appple looked with given Hash as revision id.
-
-### POST /upload-binary/Apple
-Upload a binary part to Apple
-
-### POST /upload-text/Apple
-Upload text to Apple
-
-=> special_pages Also see list of special pages
+<= special_pages : 2..
