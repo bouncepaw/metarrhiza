@@ -54,18 +54,25 @@ You //must// put a space after the dot (.).
 
 Nested lists are not implemented yet; they will be similar to Creole ones.
 
-### Rocket links
-```
-=> where
-=> where display text
+### Links
+#### Rocket links
 ```
 => wikilink
+=> wikilink display text
+```
+=> wikilink
+=> wikilink display text
 
-### Inline links
+If the hypha you are linking to has spaces in its name, replace the spaces with underscores `_`.
+
+#### Inline links
 ```
 You can link any [[hypha]], you can set the display text when linking [[hypha|hyphae]], you can link external sites if you specify a protocol: [[https://example.org]]. You can also specify display text for external links using the same syntax: [[https://example.org|just like that]]. Note that blue globe near every external link.
 ```
 You can link any [[hypha]], you can set the display text when linking [[hypha|hyphae]], you can link external sites if you specify a protocol: [[https://example.org]]. You can also specify display text for external links using the same syntax: [[https://example.org|just like that]]. Note that blue globe near every external link.
+
+### Transclusion
+See [[transclusion]]
 
 ### Blockquotes
 ```
@@ -97,6 +104,7 @@ The same formatting can be used in list items, headings and image descriptions.
 ----
 ```
 ----
+It does not always work and I have no idea why. **TODO:** fix the bug.
 
 ### Image galleries
 ```
