@@ -15,7 +15,7 @@ line 1
 line 2
 line 3
 ```
-These are different transclusions of the hypha:
+These are different transclusions of the hypha ⤵. Note that using that `:`-notation is not recommended because I'm planning on deprecating it in favor of a more semantic-oriented approach.
 ```
 Full contents:
 <= goal
