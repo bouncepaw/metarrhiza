@@ -32,5 +32,11 @@ sudo certbot --nginx
 
 `certbot` is a nice interactive program that is easy to use. After running it, you will end up with a working HTTPS setup.
 
-## 5. Check
+## 5. Restart `nginx`
+On systems with `systemd` (you probably have it) it would be like this:
+```sh
+sudo systemctl restart nginx
+```
+
+## 6. Check
 Try to visit your wiki. Most browsers display a closed lock when the site is served through HTTPS.
