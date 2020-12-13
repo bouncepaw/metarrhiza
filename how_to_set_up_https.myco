@@ -1,0 +1,36 @@
+MycorrhizaWiki does not support HTTPS out-of-the-box. If you want to add it, you should use a reverse-proxy. This hypha will instruct you how to do it with `nginx` and Certbot. There are countless other ways, but this is what is used on this wiki.
+
+Note that this guide can be used for almost any software, not only MycorrhizaWiki.
+
+## 1. Install MycorrhizaWiki
+See [[Deploy]]. The rest of the guide assumes you serve your wiki through port 1737 (this is the default port for Mycorrhiza). Change every occurrence of 1737 in the rest of the guide to your port if you use any other.
+
+## 2. Install `nginx`
+`nginx` is one of the most popular web servers. It is easy to use and is quite popular. Of course, you can use Apache instead of `nginx`.
+
+`nginx` is distributed in most OS repositories, consider installing it from there. If it is not or if you want the latest version, visit [[http://nginx.org/en/download.html|nginx website]].
+
+## 3. Initial configuration of `nginx`
+Edit file `/etc/nginx/nginx.conf`. It should exist already and have some configuration written already. In the `http` section, add this section:
+```nginx
+server {
+  server_name wiki.domain.name;
+  location / {
+    proxy_pass http://127.0.0.1:1737;
+  }
+}
+```
+
+Close the file.
+
+## 4. Install Certbot
+Go to [[https://certbot.eff.org/|Certbot's website]]. Select `nginx` and your operating system. Follow the instructions and install Certbot. Run this command to make Certbot automatically generate a Let's Encrypt SSL certificate and modify `nginx.conf` for you:
+
+```sh
+sudo certbot --nginx
+```
+
+`certbot` is a nice interactive program that is easy to use. After running it, you will end up with a working HTTPS setup.
+
+## 5. Check
+Try to visit your wiki. Most browsers display a closed lock when the site is served through HTTPS.
