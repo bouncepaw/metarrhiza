@@ -1,13 +1,16 @@
 Perhaps, one day, I'll add wysiwyg editor for gemtext to MycorrhizaWiki.
 
 There will be buttons on top:
-* Add list item
+* Add numbered list item
+* Add unnumbered list item
 * Add quote
-* Add link
-* Add header 1
-* Add header 2
-* Add header 3
+* Add rocketlink
+* Add headings 2
+* Add headings 3
+* Add headings 4 (Note that headings 1, 5 and 6 are omitted)
 * Transclude
+
+And the next row will contain buttons for paragraph formatting.
 
 I think this editor won't work without enabled JS, so text-browsers are left-aside.
 
