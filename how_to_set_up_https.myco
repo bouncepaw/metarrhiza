@@ -24,7 +24,7 @@ server {
 Close the file.
 
 ## 4. Install Certbot
-Go to [[https://certbot.eff.org/|Certbot's website]]. Select `nginx` and your operating system. Follow the instructions and install Certbot. Run this command to make Certbot automatically generate a Let's Encrypt SSL certificate and modify `nginx.conf` for you:
+Go to [[https://certbot.eff.org/|Certbot's website]]. Select `nginx` and your operating system. Follow the instructions and install Certbot; for some OSes such as Ubuntu it is recommended to install Certbot with `snap`, it is tested to work well. Run this command to make Certbot automatically generate a Let's Encrypt SSL certificate and modify `nginx.conf` for you:
 
 ```sh
 sudo certbot --nginx
