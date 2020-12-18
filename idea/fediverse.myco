@@ -1,0 +1,28 @@
+**Fediverse** is a union of different federated services like social networks, video hostings, etc running different protocols. According to [[https://the-federation.info]], there are 48 projects in the network running 14 different protocols on more than 8000 nodes.
+
+Also see [[../webmention]].
+
+## ActivityPub
+ActivityPub is the most popular protocol in the Fediverse. I'm thinking about implementing some form of support for it, thus joining every public Mycorrhiza wiki into the federation, at least partially.
+
+See [[https://communitywiki.org/wiki/ActivityPub|ActivityPub]] at CommunityWiki for some discussion on the topic.
+
+Read [[https://www.w3.org/TR/activitypub/|ActivityPub specification]].
+
+## Federated wiki
+So, how can the idea of federated wikis be carried out?
+
+### Authorization
+Perhaps, profiles from some federated networks could be used for editing Mycorrhiza wikis?
+
+### Notifying about new content
+One could subscribe to notifications about new edits instead of looking at the [[feeds]]. Also, wiki admins could set up Fediverse accounts that just broadcast all changes to the world.
+
+### Importing content
+MycorrhizaWiki will support [[import]]ing content from different sources. The Fediverse could be one of them. Imagine [[transclusion|transcluding]] a toot from Mastodon!
+
+### Exporting content
+Not exactly sure.
+
+### Commenting
+Comment threads from the Fediverse could be shown below or nearby every hypha.
