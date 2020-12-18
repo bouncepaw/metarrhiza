@@ -1,7 +1,5 @@
 **Fediverse** is a union of different federated services like social networks, video hostings, etc running different protocols. According to [[https://the-federation.info]], there are 48 projects in the network running 14 different protocols on more than 8000 nodes.
 
-Also see [[../webmention]].
-
 ## ActivityPub
 ActivityPub is the most popular protocol in the Fediverse. I'm thinking about implementing some form of support for it, thus joining every public Mycorrhiza wiki into the federation, at least partially.
 
@@ -26,3 +24,10 @@ Not exactly sure.
 
 ### Commenting
 Comment threads from the Fediverse could be shown below or nearby every hypha.
+
+## Webmention
+Webmention is another protocol in the Fediverse.
+
+Read [[https://indieweb.org/Webmention|this Indieweb wiki article]] and [[https://indieweb.org/Webmention-developer|this one too]]. I think it's just perfect for cross-site backlinks (it could even be that implementing cross-site backlinks could be easier than in-site backlinks 🤔). It's also used for commenting.
+
+I like it too. I'm thinking about supporting it in MycorrhizaWiki. Should I support together with ActivityPub or choose just one?
