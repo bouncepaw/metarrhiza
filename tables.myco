@@ -72,3 +72,15 @@ table {
 | { there are
 //two// paragraphs in this cell! } | d
 }
+
+You can omit the initial pipe characters. They will be inserted automatically:
+```
+table {
+a | b
+c | d
+}
+```
+table {
+a | b
+c | d
+}
