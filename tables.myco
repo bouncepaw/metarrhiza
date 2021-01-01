@@ -1,4 +1,4 @@
-You can organize data into tables. [[Mycomarkup]] syntax for tables is quite strict and a little verbose but nevertheless simple and reliable.
+You can organize data into tables. [[Mycomarkup]] syntax for tables is easy enough.
 
 Tables are delimited by `table {...}`. Both delimeters have to be on their own lines. You can write table's caption on the first line.
 
