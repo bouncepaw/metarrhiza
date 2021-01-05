@@ -28,6 +28,11 @@ Yet again, what to do with pictures?
 ### Telegram import
 I often find myself willing to copy something from a Telegram channel. That's why I want to support it. Telegram has a web view for public channels which is good enough for me.
 
+Perhaps importing whole chats using Telegram Desktop's export feature is something to consider too.
+
+### Email import
+I often find myself copying emails from a mail client to a wiki. Making it more automatic is a good idea.
+
 ### Other social media import
 If needed, it can be considered. VK posts and articles, Facebook posts, Instagram posts.
 
