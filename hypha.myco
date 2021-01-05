@@ -1,4 +1,4 @@
-Hyphae are what content units called like in MycorrhizaWiki. Each hypha has a text and binary part. Either of them may be empty.
+Hyphae are what content units called like in MycorrhizaWiki. It usually is an attachment (image, video, etc) with text description or a text note, article, etc.
 
 ## Hypha names
 Hypha names are case-insensitive. It means that names `amanita muscaria` and `Amanita Muscaria` are same. Also, space and underscore are also the same. Canonical names are all lowercased and have underscores. These are links to the same hypha:
@@ -8,21 +8,18 @@ Hypha names are case-insensitive. It means that names `amanita muscaria` and `Am
 => TEST_PAGE
 => test%20page
 
-There are some characters that cannot be part of a hypha name: ?!:#@><*|"\'&% Others can be used.
+There are some characters that cannot be part of a hypha name: `?!:#@><*|"\'&%{}` Others can be used.
 
 If a hypha has a slash in its name, the hypha is a subhypha of some other hypha. For example, `amanita/muscaria` and `amanita/regalis` are both subhyphae of hypha `amanita`. `Amanita` is not a subhypha of any hypha.
 
 ## Text part
-=> mycomarkup Text parts are written in mycomarkup
+Text parts are written in [[mycomarkup]].
 
 ### Editing text
-When you visit edit-pages of hyphae, you can use the forms there. You can also edit files directly but it's not safe.
+When you visit edit-pages of hyphae, you can use the form there. You can also edit files directly if you have access to the wiki server but it's not safe.
 
-In the future there may be other ways of editing pages and, perhaps, text editors integration or contenteditable wysiwyg editor.
-=> wysiwyg
-
-## Binary part
-Every type of data can be stored as binary part, but only some of them will render in the browser. Others can still be downloaded.
+## Attachment
+Every type of data can be stored as an attachment, but only some of them will render in the browser. Others can still be downloaded.
 
 ### Supported image formats
 * .jpg
@@ -43,10 +40,10 @@ If there's demand on other image formats, they can be added. The problem is that
 * .webm
 * .mp3
 
-### Uploading binary data
+### Uploading attachment
 There's a form at end of every page.
 
 ## Storage
-All hyphae are stored on file system. Text parts have the `.myco` extension, binary parts have any extension they need.
+All hyphae are stored on file system. Text parts have the `.myco` extension, attachments have any extension they need.
 
-MycorrhizaWiki indexes all those files on start or when `/reindex` is requested. For every existing hypha there must be a binary file, a text file or both. If there are several binary files for the same hypha, only one of them is used.
+MycorrhizaWiki indexes all those files on start or when `/reindex` is requested by an admin. For every existing hypha there must be a binary file, a text file or both. If there are several binary files for the same hypha, only one of them is used.
