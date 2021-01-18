@@ -1,0 +1,8 @@
+Many problems occur when you haven't configured a git repository. Do it.
+
+## Wrong names shown in recent changes!
+If you have non-ASCII characters look like `\\012\\305` or something, run this command:
+
+```sh
+git config --global core.quotepath false
+```
