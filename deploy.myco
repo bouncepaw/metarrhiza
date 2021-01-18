@@ -4,8 +4,7 @@ The rest of the instruction assumes you're using a UNIX-compatible operating sys
 
 ## Building
 ### Dependencies
-MycorrhizaWiki depends on several 
-other programs in order to work.
+MycorrhizaWiki depends on several other programs in order to work.
 
 #### Go
 Go is a compiled programming language MycorrhizaWiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
@@ -23,31 +22,34 @@ Visit the [[https://github.com/bouncepaw/mycorrhiza|GitHub repository]]
 
 You can download a .zip archive by clicking Code » Download ZIP or use this command (recommended):
 ```sh
+git clone https://github.com/bouncepaw/mycorrhiza
+```
+
+If you want to also get a snapshot of this wiki for testing purposes, run this command instead:
+```sh
 git clone --recurse-submodules  https://github.com/bouncepaw/mycorrhiza
 ```
 
 Either way, you should end up with a folder full of .go files. Let's assume it is located at `~/src/mycorrhiza`.
 
 ### Starting
-Use either `make run` or `make build`. If you use `make run`, the engine will be compiled and then run on `metarrhiza` wiki. It's a default wiki used for testing and for helpful metainformation. You are probably reading this text on that metarrhiza wiki.
+Run `make build`. You will end up with an executable named `mycorrhiza`. This is the program you need.
 
-The wiki is available now to you and your local network on this address:
+If you have downloaded the snapshot, you can just run `make run` and have a running wiki on this address:
+
 => http://localhost:1737
 
-If you want to use any other wiki, you need to use a file called `mycorrhiza` that appears in the folder after running `make run` or `make build`. It's the executable.
+### Creating a wiki
+*. Create a directory named, for example, `wiki`.
+*. Navigate to the directory and run `git init`. The wiki won't work without that.
 
 ## Running
 To start a wiki, run:
 ```sh
-~/src/mycorrhiza/mycorrhiza /path/to/your/wiki
+~/src/mycorrhiza/mycorrhiza ~/path/to/your/wiki
 ```
 
 Of course, you can move the `mycorrhiza` file anywhere. Your wiki can also be anywhere.
-
-The only runtime dependency for MycorrhizaWiki is git. It won't start without it. Also, your wiki must be a valid writable git repository. The easiest way to make a git repo is by entering the folder and running this command:
-```sh
-git init
-```
 
 Run this command to see a short summary of [[configuration]] options:
 ```sh
@@ -57,7 +59,7 @@ Run this command to see a short summary of [[configuration]] options:
 ### What wiki folders should look like?
 You can just base of the default wiki, `metarrhiza`. This way, you will have handy help built-in. The other option is to run the wiki on an empty repo. An interesting option is to run the wiki on any of your image collections. They'll appear as hyphae!
 
-If you have a subfolder called `static`, you can customize the wiki behaviour. File `static/favicon.ico` is used as a favicon for the site. File `static/common.css` is used for styling. Both are optional.
+If you have a subfolder called `static`, you can customize the wiki behaviour. File `static/favicon.ico` is used as a favicon for the site. File `static/common.css` can be used to override default styles. Both are optional.
 
 ### How to setup authorization?
 //See [[authorization]]//
