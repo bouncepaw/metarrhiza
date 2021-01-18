@@ -35,13 +35,14 @@ Either way, you should end up with a folder full of .go files. Let's assume it i
 ### Starting
 Run `make build`. You will end up with an executable named `mycorrhiza`. This is the program you need.
 
-If you have downloaded the snapshot, you can just run `make run` and have a running wiki on this address:
+If you have downloaded the snapshot, you can just run `make run` and have a running wiki on this address (it is also available in your local network but with a different address):
 
 => http://localhost:1737
 
 ### Creating a wiki
 *. Create a directory named, for example, `wiki`.
 *. Navigate to the directory and run `git init`. The wiki won't work without that.
+*. If you are planning to have hyphae named with unicode characters, also run that: `git config --global core.quotepath false`. You may not need to run that, depending on your environment configuration.
 
 ## Running
 To start a wiki, run:
