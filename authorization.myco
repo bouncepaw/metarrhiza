@@ -1,0 +1,32 @@
+Currently, there are no fancy authorization methods implemented.
+
+## Fixed authorization
+The only method implemented so far. The idea is simple: the admin of the wiki preconfigures all users before starting the wiki, that's it. Users can't create accounts by themselves.
+
+If you want to use this method, you need to run the wiki like that:
+
+```sh
+mycorrhiza -auth-method "fixed" -fixed-credentials-path "/path/to/credentials.json" /path/to/wiki
+```
+
+Attention to the credentials path. It is `mycocredentials.json` by default, but you can set a different path. The file is a JSON like that:
+
+```json
+[
+  {
+    "name": "alice", 
+    "password": "safety absolute",
+    "group": "admin"
+  }, 
+  {
+    "name": "bob", 
+    "password": "TotallySafe", 
+    "group": "trusted"
+  }
+]
+```
+
+Note that the passwords are stored in plain-text. Make sure that no one has access to that file besides admins.
+
+### Groups
+Users must be part of a group. You can choose from `user`, `trusted`, `moderator`, `admin`. They have different rights.
