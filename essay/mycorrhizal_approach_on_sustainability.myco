@@ -10,4 +10,17 @@ The downside is the difficulty for readers. You can easily get lost in the ~~wik
 
 Yet still classic wikis can be vandalized. Or can they? I think the problem has been solved already. There is captcha, human-oriented questions, stuff like that. Also, [[authorization]]. You can make registration process in such a way that no robots pass. For example, on Mycorrhiza all users are added manually (for time being). Quite safe.
 
-Or is it? Imagine if a wiki admin leaves the wiki for two months. Meanwhile, a malicious hater with a grudge on the admin destroys everything. What about that? Of course, such a user shall be banned. Perhaps, automatically. But what about the results of the destruction? There's nothing meaningful left.
+Or is it? Imagine if a wiki admin leaves the wiki for two months. Meanwhile, a malicious hater with a grudge on the admin destroys everything. What about that? Of course, such a user shall be banned. But what about the results of the destruction? There's nothing meaningful left.
+
+But hey, isn't that what history has been made up for? Just roll back to an ok version! Of course, the wiki software should be sophisticated enough for that. As for MycorrhizaWiki, it doesn't have buttons for that but, since it runs on [[git]], you can still do that.
+
+But how is it sustainable? It is, if it is automatized. Let's create an algorithm that will analyze the edits and decide if a user is malicious. It mustn't be really difficult to implement, I think. I will look into that.
+
+By the way, git. Why not use it to the fullest? Anyone can fork a git repository and then run your own wiki. Also, git repositories can be merged. It can be relied on.
+
+See [[idea/import]] for other ideas of ways of importing content.
+
+So, what do you think? In summary, my opinion is that:
+* Classic centralized wikis can be sustainable.
+* We should let the machines help us make the wikis sustainable.
+* Classic wikis can be forked/copied. Also, consider [[idea/fediverse]]. Mycorrhiza will take the integration part to the fullest one day, while still being a classic wiki.
