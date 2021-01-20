@@ -1,0 +1,13 @@
+During the anniversary [[http://fed.wiki.org/view/federated-wiki|Federated Wiki]] discussion (2021-01-20) an interesting topic has been brought up: //how do we make wikis sustainable?//
+
+In that question, //sustainable wiki// means a wiki that can be forgotten for several months, and when you return there, it's ok. Unlike more classic open wikis that tend to get vandalized, fedwikis are quite safe with that.
+
+The idea is simple. You can't edit pages. You can only //fork// them, copy to your own fedwiki and make your changes there. The software handles that connection and shows pages in such a way that you can navigate to all versions of the pages. Thus, no vandal can ruin your page.
+
+Another effect of this approach is the freedom of speech. On classic wikis you may have disagreements that won't be resolved. Edit wars happen. But on a fedwiki, no one can censor your saying.
+
+The downside is the difficulty for readers. You can easily get lost in the ~~wiki~~ wiki web of conflicting pages, lost both in time and space. Stuff like that never happens in classic wikis: you know //where// you are (fedwiki flags are hard to remember and distinguish), you know //when// you are (on the most recent version, unless you're viewing history).
+
+Yet still classic wikis can be vandalized. Or can they? I think the problem has been solved already. There is captcha, human-oriented questions, stuff like that. Also, [[authorization]]. You can make registration process in such a way that no robots pass. For example, on Mycorrhiza all users are added manually (for time being). Quite safe.
+
+Or is it? Imagine if a wiki admin leaves the wiki for two months. Meanwhile, a malicious hater with a grudge on the admin destroys everything. What about that? Of course, such a user shall be banned. Perhaps, automatically. But what about the results of the destruction? There's nothing meaningful left.
