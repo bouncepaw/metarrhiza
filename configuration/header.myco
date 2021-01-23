@@ -1,0 +1,31 @@
+On top of every page, there's a header with links shown. You can configure it.
+
+By default, it links to:
+* Home
+* Recent changes
+* Random hypha
+
+In order to configure it, you have to list all the links in a special hypha in this format:
+```
+=> Link1 Displayed text 1
+=> Link2 Displayed text 2
+```
+
+That's it, simple rocket links. Links can be internal or external. All other lines are ignored, so you can write some explaining text about the hypha for the readers.
+
+An administrator of a wiki has to set what this hypha is. Pass the name as the `-header-links-hypha` command line option:
+```sh
+mycorrhiza -header-links-hypha "sys/header links" wiki-dir
+```
+
+⚠ If you don't pass it, the links can't be configured.
+
+After editing that hypha, update the links by visiting [[/update-header-links]]. On wikis with authorization, only moderators and administrators can do this.
+
+## Example
+```myco
+This hypha sets what links are shown in the header. Be careful when editing it.
+=> home MyWiki
+=> /recent-changes What's going on
+=> https://example.org Main site
+```
