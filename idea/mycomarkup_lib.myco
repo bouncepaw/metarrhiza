@@ -1,0 +1,26 @@
+Currently, [[mycomarkup]] is only implemented inside The MycorrhizaWiki codebase. I'm confident that it should be moved to a separate project one day, and here's why:
+
+*. Having a library to use would help making mycomarkup more popular greatly.
+*. If it is a different go package, we will be able to make a distinct `mycomarkup` program which could be used in any project in any language. I, myself, would find many usages for such a program.
+*. Tearing it apart from the rest of the system would make the whole system's architecture better.
+*. Mycomarkup and Mycorrhiza could be developed in parallel.
+
+I suppose this is enough to convince anyone.
+
+## Implementation caveats
+
+Myco{rrhiza, markup} are tied together greatly. For example, every link is colored red. A separate package would have no direct access to all the hyphae, therefore there will be a way to provide a way to check a hypha's existence. But for some use cases (and a separate package should cover more use cases than an embedded one) having such functionality is not needed.
+
+There should be options:
+```
+type MycoMarkupOptions struct {
+   // Return false when applied to a hypha name that exist. If it is not set, do not check for existence.
+   CheckForExistence func(string) bool
+
+   // Given current hypha name and link's hypha name, return the best representation of it, while also handling relative links. If it is not set, keep links as is.
+   CanonicalLink func(string, string) string
+
+   // Given current hypha name, link's hypha name and transclusion range, return a mycomarkup document. If the document is nil, it is assumed to not exist. If the function is not set, do not support transclusion.
+   Transclude func(string, string, XclRange) *MycoDocument
+}
+```
