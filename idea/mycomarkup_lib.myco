@@ -24,3 +24,13 @@ type MycoMarkupOptions struct {
    Transclude func(string, string, XclRange) *MycoDocument
 }
 ```
+
+This is the the whole mycomarkup document translation algorithm overview:
+*. User gives text and hypha's name
+*. Lex and parse the document
+*. User calls all link and transclusion resolving stuff, giving access to their hypha storage
+*. Transform the document to the target markup
+
+The target markup is, usually, HTML, but I'd love to also support Gemtext.
+
+But what about the `mycomarkup` program? How do we handle hypha existence detection stuff there? Via sockets, maybe. Or through files.
