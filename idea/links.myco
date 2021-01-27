@@ -1,0 +1,37 @@
+There are only two requirements for a wiki: hyperlinks and editability. The rest is an afterthought. It only makes sense that a great attention is paid to hyperlink capabilties. In this article I'll express some improvements I'm willing to make.
+
+## Stemlinks
+The practice has shown that hyphae tend to be categorized and nested. 2 or 3 levels is average. Therefore, links get longer. What could be named `Apple` on a linear wiki may get named `Fruit/Apple` on a mycorrhiza wiki. To link it, you would type `[\[Fruit/Apple]]`. But, as it turned out, people actually write something like `[\[Fruit/Apple | Apple]]`. It makes perfect sense; after all, only the last hypha name part, the //stem// is what readers want to see in most cases.
+
+Writing that by hand is tedious, so I want to introduce a special syntax at some point.
+
+> If a hypha name in a link is prefixed with `>` and there is no display text, only the stem of the hypha name is shown.
+
+Thus, `[\[>Fruit/Apple]]` and `[\[Fruit/Apple | Apple]]` are identical.
+
+I chose `>` for that task because, first of all, it is an illegal character in [[mycomarkup]], and, secondly, it looks like a rightward arrow ➡.
+
+## Guesslinks
+Linking deeply-nested hyphae can be tricky. You can just forget the full path and not want to look it up. Also, hyphae can be moved around. For example, `Fruit/Apple` can be renamed to `Food/Apple`, and all links will break.
+
+A good solution would be a link that tries to //guess// the full path of a hypha.
+
+> If a hypha name in a link is prefixed with `?`, the engine will try to find a similarly named existing hypha which ends with the given name. If there are zero or more than one such hyphae, let the user for such hypha.
+
+For example, there is a hypha named `Food/Apple`. It doesn't matter if `Food` exists, only `Food/Apple` is needed. A user writes such link: `[\[?Apple]]`. The engine will correctly assume it is same as `[\[Food/Apple]]`. If `Food/Apple` doesn't exist, hypha `Apple` is linked instead. But if there are both `Food/Apple` and `Fruit/Apple` on the wiki, a search query is linked instead. Unfortunately, searching is not implemented yet.
+
+## Interwiki links
+See [[../interwiki]].
+
+## Embedlinks
+img { https://user-images.githubusercontent.com/22562024/100477733-144e2900-310b-11eb-9c09-06776e7aa51b.png }
+
+This feature is inspired by Notion. I want rocket links to display previews of links. External sites previews' data is provided by [[opengraph]] meta-tags.
+
+## Free-form rocket links
+Currently, rocket links do not support spaces in hyphae. Well, it is by design, this is part of the gemtext compatibility. If you want to link such hypha, you can replace the spaces with `_`, `%20` and whatnot. But what if we combine rocket links and inline links? We end up with a syntax like that:
+
+```myco
+=> [[ hypha with a lot of spaces | wonderful display text ]]
+```
+
