@@ -41,7 +41,7 @@ If there's demand on other image formats, they can be added. The problem is that
 * .mp3
 
 ### Uploading attachment
-There's a form at end of every page.
+There's a form at end of every page. Once there is an attachment, it can be unattached.
 
 ## Storage
 All hyphae are stored on file system. Text parts have the `.myco` extension, attachments have any extension they need.
