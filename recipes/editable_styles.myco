@@ -1,0 +1,8 @@
+Since 0.13, you can let the community edit CSS through wiki interface. Here's how to do it.
+
+Run this command in your wiki directory. Replace `styles` with the name of hypha you want to be used for editing styles.
+```
+ln -sf static/custom.css styles.myco
+```
+
+It should work instantly.
