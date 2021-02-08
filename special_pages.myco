@@ -6,6 +6,8 @@ These are special pages which do administrative or other work. They are similar 
 * **[[/list]]** See list of all hyphae and a total count of them.
 * **[[/recent-changes]] See list of recent changes. You can also access [[feeds]] on URLs [[/recent-changes-rss]], [[/recent-changes-atom]], [[/recent-changes-json]].
 * **[[/random]]** Go to a random hypha.
+* **[[/about]]** Technical report.
+* **[[/user-list]]** List of users.
 
 ## [[Authorization]]
 They only work if your wiki has authorization enabled. Otherwise, these links will fail. On this wiki, it is turned on.
