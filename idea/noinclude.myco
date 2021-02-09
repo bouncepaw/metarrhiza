@@ -1,0 +1,29 @@
+`noinclude {}` is a tag that surrounds markup that will never be transcluded.
+
+## Examples
+On hypha `test`:
+```
+noinclude {
+See translations: [[ru/тест]], [[eo/testo]].
+}
+
+A **test** is a way to make you feel miserable.
+```
+
+On hypha `exam`:
+```
+...
+
+A lighter version of //exam// exists and it's called test:
+<= test
+```
+
+Rendered result would be like that:
+
+```
+...
+
+A lighter version of //exam// exists and it's called test:
+
+A **test** is a way to make you feel miserable.
+```
