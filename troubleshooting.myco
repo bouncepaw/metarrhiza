@@ -4,5 +4,5 @@ Many problems occur when you haven't configured a git repository. Do it.
 If you have non-ASCII characters look like `\\012\\305` or something, run this command:
 
 ```sh
-git config --global core.quotepath false
+git config core.quotepath false
 ```
