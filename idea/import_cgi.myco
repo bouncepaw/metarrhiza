@@ -46,9 +46,13 @@ The importer runs and prints this:
 Content-Type: application/json
 
 [
-{ "HyphaName": "Cactus", "MimeType": "text/mycomarkup", "FilePath": "/home/alice/tmp/123.myco" },
-{ "HyphaName": "Cactus", "MimeType": "image/jpeg", "FilePath": "/home/alice/tmp/456.jpg" }
-}
+{ "HyphaName": "Cactus", 
+  "MimeType": "text/mycomarkup",
+  "FilePath": "/home/alice/tmp/123.myco" },
+{ "HyphaName": "Cactus",
+  "MimeType": "image/jpeg",
+  "FilePath": "/home/alice/tmp/456.jpg" }
+]
 ```
 
 A new hypha `Cactus` with both attachment and text part is created. This is the entry that gets added to the history:
