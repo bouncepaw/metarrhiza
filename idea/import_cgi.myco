@@ -1,0 +1,60 @@
+It makes sense to allow wiki administrators extend [[../import|importing]] capabilities of the engine by some sort of plugins. What about using CGI?
+
+## Configuration
+Wiki administrators should be able to somehow configure this stuff. CLI options? Whatever.
+
+* `ImporterPath`: full rooted path to the CGI executable.
+* `ImportTarget`: name of the service which content you want to import. For example: `telegram`, `twitter`, etc.
+* `UrlPattern`: the pattern used by the engine to determine what importer to use.
+
+If the importers need their own configuration, the way it is implemented is up to them.
+
+## Interface
+When visiting a non-existent hypha, the user shall be offered to import. When they decide to do it, they are given a one-line form where they type in the URL of the content to import. Then they click `Submit` and everything works.
+
+## Input environment variables
+* `MYCORRHIZA_IMPORT_URL` is the url which the user asked to import. For example: `https://t.me/bpblog/1182`. Be liberal in what urls you accept.
+* `MYCORRHIZA_HYPHA_TO_IMPORT_TO` is the name of the hypha the user wants to import to. If you end up creating additional hyphae (images, for example), create them as subhyphae of the given hypha.
+
+## Output
+First line: `Content-Type: application/json`. Second line is empty.
+
+The rest is a JSON array that consists of objects with such fields:
+* `HyphaName`: the name of the hypha you want the engine to save the file to.
+* `MimeType`: MIME-type of the file. If it is [[mycomarkup]], use `text/mycomarkup`.
+* `FilePath`: Full rooted path to the file.
+
+## Example
+Alice has a wiki with such importer configuration:
+table {
+! ImportTarget ! ImporterPath ! UrlPattern
+| `telegram` | `/home/alice/src/telegram-import/bin` | `^https://t\\.me/`
+| `twitter` | `/home/alice/bin/twitter-importer` | `^https?://twitter.com/`
+}
+
+Bob visits her wiki, navigates to non-existent hypha `Cactus` and imports this url: `https://t.me/cxiutage/36`.
+
+The engine calls the `telegram` importer with these environment variables:
+table {
+! `MYCORRHIZA_IMPORT_URL` | `https://t.me/cxiutage/36`
+! `MYCORRHIZA_HYPHA_TO_IMPORT_TO` | `Cactus`
+}
+
+The importer runs and prints this:
+
+```
+Content-Type: application/json
+
+[
+{ "HyphaName": "Cactus", "MimeType": "text/mycomarkup", "FilePath": "/home/alice/tmp/123.myco" },
+{ "HyphaName": "Cactus", "MimeType": "image/jpeg", "FilePath": "/home/alice/tmp/456.jpg" }
+}
+```
+
+A new hypha `Cactus` with both attachment and text part is created. This is the entry that gets added to the history:
+
+```
+Import ‘Cactus’ from ‘https://t.me/cxiutage/36’
+
+by importer-telegram@mycorrhiza
+```
