@@ -6,3 +6,15 @@ ln -sf static/custom.css styles.myco
 ```
 
 It should work instantly.
+
+You may want to wrap your CSS there like that:
+```
+ /*
+ ```*/
+ css code
+ css code
+ /*
+ ```*/
+```
+
+This way, the code will be displayed as a code block on your wiki and the backtick fences will not interfere with CSS when used.
