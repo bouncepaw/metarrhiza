@@ -1,4 +1,4 @@
-Transclusion is a mechanism of including contents of other hyphae into one hypha. Support for transclusion is yet another extension of gemtext's syntax.
+**Transclusion** is a mechanism of including contents of other hyphae into one hypha.
 
 ### Grammar
 ```
@@ -33,6 +33,5 @@ Lines 2 and 3:
 <= goal : 2..3
 <= goal : 2..
 ```
-This is an actual transclusion of hypha Apple:
+This is an actual transclusion of hypha Apple below. Note that Apple transcludes this very hypha, thus recursive transclusion happens. Recursive transclusion is limited.
 <= Apple
-Recursive transclusion is limited.
