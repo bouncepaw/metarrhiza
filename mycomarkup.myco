@@ -56,32 +56,22 @@ You //must// put a space after the dot (.).
 Nested lists are not implemented yet; they will be similar to Creole ones.
 
 ### Links
-#### Rocket links
+See [[link]] for details.
 ```
 => wikilink
 => wikilink display text
+=> name_with_spaces
+
+A paragraph with a link to a [[hypha]], perhaps, with a [[hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
 ```
 => wikilink
 => wikilink display text
+=> name_with_spaces
 
-If the hypha you are linking to has spaces in its name, replace the spaces with underscores `_`.
-
-#### Inline links
-```
-You can link any [[hypha]], you can set the display text when linking [[hypha|hyphae]], you can link external sites if you specify a protocol: [[https://example.org]]. You can also specify display text for external links using the same syntax: [[https://example.org|just like that]]. Note that blue globe near every external link.
-```
-You can link any [[hypha]], you can set the display text when linking [[hypha|hyphae]], you can link external sites if you specify a protocol: [[https://example.org]]. You can also specify display text for external links using the same syntax: [[https://example.org|just like that]]. Note that blue globe near every external link.
-
-#### Autolinks
-```
-Links with no brackets are recognized automatically if they have protocol specified: https://mycorrhiza.lesarbr.es
-```
-Links with no brackets are recognized automatically if they have protocol specified: https://mycorrhiza.lesarbr.es
-
-Autolinks are read until first whitespace or one of these characters: `<>{}|\\^[]\`,()`
+A paragraph with a link to a [[hypha]], perhaps, with a [[hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
 
 ### Transclusion
-See [[transclusion]]
+See [[transclusion]] for details.
 
 ### Blockquotes
 ```
