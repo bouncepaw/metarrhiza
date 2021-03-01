@@ -1,4 +1,37 @@
-[[Mycomarkup]] parses urls according to this rules. Note that links to hyphae are red if the hypha does not exist. You can create it by following the link and creating it.
+As in every wiki engine, MycorrhizaWiki lets you link documents together using special syntax.
+
+## Syntax
+There are several types of links in [[mycomarkup]], and more may be introduced in the future.
+
+### Rocket links
+Rocket links are taken from [[https://gemini.circumlunar.space/docs/gemtext.gmi|gemtext]]. You can have only one rocket link on line. You are meant to put rocket links together, like lists.
+
+Text before the first whitespace is considered an address, and everything after it is a display text.
+```
+=> Apple
+=> Apple a tasty fruit
+```
+=> Apple
+=> Apple a tasty fruit
+
+If the hypha you are linking to has spaces in its name, replace the spaces with underscores `_`.
+
+### Inline links
+```
+You can link any [[hypha]], you can set the display text when linking [[hypha|hyphae]], you can link external sites if you specify a protocol: [[https://example.org]]. You can also specify display text for external links using the same syntax: [[https://example.org|just like that]]. Note that there is an icon near every external link.
+```
+You can link any [[hypha]], you can set the display text when linking [[hypha|hyphae]], you can link external sites if you specify a protocol: [[https://example.org]]. You can also specify display text for external links using the same syntax: [[https://example.org|just like that]]. Note that there is an icon near every external link.
+
+### Autolinks
+```
+Links with no brackets are recognized automatically if they have protocol specified: https://mycorrhiza.lesarbr.es
+```
+Links with no brackets are recognized automatically if they have protocol specified: https://mycorrhiza.lesarbr.es
+
+Autolinks are read until first whitespace or one of these characters: `<>{}|\\^[]\`,()`. They may fail sometimes, you should always use usual links.
+
+## Address parsing
+Mycomarkup parses addresses according to these rules. Note that links to hyphae are red if the hypha does not exist. You can create it by following the link and creating it.
 
 * If there's a colon in the url, it is left as is and is displayed with a little icon next to it to indicate that it's an external link.
 ```
@@ -14,13 +47,13 @@
 ```
 => /list List of pages
 
-* If the address starts with ./, subhypha shall be linked.
+* If the address starts with ./, subhypha shall be linked. You cannot combine multiple `./`s.
 ```
 => ./subtheme
 ```
 => ./subtheme
 
-* If the address starts with ../, current hypha's sibling shall be linked.
+* If the address starts with ../, current hypha's sibling shall be linked. You cannot combine multiple `../`s.
 ```
 => ../hypha
 ```
