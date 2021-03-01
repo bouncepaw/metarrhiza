@@ -7,7 +7,10 @@ All of them are already implemented. More coming soon.
 * **[[/edit/Apple]]** Apple editor
 * **[[/history/Apple]]** See Apple's history
 * **[[/rev/Hash/Apple]]** See how Apple looked with given Hash as revision id.
-* **POST [[/upload-binary/Apple]]** Upload a binary part to Apple
-* **POST [[/upload-text/Apple]]** Upload text to Apple
+* **[[/unattach-ask/Apple]]** Remove the attachment Apple has.
+* **[[/rename-ask/Apple]]** Rename/move Apple.
+* **[[/delete-ask/Apple]]** Delete Apple.
+* **[[/upload-binary/Apple]]** Upload a binary part to Apple
+* **[[/upload-text/Apple]]** Upload text to Apple
 
 <= special_pages
