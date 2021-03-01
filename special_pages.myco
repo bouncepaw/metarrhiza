@@ -1,6 +1,6 @@
 Also see [[urls]].
 
-These are special pages which do administrative or other work. They are similar to pages in the `Special:` namespace in MediaWiki.
+These are special pages which do administrative or other work. They are similar to pages in the `Special:` namespace [[https://www.mediawiki.org/wiki/Special_pages|in MediaWiki]].
 
 ## Discovery
 * **[[/list]]** See list of all hyphae and a total count of them.
@@ -15,5 +15,8 @@ They only work if your wiki has authorization enabled. Otherwise, these links wi
 * **[[/logout]]** Log out of your account
 
 ## Administrative
-* **[[/reindex]]** Make the engine reindex all hypha files. It is helpful when you add hyphae manually and want the new files to be seen on the wiki. Accessible to admins only if an authorization method is available.
+* **[[/update-header-links]]** regenerates your header links (MycorrhizaWiki, Recent changes, All hyphae...).
+* **[[/reindex]]** makes the engine reindex all hypha files. It is helpful when you add hyphae manually and want the new files to be seen on the wiki. Accessible to admins only if an authorization method is available.
+* **[[/admin/shutdown]]** instantly kills the wiki. Works only if you have authorization enabled.
+* **[[/admin]]** is an admin control panel.
 
