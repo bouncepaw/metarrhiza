@@ -1,6 +1,6 @@
-MycorrhizaWiki's gemtext dialect parses urls according to this rules. Note that links to hyphae are red if the hypha does not exist. You can create it by following the link and creating it.
+[[Mycomarkup]] parses urls according to this rules. Note that links to hyphae are red if the hypha does not exist. You can create it by following the link and creating it.
 
-* If there's a colon in the url, it is left as is and is displayed with a little globe after it to indicate that it's an external link.
+* If there's a colon in the url, it is left as is and is displayed with a little icon next to it to indicate that it's an external link.
 ```
 => https://example.org
 ```
