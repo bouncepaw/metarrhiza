@@ -1,9 +1,10 @@
 On top of every page, there's a header with links shown. You can configure it.
 
 By default, it links to:
-* Home
-* Recent changes
-* Random hypha
+* Home [[/]]
+* Recent changes [[/recent-changes]]
+* List of all hypha [[/list]]
+* Random hypha [[/random]]
 
 In order to configure it, you have to list all the links in a special hypha in this format:
 ```
