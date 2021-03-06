@@ -1,4 +1,28 @@
 Run `mycorrhiza -help` to see all options.
 
-## Detailed configuration
 * [[./header | How to configure the navigational header]]
+
+## Config file
+
+In the upcoming 0.14 release, wiki administrators shall be able to configure their wikis using special configuration files. These files will have more capabilities and will be quite convenient to use.
+
+The file is written in the [[https://en.wikipedia.org/wiki/INI_file|.ini format]]. Here's an example configuration:
+
+```ini
+WikiName = My wiki
+NaviTitleIcon = 🐑
+
+[hyphae]
+HomeHypha = home
+UserHypha = u
+HeaderLinksHypha = header-links
+
+[network]
+HTTPPort = 8080
+URL = https://wiki
+GeminiCertificatePath = /home/wiki/gemcerts
+
+[authorization]
+UseFixedAuth = true
+FixedAuthCredentialsPath = /home/wiki/mycocredentials.json
+```
