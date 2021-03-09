@@ -47,6 +47,7 @@ Content-Type: application/json
 
 {
   "error": "",
+  "message": "Import ‘Cactus’ from ‘https://t.me/cxiutage/36’",
   "body": [
     { "HyphaName": "Cactus", 
       "MimeType": "text/mycomarkup",
