@@ -1,0 +1,46 @@
+This text is supposed to be shown beside the text editor.
+----
+
+See [[https://mycorrhiza.lesarbr.es/hypha/mycomarkup|the manual]] for full description of the markup.
+
+``# heading level 1
+``## heading level 2
+//Up to 6//
+
+``* unordered list element
+``*. numbered list element
+
+``=> link text
+[\[link]], [\[link|text]]
+
+``<= Transclusion
+
+``> Blockquote
+
+```
+ ```
+ some code here
+ ```
+```
+
+///\/italic/\///, ***\*bold*\***, `monospace`, !!highlighted!!, ^lifted^, ,,lowered,, or ~~striked-through~~ text
+
+Horizontal bar:
+----
+
+Image:
+```
+img { Apple }
+img { Apple { A //description// } }
+img { Apple | 300 { With size } }
+```
+
+Table:
+```
+table {
+  ! Title 1  ! Title 2
+  | //text// | {
+  multi
+  line }
+}
+```
