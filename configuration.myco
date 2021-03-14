@@ -2,9 +2,7 @@ Run `mycorrhiza -help` to see all options.
 
 * [[./header | How to configure the navigational header]]
 
-## Config file
-
-In the upcoming 0.14 release, wiki administrators shall be able to configure their wikis using special configuration files. These files will have more capabilities and will be quite convenient to use.
+Since the 1.0 release, wiki administrators are able to configure their wikis using special configuration files. These files will have more capabilities and will be quite convenient to use.
 
 The file is written in the [[https://en.wikipedia.org/wiki/INI_file|.ini format]]. Here's an example configuration:
 
@@ -26,3 +24,5 @@ GeminiCertificatePath = /home/wiki/gemcerts
 UseFixedAuth = true
 FixedAuthCredentialsPath = /home/wiki/mycocredentials.json
 ```
+
+You can get an example configuration by running `mycorrhiza -print-example-config`.
