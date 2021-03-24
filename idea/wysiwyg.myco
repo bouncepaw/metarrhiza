@@ -15,3 +15,7 @@ And the next row will contain buttons for paragraph formatting.
 I think this editor won't work without enabled JS, so text-browsers are left-aside.
 
 I guess it will be implemented using the contenteditable property.
+
+----
+
+Since 1.1, there's something similar available. Although it is not WYSIWYG per se, it is quite convenient.
