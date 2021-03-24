@@ -1,4 +1,9 @@
-Currently, [[mycomarkup]] is only implemented inside The MycorrhizaWiki codebase. I'm confident that it should be moved to a separate project one day, and here's why:
+It has been decided that a mycomarkup library is needed. You can read the original thoughts on the topic below; they shall be removed once they lose their value.
+
+The library is developed on [[https://github.com/bouncepaw/mycomarkup|GitHub]]. It is not done yet.
+
+# Original text
+Currently, [[mycomarkup]] is only implemented inside the MycorrhizaWiki codebase. I'm confident that it should be moved to a separate project one day, and here's why:
 
 *. Having a library to use would help making mycomarkup more popular greatly.
 *. If it is a different go package, we will be able to make a distinct `mycomarkup` program which could be used in any project in any language. I, myself, would find many usages for such a program.
