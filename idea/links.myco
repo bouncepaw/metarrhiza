@@ -35,6 +35,8 @@ Currently, rocket links do not support spaces in hyphae. Well, it is by design, 
 => [[ hypha with a lot of spaces | wonderful display text ]]
 ```
 
+2021-03-24: This feature will be implented in [[../mycomarkup lib]]
+
 ## Autolinks
 You know, links like that: https://example.org
 
