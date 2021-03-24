@@ -1,0 +1,50 @@
+Some form of TODO elements is desired.
+
+## Discussion
+A translated 🇷🇺➡🇬🇧 discussion from [[https://t.me/mycorrhizadev/6992|our Telegram chat]]:
+
+**Bouncepaw:** [[https://github.github.com/gfm/|GFM]] has an interesting syntax for TODO:
+```md
+* [ ] todo 1
+* [ ] todo 2
+```
+Interesting 🤔
+
+**Gualse:** Oh, yes yes
+
+**Bouncepaw:** How could that be incorporated into mycomarkup?
+
+**Gualse:** I want it to be like that: you can click on it and it gets saved.
+
+**Bouncepaw:** That's possible.
+
+**Gualse:** I think that should be optional. On a public wiki, it shouldn't be enabled because someone may click on it accidentally. On a home wiki, though, that'd be great.
+
+**Bouncepaw:** +
+
+## Possible syntax
+GFM-like:
+```myco
+* [ ] todo 1
+* [x] todo 2
+```
+
+Power of UNICODE, variant 1 (no nesting):
+```myco
+✗ todo 1
+✓ todo 2
+```
+
+Power of UNICODE, variant 2:
+```myco
+* ✗ todo 1
+* ✓ todo 2
+```
+
+`todo` block:
+```myco
+todo Our goals {
+x Reach the stars
+v Enjoy
+}
+```
