@@ -1,8 +1,13 @@
 Some ideas are stored as subhyphae of this hypha. There is also a [[https://github.com/bouncepaw/mycorrhiza/projects/1|Kanban board]] on Github for tracking development.
 
-<= ./import : ..1
-<= ./wysiwyg : ..1
-<= ./fediverse : ..1
+## [[Mycomarkup]]-related
 <= ./mycomarkup lib : ..1
 <= ./links : ..1
+<= ./wysiwyg : ..1
 <= ./noinclude : ..1
+<= ./todo : ..1
+
+## [[Integration]]-related
+<= ./import : ..1
+<= ./import cgi : ..1
+<= ./fediverse : ..1
