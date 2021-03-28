@@ -1,4 +1,6 @@
-Since 0.13, you can let the community edit CSS through wiki interface. Here's how to do it.
+You can let the community edit CSS through the wiki interface. Here's how to do it.
+
+**Disclaimer:** you probably shouldn't do what is written here, because any editor can basically wreck down your site. If you really want to, provide some protection.
 
 Run this command in your wiki directory. Replace `styles` with the name of hypha you want to be used for editing styles.
 ```
@@ -18,3 +20,5 @@ You may want to wrap your CSS there like that:
 ```
 
 This way, the code will be displayed as a code block on your wiki and the backtick fences will not interfere with CSS when used.
+
+Make sure to write instructions for the community so they know what to do.
