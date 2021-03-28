@@ -2,6 +2,9 @@ Some web servers offer [[https://en.wikipedia.org/wiki/Basic_access_authenticati
 
 You can read the nginx' guide linked before, or read this article. This article is based on the nginx' guide anyway.
 
+## Use cases
+You may use this instruction if you don't like the built-in authorization method or want to completely lock your wiki down from all unwanted visitors.
+
 ## Prerequisites
 * `nginx`
 * A password creation utility, such as `apache2-utils` (Debian, Ubuntu, OpenSUSE) or `httpd-tools` (RHEL/CentOS/Oracle Linux)
@@ -44,7 +47,7 @@ http {
    ...
    server {
       server_name wiki.example.org;
-      location {
+      location / {
          auth_basic "The message shown to the user";
          auth_basic_user_file /etc/apache2/.htpasswd;
       }
@@ -53,8 +56,9 @@ http {
    ...
 }
 ...
-}
 ```
+
+By manipulating your configuration you can make it so that only some parts of your wiki (such as `/edit`, `/upload-text` and other dangerous paths) are protected by basic auth.
 
 ## What it looks like
 When anyone visits the wiki, they are prompted with a window like that:
