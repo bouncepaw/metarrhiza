@@ -1,0 +1,68 @@
+Some web servers offer [[https://en.wikipedia.org/wiki/Basic_access_authentication|basic authentication]]. [[https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/|Nginx does]]. Since you are probably already nginx as a HTTPS forward-proxy for your wikis, you may also want to use its basic auth functionality.
+
+You can read the nginx' guide linked before, or read this article. This article is based on the nginx' guide anyway.
+
+## Prerequisites
+* `nginx`
+* A password creation utility, such as `apache2-utils` (Debian, Ubuntu, OpenSUSE) or `httpd-tools` (RHEL/CentOS/Oracle Linux)
+
+## What to do
+### User-password pairs creation
+Create the credentials file and the first user `user1` by running this command: 
+
+```
+sudo htpasswd -c /etc/apache2/.htpasswd user1
+```
+
+The program shall prompt you for a password for `user1`.
+
+Create further users by running this command (no `-c`, which means //create new file//):
+
+```
+sudo htpasswd /etc/apache2/.htpasswd user2
+```
+
+Make sure the passwords are created by looking at the file's contents:
+
+```
+cat /etc/apache2/.htpasswd
+```
+
+### Nginx configuration
+In your nginx config file (probably `/etc/nginx/nginx.conf`), add these lines to the root location of your server:
+
+```
+auth_basic "The message shown to the user";
+auth_basic_user_file /etc/apache2/.htpasswd;
+```
+
+Thus, your config may look something like this:
+
+```
+...
+http {
+   ...
+   server {
+      server_name wiki.example.org;
+      location {
+         auth_basic "The message shown to the user";
+         auth_basic_user_file /etc/apache2/.htpasswd;
+      }
+      listen 80;
+   }
+   ...
+}
+...
+}
+```
+
+## What it looks like
+When anyone visits the wiki, they are prompted with a window like that:
+img {
+./prompt chrome { A prompt like this is shown in desktop Chrome and Chromium (message hidden) }
+}
+
+The visitor has to type in the correct user and password. If they don't, they won't be able to visit the wiki.
+
+## Security
+Please note that when using HTTP (not HTTPS), the credentials are transferred in plaintext. Make sure you are using HTTPS or that the wiki is not exposed to the outer world in any way.
