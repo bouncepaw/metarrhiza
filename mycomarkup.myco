@@ -28,9 +28,7 @@ There are six levels of headings:
 ##### level 5
 ###### level 6
 
-You'll rarely need more than 3.
-
-You //must// put a space after the octothrops (#).
+You'll rarely need more than 3. You //must// put a space after the octothrops (#). You probably should start with `## ` and more.
 
 ### Lists
 You can use unordered lists:
@@ -103,7 +101,6 @@ The same formatting can be used in list items, headings and image descriptions.
 ----
 ```
 ----
-It does not always work and I have no idea why. **TODO:** fix the bug.
 
 ### Image galleries
 ```
