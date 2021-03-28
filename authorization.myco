@@ -1,12 +1,15 @@
-Currently, there are no fancy authorization methods implemented.
+By default, MycorrhizaWiki has no protection nor authorization, thus anyone who has access to your wiki can edit. You may want to turn on authorization. This article describes the authorization method that is built in the engine. Alternatively, you can use [[recipes/basic auth]].
 
 ## Fixed authorization
 The only method implemented so far. The idea is simple: the admin of the wiki preconfigures all users before starting the wiki, that's it. Users can't create accounts by themselves.
 
-If you want to use this method, you need to run the wiki like that:
-
-```sh
-mycorrhiza -auth-method "fixed" -fixed-credentials-path "/path/to/credentials.json" /path/to/wiki
+If you want to use this method, in your [[configuration]] file, in `[Authorization]` section, write:
+```
+...
+[Authorization]
+UseFixedAuth = true
+FixedAuthCredentialsPath = /home/wiki/mycocredentials.json
+...
 ```
 
 Attention to the credentials path. It is `mycocredentials.json` by default, but you can set a different path. The file is a JSON like that:
@@ -29,4 +32,4 @@ Attention to the credentials path. It is `mycocredentials.json` by default, but 
 Note that the passwords are stored in plain-text. Make sure that no one has access to that file besides admins.
 
 ### Groups
-Users must be part of a group. You can choose from `user`, `trusted`, `moderator`, `admin`. They have different rights.
+Users must be part of a group. You can choose from `anon`, `editor`, `trusted`, `moderator`, `admin`. They have different rights. Anonymous users can only read hyphae, editors can edit hyphae, trusted editors can also rename them, moderators can delete them, and administrators can do everything.
