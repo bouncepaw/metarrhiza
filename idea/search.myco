@@ -1,0 +1,44 @@
+A wiki is a form of an information storage. A reader wants to be able to get to any place of it quickly. Therefore, **searching** is an important thing.
+
+As of v1.0, there's no searching functionality. There only thing you can do is:
+* Open [[/list]]
+* Use your browser's //Find on page// feature and find a matching hypha
+
+What we need is a search bar on top of every page where you can type in stuff. Special syntax for more precise results is also great. This hypha collects ideas on what syntax can be done.
+
+Just to remind you, hyphae cannot have these characters in their names: `?!:#@><*|"\\'&%{}`. Thus, it is quite safe to use them for searching syntax.
+
+Note that the first version of MycorrhizaWiki with the search bar will probably lack all of the things listed below.
+
+## Logic
+
+MycorrhizaWiki is not a relational database, there's no need for a really advanced searching syntax with cool set logic. Some basic form of it would be enough.
+
+
+**Conjunction.** It is represented as whitespace.
+
+```
+foo bar
+```
+
+This query will match hyphae that have names that match both //foo// and //bar//. For example, //foobar//, //foo/bar//, //bar_foo//.
+
+----
+
+**Disjunction.** It is represented as a pipe `|`. It has the lowest operator precedence.
+
+```
+apple | orange
+```
+
+## Genealogy
+**hypha/\*** matches all subhyphae of //hypha//.
+
+**hypha/\*/** matches direct subhyphae only.
+
+**\*/hypha** matches all hyphae that have this subhypha.
+
+Or something like that.
+
+## Relations
+**links://hypha//** matches hyphae that link the given hypha
