@@ -1,0 +1,19 @@
+Wiki should to support HTML `<ruby>` tags. I suggest this syntax:
+
+```
+[[u/bouncepaw|<跳足>{バーウンスポー}]]はこの<wiki>{ウィキ}の<可愛>{かわい}い<開発者>{かいはつしゃ}です。
+```
+
+It will be converted to this HTML:
+```
+<a href="/u/bouncepaw">
+  <ruby><rb>跳足</rb><rt>バーウンスポー</rt></ruby>
+</a>
+はこの
+<ruby><rb>wiki</rb><rt>ウィキ</rt></ruby>
+の
+<ruby><rb>可愛</rb><rt>かわい</rt></ruby>
+い
+<ruby><rb>開発者</rb><rt>かいはつしゃ</rt></ruby>
+です。
+```
