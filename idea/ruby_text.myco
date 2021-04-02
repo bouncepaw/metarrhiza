@@ -7,14 +7,14 @@ Wiki should to support HTML `<ruby>` tags. I suggest this syntax:
 It will be converted to this HTML:
 ```
 <a href="/u/bouncepaw">
-  <ruby><rb>跳足</rb><rt>バーウンスポー</rt></ruby>
+  <ruby>跳足<rp>(</rp><rt>バーウンスポー</rt><rp>)</rp></ruby>
 </a>
 はこの
-<ruby><rb>wiki</rb><rt>ウィキ</rt></ruby>
+<ruby>wiki<rp>(</rp><rt>ウィキ</rt><rp>)</rp></ruby>
 の
-<ruby><rb>可愛</rb><rt>かわい</rt></ruby>
+<ruby>可愛<rp>(</rp><rt>かわい</rt><rp>)</rp></ruby>
 い
-<ruby><rb>開発者</rb><rt>かいはつしゃ</rt></ruby>
+<ruby>開発者<rp>(</rp><rt>かいはつしゃ</rt><rp>)</rp></ruby>
 です。
 ```
 
