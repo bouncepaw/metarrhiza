@@ -1,9 +1,14 @@
-It makes sense to allow wiki administrators extend [[../import|importing]] capabilities of the engine by some sort of plugins. What about using CGI?
+An **importer** is a thing that can import a piece of content pointed by an URL to a hypha. Since MycorrhizaWiki is written in a compiled language, we can't just include importers in it, we have to either compile it in or communicate with it using some **protocol**. That's what we are going to do.
 
-## Configuration
-Wiki administrators should be able to somehow configure this stuff. CLI options? Whatever.
+//This protocol is inspired by CGI, the Common Gateway Interface.//
 
-* `ImporterPath`: full rooted path to the CGI executable.
+## Basic idea
+Importers are executables that are run by the engine. They are given input through environment variables. They save the output into temporary files. They print JSON documents with information about those temporary files that the engine uses and constructs hyphae from.
+
+## [[Configuration]]
+Wiki administrators should be able to somehow configure this stuff. A section called `[Importers]` in the config file:
+
+* `ImporterPath`: full rooted path to the executable.
 * `ImportTarget`: name of the service which content you want to import. For example: `telegram`, `twitter`, etc.
 * `UrlPattern`: the pattern used by the engine to determine what importer to use.
 
@@ -12,17 +17,24 @@ If the importers need their own configuration, the way it is implemented is up t
 ## Interface
 When visiting a non-existent hypha, the user shall be offered to import. When they decide to do it, they are given a one-line form where they type in the URL of the content to import. Then they click `Submit` and everything works.
 
+Alternatively they can choose an importer explicitly.
+
 ## Input environment variables
-* `MYCORRHIZA_IMPORT_URL` is the url which the user asked to import. For example: `https://t.me/bpblog/1182`. Be liberal in what urls you accept.
-* `MYCORRHIZA_HYPHA_TO_IMPORT_TO` is the name of the hypha the user wants to import to. If you end up creating additional hyphae (images, for example), create them as subhyphae of the given hypha.
+* `MYCORRHIZA_IMPORT_URL` is the url which the user asked to import. For example: `https://t.me/bpblog/1182`. Be liberal in what urls you accept, really liberal.
+* `MYCORRHIZA_TARGET_HYPHA` is the name of the hypha the user wants to import to; the hypha from which the user called the importer. If you end up creating additional hyphae (images, for example), create them as subhyphae of the given hypha.
+* `MYCORRHIZA_COPY_MEDIA` is whether images and other forms of media shall be copied to the wiki.
 
 ## Output
-First line: `Content-Type: application/json`. Second line is empty.
+Output is a JSON object:
+* `Error` //string//: error code. If empty, everything is ok.
+* `Record` //string//: what message to use for the history.
+* `Message` //string//: [[mycomarkup]]-formatted document shown to the user.
+* `Body` //array//: objects like described below.
 
-The rest is a JSON array that consists of objects with such fields:
+⬇️
 * `HyphaName`: the name of the hypha you want the engine to save the file to.
 * `MimeType`: MIME-type of the file. If it is [[mycomarkup]], use `text/mycomarkup`.
-* `FilePath`: Full rooted path to the file.
+* `FilePath`: Full rooted path to the temporary file.
 
 ## Example
 Alice has a wiki with such importer configuration:
@@ -37,18 +49,18 @@ Bob visits her wiki, navigates to non-existent hypha `Cactus` and imports this u
 The engine calls the `telegram` importer with these environment variables:
 table {
 ! `MYCORRHIZA_IMPORT_URL` | `https://t.me/cxiutage/36`
-! `MYCORRHIZA_HYPHA_TO_IMPORT_TO` | `Cactus`
+! `MYCORRHIZA_TARGET_HYPHA` | `Cactus`
+! `MYCORRHIZA_COPY_MEDIA` | //false//
 }
 
 The importer runs and prints this:
 
 ```
-Content-Type: application/json
-
 {
-  "error": "",
-  "message": "Import ‘Cactus’ from ‘https://t.me/cxiutage/36’",
-  "body": [
+  "Error": "",
+  "Record": "Import ‘Cactus’ from ‘https://t.me/cxiutage/36’",
+  "Message": "Take a [[cactus|look]]",
+  "Body": [
     { "HyphaName": "Cactus", 
       "MimeType": "text/mycomarkup",
       "FilePath": "/home/alice/tmp/123.myco" },
