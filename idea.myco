@@ -6,6 +6,7 @@ Some ideas are stored as subhyphae of this hypha. There is also a [[https://gith
 <= ./wysiwyg : ..1
 <= ./noinclude : ..1
 <= ./todo : ..1
+<= ./ruby text : ..1
 
 ## [[Integration]]-related
 <= ./import : ..1
