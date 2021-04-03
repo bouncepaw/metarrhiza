@@ -1,0 +1,9 @@
+During WikiMeet 2021-04-03 [[u/DanInSpace]] thought of a syntax for footnote references:
+
+```
+[[&shortlink]]
+
+links {
+   shortlink | https://veryveryveryverylonglink.org
+}
+```
