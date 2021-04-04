@@ -1,5 +1,7 @@
 Some ideas are stored as subhyphae of this hypha. There is also a [[https://github.com/bouncepaw/mycorrhiza/projects/1|Kanban board]] on Github for tracking development.
 
+Some of the transcluded hyphae do not exist. It's ok. The ideas just haven't been written down yet.
+
 ## [[Mycomarkup]]-related
 <= ./mycomarkup lib : ..1
 <= ./links : ..1
@@ -7,10 +9,11 @@ Some ideas are stored as subhyphae of this hypha. There is also a [[https://gith
 <= ./noinclude : ..1
 <= ./todo : ..1
 <= ./ruby text : ..1
+<= ./new transclusion ranges : ..1
 
 ## [[Integration]]-related
 <= ./import : ..1
-<= ./import cgi : ..1
+<= ./importer protocol : ..1
 <= ./fediverse : ..1
 
 ## Other features
