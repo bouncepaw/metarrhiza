@@ -7,3 +7,7 @@ links {
    shortlink | https://veryveryveryverylonglink.org
 }
 ```
+**dan**: maybe, just replace aliases with value before gypha rendering? something like this:
+```
+[[&shortlink]] -> [[https://veryveryveryverylonglink.org|shortlink]]
+```
