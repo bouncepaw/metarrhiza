@@ -1,0 +1,17 @@
+## Root section
+* `WikiName`: //string//. The name your wiki has. It is shown in the header by default and in other places. **Default:** `MycorrhizaWiki`.
+* `NaviTitleIcon`: //string//. The icon shown before the colon in the navigational titles above each hypha. You may want to use an emoji or HTML here. **Default:** `🍄` (mushroom emoji).
+
+## [Hyphae]
+* `HomeHypha`: //string//. The name your home hypha has. **Default:** `home`.
+* `UserHypha`: //string//. The name of the hypha that is parent of all user hyphae. **Default:** `u`.
+* `HeaderLinkHypha`: //string//. The name of the hypha where you can [[../header | configure]] the header. There is no default.
+
+## [Network]
+* `HTTPPort`: //number//. What port is used for serving the web interface of Mycorrhiza. **Default:** `1737`.
+* `URL`: //url//. What URL is used for Opengraph and Web feed in the web interface. There is no default.
+* `GeminiCertificatePath`: //path//. Where do you store your Gemini certificate. There is no default.
+
+## [Authorization]
+* `UseFixedAuth`: //boolean//. Whether you want to use [[authorization#Fixed_authorization | fixed authorization]]. **Default:** `false`.
+* `FixedAuthCredentialsPath`: //path//. Where do you want to store your fixed credentials json file. Only makes sense when `UseFixedAuth` is `true`. There is no default.
