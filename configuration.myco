@@ -25,4 +25,6 @@ UseFixedAuth = true
 FixedAuthCredentialsPath = /home/wiki/mycocredentials.json
 ```
 
+See [[./fields]] for detailed descriptions of all config file fields.
+
 You can get an example configuration by running `mycorrhiza -print-example-config`.
