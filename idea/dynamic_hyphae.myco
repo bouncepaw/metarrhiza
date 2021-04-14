@@ -24,3 +24,31 @@ Something inspired by [[https://communitywiki.org/wiki/MiniCubes]].
 
 ## Implementation
 There are several ways of implementing this idea:
+
+### Part of the engine
+Just build the support in.
+
+**Pros:**
+* Closest connection to the rest of the system.
+
+**Cons:**
+* The code base will become really bloated and hard to maintain. It's not like it's easy to maintain //now//, but it will become even harder.
+* All dynamic hyphae would be mandatory, which is not needed for all users.
+
+### Build-time optional dependencies
+The same, but the wiki could be compiled without some dynahypha support.
+
+### Run-time executables dependency
+Similar to [[../importer protocol]].
+
+**Pros:**
+* Asynchronous development
+* They would call it //UNIX-way//
+* Any language could be used
+
+**Cons:**
+* Difficult communication between the engine and the dynahypha provider
+
+----
+
+Comparing these, the last option seems to be the best. Alright.
