@@ -1,0 +1,11 @@
+**MycorrhizaWiki 0.10** is the fifth pre-release of MycorrhizaWiki. Date: 2020-11-11. Prev: [[../0.9]], next: [[../0.11]].
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.10
+=> https://t.me/bpblog/1161
+
+## New features
+This is a major improvement over 0.9.
+
+* A new file structure. The folder structure is unchanged, it's the file names that have changed, they no longer require `&` in them. It's a breaking change making all previous hypha history lost. This structure is still being used.
+* CLI options were introduced and were being used as the main configuration way until [[../1.0]].
+* Gemtext was extended so hard that it became [[Mycomarkup]].
