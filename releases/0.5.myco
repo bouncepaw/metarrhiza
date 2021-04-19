@@ -1,0 +1,9 @@
+**MycorrhizaWiki 0.5** is the first released Mycorrhiza version. Date: 2020-09-30. Next: [[../0.7]]
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.5
+
+This version is dramatically different from all further releases. First of all, Markdown is used rather than [[Mycomarkup]]. It's not like [[u/bouncepaw]] liked Markdown; he just didn't want to bother himself with implementing the markup language for now.
+
+Second, a handmade revision system is used along with a complicated folder structure. It was quite fun but no one liked it; also, it was hard to follow by hand.
+
+Third, //themes// were supported! In fact, they were usual hyphae, you could just edit HTML in your browser. It turned out to be a bad idea.
