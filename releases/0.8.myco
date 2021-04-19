@@ -1,0 +1,8 @@
+**MycorrhizaWiki 0.8** is the third pre-release of Mycorrhiza. Date: 2020-09-01. Next: [[../0.9]].
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.8
+=> https://t.me/bpblog/1146
+
+Finally, git-powered history was implemented. You could see text part history. You could also navigate to subhyphae, sister hyphae and superhyphae. Random hyphae link was added too.
+
+Metarrhiza, this wiki, was turned into a git repository and was stored at [[https://github.com/bouncepaw/metarrhiza]].
