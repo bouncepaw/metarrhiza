@@ -1,0 +1,11 @@
+**MycorrhizaWiki 0.9** is the fourth pre-release of MycorrhizaWiki. Date: 2020-10-03. Prev: [[../0.8]], next: [[../0.10]].
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.9
+=> https://t.me/bpblog/1152
+
+This is a small version bump from 0.8.
+
+## New features
+* Recent changes page (/recent-changes).
+* Hyphae can be deleted. Their history can still be viewed.
+* Hyphae can be renamed. Recursive renaming of subhyphae is also supported.
