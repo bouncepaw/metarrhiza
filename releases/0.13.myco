@@ -1,0 +1,24 @@
+**MycorrhizaWiki 0.13**
+Date: 2021-03-50. Previous: ../0.12 Next: ../1.0
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/0.13
+
+Mycomarkup improvements
+* Add `----` horizontal lines
+* Support anchor links [[#anchor]]
+UI/UX changes
+* Add the //Attachment// tab to the hyphae
+* Redesign many forms
+* Redesign the page with the list of hyphae and the history page
+* Introduce the multi-columnar layout
+* Make hypha tabs look cuter
+Hyphae now have URLs starting with `/hypha/`, not with `/page/`. Older URLs still work though.
+Have a proof-of-concept support for the Gemini protocol
+Add the admin panel and some administrative functions
+Add /user-list page
+Let wiki administrators set their own CSS rules in addition to the default ones
+Fix some bugs
+Refactor a lot of stuff
+Start implementing backlinks (do not work yet)
+
+Thanks [[u/hugmouse]] and [[u/handlerug]] for their contribution.
