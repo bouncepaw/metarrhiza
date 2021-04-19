@@ -1,0 +1,15 @@
+MycorrhizaWiki uses 1737 as the default HTTP port. Why not 8080, 8000 or whatever everyone else is using? Well, there are //reasons//.
+
+The reason for choosing //a different// port is the inspiration from Gemini ([[https://communitywiki.org/wiki/Gemini | See CommunityWiki:Gemini]]). It is using port 1965, the year when the [[https://en.wikipedia.org/wiki/Project_Gemini | Gemini mission]] was sent to space. [[u/Bouncepaw]] thought it was cool and wanted something like that.
+
+There were two requirements for the port number:
+
+*. It must be above 1024, so it is not a [[https://www.w3.org/Daemon/User/Installation/PrivilegedPorts.html | privileged port]] and can be used by normal users, not just superusers.
+*. It must be somehow related to mycology.
+
+Looking through the mycology history, Bouncepaw found an important date on [[https://en.wikipedia.org/wiki/Mycology#History | Wikipedia, the free encyclopedia]]:
+> The start of the modern age of mycology begins with Pier Antonio Micheli's 1737 publication of //Nova plantarum genera//. Published in Florence, this seminal work laid the foundations for the systematic classification of grasses, mosses and fungi.
+
+Other sources state that the real date of publication is 1729, and it is probably true, but 1737 looks much better.
+
+That's why 1737 is used.
