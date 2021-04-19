@@ -1,0 +1,10 @@
+**MycorrhizaWiki 0.7** is the second released Mycorrhiza version. Date: 2020-08-11. Next: [[../0.8]].
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.7
+=> https://t.me/bpblog/1142
+
+This version is a major rewrite of [[../0.5]], almost zero code had been reused.
+
+[[https://communitywiki.org/wiki/GemText|Gemtext]] became the only available markup language starting with this version. The engine has extended the syntax by adding [[transclusion]], though.
+
+A new file structure was implemented; it is still used nowadays. Funnily enough, no history records were made in this version.
