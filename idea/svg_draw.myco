@@ -1,0 +1,20 @@
+When taking notes in paper, you can just draw anything. This freedom is taken away when using textarea-based wikis, such as MycorrhizaWiki. Indeed, you can embed pictures using mycomarkup. But it's not handy.
+
+Here's how you insert a drawing:
+
+*. Make a drawing in an external program.
+*. Save the drawing in any of the supported formats.
+*. Attach it to a hypha.
+*. Embed it in a different hypha.
+
+Tiresome! Here's the idea: you can click a button titled //Insert drawing// and a graphics editor fires up. Once you finish the drawing, it saved as a subhypha `drawing ##` and an `img{}` block is created.
+
+Pictures created by this editor shall be vector, therefore, svg. The editor will be quite limited to make you focus on the real stuff.
+
+* 7 colors: main, inverse, 5 accents. No more. Colors may change depending on the theme.
+* One brush.
+* Drawing tablet support.
+* Some basic layers?
+* Picture import?
+
+It can implemented by one person in a month.
