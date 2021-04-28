@@ -51,7 +51,23 @@ There are also numbered lists:
 
 You //must// put a space after the dot (.).
 
-Nested lists are not implemented yet; they will be similar to Creole ones.
+By increasing the number of asterisks, you can increase the nesting level:
+```
+* A
+** B
+*** C
+* D
+*. argh
+*. uhh
+**.  uhm
+```
+* A
+** B
+*** C
+* D
+*. argh
+*. uhh
+**. uhm
 
 ### Links
 See [[link]] for details.
