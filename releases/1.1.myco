@@ -1,0 +1,47 @@
+**MycorrhizaWiki 1.1** was released on 2021-05-01, 1.5 months after [[../1.0]].
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.1.0 GitHub release
+
+## New features
+### Registration
+You can let people register on your wiki without your manual intervention. To do so, you have to enable registration in your [[configuration]] file. In the `[Authorization]` section add these lines:
+
+```ini
+UseRegistration = true
+RegistrationCredentialsPath = /path/for/storing/credentials
+LimitRegistration = 10
+```
+
+Change the path as appropriate. In that file, usernames, usergroups and hashed passwords will be stored. You can also limit how many registered users there can be. If you do not want that limit, set it to zero.
+
+Start your wiki. Users can register by visiting `/register`. Here's how the registration form looks like:
+img { ./registration form }
+
+Later on, you can log in/out using `/login` and `/logout`.
+
+### Toolbar
+img { ./toolbar }
+There's now a toolbar on the edit page. It lets you quickly enter some [[mycomarkup]] elements, go to the documentation page, insert current date and (if authorization is enabled) insert a link to your user page.
+
+### Subhypha counter
+img { ./subhypha counter }
+The relative hyphae toolbar has changed. Now it shows you how many direct (first number) and indirect (second number, in parentheses) subhyphae the hypha has, instead of just showing that subhyphae exist.
+
+### Nested lists
+* You can now nest lists
+** Like that!
+
+*. It works with numbered lists too
+**. See!
+
+```
+* You can now nest lists
+** Like that!
+
+*. It works with numbered lists too
+**. See!
+```
+
+## Other changes
+* The license has been changed from Apache v2.0 to GNU Affero General Public License v3.0. It means that if you fork Mycorrhiza and host a wiki running that fork, you are obliged to publish your changed version's source code.
+* A new background pattern is used instead of the bricks. People just got bored with them.
