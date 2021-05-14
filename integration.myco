@@ -5,9 +5,9 @@ See [[Idea]] for planned features.
 
 ## Export
 ### Social media preview
-Nowadays, all major social media and messengers support the [[./opengraph]] protocol. When given a link, they visit it and try to find special HTML `<meta>` tags with the data they need. MycorrhizaWiki provides these tags. Here's how a link to [[recipes/basic auth]] looks like in Telegram:
+Nowadays, all major social media and messengers support the [[standard/opengraph | OpenGraph]] protocol. When given a link, they visit it and try to find special HTML `<meta>` tags with the data they need. MycorrhizaWiki provides these tags. Here's how a link to [[recipes/basic auth]] looks like in Telegram:
 
-img { ./opengraph/telegram preview }
+img { standard/opengraph/telegram preview }
 
 ### Get the mycomarkup source of any hypha
 For any hypha, click the //Raw text// tab to see the source. You can do some automation with that.
