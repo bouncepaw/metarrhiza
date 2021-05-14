@@ -1,0 +1,41 @@
+**MycorrhizaWiki 0.11** is the sixth pre-release of Mycorrhiza Wiki. It was released on 2020-11-28, half a month after [[../0.10]]. Next pre-release is [[../0.12]].
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.11 GitHub release
+=> https://t.me/bpblog/1165 Telegram announcement
+
+## New features
+[[Authorization/fixed | Fixed authorization]] is introduced and is enabled using CLI options. Wiki administrators have to pre-register all users in a special file using the JSON format. Here's an example of such file:
+```json
+[
+	{
+		"name": "admin",
+		"password": "mycorrhiza",
+		"group": "admin"
+	},
+	{
+		"name": "weird_fish",
+		"password": "DeepestOcean",
+		"group": "moderator"
+	},
+	{
+		"name": "king_of_limbs",
+		"password": "ambush",
+		"group": "trusted"
+	},
+	{
+		"name": "paranoid_android",
+		"password": "ok computer",
+		"group": "editor"
+	}
+]
+```
+There are five groups users can be part of: `anon`, `editor`, `trusted`, `moderator`, `admin`. See [[authorization/user groups]] for details.
+
+On the Recent changes page, each authored edit has a link to author's user page.
+
+In [[Mycomarkup]], ~~strike-through~~ is introduced and inline formatting is supported in headings.
+
+Also, some CSS fixed are made.
+
+## License
+This version is the first version to have an explicit license, the [[https://www.apache.org/licenses/LICENSE-2.0 | Apache 2.0 license]]. Legal status of the previous versions is unclear. Later, in [[../1.1]], the license has been changed to AGPLv3.
