@@ -15,7 +15,7 @@ line 1
 line 2
 line 3
 ```
-These are different transclusions of the hypha ⤵. Note that using that `:`-notation is not recommended because I'm planning on deprecating it in favor of a more semantic-oriented approach.
+These are different transclusions of the hypha ⤵. !!Note that using that `:`-notation is not recommended!! because I'm planning on **deprecating** it in favor of a more semantic-oriented approach.
 ```
 Full contents:
 <= goal
@@ -33,5 +33,8 @@ Lines 2 and 3:
 <= goal : 2..3
 <= goal : 2..
 ```
-This is an actual transclusion of hypha Apple below. Note that Apple transcludes this very hypha, thus recursive transclusion happens. Recursive transclusion is limited.
-<= Apple
+
+This is an actual transclusion of a hypha below. 
+<= u/bouncepaw/userpic
+
+Recursive transclusion is also supported but it is limited to three iterations.
