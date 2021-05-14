@@ -16,7 +16,7 @@ Here are some features of the engine:
 * **Optional basic [[feature/authorization | authorization]].**
 * **[[standard/opengraph|Opengraph]] support.**
 
-Want to try it? Surf this wiki or learn how to [[recipe/deployment | deploy]] your own.
+Want to try it? Surf this wiki or learn how to [[guide/deployment | deploy]] your own.
 
 ## Community
 There isn't a lot of action going but there is a group in Telegram [[https://t.me/mycorrhizadev|@mycorrhizadev]]. Consider supporting the development on [[https://boosty.to/bouncepaw|boosty]].
