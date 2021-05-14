@@ -1,4 +1,4 @@
-On top of every page, there's a header with links shown. These links are called [[feature/header links | header links]]. You can configure them.
+On top of every page, there's a header with links shown. These links are called [[feature/top bar/header links | header links]]. You can configure them.
 
 By default, it links to:
 * Home [[/]]
