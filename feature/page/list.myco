@@ -1,4 +1,4 @@
-img { ./1.1 illustration }
+img { ./1.1 screenshot }
 [[/list]] is a page which lists all hyphae on a wiki. The entries are shown in random order. There is a small gray textbox near all hyphae with [[feature/attachment | attachments]] that tells you what kind of attachment it has. This page can also be used for searching the wiki.
 
 The screenshot above shows how the page looks on [[release/1.1]].
