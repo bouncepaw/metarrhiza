@@ -6,3 +6,6 @@ If you have non-ASCII characters look like `\\012\\305` or something, run this c
 ```sh
 git config core.quotepath false
 ```
+
+## Can't rename hyphae with some names!
+It's a known bug. For the time being, administrators of wikis can move the hyphae manually from the server.
