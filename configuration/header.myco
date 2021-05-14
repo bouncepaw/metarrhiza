@@ -1,4 +1,4 @@
-On top of every page, there's a header with links shown. You can configure it.
+On top of every page, there's a header with links shown. These links are called [[feature/header links | header links]]. You can configure them.
 
 By default, it links to:
 * Home [[/]]
@@ -23,7 +23,7 @@ HeaderLinksHypha = header_links
 ...
 ```
 
-⚠ If you don't set it, the links can't be configured.
+⚠️ If you don't set it, the links can't be configured.
 
 After editing that hypha, update the links by visiting [[/update-header-links]]. On wikis with authorization, only moderators and administrators can do this.
 
