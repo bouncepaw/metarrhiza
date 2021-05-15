@@ -1,0 +1,19 @@
+**MycorrhizaWiki 1.0** is the first release of Mycorrhiza Wiki, released on 2021-03-14, less than two weeks after [[../0.13]]. 
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.0.0 GitHub release
+=> https://t.me/bpblog/1187 Telegram announcement
+
+Originally, it was planned to release this version as 0.14 pre-release but [[u/bouncepaw]] got tired of that 0. prefix and released it as 1.0.
+
+## New features
+* When visiting non-existent [[feature/hypha | hyphae]], 404 status is returned instead of 200.
+* Links with anchors are supported. For example, [[Release/1.0#New_features]].
+* In the [[feature/admin panel | admin panel]], a button for reloading user configuration has been added.
+* [[feature/Primitive diff]] is added.
+* Older CLI options have been deleted. From now on, wiki administrators are meant to do [[configuration]] using files.
+
+## Developers
+=> u/bouncepaw
+=> u/gualse
+=> u/daninspace
+=> u/hugmouse
