@@ -22,3 +22,9 @@ Some fields are marked with //Since x.y//. It means they have been introduced or
 * `UseRegistration`: //boolean//. Whether you want unregistered visitors to be able to register themselves using the web form. **Default:** `false`. //Since 1.1//
 * `RegistrationCredentialsPath`: //path//. Where do you want to store users' encrypted credentials. You are not meant to edit that file by hand, by the way. There is no default. //Since 1.1//
 * `LimitRegistration`: //number//. There cannot be more registered users than this number. If the number is zero, there is no limit. Makes sense only when `UseRegistration` is `true`. **Default:** `0`. //Since 1.1//
+
+## [CustomScripts] //Since [[release/1.2 | 1.2]]//
+You can specify URLs of JavaScript files you want to load.
+* `OmnipresentScripts`: //list of url//. Comma-separated list of unquoted URLs to JS files to load on //all// pages.
+* `ViewScripts`: //list of urls//. Comma-separated list of unquoted URLs to JS files to load on //view// pages: `/hypha`, `/rev`.
+* `EditScripts`: //list of urls//. Comma-separated list of unquoted URLs to JS files to load on the `/edit` page.
