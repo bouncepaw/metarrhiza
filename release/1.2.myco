@@ -1,0 +1,23 @@
+**Mycorrhiza Wiki 1.2** is the third release of Mycorrhiza Wiki. It is currently being developed.
+
+When the time comes, see [[./migration guide]].
+
+## Changes
+* The [[essay/name | name]] of the project has been changed from //MycorrhizaWiki// to //Mycorrhiza Wiki//.
+* Web feeds now have diffs in them.
+* Less messages are printed on start.
+* There is a new button on the [[feature/tool bar | tool bar]] that inserts current UTC time.
+* UI changes:
+** The background pattern has been removed.
+** The [[feature/top bar | top bar]] has changed its color to a brighter one.
+** Login and register forms have become easier to find.
+** Non-existent hyphae have gotten a better notice:
+img {
+   ./non-existent notice before { Before }
+   ./non-existent notice after { After }
+}
+* Static assets' changes:
+** Icons can no longer be redefined. //No one has used this feature anyway.//
+** URLs for static assets have changed.
+** Custom JS files can be embedded on pages by specifying them in the config.
+* [[/]] no longer redirects to the home hypha, resulting in a better-looking URL.
