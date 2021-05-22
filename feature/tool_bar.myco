@@ -1,0 +1,7 @@
+img {
+   release/1.1/toolbar
+}
+
+**Tool bar** is the area shown in the editor with quick access to some [[Mycomarkup]] blocks and quick actions like inserting current date, time and link to yourself.
+
+It was first added in [[release/1.1]].
