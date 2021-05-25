@@ -1,0 +1,75 @@
+Mycorrhiza Wiki uses its own markup language called [[Mycomarkup]]. Why invent yet another markup in the age when there are hundreds of them? Why not just use Markdown? This hypha answers that and tells about design principles of Mycomarkup.
+
+## Choices
+
+[[u/Bouncepaw]] was not satisfied with existing markups. What do we have?
+
+**HTML.** Obviously, this markup is too complex to be used on a wiki unironically. Same for L,,A,,T,,E,,X.
+
+**Creole.** One of the //standard// wiki markups. It was designed to reduce the incompatibilities between wikis. Indeed, it has good ideas, thus some parts of it are copied (such as lists and //emphasis//). Nevertheless, it lacks many crucial things, and we would have to make a derived language from it.
+
+**Markdown.** It's just bad. Starting from its high dependence on indentation (effectively making it impossible to edit Markdown in a proportional font) and finishing with its incomprehensible syntax rules (such as the syntax for links (which is basically not like all the others)). Moreover, we would still have to add new features, effectively making a derivate language, contributing to the mess of incompatible Markdown derivates.
+
+Bouncepaw has collected some of his thoughts on the topic in [[gemini://tanelorn.city/~bouncepaw/gemlog/md-sucks.gemini|a rant on Markdown on his gemlog]] ([[https://portal.mozz.us/gemini/tanelorn.city/~bouncepaw/gemlog/md-sucks.gemini|web proxy]])
+
+**Other languages.** Many of them are nice but all of them lack something or do not satisfy Bouncepaw's taste. Namely, [[feature/transclusion]] is missing almost everywhere. MediaWiki syntax has it, but MediaWiki has that stupid apostrophe-based emphasis syntax.
+
+**Conclusion:** every language misses the point, we either have to derivate or create something from scratch. Since maintaining at least some sort of compatibility with something is good, derivating was chosen.
+
+And there's that wonderful language called **Gemtext** used with the Gemini protocol. Here are all the elements:
+
+```
+# heading 1
+## heading 2
+### heading 3
+* list entry
+> quote
+paragraph
+```
+
+All of them end on new line. As simple as it can be! The perfect language for extending!
+
+For a long time, Mycorrhiza Wiki used Gemtext with just one derivation: transclusion syntax. Some time later ([[release/0.10]]), it was finally the time to implement Mycomarkup.
+
+## Design principles
+* Maintain a high degree of compatibility with Gemtext.
+** This is exactly why headings start with octothorps and not with equal signs, as one would wish.
+* Work fine with proportional fonts.
+** Thus no dependence on indentation.
+* Be dumb, because people are dumb too.
+** See double slash? It means italic is toggled. No matter where in the paragraph. Compare with Markdown, where the amount of //spaces// around the italic token matters in some dialects.
+* Do not abuse the combinations of non-letter characters.
+** Sure, there are many inventive ways of creating an image inclusion syntax, but why not just call it //img//? Same for //table//, etc.
+
+The curly braces have become a staple in Mycomarkup. They are everywhere, making documents remind of nginx configs or something like that.
+
+```
+# Some images you might like
+img {
+   hypha {
+      A description;
+   }
+   other hypha
+}
+```
+
+```
+server { # php/fastcgi
+  listen       80;
+  server_name  domain1.com www.domain1.com;
+  access_log   logs/domain1.access.log  main;
+  root         html;
+
+  location ~ \.php$ {
+    fastcgi_pass   127.0.0.1:1025;
+  }
+}
+```
+
+People either love the curly braces or hate it. Whatever. Deal with it.
+
+## Why not support multiple markups?
+
+There was some experimentation with that. It turned out to be hard to maintain, hard to design and hard to use with no real profit.
+
+And anyway, we would have to extend all the supported languages for features like transclusion and future features like tables of content, backlinks, et cetera. There are not enough developers for that.
