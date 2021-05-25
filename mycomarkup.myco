@@ -1,4 +1,4 @@
-**Mycomarkup** is a markup language designed specifically for MycorrhizaWiki. Although it can be used anywhere, no other implementations have been spotted yet. It draws inspiration from Gemini markup (gemtext, see section 5 of the [[//gemini.circumlunar.space/docs/specification.html|Gemini spec]]),[[http://www.wikicreole.org/wiki/AllMarkup|Creole]], other wiki markups and some [[https://daringfireball.net/projects/markdown/syntax|Markdown]] maybe.
+**Mycomarkup** is a markup language designed for Mycorrhiza Wiki. Although it can be used anywhere, no other implementations have been spotted yet. It draws inspiration from Gemini markup (gemtext, see section 5 of the [[//gemini.circumlunar.space/docs/specification.html|Gemini spec]]),[[http://www.wikicreole.org/wiki/AllMarkup|Creole]], other wiki markups and some [[https://daringfireball.net/projects/markdown/syntax|Markdown]] maybe.
 
 ## Why not use an existing markup language?
 * I don't particularly enjoy any of the existing solutions.
@@ -70,22 +70,22 @@ By increasing the number of asterisks, you can increase the nesting level:
 **. uhm
 
 ### Links
-See [[link]] for details.
+See [[./link]] for details.
 ```
 => wikilink
 => wikilink display text
 => name_with_spaces
 
-A paragraph with a link to a [[hypha]], perhaps, with a [[hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
+A paragraph with a link to a [[feature/hypha]], perhaps, with a [[feature/hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
 ```
 => wikilink
 => wikilink display text
 => name_with_spaces
 
-A paragraph with a link to a [[hypha]], perhaps, with a [[hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
+A paragraph with a link to a [[feature/hypha]], perhaps, with a [[feature/hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
 
 ### Transclusion
-See [[transclusion]] for details.
+See [[feature/transclusion]] for details.
 
 ### Blockquotes
 ```
@@ -121,19 +121,24 @@ The same formatting can be used in list items, headings and image descriptions.
 ### Image galleries
 ```
 img {
-Apple
-Apple| 200
-Apple| *100 { A //description// }
+u/bouncepaw/ominous
+u/bouncepaw/ominous | 200*50 { A //description// }
+u/bouncepaw/ominous | *100 { A //longer// 
+
+   and multi-line description}
 https://upload.wikimedia.org/wikipedia/commons/7/70/A.png
 }
 ```
 
 img {
-Apple
-Apple| 200
-Apple| *100 { A //description// }
+u/bouncepaw/ominous
+u/bouncepaw/ominous | 200*50 { A //description// }
+u/bouncepaw/ominous | *100 { A //longer// 
+
+   and multi-line description}
 https://upload.wikimedia.org/wikipedia/commons/7/70/A.png
 }
+
 
 If you put just one image, it will be displayed with no decorations:
 ```
