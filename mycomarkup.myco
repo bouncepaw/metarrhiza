@@ -1,12 +1,6 @@
-**Mycomarkup** is a markup language designed for Mycorrhiza Wiki. Although it can be used anywhere, no other implementations have been spotted yet. It draws inspiration from Gemini markup (gemtext, see section 5 of the [[//gemini.circumlunar.space/docs/specification.html|Gemini spec]]),[[http://www.wikicreole.org/wiki/AllMarkup|Creole]], other wiki markups and some [[https://daringfireball.net/projects/markdown/syntax|Markdown]] maybe.
+**Mycomarkup** is the markup language designed for Mycorrhiza Wiki.
 
-## Why not use an existing markup language?
-* I don't particularly enjoy any of the existing solutions.
-* //Creole// is really nice but lacks many features needed for MycorrhizaWiki.
-* //Gemtext// is really nice, MycorrhizaWiki used to use it for a long time. Even now, Mycomarkup is somewhat compatible with Gemtext. But still, it lacks many features, even more than Creole does.
-* //Markdown// is bad. By implementing it for MycorrhizaWiki it'd get even worse.
-
-See my [[gemini://tanelorn.city/~bouncepaw/gemlog/md-sucks.gemini|rant on Markdown on my gemlog]] ([[https://portal.mozz.us/gemini/tanelorn.city/~bouncepaw/gemlog/md-sucks.gemini|web proxy]])
+See [[essay/why Mycomarkup]] to learn why we have a different markup in the first place.
 
 ## Features
 This list is meant to be always up-to-date.
