@@ -1,4 +1,4 @@
-Wiki should to support HTML `<ruby>` tags. I suggest this syntax:
+Wiki should support HTML `<ruby>` tags. [[u/gualse|GuAlSe]] suggests this syntax:
 
 ```
 [[u/bouncepaw|<跳足>{バーウンスポー}]]はこの<wiki>{ウィキ}の<可愛>{かわい}い<開発者>{かいはつしゃ}です。
@@ -20,4 +20,11 @@ It will be converted to this HTML:
 
 ----
 
-by [[u/gualse|GuAlSe]]
+[[u/bouncepaw]] thinks it would be better to rhyme the ruby syntax with the future supertext syntax:
+
+```
+^^supertext^^
+^^furigana | bottom text^^
+```
+
+And this is how it is going to be implemented, most likely.
