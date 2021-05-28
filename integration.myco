@@ -1,11 +1,11 @@
 One of the aims MycorrhizaWiki has, is **integration**, //id est// you are meant to be able to somehow stick the wiki together with other software and get things done, hence the name.
 
-See [[Recipes]] for some stuff you can do.
+See [[Guide]] for some stuff you can do.
 See [[Idea]] for planned features.
 
 ## Export
 ### Social media preview
-Nowadays, all major social media and messengers support the [[standard/opengraph | OpenGraph]] protocol. When given a link, they visit it and try to find special HTML `<meta>` tags with the data they need. MycorrhizaWiki provides these tags. Here's how a link to [[recipes/basic auth]] looks like in Telegram:
+Nowadays, all major social media and messengers support the [[standard/opengraph | OpenGraph]] protocol. When given a link, they visit it and try to find special HTML `<meta>` tags with the data they need. MycorrhizaWiki provides these tags. Here's how a link to a hypha looks like in Telegram:
 
 img { standard/opengraph/telegram preview }
 
@@ -14,13 +14,13 @@ For any hypha, click the //Raw text// tab to see the source. You can do some aut
 
 ## Import
 ### Edit with other editors or automate editing
-See [[recipes/how to edit with any editor]]
+See [[guide/how to edit with any editor]]
 
 ## Misc
 ### Network
 MycorrhizaWiki does not do all the network stuff by design. If you need some advanced stuff, use `nginx` or any other web server.
 
-There are recipes such as [[recipes/how to set up HTTPS]] and [[recipes/basic auth]] that offer you to use nginx.
+There are recipes such as [[guide/how to set up HTTPS]] and [[guide/basic auth]] that offer you to use nginx.
 
 ### Direct file operations
 Wiki administrators that have direct access to the wiki files can do stuff with `git` and other utilities. In fact, they are meant to.
