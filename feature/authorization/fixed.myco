@@ -1,0 +1,29 @@
+The idea is simple: the admin of the wiki preconfigures all users before starting the wiki, that's it. Users can't create accounts by themselves.
+
+If you want to use this method, in your [[configuration]] file, in `[Authorization]` section, write:
+```
+...
+[Authorization]
+UseFixedAuth = true
+FixedAuthCredentialsPath = /home/wiki/mycocredentials.json
+...
+```
+
+Attention to the credentials path. It is `mycocredentials.json` by default, but you can set a different path. The file is a JSON like that:
+
+```json
+[
+  {
+    "name": "alice", 
+    "password": "safety absolute",
+    "group": "admin"
+  }, 
+  {
+    "name": "bob", 
+    "password": "TotallySafe", 
+    "group": "trusted"
+  }
+]
+```
+
+Note that the passwords are stored in plain-text. Make sure that no one has access to that file besides admins.
