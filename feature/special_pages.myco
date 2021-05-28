@@ -7,7 +7,7 @@ These are special pages which do administrative or other work. They are similar 
 * **[[/about]]** Technical report.
 * **[[/user-list]]** List of users.
 
-## [[Authorization]]
+## [[../Authorization]]
 They only work if your wiki has authorization enabled. Otherwise, these links will fail. On this wiki, it is turned on.
 * **[[/login]]** Log in to your account.
 * **[[/logout]]** Log out of your account
