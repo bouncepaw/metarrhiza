@@ -2,6 +2,11 @@
 
 See [[essay/why Mycomarkup]] to learn why we have a different markup in the first place.
 
+Some syntax parts are described on their own hyphae. Take a look at:
+=> ./tables
+=> ./link
+=> feature/transclusion
+
 ## Features
 This list is meant to be always up-to-date.
 
@@ -78,9 +83,6 @@ A paragraph with a link to a [[feature/hypha]], perhaps, with a [[feature/hypha|
 
 A paragraph with a link to a [[feature/hypha]], perhaps, with a [[feature/hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
 
-### Transclusion
-See [[feature/transclusion]] for details.
-
 ### Blockquotes
 ```
 > quote 1
@@ -139,6 +141,3 @@ If you put just one image, it will be displayed with no decorations:
 img { https://mycorrhiza.lesarbr.es/favicon.ico }
 ```
 img { https://mycorrhiza.lesarbr.es/favicon.ico }
-
-### Tables
-<= ./tables
