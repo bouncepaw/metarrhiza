@@ -1,35 +1,14 @@
-By default, MycorrhizaWiki has no protection nor authorization, thus anyone who has access to your wiki can edit. You may want to turn on authorization. This article describes the authorization method that is built in the engine. Alternatively, you can use [[recipes/basic auth]].
+By default, MycorrhizaWiki has no protection nor authorization, thus anyone who has access to your wiki can edit. You may want to turn on authorization.
 
-## Fixed authorization
-The only method implemented so far. The idea is simple: the admin of the wiki preconfigures all users before starting the wiki, that's it. Users can't create accounts by themselves.
+## Groups
+Every user is part of a group. The groups are `anon`, `editor`, `trusted`, `moderator`, `admin`. They have different rights. Anonymous users can only read hyphae, editors can edit hyphae, trusted editors can also rename them, moderators can delete them, and administrators can do everything.
 
-If you want to use this method, in your [[configuration]] file, in `[Authorization]` section, write:
-```
-...
-[Authorization]
-UseFixedAuth = true
-FixedAuthCredentialsPath = /home/wiki/mycocredentials.json
-...
-```
+## Authorization types
 
-Attention to the credentials path. It is `mycocredentials.json` by default, but you can set a different path. The file is a JSON like that:
+**Fixed authorization.** Basically, the wiki administrator just writes down all users and gives them their credentials. Use it for small communities where you know everyone beforehand and do not plan to extend. See [[./fixed]].
 
-```json
-[
-  {
-    "name": "alice", 
-    "password": "safety absolute",
-    "group": "admin"
-  }, 
-  {
-    "name": "bob", 
-    "password": "TotallySafe", 
-    "group": "trusted"
-  }
-]
-```
+**Registration.** Just like elsewhere. Use it when you want your community to become larger. See [[./registration]].
 
-Note that the passwords are stored in plain-text. Make sure that no one has access to that file besides admins.
+**HTTP Basic Auth.** This one is not actually part of Mycorrhiza Wiki, it is done by a reverse proxy. Use it for private wikis that you can hide from other people. See [[Guide/Basic auth]].
 
-### Groups
-Users must be part of a group. You can choose from `anon`, `editor`, `trusted`, `moderator`, `admin`. They have different rights. Anonymous users can only read hyphae, editors can edit hyphae, trusted editors can also rename them, moderators can delete them, and administrators can do everything.
+Note that having no authorization is not a bad idea.
