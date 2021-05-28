@@ -2,69 +2,79 @@ Deploying a Mycorrhiza wiki is simple.
 
 The rest of the instruction assumes you're using a UNIX-compatible operating system such as macOS or a distribution of GNU+Linux. If you're using Windows or any other obscure system, good luck, no one bears the knowledge of using Mycorrhiza on them. The process will be similar though.
 
-## Building
-You can build Mycorrhiza by yourself. If you do not want to, just grab a build of any [[release]] you like.
+First, you have to get a copy of Mycorrhiza. There are several options for that.
 
-### Runtime dependencies
-Mycorrhiza Wiki depends on several other programs in order to work.
+## Pre-built releases
+**Download.** Choose a release on [[https://github.com/bouncepaw/mycorrhiza/releases | this GitHub page]] and download a binary for you system.
 
-#### Go
-Go is a compiled programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
+**Install.** Put it into your `$PATH`. If you don't know where it is, run this command in terminal:
 
-#### Git
-Git is the most popular version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads|Git website]].
-
-#### Quicktemplate
-[[https://github.com/valyala/quicktemplate | Quicktemplate]] is a system Mycorrhiza Wiki uses during compilation. If you have a properly configured Go environment, it will be installed automatically and you will not need to think about it. Don't forget to put `$GOPATH/bin` into your `$PATH`.
-
-### Getting the source code
-Visit the [[https://github.com/bouncepaw/mycorrhiza|GitHub repository]]
-
-You can download a .zip archive by clicking Code » Download ZIP or use this command (recommended):
 ```sh
-git clone https://github.com/bouncepaw/mycorrhiza
+echo $PATH
 ```
 
-Either way, you should end up with a folder full of .go files. Let's assume it is located at `~/src/mycorrhiza`.
+There will be a list of colon-separated directories. Choose one of them and put the executable file there. Directory like `/usr/bin` or `/usr/local/bin` is the best. You should save the file as `mycorrhiza`.
 
-### Starting
-Run `make build`. You will end up with an executable named `mycorrhiza`. This is the program you need.
-
-If you have downloaded the snapshot, you can just run `make run` and have a running wiki on this address (it is also available in your local network but with a different address):
-
-=> http://localhost:1737
-
-## Installing
-If you use linux disto with pacman package manager (Arch, Manjaro, Garuda, etc) you can install it from PKGBUILD:
+## Packages
+There are packages for GNU+Linux distros with the `pacman` package manager (Arch, Manjaro, Garuda, etc) you can install it from PKGBUILD:
 ```sh
 $ wget https://raw.githubusercontent.com/bouncepaw/mycorrhiza/master/PKGBUILD
 $ makepkg --install
 ```
 
+There is also a nix package. [[https://github.com/bouncepaw/mycorrhiza | Find it in the repo]].
+
+## Building
+You can build Mycorrhiza yourself.
+
+### Dependencies
+
+**Go** is the compiled programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
+
+**Git** is the most popular version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads|Git website]].
+
+**[[https://github.com/valyala/quicktemplate | Quicktemplate]]** is the system Mycorrhiza Wiki uses during compilation. If you have a properly configured Go environment, it will be installed automatically and you will not need to think about it. Don't forget to put `$GOPATH/bin` into your `$PATH`.
+
+### Getting the source code
+
+Visit the [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]
+
+You can download a `.zip` archive by clicking Code » Download ZIP or use this command:
+```sh
+git clone https://github.com/bouncepaw/mycorrhiza
+```
+
+Either way, you should end up with a folder full of `.go` files. Let's assume it is located at `~/src/mycorrhiza`.
+
+### Compiling
+Run `make build` or `go build .`. You will end up with an executable named `mycorrhiza`. This is the program you need. Put it in your `$PATH`.
+
+If the compilator says something about `qtc`, fix your Go installation.
+
+## Usage
 ### Creating a wiki
 *. Create a directory named, for example, `wiki`.
 *. Navigate to the directory and run `git init`. The wiki won't work without that.
 *. If you are planning to have hyphae named with unicode characters, also run that: `git config core.quotepath false`. You may not need to run that, depending on your environment configuration.
 
-## Running
+### Example wiki
+There is an [[https://github.com/bouncepaw/example-wiki | example wiki]] with several hyphae. You can clone it and base your wiki from it.
+
+### Running
 To start a wiki, run:
 ```sh
-~/src/mycorrhiza/mycorrhiza ~/path/to/your/wiki
+mycorrhiza ~/path/to/your/wiki
 ```
 
-Of course, you can move the `mycorrhiza` file anywhere. Your wiki can also be anywhere.
+Your wiki can be anywhere as long it's a valid git repository.
 
 Run this command to see a short summary of [[configuration]] options:
 ```sh
 ~/src/mycorrhiza/mycorrhiza -help
 ```
 
-Make sure that environment variable `$XDG_DATA_HOME` is set to a reasonable location. The recommended value is `$HOME/.local/share`. If you don't set it, the Mycorrhiza will probably figure everything out but it may fail.
+Make sure that environment variable `$XDG_DATA_HOME` is set to a reasonable location. The recommended value is `$HOME/.local/share`. If you don't set it, the Mycorrhiza will probably figure everything out though.
 
-### What wiki folders should look like?
-You can just base of the default wiki, `metarrhiza`. This way, you will have handy help built-in. The other option is to run the wiki on an empty repo. An interesting option is to run the wiki on any of your image collections. They'll appear as hyphae!
-
-If you have a subfolder called `static`, you can customize the wiki behaviour. File `static/favicon.ico` is used as a favicon for the site. File `static/common.css` can be used to override default styles. Both are optional.
-
-### How to setup authorization?
-//See [[feature/authorization]]//
+## Further reading
+* [[Configuration]]
+* [[Feature/Authorization]]
