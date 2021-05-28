@@ -39,6 +39,13 @@ If you have downloaded the snapshot, you can just run `make run` and have a runn
 
 => http://localhost:1737
 
+## Installing
+If you use linux disto with pacman package manager (Arch, Manjaro, Garuda, etc) you can install it from PKGBUILD:
+```sh
+$ wget https://raw.githubusercontent.com/bouncepaw/mycorrhiza/master/PKGBUILD
+$ makepkg --install
+```
+
 ### Creating a wiki
 *. Create a directory named, for example, `wiki`.
 *. Navigate to the directory and run `git init`. The wiki won't work without that.
