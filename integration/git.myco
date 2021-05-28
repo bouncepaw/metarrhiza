@@ -1,0 +1,13 @@
+**Git** is the most popular version control system used by many major software projects. They use it for managing their source code. Mycorrhiza does that too but, also, most importantly, it uses it as the back-end for [[feature/history]].
+
+Reasons for that:
+* Creating a brand-new VCS (like many wiki engines do) is hard, and we don't have that many people to maintain it. Less code to write — less work needed.
+* Many people are already familiar with Git.
+* Mycorrhiza lacks many history-related operations, but wiki admins can work it around by working with Git directly. In fact, this is what some of them do.
+
+Here is what you can do with Git (if you know how):
+* Make edits without using the Web interface, directly from the server.
+* Revert some edits you do not like.
+* Easily synchronise back-ups of your wiki.
+* Fork a wiki.
+* Merge a wiki.
