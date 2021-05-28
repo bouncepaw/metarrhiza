@@ -1,38 +1,13 @@
-**Transclusion** is a mechanism of including contents of other hyphae into one hypha.
+**Transclusion** is the mechanism of including contents of other hyphae into one hypha.
 
-### Grammar
+To include a hypha named `yoghurt`, write a line like that:
 ```
-transclusion_line  ::= transclusion_token hypha_name LWS* [":" LWS* range LWS*]
-transclusion_token ::= "<=" LWS+
-hypha_name         ::= canonical_name | noncanonical_name
-range              ::= id | (from_id two_dots to_id) | (from_id two_dots) | (two_dots to_id)
-two_dots           ::= ".."
+<= yoghurt
 ```
-### Examples
-This is contents of hypha ‘goal’:
-```
-line 1
-line 2
-line 3
-```
-These are different transclusions of the hypha ⤵. !!Note that using that `:`-notation is not recommended!! because I'm planning on **deprecating** it in favor of a more semantic-oriented approach.
-```
-Full contents:
-<= goal
 
-Line 1 only:
-<= goal : 1
+Transclusion copies the hypha in whole and also inserts the attachment, if possible.
 
-Lines 1 and 2:
-<= goal : 1..2
-
-Heading of the page, lines 1 and 2:
-<= goal : ..2
-
-Lines 2 and 3:
-<= goal : 2..3
-<= goal : 2..
-```
+There is a deprecated syntax of transcluding only a part of a hypha. Its description has been removed from here and you are discouraged to use it. Since [[release/1.2]], that old syntax will not work, there will be a new one.
 
 This is an actual transclusion of a hypha below. 
 <= u/bouncepaw/userpic
