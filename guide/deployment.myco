@@ -1,21 +1,21 @@
 Deploying a Mycorrhiza wiki is simple.
 
-The rest of the instruction assumes you're using a UNIX-compatible operating system such as macOS or a distribution of GNU+Linux. If you're using Windows or any other obscure system, good luck, I have no knowledge of them. The process will be similar though.
+The rest of the instruction assumes you're using a UNIX-compatible operating system such as macOS or a distribution of GNU+Linux. If you're using Windows or any other obscure system, good luck, no one bears the knowledge of using Mycorrhiza on them. The process will be similar though.
 
 ## Building
-### Dependencies
-MycorrhizaWiki depends on several other programs in order to work.
+You can build Mycorrhiza by yourself. If you do not want to, just grab a build of any [[release]] you like.
+
+### Runtime dependencies
+Mycorrhiza Wiki depends on several other programs in order to work.
 
 #### Go
-Go is a compiled programming language MycorrhizaWiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
+Go is a compiled programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
 
 #### Git
 Git is the most popular version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads|Git website]].
 
-#### Other dependencies
-There is a Makefile in the source code. If you want to use it, you will need `make` which you probably have installed. If not, consult your OS' repos. You can also avoid using it by invoking the Go compiler directly.
-
-The rest of the dependences will be fetched by the Go compiler automatically. Don't forget to put `$GOPATH/bin` into your `$PATH`.
+#### Quicktemplate
+[[https://github.com/valyala/quicktemplate | Quicktemplate]] is a system Mycorrhiza Wiki uses during compilation. If you have a properly configured Go environment, it will be installed automatically and you will not need to think about it. Don't forget to put `$GOPATH/bin` into your `$PATH`.
 
 ### Getting the source code
 Visit the [[https://github.com/bouncepaw/mycorrhiza|GitHub repository]]
@@ -23,11 +23,6 @@ Visit the [[https://github.com/bouncepaw/mycorrhiza|GitHub repository]]
 You can download a .zip archive by clicking Code » Download ZIP or use this command (recommended):
 ```sh
 git clone https://github.com/bouncepaw/mycorrhiza
-```
-
-If you want to also get a snapshot of this wiki for testing purposes, run this command instead:
-```sh
-git clone --recurse-submodules  https://github.com/bouncepaw/mycorrhiza
 ```
 
 Either way, you should end up with a folder full of .go files. Let's assume it is located at `~/src/mycorrhiza`.
@@ -72,4 +67,4 @@ You can just base of the default wiki, `metarrhiza`. This way, you will have han
 If you have a subfolder called `static`, you can customize the wiki behaviour. File `static/favicon.ico` is used as a favicon for the site. File `static/common.css` can be used to override default styles. Both are optional.
 
 ### How to setup authorization?
-//See [[authorization]]//
+//See [[feature/authorization]]//
