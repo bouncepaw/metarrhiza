@@ -22,19 +22,19 @@ Now, the hypha should be loaded and lexed.
 
 ## Selector rules
 
-If the //selector// is empty, we think of it as of selector `0..1` and try again.
+If the //selector// is empty, we think of it as of selector `start..end` and try again.
 
 If there is no `..` in the //selector//, we find a block in the //target// hypha with an id equal //selector// or, if there is no such id, a block with an id starting with //selector//. If there is none, we consider the //selector// to be empty and process it as one.
 
 If there is a `..` in //selector//, there are two //bounds//: left and right. Both //bounds// are ids with the same aforementioned logic.
 
 Special //bounds//:
-* `-1`, `amnt`, `attachment`: hypha's attachment.
-* `0`, `start`: hypha's text's first block.
-* `1`, `desc`, `description`: hypha's text's first paragraph.
+* `attachment`: hypha's attachment.
+* `start`: hypha's text's first block.
+* `description`: hypha's text's first paragraph.
 * `end`: hypha's last block.
 
-If the left //bound// is empty, it is set to `0`. If the right //bound// is empty, it is set to `end`.
+If the left //bound// is empty, it is set to `start`. If the right //bound// is empty, it is set to `end`.
 
 ----
 
