@@ -22,7 +22,7 @@ Now, the hypha should be loaded and lexed.
 
 ## Selector rules
 
-If the //selector// is empty, we think of it as of selector `..1`` and try again.
+If the //selector// is empty, we think of it as of selector `0..1` and try again.
 
 If there is no `..` in the //selector//, we find a block in the //target// hypha with an id equal //selector// or, if there is no such id, a block with an id starting with //selector//. If there is none, we consider the //selector// to be empty and process it as one.
 
