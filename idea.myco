@@ -1,23 +1,27 @@
-Some ideas are stored as subhyphae of this hypha. There is also a [[https://github.com/bouncepaw/mycorrhiza/projects/1|Kanban board]] on Github for tracking development.
+Some ideas are stored as subhyphae of this hypha.
 
-Some of the transcluded hyphae do not exist. It's ok. The ideas just haven't been written down yet.
+## See also
+=> Essay/Rejected List of some rejected ideas
+=> https://github.com/bouncepaw/mycorrhiza/projects/1 Kanban board
 
 ## [[Mycomarkup]]-related
-<= ./mycomarkup lib : ..1
-<= ./links : ..1
-<= ./wysiwyg : ..1
-<= ./noinclude : ..1
-<= ./todo : ..1
-<= ./ruby text : ..1
-<= ./new transclusion ranges : ..1
+=> ./mycomarkup_lib
+=> ./links
+=> ./wysiwyg
+=> ./noinclude
+=> ./todo
+=> ./ruby text
+=> ./footnote_references
 
 ## [[Integration]]-related
-<= ./import : ..1
-<= ./importer protocol : ..1
-<= ./fediverse : ..1
+=> ./import
+=> ./importer_protocol
+=> ./fediverse
+=> ./interwiki
 
 ## Other features
-<= ./search : ..1
-<= ./backlinks : ..1
-<= ./dynamic hyphae : ..1
-<= ./svg draw : ..1
+=> ./search
+=> ./backlinks
+=> ./dynamic_hyphae
+=> ./svg_draw
+=> ./user_panel
