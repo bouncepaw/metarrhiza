@@ -1,2 +1,7 @@
 We are angry and rageful people, thus we reject a lot of features. Here we try to list them all.
 
+**Mycelia** were like namespaces in other wiki engines. There was an attempt to implement them in 0.6 but it turned out to be hard to implement and it didn't really fit the design. Bouncepaw decided to drop it and no one complained to this day. [[https://github.com/bouncepaw/mycorrhiza/issues/13 | #14]]
+
+**Transcluded image resizing** was no more needed when `img {}` was made. [[https://github.com/bouncepaw/mycorrhiza/issues/23 | #23]]
+
+**Markup cheatsheet** was no longer needed with [[feature/tool bar]] introduced. [[https://github.com/bouncepaw/mycorrhiza/issues/42 | #42]]
