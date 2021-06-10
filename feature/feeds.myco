@@ -1,0 +1,12 @@
+**Feeds** are special machine-readable files that list some entries chronologically. Popular feed formats include RSS, Atom and JSON Feed. Mycorrhiza supports them all for [[../recent changes]].
+
+Here are the links you can add to your feed reader.
+
+=> /recent-changes-rss
+=> /recent-changes-atom
+=> /recent-changes-json
+
+The feeds feature 30 latest edits with diffs. There is no practical difference between the formats, choose the one you like.
+
+## See also
+=> https://communitywiki.org/wiki/WebFeed
