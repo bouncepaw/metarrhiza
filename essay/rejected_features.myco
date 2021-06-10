@@ -22,6 +22,6 @@ We are angry and rageful people, thus we reject a lot of features. Here we try t
 
 **Reversed order of link address and display text** is aggressively rejected for ideology reasons.
 
-**Advanced link syntax** that looked like this: `[[термины/стандартная клавиатура|стандартной клавиатуре]] = [{термины/}[стандартн]{ая}ой[клавиатур]{а}е]`, was rejected because no one understood it.
+**Advanced link syntax** that looked like this: `[\[термины/стандартная клавиатура|стандартной клавиатуре]] = [{термины/}[стандартн]{ая}ой[клавиатур]{а}е]`, was rejected because no one understood it.
 
 **Wiki path in config** was rejected because the Structure is coming. [[https://github.com/bouncepaw/mycorrhiza/issues/56 | #56]]
