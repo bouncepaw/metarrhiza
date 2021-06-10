@@ -1,7 +1,19 @@
 We are angry and rageful people, thus we reject a lot of features. Here we try to list them all.
 
+**Custom VCS** was rejected in favor of [[integration/Git]]. This choice is good enough for now but it may change in the future.
+
+**Different file structure** was used. A simpler one was chosen because it's simpler. [[https://github.com/bouncepaw/mycorrhiza/issues/4 | #4]]
+
+**Collapsible tree navigation** was rejected because the trees ended up being too large. [[https://github.com/bouncepaw/mycorrhiza/issues/7 | #7]]
+
+**Sophisticated user system** with granular control and high customizability was rejected because it was hard to implement. A much simpler solution based on this idea was implemented instead. [[https://github.com/bouncepaw/mycorrhiza/issues/11 | #11]]
+
+**Different markup support** was rejected due to ideology. [[https://github.com/bouncepaw/mycorrhiza/issues/12 | #12]]
+
 **Mycelia** were like namespaces in other wiki engines. There was an attempt to implement them in 0.6 but it turned out to be hard to implement and it didn't really fit the design. Bouncepaw decided to drop it and no one complained to this day. [[https://github.com/bouncepaw/mycorrhiza/issues/13 | #14]]
 
 **Transcluded image resizing** was no more needed when `img {}` was made. [[https://github.com/bouncepaw/mycorrhiza/issues/23 | #23]]
 
 **Markup cheatsheet** was no longer needed with [[feature/tool bar]] introduced. [[https://github.com/bouncepaw/mycorrhiza/issues/42 | #42]]
+
+**Wiki path in config** was rejected because the Structure is coming. [[https://github.com/bouncepaw/mycorrhiza/issues/56 | #56]]
