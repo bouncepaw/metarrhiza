@@ -1,0 +1,25 @@
+Currently, there are no good ways of managing users—everything is done by editing poorly placed JSON files. Less than satisfactory, no doubt. What administrators need is a **user panel** where they can quickly do their dirty stuff.
+
+The user panel is available on `/admin/user-panel`. There should be a link to this panel on `/admin`.
+
+The panel has two blocks.
+
+## Block 1. Actions
+It has a form that triggers `/admin/reindex-users` and a form that resets all tokens (`/admin/reset-tokens`, maybe). If we think of more actions, they should be here too.
+
+## Block 2. Users
+A table representing every user on the wiki.
+
+table {
+! User ! Group ! Source ! Buttons
+| [[u/bouncepaw | bouncepaw]] | //admin//▾ | //fixed// | [[# | forget user]], [[# | reset tokens]]
+| [[u/not_bouncepaw | not_bouncepaw]] | //trusted//▾ | //registration// | [[# | forget user]], [[# | reset tokens]]
+|||| [[# | + Add a fixed user]]
+}
+
+The first column has user names. They cannot be changed. The second column has their groups. One can easily change the groups with a dropdown menu. The third column tells where the user came from: fixed or registered. The fourth column has the //forget user// button. It basically removes the user from the corresponding JSON file. There is also //reset tokens// button which drops all tokens associated with the user. In the future buttons like //ban//, //unban// might be added.
+
+Below, there is the button that helps you create a new fixed user. It is available only when fixed authorization is enabled.
+
+## Implementation notes
+The panel is able to edit some files. Gotta make sure it doesn't corrupt them. Backup files might come in handy.
