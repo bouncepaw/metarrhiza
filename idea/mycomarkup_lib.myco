@@ -1,20 +1,17 @@
 It has been decided that a mycomarkup library is needed. You can read the original thoughts on the topic below; they shall be removed once they lose their value.
 
-The library is developed on [[https://github.com/bouncepaw/mycomarkup|GitHub]]. It is not done yet.
+The library is developed on [[https://github.com/bouncepaw/mycomarkup|GitHub]]. It is used with [[release/1.2]] which is in development.
 
-# Original text
-Currently, [[mycomarkup]] is only implemented inside the MycorrhizaWiki codebase. I'm confident that it should be moved to a separate project one day, and here's why:
-
-*. Having a library to use would help making mycomarkup more popular greatly.
+## Reasons for development
+*. Having a library ready to use would help making mycomarkup more popular greatly.
 *. If it is a different go package, we will be able to make a distinct `mycomarkup` program which could be used in any project in any language. I, myself, would find many usages for such a program.
 *. Tearing it apart from the rest of the system would make the whole system's architecture better.
 *. Mycomarkup and Mycorrhiza could be developed in parallel.
 
-I suppose this is enough to convince anyone.
-
 ## Implementation caveats
+//Kinda outdated section//
 
-Myco{rrhiza, markup} are tied together greatly. For example, every link is colored red. A separate package would have no direct access to all the hyphae, therefore there will be a way to provide a way to check a hypha's existence. But for some use cases (and a separate package should cover more use cases than an embedded one) having such functionality is not needed.
+Myco{rrhiza, markup} are tied together greatly. For example, some links are colored red. A separate package would have no direct access to all the hyphae, therefore there will be a way to provide a way to check a hypha's existence. But for some use cases (and a separate package should cover more use cases than an embedded one) having such functionality is not needed.
 
 There should be options:
 ```
