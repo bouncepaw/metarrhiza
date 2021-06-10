@@ -14,6 +14,14 @@ We are angry and rageful people, thus we reject a lot of features. Here we try t
 
 **Transcluded image resizing** was no more needed when `img {}` was made. [[https://github.com/bouncepaw/mycorrhiza/issues/23 | #23]]
 
+**`date {}` block** was cancelled because there is no need for it.
+
+**Git clone endpoint** was rejected because it is out of scope.
+
 **Markup cheatsheet** was no longer needed with [[feature/tool bar]] introduced. [[https://github.com/bouncepaw/mycorrhiza/issues/42 | #42]]
+
+**Reversed order of link address and display text** is aggressively rejected for ideology reasons.
+
+**Advanced link syntax** that looked like this: `[[термины/стандартная клавиатура|стандартной клавиатуре]] = [{термины/}[стандартн]{ая}ой[клавиатур]{а}е]`, was rejected because no one understood it.
 
 **Wiki path in config** was rejected because the Structure is coming. [[https://github.com/bouncepaw/mycorrhiza/issues/56 | #56]]
