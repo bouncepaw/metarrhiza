@@ -7,3 +7,9 @@ FedWiki community calls sites that can share their pages with the federation wit
 FedWiki has a special JSON-based format which seems simple enough for the [[Mycomarkup]] library to produce eventually.
 
 Perhaps, Mycorrhiza will join this federation one day.
+
+## Some outposts
+=> https://github.com/paul90/risks
+> Federated Wiki: Foreign Server with RSS sourced content
+>
+> A little experiment in writing a small foreign server targetting Deno Deploy. Using The Risks Digest RSS feed as a data source, just cause it is something convient and might even be useful.
