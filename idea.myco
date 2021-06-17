@@ -18,6 +18,7 @@ Some ideas are stored as subhyphae of this hypha.
 => ./importer_protocol
 => ./fediverse
 => ./interwiki
+=> ./fedwiki_outpost
 
 ## Other features
 => ./search
@@ -25,3 +26,4 @@ Some ideas are stored as subhyphae of this hypha.
 => ./dynamic_hyphae
 => ./svg_draw
 => ./user_panel
+=> ./the_structure
