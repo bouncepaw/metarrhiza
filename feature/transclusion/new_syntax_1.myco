@@ -1,3 +1,5 @@
+**Note:** this syntax will not be implemented after all. See [[../new syntax 2]]
+
 This is the new syntax for transclusion that is planned to be implemented in [[release/1.2]]. It is a breaking change.
 
 Transclusion lines start with a reverse-rocket symbol (`<=`) followed by any amount of spaces (possibly zero). The text on the line before a line break or a pipe character (`|`) is called //target//. If there is a pipe, the text after it is called //selector//. If there is no pipe, the selector is empty. Both //target// and //selector// are stripped of left-side and right-side whitespace before further processing.
