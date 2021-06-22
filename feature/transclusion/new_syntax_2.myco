@@ -26,6 +26,7 @@ The target hypha shall be loaded and parsed.
 The //selector// specifies what part of the //target// to transclude. The parser checks for these words:
 
 * **full.** Transclude the whole document.
+* **text.** Transclude all text.
 * **attachment.** Transclude attachment only.
 * **description.** Transclude first paragraph only.
 * **overview.** Short for both **attachment** and **description**.
