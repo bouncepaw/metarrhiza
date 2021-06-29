@@ -1,4 +1,4 @@
-MycorrhizaWiki keeps track of all changes made on a wiki using git back-end. Every mutable operation result in a commit being made in the wiki repository.
+Mycorrhiza Wiki keeps track of all changes made on a wiki using git back-end. Every mutable operation result in a commit being made in the wiki repository.
 
 ## Commiter and author
 Git distinguishes between commiter and author. Author is a person who has created the changes for the commit and commiter is a person who has commited these changes into the repository. It fits MycorrhizaWiki well: usually users are authors and `wikimind`, the user that represents the wiki engine itself, is commiter of all edits made through wiki engine.
