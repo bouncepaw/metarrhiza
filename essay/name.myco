@@ -1,0 +1,11 @@
+You may wonder why in the world is Mycorrhiza Wiki called like that. Read this article to learn why.
+
+Summer 2020, [[u/bouncepaw]] learns about the wonders of fungi. He noticed that there are multiple similarities between mushrooms and wikis. Hyphae (the filament from which the fungus is made) are like pages and files, mycelia are like wikis themselves.
+
+But what is mycorrhiza like? Mycorrhiza is a symbiotic connection between a fungus and a green plant. The fungus receives the glucose and the plant receives minerals.
+
+[[u/bouncepaw]] wanted this kind of behavior for the wiki engine, where the content could flow from one place to another. As of now, the content doesn't do that yet, but we'll see.
+
+So he chose this word. It also sounds nice. Add the //Wiki// suffix and you get //MycorrhizaWiki//.
+
+During [[release/1.2]] development the name was changed to //Mycorrhiza Wiki//, with a space. The reason for that is [[Mycomarkup]]'s syntax for links and hypha names' case insensitivity. Having a CamelCase name makes little sense when you don't even have CamelCase WikiLinks.
