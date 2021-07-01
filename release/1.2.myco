@@ -1,10 +1,17 @@
-**Mycorrhiza Wiki 1.2** is the third release of Mycorrhiza Wiki. It is currently being developed.
-
-When the time comes, see [[./migration guide]].
+**Mycorrhiza Wiki 1.2** is the third release of Mycorrhiza Wiki. It was released on 2021-07-01, two months after [[../1.1]]. It is a breaking release, see [[./migration guide]].
 
 ## Changes
+### The Structure
+Before this release, you could just run Mycorrhiza on any git repo and get a working wiki. If you wanted any other files, beside the wiki contents, such as configs or user storage, you had to specify them explicitly.
+
+Now you don't. There is a fixed Structure of wiki directories that every Mycorrhiza wiki has to follow. It makes initial deployment for primitive wikis a little bit harder but eases administration a lot for everyone.
+
+++If you were using an older version of Mycorrhiza, you will have to [[./migration guide | migrate]] to the Structure!++
+
+See [[feature/the Structure]].
+
 ### [[Mycomarkup]] changes
-* Mycomarkup is now being developed as a parallel project — [[https://github.com/bouncepaw/mycomarkup]]. A CLI interface is provided as well.
+* Mycomarkup is now being developed as a parallel project — [[https://github.com/bouncepaw/mycomarkup]]. A CLI interface is provided as well as a library. This way, you can include it in your projects. For now, this library is less stable than Mycorrhiza itself.
 * Supertext syntax changed from `^` to `^^`.
 * Highligh syntax changed from `!!` to `++`.
 * Underline syntax added: `__`.
@@ -22,7 +29,7 @@ table {
 { the same applies
 
 to table cells } | See this hypha's source to learn how to do so
-}
+}}
 * In HTML, elements have different ID attributes.
 
 ### Editor changes
@@ -48,14 +55,14 @@ img {
    ./non-existent notice after { After }
 }}
 * Quotes have become cuter.
+* The design has become more consistent in some places, less consistent in others.
+
+### History changes
+* Web feeds now have diffs in them.
+* The Recent changes page has edits grouped by day now.
 
 ### Various
 * The [[essay/name | name]] of the project has been changed from //MycorrhizaWiki// to //Mycorrhiza Wiki//.
-* The Structure:
-* Web feeds now have diffs in them.
 * Less messages are printed on start.
 * Drop Gemini protocol support.
-* Static assets' changes:
-** URLs for static assets have changed.
-** Custom JS files can be embedded on pages by specifying them in the config.
-* [[/]] no longer redirects to the home hypha, resulting in a better-looking URL.
+* [[/]] no longer redirects to the home hypha, it just shows it, resulting in a better-looking URL.
