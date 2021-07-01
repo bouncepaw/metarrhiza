@@ -1,19 +1,13 @@
-Deploying a Mycorrhiza wiki is simple.
+Deploying a Mycorrhiza wiki is quite simple. This page will guide you through the process of getting your wiki up and running.
 
-The rest of the instruction assumes you're using a UNIX-compatible operating system such as macOS or a distribution of GNU+Linux. If you're using Windows or any other obscure system, good luck, no one bears the knowledge of using Mycorrhiza on them. The process will be similar though.
+The rest of the instruction assumes you're using a POSIX-compatible operating system. If you're using Windows or an obscure OS, good luck, no one bears the knowledge of using Mycorrhiza Wiki on them. The process will be similar though.
 
-First, you have to get a copy of Mycorrhiza. There are several options for that.
+First, you have to get an executable to run. There are several options available.
 
 ## Pre-built releases
 **Download.** Pick a release [[https://github.com/bouncepaw/mycorrhiza/releases | on GitHub]] and download the proper executable for you system.
 
-**Install.** Put it into your `$PATH`. If you don't know where it is, run this command in terminal:
-
-```sh
-echo $PATH
-```
-
-There will be a list of colon-separated directories. Choose one of them and put the executable file there. Directories like `/usr/bin` or `/usr/local/bin` work the best. You should name the file `mycorrhiza`.
+**Install.** Put it into your `$PATH` (paths like `/usr/bin/` or `/usr/local/bin/` work the best). You should also rename the file to `mycorrhiza`.
 
 ## Arch Linux (AUR)
 
@@ -50,7 +44,7 @@ You can build Mycorrhiza yourself.
 
 ### Dependencies
 
-**Go** is a programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
+**Go** is a programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]] or from your OS' software repos.
 
 **Git** is a version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads | the official Git website]].
 
@@ -60,8 +54,6 @@ Visit [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]. You ca
 ```sh
 git clone https://github.com/bouncepaw/mycorrhiza.git
 ```
-
-Either way, you should end up with a folder full of `.go` files. Let's assume it is located at `~/src/mycorrhiza`.
 
 ### Compiling
 Run `go build`. You will end up with an executable named `mycorrhiza`. This is the program you need. Put it in your `$PATH`.
