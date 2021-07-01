@@ -1,7 +1,7 @@
-*.
+*. Prepare:
 ** Create wiki directory: `mkdir wiki`
 ** Populate it with default files: `mycorrhiza wiki`
-*. Terminate the wiki
+*. Terminate the wiki.
 *. Replace the files with your own while keeping the new names:
 ** `wiki.git` with your git repo
 ** `config.ini` with your config
