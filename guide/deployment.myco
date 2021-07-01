@@ -17,8 +17,7 @@ There will be a list of colon-separated directories. Choose one of them and put 
 
 ## Arch Linux (AUR)
 
-You can install Mycorrhiza Wiki from AUR using your favorite package manager on
-any Arch Linux-derivative distro (Arch, Manjaro, Garuda, etc):
+You can install Mycorrhiza Wiki from AUR using your favorite package manager on any Arch Linux-derivative distro (Arch, Manjaro, Garuda, etc):
 
 ```sh
 # Build from sources:
