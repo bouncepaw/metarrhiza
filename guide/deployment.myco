@@ -49,7 +49,7 @@ Either way, you should end up with a folder full of `.go` files. Let's assume it
 ### Compiling
 Run `make build` or `go build .`. You will end up with an executable named `mycorrhiza`. This is the program you need. Put it in your `$PATH`.
 
-If the compilator says something about `qtc`, fix your Go installation.
+If the compiler says something about `qtc`, fix your Go installation.
 
 ## Usage
 ### Creating a wiki
