@@ -14,17 +14,17 @@ Some fields are marked with //Since x.y//. It means they have been introduced or
 ## [Network]
 * `HTTPPort`: //number//. What port is used for serving the web interface of Mycorrhiza. **Default:** `1737`.
 * `URL`: //url//. What URL is used for Opengraph and Web feed in the web interface. There is no default.
-* `GeminiCertificatePath`: //path//. Where do you store your Gemini certificate. There is no default.
+* ~~`GeminiCertificatePath`: //path//. Where do you store your Gemini certificate. There is no default.~~ //Removed in 1.2//
 
 ## [Authorization]
 * `UseFixedAuth`: //boolean//. Whether you want to use [[feature/authorization#Fixed_authorization | fixed authorization]]. **Default:** `false`.
-* `FixedAuthCredentialsPath`: //path//. Where do you want to store your fixed credentials json file. Only makes sense when `UseFixedAuth` is `true`. There is no default.
+* ~~`FixedAuthCredentialsPath`: //path//. Where do you want to store your fixed credentials json file. Only makes sense when `UseFixedAuth` is `true`. There is no default.~~ //Removed in 1.2//
 * `UseRegistration`: //boolean//. Whether you want unregistered visitors to be able to register themselves using the web form. **Default:** `false`. //Since 1.1//
-* `RegistrationCredentialsPath`: //path//. Where do you want to store users' encrypted credentials. You are not meant to edit that file by hand, by the way. There is no default. //Since 1.1//
+* ~~`RegistrationCredentialsPath`: //path//. Where do you want to store users' encrypted credentials. You are not meant to edit that file by hand, by the way. There is no default. //Since 1.1//~~ //Removed in 1.2//
 * `LimitRegistration`: //number//. There cannot be more registered users than this number. If the number is zero, there is no limit. Makes sense only when `UseRegistration` is `true`. **Default:** `0`. //Since 1.1//
 
 ## [CustomScripts] //Since [[release/1.2 | 1.2]]//
 You can specify URLs of JavaScript files you want to load.
-* `OmnipresentScripts`: //list of url//. Comma-separated list of unquoted URLs to JS files to load on //all// pages.
+* `CommonScripts`: //list of url//. Comma-separated list of unquoted URLs to JS files to load on //all// pages.
 * `ViewScripts`: //list of urls//. Comma-separated list of unquoted URLs to JS files to load on //view// pages: `/hypha`, `/rev`.
 * `EditScripts`: //list of urls//. Comma-separated list of unquoted URLs to JS files to load on the `/edit` page.
