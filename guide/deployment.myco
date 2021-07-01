@@ -5,7 +5,7 @@ The rest of the instruction assumes you're using a UNIX-compatible operating sys
 First, you have to get a copy of Mycorrhiza. There are several options for that.
 
 ## Pre-built releases
-**Download.** Choose a release on [[https://github.com/bouncepaw/mycorrhiza/releases | this GitHub page]] and download a binary for you system.
+**Download.** Pick [[https://github.com/bouncepaw/mycorrhiza/releases | a release on GitHub]] and download the proper executable for you system.
 
 **Install.** Put it into your `$PATH`. If you don't know where it is, run this command in terminal:
 
@@ -13,14 +13,36 @@ First, you have to get a copy of Mycorrhiza. There are several options for that.
 echo $PATH
 ```
 
-There will be a list of colon-separated directories. Choose one of them and put the executable file there. Directory like `/usr/bin` or `/usr/local/bin` is the best. You should save the file as `mycorrhiza`.
+There will be a list of colon-separated directories. Choose one of them and put the executable file there. Directories like `/usr/bin` or `/usr/local/bin` work the best. You should name the file `mycorrhiza`.
 
-## Packages
-There are packages for GNU+Linux distros with the `pacman` package manager (Arch, Manjaro, Garuda, etc) you can install it from PKGBUILD:
+## Arch Linux (AUR)
+
+You can install Mycorrhiza Wiki from AUR using your favorite package manager on
+any Arch Linux-derivative distro (Arch, Manjaro, Garuda, etc):
+
 ```sh
-$ wget https://raw.githubusercontent.com/bouncepaw/mycorrhiza/master/PKGBUILD
-$ makepkg --install
+# Build from sources:
+yay -S mycorrhiza
+# ...or use pre-built binaries from the Github Releases page:
+yay -S mycorrhiza-bin
 ```
+
+## Docker
+
+You can run Mycorrhiza Wiki in Docker using Dockerfile from the [[https://github.com/bouncepaw/mycorrhiza | Git repository]]:
+
+```sh
+git clone https://github.com/bouncepaw/mycorrhiza.git
+cd mycorrhiza
+
+# Build the image:
+docker build -t mycorrhiza .
+
+# Now create a new container:
+docker run -v /path/to/wiki:/wiki -p 8080:1737 mycorrhiza
+```
+
+## NixOS
 
 There is also a nix package. [[https://github.com/bouncepaw/mycorrhiza | Find it in the repo]].
 
@@ -37,7 +59,7 @@ You can build Mycorrhiza yourself.
 
 Visit [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]. You can download a `.zip` archive by clicking Code » Download ZIP or use this command:
 ```sh
-git clone https://github.com/bouncepaw/mycorrhiza
+git clone https://github.com/bouncepaw/mycorrhiza.git
 ```
 
 Either way, you should end up with a folder full of `.go` files. Let's assume it is located at `~/src/mycorrhiza`.
