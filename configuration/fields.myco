@@ -3,7 +3,7 @@ Learn what fields you can include in your [[configuration]] files.
 Some fields are marked with //Since x.y//. It means they have been introduced or will be introduced in the given release.
 
 ## Root section
-* `WikiName`: //string//. The name your wiki has. It is shown in the header by default and in other places. **Default:** `MycorrhizaWiki`.
+* `WikiName`: //string//. The name your wiki has. It is shown in the header by default and in other places. **Default:** `Mycorrhiza Wiki`.
 * `NaviTitleIcon`: //string//. The icon shown before the colon in the navigational titles above each hypha. You may want to use an emoji or HTML here. **Default:** `🍄` (mushroom emoji).
 
 ## [Hyphae]
