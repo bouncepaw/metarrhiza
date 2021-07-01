@@ -64,5 +64,5 @@ img {
 ### Various
 * The [[essay/name | name]] of the project has been changed from //MycorrhizaWiki// to //Mycorrhiza Wiki//.
 * Less messages are printed on start.
-* Drop Gemini protocol support.
+* Gemini protocol support is dropped.
 * [[/]] no longer redirects to the home hypha, it just shows it, resulting in a better-looking URL.
