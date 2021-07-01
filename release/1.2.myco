@@ -3,21 +3,59 @@
 When the time comes, see [[./migration guide]].
 
 ## Changes
-* The [[essay/name | name]] of the project has been changed from //MycorrhizaWiki// to //Mycorrhiza Wiki//.
-* Web feeds now have diffs in them.
-* Less messages are printed on start.
+### [[Mycomarkup]] changes
+* Mycomarkup is now being developed as a parallel project — [[https://github.com/bouncepaw/mycomarkup]]. A CLI interface is provided as well.
+* Supertext syntax changed from `^` to `^^`.
+* Highligh syntax changed from `!!` to `++`.
+* Underline syntax added: `__`.
+* {
+> Quotes
+>
+> can contain multiple paragraphs
+> * and any markup inside
+}
+* { Similarly,
+
+list items can be multiline.
+
+table {
+{ the same applies
+
+to table cells } | See this hypha's source to learn how to do so
+}
+* In HTML, elements have different ID attributes.
+
+### Editor changes
 * There is a new button on the [[feature/tool bar | tool bar]] that inserts current UTC time.
-* UI changes:
-** The background pattern has been removed.
-** The [[feature/top bar | top bar]] has changed its color to a brighter one.
-** Login and register forms have become easier to find.
-** Non-existent hyphae have gotten a better notice:
+* Underline button.
+* You can describe your changes; the message will be shown in history.
+
+### Authorization changes
+* If you are not logged in, there is the //Register// link beside the //Login// link.
+* ++Fixed authorization is deprecated.++
+** The engine will attempt to turn all of your fixed users to registered users.
+* There is a panel that lets wiki administrators manage users, i.e. change their groups.
+* Users' registration date is saved now.
+
+### Visual changes
+* Dark theme improvements
+* The background pattern has been removed.
+* The [[feature/top bar | top bar]] has changed its color to a brighter one.
+* Login and register forms have become easier to find.
+* { Non-existent hyphae have gotten a better notice:
 img {
    ./non-existent notice before { Before }
    ./non-existent notice after { After }
-}
+}}
+* Quotes have become cuter.
+
+### Various
+* The [[essay/name | name]] of the project has been changed from //MycorrhizaWiki// to //Mycorrhiza Wiki//.
+* The Structure:
+* Web feeds now have diffs in them.
+* Less messages are printed on start.
+* Drop Gemini protocol support.
 * Static assets' changes:
-** Icons can no longer be redefined. //No one has used this feature anyway.//
 ** URLs for static assets have changed.
 ** Custom JS files can be embedded on pages by specifying them in the config.
 * [[/]] no longer redirects to the home hypha, resulting in a better-looking URL.
