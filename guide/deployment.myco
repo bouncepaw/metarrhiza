@@ -77,7 +77,7 @@ To start a wiki, run:
 mycorrhiza path/to/your/wiki
 ```
 
-The directory for your new wiki will be created automatically, and all relevant Git preferences will be set.
+The directory for your new wiki will be created automatically, and all relevant Git settings will be set.
 
 Run `mycorrhiza -help` to see a short summary of [[configuration]] options.
 
