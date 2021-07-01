@@ -1,6 +1,6 @@
 It has been decided that a mycomarkup library is needed. You can read the original thoughts on the topic below; they shall be removed once they lose their value.
 
-The library is developed on [[https://github.com/bouncepaw/mycomarkup|GitHub]]. It is used with [[release/1.2]] which is in development.
+The library is developed on [[https://github.com/bouncepaw/mycomarkup|GitHub]]. It has been used since [[release/1.2]].
 
 ## Reasons for development
 *. Having a library ready to use would help making mycomarkup more popular greatly.
