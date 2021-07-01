@@ -21,8 +21,7 @@ URL = https://wiki
 GeminiCertificatePath = /home/wiki/gemcerts
 
 [Authorization]
-UseFixedAuth = true
-FixedAuthCredentialsPath = /home/wiki/mycocredentials.json
+UseRegistration = true
 ```
 
 See [[./fields]] for detailed descriptions of all config file fields.
