@@ -66,3 +66,4 @@ img {
 * Less messages are printed on start.
 * Gemini protocol support is dropped.
 * [[/]] no longer redirects to the home hypha, it just shows it, resulting in a better-looking URL.
+* Hotkey shortcut available by pressing `?` on keyboard.
