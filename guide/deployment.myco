@@ -29,17 +29,13 @@ You can build Mycorrhiza yourself.
 
 ### Dependencies
 
-**Go** is the compiled programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
+**Go** is a programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]]. Using your OS's repositories is not recommended because they may be out-of-date.
 
-**Git** is the most popular version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads|Git website]].
-
-**[[https://github.com/valyala/quicktemplate | Quicktemplate]]** is the system Mycorrhiza Wiki uses during compilation. If you have a properly configured Go environment, it will be installed automatically and you will not need to think about it. Don't forget to put `$GOPATH/bin` into your `$PATH`.
+**Git** is a version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads | the official Git website]].
 
 ### Getting the source code
 
-Visit the [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]
-
-You can download a `.zip` archive by clicking Code » Download ZIP or use this command:
+Visit [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]. You can download a `.zip` archive by clicking Code » Download ZIP or use this command:
 ```sh
 git clone https://github.com/bouncepaw/mycorrhiza
 ```
@@ -47,33 +43,24 @@ git clone https://github.com/bouncepaw/mycorrhiza
 Either way, you should end up with a folder full of `.go` files. Let's assume it is located at `~/src/mycorrhiza`.
 
 ### Compiling
-Run `make build` or `go build .`. You will end up with an executable named `mycorrhiza`. This is the program you need. Put it in your `$PATH`.
-
-If the compiler says something about `qtc`, fix your Go installation.
+Run `go build`. You will end up with an executable named `mycorrhiza`. This is the program you need. Put it in your `$PATH`.
 
 ## Usage
-### Creating a wiki
-*. Create a directory named, for example, `wiki`.
-*. Navigate to the directory and run `git init`. The wiki won't work without that.
-*. If you are planning to have hyphae named with unicode characters, also run that: `git config core.quotepath false`. You may not need to run that, depending on your environment configuration.
-
 ### Example wiki
-There is an [[https://github.com/bouncepaw/example-wiki | example wiki]] with several hyphae. You can clone it and base your wiki from it.
+There is an [[https://github.com/bouncepaw/example-wiki | example wiki]] with several simple hyphae. You can clone it and base your wiki from it.
 
 ### Running
 To start a wiki, run:
 ```sh
-mycorrhiza ~/path/to/your/wiki
+mycorrhiza path/to/your/wiki
 ```
 
-Your wiki can be anywhere as long it's a valid git repository.
+The directory for your new wiki will be created automatically, and all relevant Git preferences will be set.
 
 Run this command to see a short summary of [[configuration]] options:
 ```sh
 ~/src/mycorrhiza/mycorrhiza -help
 ```
-
-Make sure that environment variable `$XDG_DATA_HOME` is set to a reasonable location. The recommended value is `$HOME/.local/share`. If you don't set it, the Mycorrhiza will probably figure everything out though.
 
 ## Further reading
 * [[Configuration]]
