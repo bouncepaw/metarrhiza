@@ -7,7 +7,6 @@ The whole wiki is inside one directory or inside one of its subdirectories. Only
 ### Subdirectories
 * `wiki.git/` is a valid Git repository. If it is not present or is not a valid Git repository, the engine shall fail to work. When the Wizard is implemented, the engine will offer to make the Git repository.
 * `cache/` contains temporary files such as user token caches. Wiki administrators can safely delete this directory and expect the wiki to continue working. In the future, stuff like pre-rendered HTML can be stored here.
-* All other subdirectories are ignored.
 
 ### User configuration
 * `registered-users.json` contains a JSON array of all registered users. The engine will edit this file, and the administrators should not edit by themselves, unless they really want to.
