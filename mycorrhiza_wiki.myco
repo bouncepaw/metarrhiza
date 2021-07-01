@@ -9,7 +9,7 @@ Here are some features of the engine:
 * **History of changes** for text parts of hyphae. Every change is saved to [[integration/git | git]], the most popular version control system.
 * **Keyboard-driven navigation.** Press `?` to see the list of shortcuts.
 * **[[Mycomarkup]], a custom-made markup language.**
-* **Optional basic [[feature/authorization | authorization]].**
+* **Optional [[feature/authorization | authorization]] support.**
 * **[[standard/opengraph|Opengraph]] support.**
 
 Want to try it? Surf this wiki or learn how to [[guide/deployment | deploy]] your own.
