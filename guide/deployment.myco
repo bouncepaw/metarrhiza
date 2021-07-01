@@ -5,7 +5,7 @@ The rest of the instruction assumes you're using a UNIX-compatible operating sys
 First, you have to get a copy of Mycorrhiza. There are several options for that.
 
 ## Pre-built releases
-**Download.** Pick [[https://github.com/bouncepaw/mycorrhiza/releases | a release on GitHub]] and download the proper executable for you system.
+**Download.** Pick a release [[https://github.com/bouncepaw/mycorrhiza/releases | on GitHub]] and download the proper executable for you system.
 
 **Install.** Put it into your `$PATH`. If you don't know where it is, run this command in terminal:
 
@@ -79,10 +79,7 @@ mycorrhiza path/to/your/wiki
 
 The directory for your new wiki will be created automatically, and all relevant Git preferences will be set.
 
-Run this command to see a short summary of [[configuration]] options:
-```sh
-~/src/mycorrhiza/mycorrhiza -help
-```
+Run `mycorrhiza -help` to see a short summary of [[configuration]] options.
 
 ## Further reading
 * [[Configuration]]
