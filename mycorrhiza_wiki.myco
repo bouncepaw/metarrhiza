@@ -7,6 +7,7 @@ Here are some features of the engine:
 * **Everything is hyphae.** A [[feature/hypha | hypha]] is a unit of content such as a picture, video or a text article. Hyphae can [[feature/transclusion|transclude]] and [[mycomarkup/link|link]] each other resulting in a tight network of hypertext pages.
 * **Nesting of hyphae** is also supported. There is also a tree of related hyphae displayed on every page.
 * **History of changes** for text parts of hyphae. Every change is saved to [[integration/git | git]], the most popular version control system.
+* **Keyboard-driven navigation.** Press `?` to see the list of shortcuts.
 * **[[Mycomarkup]], a custom-made markup language.**
 * **Optional basic [[feature/authorization | authorization]].**
 * **[[standard/opengraph|Opengraph]] support.**
