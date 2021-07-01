@@ -17,7 +17,7 @@ Some fields are marked with //Since x.y//. It means they have been introduced or
 * ~~`GeminiCertificatePath`: //path//. Where do you store your Gemini certificate. There is no default.~~ //Removed in 1.2//
 
 ## [Authorization]
-* `UseFixedAuth`: //boolean//. Whether you want to use [[feature/authorization#Fixed_authorization | fixed authorization]]. **Default:** `false`.
+* `UseFixedAuth`: //boolean//. Whether you want to use [[feature/authorization#Fixed_authorization | fixed authorization]]. **Default:** `false`. //Deprecated in 1.2//
 * ~~`FixedAuthCredentialsPath`: //path//. Where do you want to store your fixed credentials json file. Only makes sense when `UseFixedAuth` is `true`. There is no default.~~ //Removed in 1.2//
 * `UseRegistration`: //boolean//. Whether you want unregistered visitors to be able to register themselves using the web form. **Default:** `false`. //Since 1.1//
 * ~~`RegistrationCredentialsPath`: //path//. Where do you want to store users' encrypted credentials. You are not meant to edit that file by hand, by the way. There is no default. //Since 1.1//~~ //Removed in 1.2//
