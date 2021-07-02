@@ -138,6 +138,6 @@ https://upload.wikimedia.org/wikipedia/commons/7/70/A.png
 
 If you put just one image, it will be displayed with no decorations:
 ```
-img { https://mycorrhiza.lesarbr.es/favicon.ico }
+img { https://mycorrhiza.wiki/static/favicon.ico }
 ```
-img { https://mycorrhiza.lesarbr.es/favicon.ico }
+img { https://mycorrhiza.wiki/static/favicon.ico }
