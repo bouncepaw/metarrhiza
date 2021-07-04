@@ -5,9 +5,28 @@ To include a hypha named `yoghurt`, write a line like that:
 <= yoghurt
 ```
 
-Transclusion copies the hypha in whole and also inserts the attachment, if possible.
+In [[release/1.2]], the transclusion semantics were changed. If you were using transclusion before that release, please update your hyphae. For time being, the engine will report transclusion using the old syntax with colon.
 
-There is a deprecated syntax of transcluding only a part of a hypha. Its description has been removed from here and you are discouraged to use it. Since [[release/1.2]], that old syntax will not work, there will be a new one.
+Transclusion lines start with a reverse-rocket symbol (`<=`) followed by zero or more spaces. The text on the line before a line break or a pipe character (`|`) is called //target// or //target hypha//. If there is a pipe, the text after it is called //selector//. If there is no pipe, the //selector// is empty. Both //target// and //selector// are stripped of left-side and right-side whitespace before further processing.
+
+```
+<= target hypha
+<= target hypha |
+<= target hypha | selector
+```
+
+## Selector
+The //selector// specifies what part of the //target// to transclude. The parser checks for these words:
+
+* **full.** Transclude the whole document.
+* **text.** Transclude all text.
+* **attachment.** Transclude attachment only.
+* **description.** Transclude first paragraph only.
+* **overview.** Short for both **attachment** and **description**.
+
+If only one of them is found, the corresponding part is transcluded. If several are found, the bigger transclusion is done. If none are found, **overview** is implicitly considered.
+
+Additionally, if the word **blend** is present, the transclusion is rendered without the gray box and the link to the //target// by default. Wiki administrators can override this behaviour.
 
 This is an actual transclusion of a hypha below. 
 <= u/bouncepaw/userpic
