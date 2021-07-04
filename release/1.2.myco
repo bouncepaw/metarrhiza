@@ -12,6 +12,7 @@ See [[feature/the Structure]].
 
 ### [[Mycomarkup]] changes
 * Mycomarkup is now being developed as a parallel project — [[https://github.com/bouncepaw/mycomarkup]]. A CLI interface is provided as well as a library. This way, you can include it in your projects. For now, this library is less stable than Mycorrhiza itself.
+* [[feature/transclusion]] changed dramatically.
 * Supertext syntax changed from `^` to `^^`.
 * Highligh syntax changed from `!!` to `++`.
 * Underline syntax added: `__`.
