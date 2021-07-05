@@ -1,0 +1,18 @@
+**Mycorrhiza Wiki 1.3** will be the fourth release of Mycorrhiza Wiki. This hypha is a working document.
+
+## Cool cheems changes
+* `-create-admin` was added.
+* `-print-example-config` was removed.
+* Fixed authorization was removed.
+* In the Structure, registered-users.json is now users.json, because all users are stored there.
+* Admins can delete and register users now.
+
+### Config changes
+* UseAuth toggles all kinds of authorization and registration
+* UseRegistration is now AllowRegistration to better reflect the meaning
+* LimitRegistration is now RegistrationLimit because it's not a boolean, it's a value (not "limit registration?", but "registration limit is ...")
+* `HTTPPort` was removed in favor of `ListenAddr`.
+* `ListenAddr` lets you set the address of the wiki with more freedom.
+** CLI option `-listen-addr` was added to help you change this field.
+
+* Admins can delete and register users now.
