@@ -44,7 +44,7 @@ You can build Mycorrhiza yourself.
 
 ### Dependencies
 
-**Go** is a programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]] or from your OS' software repos.
+**Go** is a programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]] or from your OS' software repos. Do not forget to set your `$GOPATH` (to `~/go`, for example) and put `$GOPATH/bin` in `$PATH`.
 
 **Git** is a version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads | the official Git website]].
 
