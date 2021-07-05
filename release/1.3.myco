@@ -8,11 +8,20 @@
 * Admins can delete and register users now.
 
 ### Config changes
-* UseAuth toggles all kinds of authorization and registration
-* UseRegistration is now AllowRegistration to better reflect the meaning
-* LimitRegistration is now RegistrationLimit because it's not a boolean, it's a value (not "limit registration?", but "registration limit is ...")
+* `UseAuth` toggles all kinds of authorization and registration
+* `UseRegistration` is now `AllowRegistration` to better reflect the meaning
+* `LimitRegistration` is now `RegistrationLimit` because it's not a boolean, it's a value (not "limit registration?", but "registration limit is ...")
 * `HTTPPort` was removed in favor of `ListenAddr`.
 * `ListenAddr` lets you set the address of the wiki with more freedom.
 ** CLI option `-listen-addr` was added to help you change this field.
 
 * Admins can delete and register users now.
+
+## A script that can help you migrate
+You might want to back up your config.
+
+```sh
+cd your_wiki
+mv registered-users.json users.json
+sed -i -e 's/HTTPPort = /ListenAddr = 0.0.0.0:/' -e 's/UseFixedAuth =/UseAuth =/' -e 's/UseRegistration/AllowRegistration/' -e 's/LimitRegistration/RegistrationLimit/' config.ini
+```
