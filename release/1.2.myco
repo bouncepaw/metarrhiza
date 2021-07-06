@@ -4,11 +4,11 @@
 ### The Structure
 Before this release, you could just run Mycorrhiza on any git repo and get a working wiki. If you wanted any other files, beside the wiki contents, such as configs or user storage, you had to specify them explicitly.
 
-Now you don't. There is a fixed Structure of wiki directories that every Mycorrhiza wiki has to follow. It makes both initial deployment and administration easier.
+Now you don't. There is a fixed structure of wiki directories that every Mycorrhiza wiki has to follow. It makes both initial deployment and administration easier.
 
 ++If you were using an older version of Mycorrhiza, you will have to [[./migration guide | migrate]] to the Structure!++
 
-See [[feature/the Structure]].
+See [[feature/wiki structure]].
 
 ### [[Mycomarkup]] changes
 * Mycomarkup is now being developed as a parallel project — [[https://github.com/bouncepaw/mycomarkup]]. A CLI interface is provided as well as a library. This way, you can include it in your projects. For now, this library is less stable than Mycorrhiza itself.
