@@ -6,6 +6,7 @@
 * Fixed authorization was removed.
 * In the [[feature/wiki structure|structure]], registered-users.json is now named users.json, because now it's the only users database.
 * Now admins can manage users right from the web UI.
+* The relative hyphae sidebar was renamed to the sister hyphae sidebar.
 
 ### Config changes
 * `UseAuth` toggles all kinds of authorization and registration
@@ -14,6 +15,14 @@
 * `HTTPPort` was removed in favor of `ListenAddr`.
 * `ListenAddr` lets you set the address of the wiki with more freedom.
 ** CLI option `-listen-addr` was added to help you change this field.
+
+### UI changes
+* The old color of the top bar returns.
+* The transclusion source does not take a whole line now.
+
+###[[Mycomarkup]] changes
+* Fix some critical bugs.
+* Allow other spans inside monospace spans.
 
 ## A script that can help you migrate
 You might want to back up your config.
