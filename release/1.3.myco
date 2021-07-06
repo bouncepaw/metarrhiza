@@ -20,7 +20,7 @@
 * The old color of the top bar returns.
 * The transclusion source does not take a whole line now.
 
-###[[Mycomarkup]] changes
+### [[Mycomarkup]] changes
 * Fix some critical bugs.
 * Allow other spans inside monospace spans.
 
