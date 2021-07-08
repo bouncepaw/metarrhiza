@@ -1,0 +1,60 @@
+A share button that copies the raw, not percent-encoded URL and invokes the share sheet, if available.
+
+```js
+(function () {
+	var shareButton = document.createElement('button');
+	shareButton.innerHTML = 'Поделиться';
+	shareButton.style = "\
+	background: none;\
+	margin: 0;\
+	padding: 0;\
+	border: none;\
+	font: inherit;\
+	color: inherit;\
+	cursor: pointer;\
+	opacity: 0.6;\
+	";
+
+	var onSuccess = function () {
+		shareButton.innerHTML = 'Скопировано!';
+	};
+
+	shareButton.addEventListener('click', function () {
+		var url = decodeURI(window.location.href);
+
+		if (window.navigator.share) {
+			window.navigator.share({ text: url });
+		} else if (window.navigator.clipboard) {
+			window.navigator.clipboard.writeText(url).then(onSuccess);
+		} else {
+			var textArea = document.createElement("textarea");
+			textArea.value = url;
+			textArea.style = "\
+			background: none;\
+			color: transparent;\
+			position: fixed;\
+			top: 0;\
+			left: 0;\
+			padding: 0;\
+			width: 4px;\
+			height: 4px;\
+			";
+
+			document.body.appendChild(textArea);
+			textArea.focus();
+			textArea.select();
+
+			try {
+				if (document.execCommand('copy')) onSuccess();
+			} catch (err) {
+				console.error(err);
+			}
+			document.body.removeChild(textArea);
+		}
+	});
+
+
+	var naviTitle = document.querySelector('.navi-title');
+	naviTitle.parentNode.insertBefore(shareButton, naviTitle.nextSibling);
+})();
+```
