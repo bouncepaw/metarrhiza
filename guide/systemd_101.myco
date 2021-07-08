@@ -1,0 +1,153 @@
+or **The Definitive Guide to Setting Up Systemd for Mycorrhizal Affairs**
+
+//**Disclaimer:** I hate systemd.//
+
+## Introduction
+
+Okay, so you got your systemd-based distro on a server and Mycorrhiza running in a tmux. But with experience you realize that running software without persistent logging, no crash reporting and unreliable shell scripts for restarting (if you even have any) is not how you roll in production. Good news—I got your back. We'll walk through setting up a user service for systemd from scratch, with auto-restart, failure notifications and no root access for manipulating service state.
+
+//A hash symbol (`#`) in the beginning means you need to run the command as root. Similarly, a dollar sign (`$`) means you need to run the command as a normal user.//
+
+## Setting up
+
+First, we need to create a separate user for the wiki. Using your own profile (or even worse, the superuser) is very insecure; you're not protected from hack attempts or vulnerabilities in the software, and you really don't want to compromise some of your more secure stuff. Creating a new user is as simple as running one command:
+
+```sh
+# useradd -m myco
+```
+
+If you're not planning to give anyone access to the server via this user, you could use `-s /usr/sbin/nologin` to disable shell access and prevent anyone from logging in. Then you would need to add `-s /bin/bash` to every `su` command that logs into the account in order to get a working shell.
+
+Now, let's login into our newly created account:
+
+```sh
+# su - myco
+```
+
+At this point, you can add some SSH keys to `.ssh/authorized_keys` in order to be able to login using SSH directly into `myco` user without additional `su` hop.
+
+`systemd` has two modes:
+* System mode (`--system`) is assumed automatically when systemd is running with PID 1. It acts as the global init system and automatically runs system services.
+* User mode (`--user`) is used when, well, it's not running in system mode. One systemd instance is automatically started for every user logged in (not per-session, but rather per-user) and killed after the last session is closed. The major advantage is that you can run `systemctl` without root access.
+
+Sounds great! But, we need systemd to not automatically exit when we log out. We want our wiki to be running even without us logged in, right? For that to work we can enable systemd linger:
+
+```sh
+$ loginctl enable-linger $USER
+```
+
+Great! Now we have our own systemd user instance running and even automatically starting at boot. Let's test if it works:
+
+```sh
+$ systemctl --user
+```
+
+If this command fails with a "failed to connect to bus" error, that means we don't have required environment variables set because we logged in "brutally" using `su`. You see, when you login via SSH or a login prompt in the console, your authentication request is processed by PAM, and if your credentials are correct, the very same service also runs pam_env and sets proper environment variables. But it doesn't run when you change the user by running `su`, because practically what you're doing is that you're just running an interactive shell as that user, not even properly logging in.
+
+As a workaround, you can just disconnect right now and login via SSH instead, or run the following command:
+
+```sh
+export XDG_RUNTIME_DIR=/run/user/$UID
+```
+
+Now the previous `systemctl` command should work fine! If it's not, try logging in via SSH. If it still doesn't work, well, you're on your own :)
+
+## Service file
+
+Let's create some directories:
+
+```
+mkdir -p .config/systemd/user
+```
+
+Open up an editor for `.config/systemd/user/mycorrhiza.service`. This service config will be pretty simple:
+
+```
+[Unit]
+Description=Mycorrhiza Wiki
+
+[Service]
+ExecStart=/usr/bin/mycorrhiza -listen-addr 127.0.0.1:8080 %h/wiki
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
+```
+
+Replace the path to the executable if yours is not in `/usr/bin`. This service configuration will start the wiki from `$HOME/wiki` directory and listen on `127.0.0.1:8080`.
+
+Now let's enable the service and start it:
+
+```sh
+$ systemctl --user enable mycorrhiza
+$ systemctl --user start mycorrhiza
+```
+
+Check the logs:
+
+```sh
+$ journalctl --user -u mycorrhiza
+```
+
+Your wiki should be running and be accessible at `127.0.0.1:8080` at the moment. It should also automatically start on boot, if your server gets rebooted or shut down.
+
+## Failure notifications in Telegram
+
+Now let's setup some sort of a notification if the wiki crashes anyway. It's not really comfortable to learn about your website being down from your users.
+
+It'll be quite simple. First, create a Telegram bot in @BotFather and get its API token. Then, create a shell script at `~/notify.sh` with the following contents:
+
+```sh
+#!/bin/sh
+TOKEN=
+CHAT_ID=
+TEXT="❌ Wiki *crashed*"
+
+curl -s "https://api.telegram.org/bot$TOKEN/sendMessage" \
+	-d "chat_id=$CHAT_ID" \
+	-d "text=$TEXT" \
+	-d "parse_mode=markdown"
+```
+
+Paste in your Bot API token and chat ID in the corresponding variables. Don't forget to run chmod on it:
+
+```sh
+$ chmod +x notify.sh
+```
+
+Now let's create a service at `.config/systemd/user/failure-notification@.service`:
+
+```
+[Unit]
+Description=Failure notification sender
+After=network.target
+
+[Service]
+ExecStart=%h/notify.sh %i
+```
+
+And modify `.config/systemd/user/mycorrhiza.service` appropriately:
+
+```
+[Unit]
+# fields omitted
+OnFailure=failure-notification@%i
+
+[Service]
+# further contents omitted
+```
+
+Now reload the service files:
+
+```
+$ systemctl --user daemon-reload
+```
+
+You're incredible!
+
+## Cheatsheet
+
+* Control the service: `systemctl --user start|stop|restart|status mycorrhiza`
+* View logs: `journalctl --user -u mycorrhiza`
+
+# systemd is shit
