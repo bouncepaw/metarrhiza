@@ -58,3 +58,9 @@ A share button that copies the raw, not percent-encoded URL and invokes the shar
 	naviTitle.parentNode.insertBefore(shareButton, naviTitle.nextSibling);
 })();
 ```
+
+Place it, for example, at `path/to/wiki/static/share.js`, then add the following lines to `config.ini`:
+```
+[CustomScripts]
+ViewScripts = /static/share.js
+```
