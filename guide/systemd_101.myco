@@ -151,3 +151,5 @@ You're incredible!
 * View logs: `journalctl --user -u mycorrhiza`
 
 # systemd is shit
+
+nuff said
