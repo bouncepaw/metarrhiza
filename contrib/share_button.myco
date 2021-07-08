@@ -3,7 +3,7 @@ A share button that copies the raw, not percent-encoded URL and invokes the shar
 ```js
 (function () {
 	var shareButton = document.createElement('button');
-	shareButton.innerHTML = 'Поделиться';
+	shareButton.innerHTML = 'Share';
 	shareButton.style = "\
 	background: none;\
 	margin: 0;\
@@ -21,7 +21,7 @@ A share button that copies the raw, not percent-encoded URL and invokes the shar
 	// shareEnabled = /android|webos|iphone|ipad|ipod/i.test(window.navigator.userAgent);
 
 	var onSuccess = function () {
-		shareButton.innerHTML = 'Скопировано!';
+		shareButton.innerHTML = 'Copied!';
 	};
 
 	shareButton.addEventListener('click', function () {
