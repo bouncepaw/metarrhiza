@@ -109,7 +109,7 @@ curl -s "https://api.telegram.org/bot$TOKEN/sendMessage" \
 	-d "parse_mode=markdown"
 ```
 
-Paste in your Bot API token and chat ID in the corresponding variables. Don't forget to run chmod on it:
+Paste in your Bot API token and chat ID in the corresponding variables. You can get the chat ID using @myidbot. Don't forget to run chmod on the script:
 
 ```sh
 $ chmod +x notify.sh
