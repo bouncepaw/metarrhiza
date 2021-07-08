@@ -1,9 +1,6 @@
-/*
 A share button that copies the raw, not percent-encoded URL and invokes the share sheet, if available.
 
 ```js
-*/
-
 (function () {
 	var shareButton = document.createElement('button');
 	shareButton.innerHTML = 'Share';
@@ -69,8 +66,6 @@ A share button that copies the raw, not percent-encoded URL and invokes the shar
 	var naviTitle = document.querySelector('.navi-title');
 	naviTitle.parentNode.insertBefore(shareButton, naviTitle.nextSibling);
 })();
-
-/*
 ```
 
 Place it, for example, at `path/to/wiki/static/share.js`, then add the following lines to `config.ini`:
@@ -78,5 +73,3 @@ Place it, for example, at `path/to/wiki/static/share.js`, then add the following
 [CustomScripts]
 ViewScripts = /static/share.js
 ```
-
-*/
