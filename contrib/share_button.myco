@@ -15,6 +15,11 @@ A share button that copies the raw, not percent-encoded URL and invokes the shar
 	opacity: 0.6;\
 	";
 
+	var shareEnabled = true;
+	// if you want to disable share sheet on desktops,
+	// uncomment the following line:
+	// shareEnabled = /android|webos|iphone|ipad|ipod/i.test(window.navigator.userAgent);
+
 	var onSuccess = function () {
 		shareButton.innerHTML = 'Скопировано!';
 	};
@@ -22,7 +27,7 @@ A share button that copies the raw, not percent-encoded URL and invokes the shar
 	shareButton.addEventListener('click', function () {
 		var url = decodeURI(window.location.href);
 
-		if (window.navigator.share) {
+		if (window.navigator.share && shareEnabled) {
 			window.navigator.share({ text: url });
 		} else if (window.navigator.clipboard) {
 			window.navigator.clipboard.writeText(url).then(onSuccess);
