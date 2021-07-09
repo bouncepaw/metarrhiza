@@ -95,7 +95,7 @@ Your wiki should be running and be accessible at `127.0.0.1:8080` at the moment.
 
 Now let's setup some sort of a notification if the wiki crashes anyway. It's not really comfortable to learn about your website being down from your users.
 
-It'll be quite simple. First, create a Telegram bot in @BotFather and get its API token. Then, create a shell script at `~/notify.sh` with the following contents:
+It'll be quite simple. First, create a Telegram bot in [[https://t.me/BotFather | @BotFather]] and get its API token. Then, create a shell script at `~/notify.sh` with the following contents:
 
 ```sh
 #!/bin/sh
@@ -143,13 +143,9 @@ Now reload the service files:
 $ systemctl --user daemon-reload
 ```
 
-You're incredible!
+**You're incredible!**
 
 ## Cheatsheet
 
 * Control the service: `systemctl --user start|stop|restart|status mycorrhiza`
 * View logs: `journalctl --user -u mycorrhiza`
-
-# systemd is shit
-
-nuff said
