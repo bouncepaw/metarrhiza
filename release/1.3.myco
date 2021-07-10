@@ -1,12 +1,13 @@
 **Mycorrhiza Wiki 1.3** will be the fourth release of Mycorrhiza Wiki. This hypha is a working document.
 
-## Cool cheems changes
+## Cool changes
 * `-create-admin` was added.
 * `-print-example-config` was removed.
 * Fixed authorization was removed.
 * In the [[feature/wiki structure|structure]], registered-users.json is now named users.json, because now it's the only users database.
 * Now admins can manage users right from the web UI.
 * The relative hyphae sidebar was renamed to the sister hyphae sidebar.
+* You can //lock// your wiki from strangers.
 
 ### Config changes
 * `UseAuth` toggles all kinds of authorization and registration
@@ -15,6 +16,7 @@
 * `HTTPPort` was removed in favor of `ListenAddr`.
 * `ListenAddr` lets you set the address of the wiki with more freedom.
 ** CLI option `-listen-addr` was added to help you change this field.
+* `Locked` added.
 
 ### UI changes
 * The old color of the top bar returns.
