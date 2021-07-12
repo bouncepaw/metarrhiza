@@ -1,0 +1,7 @@
+You can use Mycorrhiza without git. If you disable git history is gone.
+
+```
+$ mkdir mycousr
+$ ln -s /usr/true mycousr/git
+$ env PATH=$(pwd)/mycousr path/to/mycorrhiza path/to/wiki
+```
