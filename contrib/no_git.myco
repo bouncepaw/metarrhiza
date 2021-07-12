@@ -1,0 +1,13 @@
+Place this instead of your `git` binary in Mycorrhiza's `PATH`:
+```sh
+#!/bin/sh
+case "$1" in
+	add|commit|init|config)
+		exit 0
+		;;
+	*)
+		exit 1
+		;;
+esac
+```
+It'll make the whole thing run substantially faster at the cost of not having any history. //Who cares about it, anyway?..//
