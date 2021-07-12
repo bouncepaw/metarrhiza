@@ -8,6 +8,7 @@
 * Now admins can manage users right from the web UI.
 * The relative hyphae sidebar was renamed to the sister hyphae sidebar.
 * You can //lock// your wiki from strangers.
+* [[/help]]
 
 ### Config changes
 * `UseAuth` toggles all kinds of authorization and registration
