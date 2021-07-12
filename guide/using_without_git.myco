@@ -1,7 +1,5 @@
-You can use Mycorrhiza without git. If you disable git history is gone.
-
+Mycorrhiza uses Git, but you're free to replace the executable Mycorrhiza uses with a shim that does nothing, like [[contrib/no git | this one]]. Assuming it's in `$HOME/bin`, you can run Mycorrhiza like this:
 ```
-$ mkdir mycousr
-$ ln -s /usr/true mycousr/git
-$ env PATH=$(pwd)/mycousr path/to/mycorrhiza path/to/wiki
+$ PATH=$HOME/bin:$PATH mycorrhiza path/to/wiki
 ```
+It'll pick up the shim and use it instead of the original Git binary.
