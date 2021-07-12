@@ -5,11 +5,11 @@ The list of backlinks will be accessed at `/backlinks/hypha`. It will be generat
 ## Roadmap
 Perhaps, it will be done in [[release/1.4]].
 *x Mycomarkup: AST for paragraphs
-*x Hyphae: [[#Outlinks]]
+*x Hyphae: [[./#Outlinks]]
 *x Backlink collecting
 *x Done
 
-## Outlink
+## Outlinks
 Parsing every Mycomarkup document on every backlink request is too much of a hassle (not impossible, though), so we will not do that. Instead, we will parse each document every time it is changed and on startup and save the **outlinks** somewhere.
 
 Why not save backlinks then? Well, it turned out to be quite complicated.
