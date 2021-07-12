@@ -24,6 +24,8 @@ We are angry and rageful people, thus we reject a lot of features. Here we try t
 
 **Advanced link syntax** that looked like this: `[\[термины/стандартная клавиатура|стандартной клавиатуре]] = [{термины/}[стандартн]{ая}ой[клавиатур]{а}е]`, was rejected because no one understood it.
 
+**Other ideas of todo list syntax** were rejected because they were worse than the one we have now. See [[./todo syntax | the rejected ones]].
+
 **Wiki path in config** was rejected because the Structure is coming. [[https://github.com/bouncepaw/mycorrhiza/issues/56 | #56]]
 
 Address [[/]] used to **redirect to the home hypha.** It was later changed so that it does not redirect the but still shows that hypha. There was a proposition of returning it, but it was rejected for ideology reasons.
