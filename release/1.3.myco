@@ -10,6 +10,7 @@
 * You can //lock// your wiki from strangers.
 * [[/help]]
 * Title search.
+* Warn about unsaved changes.
 
 ### Config changes
 * `UseAuth` toggles all kinds of authorization and registration
