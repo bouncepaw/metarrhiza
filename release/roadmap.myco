@@ -1,0 +1,20 @@
+Here be a **roadmap** of the features. Let's see if it works. We also have a Kanban board and an issue tracker but [[u/bouncepaw]] wants a roadmap anyway.
+
+## How to use
+Make every entry a todo list item. Mark with `*v` if the task is done and will be part of the next release. Mark with `*x` otherwise.
+
+Put dependent tasks as sublists. If a task depends on multiple tasks, put it under one of them.
+
+## The
+Not done yet
+*x Cooler wiki navigation
+**v Two-line header — No one likes it.
+**x Cool sidebar
+*x Hypha relationships
+**x Find backlinks
+***x Find unlinked hyphae
+**x Find orphaned hyphae
+*x Searching
+**v Title search
+**x Better title search
+**x Full text search
