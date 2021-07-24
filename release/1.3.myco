@@ -20,10 +20,13 @@
 * `ListenAddr` lets you set the address of the wiki with more freedom.
 ** CLI option `-listen-addr` was added to help you change this field.
 * `Locked` added.
+* Telegram integration.
+* Whitelist.
 
 ### UI changes
 * The old color of the top bar returns.
 * The transclusion source does not take a whole line now.
+* New top bar.
 
 ### [[Mycomarkup]] changes
 * Fix some critical bugs.
