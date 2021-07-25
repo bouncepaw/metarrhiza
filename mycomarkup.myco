@@ -1,6 +1,6 @@
 **Mycomarkup** is the markup language designed for Mycorrhiza Wiki.
 
-See [[essay/why Mycomarkup]] to learn why we have a different markup in the first place.
+++This document is being moved to the Mycorrhiza's internal help system. Until it is moved, [[/rev/defdefd/mycomarkup | go here]] to read the markup's description.++
 
 Some syntax parts are described on their own hyphae. Take a look at:
 => ./tables
@@ -8,26 +8,6 @@ Some syntax parts are described on their own hyphae. Take a look at:
 => feature/transclusion
 
 ## Features
-This list is meant to be always up-to-date.
-
-### Headings
-There are six levels of headings:
-```
-# level 1
-## level 2
-### level 3
-#### level 4
-##### level 5
-###### level 6
-```
-# level 1
-## level 2
-### level 3
-#### level 4
-##### level 5
-###### level 6
-
-You'll rarely need more than 3. You //must// put a space after the octothrops (#). You probably should start with `## ` and more.
 
 ### Lists
 You can use unordered lists:
@@ -92,27 +72,6 @@ A paragraph with a link to a [[feature/hypha]], perhaps, with a [[feature/hypha|
 > quote 2
 
 They can't be nested for now.
-
-### Preformatted blocks
-```
- ```alt text
- some code here
- ```
-```
-
-### Paragraphs
-```
-Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^, ,,lowered,, or ~~striked-through~~ text. You can also !!//combine//!! them!
-```
-Other lines are considered to be paragraphs. You can use //italic//, **bold**, `monospace`, !!highlighted!!, ^lifted^, ,,lowered,, or ~~striked-through~~ text. You can also !!//combine//!! them!
-
-The same formatting can be used in list items, headings and image descriptions.
-
-### Horizontal bar
-```
-----
-```
-----
 
 ### Image galleries
 ```
