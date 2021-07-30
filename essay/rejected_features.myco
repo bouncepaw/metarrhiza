@@ -29,3 +29,7 @@ We are angry and rageful people, thus we reject a lot of features. Here we try t
 **Wiki path in config** was rejected because the Structure is coming. [[https://github.com/bouncepaw/mycorrhiza/issues/56 | #56]]
 
 Address [[/]] used to **redirect to the home hypha.** It was later changed so that it does not redirect the but still shows that hypha. There was a proposition of returning it, but it was rejected for ideology reasons.
+
+**Transparent top bar** was rejected because people liked the contrast between the shades of gray.
+
+**Mandatory wrapping** of paragraph spans was rejected for ideology reasons. Because of that, a single `/\/` on a line would italicise it whole.
