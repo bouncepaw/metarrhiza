@@ -9,45 +9,6 @@ Some syntax parts are described on their own hyphae. Take a look at:
 
 ## Features
 
-### Lists
-You can use unordered lists:
-```
-* list element a
-* list element b
-```
-* list element a
-* list element b
-
-You //must// put a space after the asterisk (*).
-
-There are also numbered lists:
-```
-*. list element 1
-*. list element 2
-```
-*. list element 1
-*. list element 2
-
-You //must// put a space after the dot (.).
-
-By increasing the number of asterisks, you can increase the nesting level:
-```
-* A
-** B
-*** C
-* D
-*. argh
-*. uhh
-**.  uhm
-```
-* A
-** B
-*** C
-* D
-*. argh
-*. uhh
-**. uhm
-
 ### Links
 See [[./link]] for details.
 ```
