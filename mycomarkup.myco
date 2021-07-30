@@ -6,20 +6,3 @@ Some syntax parts are described on their own hyphae. Take a look at:
 => ./tables
 => ./link
 => feature/transclusion
-
-## Features
-
-### Links
-See [[./link]] for details.
-```
-=> wikilink
-=> wikilink display text
-=> name_with_spaces
-
-A paragraph with a link to a [[feature/hypha]], perhaps, with a [[feature/hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
-```
-=> wikilink
-=> wikilink display text
-=> name_with_spaces
-
-A paragraph with a link to a [[feature/hypha]], perhaps, with a [[feature/hypha|display text]]. External links are a thing: [[https://example.org]]! Sometimes you can omit the brackets for external links: https://example.org
