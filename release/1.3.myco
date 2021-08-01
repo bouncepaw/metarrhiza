@@ -36,7 +36,7 @@ This release is breaking, see the migration guide below. You are recommended to 
 * Fixed authorization was removed.
 * `-print-example-config` was removed.
 * File `registered-users.json` is now named `users.json`.
-* The relative hyphae sidebar was renamed to the sister hyphae sidebar.
+* The relative hyphae sidebar was renamed to the sister hyphae sidebar. [[/help/en/sibling_hyphae_section | Docs]]
 
 ## Migration guide
 You might want to back up your config.
