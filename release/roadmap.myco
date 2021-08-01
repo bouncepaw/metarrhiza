@@ -19,8 +19,8 @@ Not done yet
 **x Better title search
 **x Full text search
 *x HTML+CSS fixes
-**x Header on mobiles
-**x Ticks in todo lists in dark theme
-**x Telegram on lock
+**v Header on mobiles
+**x Ticks in todo lists are not contrast enough
+**v Telegram on lock
 *x Mycomarkup fixes
 **x There is something wrong with anchor links
