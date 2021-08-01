@@ -1,8 +1,3 @@
 **Mycomarkup** is the markup language designed for Mycorrhiza Wiki.
 
-++This document is being moved to the Mycorrhiza's internal help system. Until it is moved, [[/rev/defdefd/mycomarkup | go here]] to read the markup's description.++
-
-Some syntax parts are described on their own hyphae. Take a look at:
-=> ./tables
-=> ./link
-=> feature/transclusion
+=> /help/en/mycomarkup See the documentation
