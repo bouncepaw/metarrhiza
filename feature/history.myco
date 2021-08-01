@@ -10,6 +10,6 @@ Git wants both names and emails for commits. Mycorrhiza sets the name to `anon` 
 
 ## Checking history
 Every hypha page has History link. If you follow it, you'll see a table of all commits associated with this hypha. This is history of this hypha:
-=> /history/history
+=> /history/feature/history
 
 By clicking on links, you can see how hypha looked on this revision. For now, only text part is supported. Binary part viewing is trickier to implement because file names change. There is a notice about that on every revision page.
