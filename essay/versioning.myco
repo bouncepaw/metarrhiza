@@ -1,0 +1,20 @@
+Many people claim that Mycorrhiza Wiki does not follow Semantic Versioning when they look at the amount of breaking changes in our [[release | releases]]. They are right, of course.
+
+This is a deliberate choice.
+
+If we were to follow SemVer, these would be the options:
+
+* { **Use 0.x until everything is stabilized.**
+
+This approach is bad. Why release something as 0.x when it works fine for years? [[Release/1.0]] was originally named 0.14 until [[u/bouncepaw]] understood that it will go on like that forever.
+}
+* { **Follow SemVer precisely.**
+
+This approach is bad. No one wants Mycorrhiza 7.0 that is mostly identical to Mycorrhiza 2.1, besides some little breaking changes.
+}
+
+Both approaches are bad. Moreover, Mycorrhiza would not benefit from SemVer at all, because it is not a library. So why force something unfitting?
+
+The version scheme Mycorrhiza uses is as follows: IDEOLOGY.UPDATE.PATCH, where IDEOLOGY is an ideology change and UPDATE is an update, minor or major. It fits the project well.
+
+Of course, the versioning system is subject to change.
