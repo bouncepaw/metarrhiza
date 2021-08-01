@@ -1,6 +1,6 @@
-Deploying a Mycorrhiza wiki is quite simple. This page will guide you through the process of getting your wiki up and running.
+**Deploying** a Mycorrhiza wiki is quite simple. This article will guide you through the process of getting your wiki up and running.
 
-The rest of the instruction assumes you're using a POSIX-compatible operating system. If you're using Windows or an obscure OS, good luck, no one bears the knowledge of using Mycorrhiza Wiki on them. The process will be similar though.
+The rest of the instruction assumes you're using a POSIX-compatible operating system. If you're using Windows or other obscure OS, good luck, no one bears the knowledge of using Mycorrhiza Wiki on them. The process will be similar though.
 
 First, you have to get an executable to run. There are several options available.
 
@@ -37,16 +37,16 @@ docker run -v /path/to/wiki:/wiki -p 8080:1737 mycorrhiza
 
 ## Others
 
-Ebuilds are available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik's repo]].
+Ebuilds are available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik’s repo]].
 
-There were nix packages for older version. [[https://github.com/bouncepaw/mycorrhiza | Find it in the repo's history]].
+There were nix packages for older version. [[https://github.com/bouncepaw/mycorrhiza | Find it in the repo’s history]].
 
 ## Building
 You can build Mycorrhiza yourself.
 
 ### Dependencies
 
-**Go** is a programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go's website]] or from your OS' software repos. Do not forget to set your `$GOPATH` (to `~/go`, for example) and put `$GOPATH/bin` in `$PATH`.
+**Go** is a programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go’s website]] or from your OS' software repos. Do not forget to set your `$GOPATH` (to `~/go`, for example) and put `$GOPATH/bin` in `$PATH`.
 
 **Git** is a version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads | the official Git website]].
 
