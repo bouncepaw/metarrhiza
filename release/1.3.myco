@@ -1,16 +1,23 @@
-**Mycorrhiza Wiki 1.3** will be the fourth release of Mycorrhiza Wiki. This hypha is a working document. It is scheduled to be released on 2021-08-01.
+img { ./screenshot }
+**Mycorrhiza Wiki 1.3** is the fourth release of Mycorrhiza Wiki. Release date: 2021-08-01, one month after [[../1.2]].
 
-## Cool changes
-* `-create-admin` was added.
-* `-print-example-config` was removed.
-* Fixed authorization was removed.
-* In the [[feature/wiki structure|structure]], registered-users.json is now named users.json, because now it's the only users database.
+This release is breaking, see the migration guide below. You are recommended to upgrade from 1.2.
+
+## New features
+* [[/help | Built-in documentation system]] added. It does not cover everything yet.
+* `-create-admin` CLI option was added.
 * Now admins can manage users right from the web UI.
-* The relative hyphae sidebar was renamed to the sister hyphae sidebar.
-* You can //lock// your wiki from strangers.
-* [[/help]]
-* Title search.
+* You can //lock// your wiki from strangers. [[/help/en/lock | Docs]]
+* Title search added.
 * Warn about unsaved changes.
+* CLI option `-listen-addr` was added to help you set the listen address.
+* Telegram integration. [[/help/en/telegram | Docs]]
+* Whitelist. [[/help/en/whitelist | Docs]]
+
+## Changes
+### [[Mycomarkup]] changes
+* Some critical bugs were fixed.
+* Allow other spans inside monospace spans.
 
 ### Config changes
 * `UseAuth` toggles all kinds of authorization and registration
@@ -18,23 +25,23 @@
 * `LimitRegistration` is now `RegistrationLimit` because it's not a boolean, it's a value (not "limit registration?", but "registration limit is ...")
 * `HTTPPort` was removed in favor of `ListenAddr`.
 * `ListenAddr` lets you set the address of the wiki with more freedom.
-** CLI option `-listen-addr` was added to help you change this field.
-* `Locked` added.
-* Telegram integration.
-* Whitelist.
 
 ### UI changes
 * The old color of the top bar returns.
-* The transclusion source does not take a whole line now.
-* New top bar.
+* The transclusion target link does not take a whole line now.
+* New two-line top bar. [[/help/en/top-bar | Docs]]
+* Hamburger menu added for smaller screens.
 
-### [[Mycomarkup]] changes
-* Fix some critical bugs.
-* Allow other spans inside monospace spans.
+### Other changes
+* Fixed authorization was removed.
+* `-print-example-config` was removed.
+* File `registered-users.json` is now named `users.json`.
+* The relative hyphae sidebar was renamed to the sister hyphae sidebar.
 
-## A script that can help you migrate
+## Migration guide
 You might want to back up your config.
 
+Run this:
 ```sh
 cd your_wiki
 mv registered-users.json users.json
