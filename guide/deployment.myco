@@ -35,9 +35,11 @@ docker build -t mycorrhiza .
 docker run -v /path/to/wiki:/wiki -p 8080:1737 mycorrhiza
 ```
 
-## NixOS
+## Others
 
-There is also a nix package. [[https://github.com/bouncepaw/mycorrhiza | Find it in the repo]].
+Ebuilds are available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik's repo]].
+
+There were nix packages for older version. [[https://github.com/bouncepaw/mycorrhiza | Find it in the repo's history]].
 
 ## Building
 You can build Mycorrhiza yourself.
