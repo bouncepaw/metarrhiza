@@ -41,9 +41,8 @@ This release is breaking, see the migration guide below. You are recommended to 
 ## Migration guide
 You might want to back up your config.
 
-Run this:
+Run this inside your wiki's directory:
 ```sh
-cd your_wiki
 mv registered-users.json users.json
 cp config.ini config.ini.bkp
 sed -i -e 's/HTTPPort = /ListenAddr = 0.0.0.0:/' -e 's/UseFixedAuth =/UseAuth =/' -e 's/UseRegistration/AllowRegistration/' -e 's/LimitRegistration/RegistrationLimit/' config.ini
