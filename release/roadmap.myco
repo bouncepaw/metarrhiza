@@ -1,29 +1,52 @@
 Here be a **roadmap** of the features. Let's see if it works. We also have a Kanban board and an issue tracker but [[u/bouncepaw]] wants a roadmap anyway.
 
-## How to use
-Make every entry a todo list item. Mark with `*v` if the task is done and will be part of the next release. Mark with `*x` otherwise.
+=> https://github.com/bouncepaw/mycorrhiza/issues GitHub issues
+=> https://github.com/bouncepaw/mycorrhiza/projects/1 GitHub kanban
 
-Put dependent tasks as sublists. If a task depends on multiple tasks, put it under one of them.
+## The roadmap itself
+### Navigation things
+*v Two-line top bar — No one likes it.
+**v Fix top bar on mobiles
+*x Cool sidebar
 
-## The
-Not done yet
-*x Cooler wiki navigation
-**v Two-line header — No one likes it.
-**x Cool sidebar
-*x Hypha relationships
+### Link things
+*x Outlinks
 **x Find backlinks
 ***x Find unlinked hyphae
-**x Find orphaned hyphae
-*x Searching
-**v Title search
+*x Find orphaned hyphae
+
+### Search things
+*v Title search
 **x Better title search
-**x Full text search
-*x HTML+CSS fixes
-**v Header on mobiles
-**x Ticks in todo lists are not contrast enough
-**v Telegram on lock
-*x Mycomarkup fixes
-**x There is something wrong with anchor links
-*x Recent changes improvements
+***x Full text search
+
+### HTML+CSS things
+*v Put Telegram on lock
+*x Make ticks in todo list more contrast
+
+### Recent changes things
+* Recent changes improvements
 **x Return 100 cap
 **x Group by days rather than by count
+
+### Mycomarkup things
+*x There is something wrong with anchor links—investigate
+*x AST paragraphs (makes outlinks possible)
+*x A better API with no global variables
+*v Fix the apostrophe bug
+* New elements
+**x [[idea/ruby text]]
+**x [[idea/noinclude]]
+**x [[idea/footnote references]]
+**x [[idea/broken rockets]]
+**x Message block
+**x Notice block
+* Other output formats
+**x Markdown. CommonMark or GFM?
+**x Gemtext. Will have to be creative
+**x Telegraph markup? [[https://telegra.ph/api#Node]]. Gotta think about that
+**x Fedwiki markup. [[idea/fedwiki outpost]]
+
+### YunoHost things
+*v ARM binaries
+*x SSO
