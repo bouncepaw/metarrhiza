@@ -4,15 +4,17 @@ Here be a **roadmap** of the features. Let's see if it works. We also have a Kan
 => https://github.com/bouncepaw/mycorrhiza/projects/1 GitHub kanban
 
 ## The roadmap itself
+The entries marked with 🐫 are what [[u/bouncepaw]] wants to have in [[../1.4]]. Other things can happen in this release, of course. 🦦 is for things that he wants to see implemented as soon as possible (no hurry).
+
 ### Navigation things
 *v Two-line top bar — No one likes it.
 **v Fix top bar on mobiles
-*x Cool sidebar
+*x Cool sidebar 🦦
 
 ### Link things
-*x Outlinks
-**x Find backlinks
-***x Find unlinked hyphae
+*x Outlinks 🐫
+**x Find backlinks 🐫
+***x Find unlinked hyphae 🐫
 *x Find orphaned hyphae
 
 ### Search things
@@ -22,30 +24,32 @@ Here be a **roadmap** of the features. Let's see if it works. We also have a Kan
 
 ### HTML+CSS things
 *v Put Telegram on lock
-*x Make ticks in todo list more contrast
+*x Make ticks in todo list more contrast 🐫
+*x Get rid of the hypha tabs 🐫
 
 ### Recent changes things
-* Recent changes improvements
-**x Return 100 cap
-**x Group by days rather than by count
+*x Return 100 cap
+*x Group by days rather than by count 🦦
 
 ### Mycomarkup things
 *x There is something wrong with anchor links—investigate
-*x AST paragraphs (makes outlinks possible)
-*x A better API with no global variables
+*x AST paragraphs (makes outlinks possible) 🐫
+*x A better API with no global variables 🦦
 *v Fix the apostrophe bug
 * New elements
 **x [[idea/ruby text]]
 **x [[idea/noinclude]]
 **x [[idea/footnote references]]
 **x [[idea/broken rockets]]
-**x Message block
+**x Message block 🦦
 **x Notice block
+**x Column block 🦦
 * Other output formats
 **x Markdown. CommonMark or GFM?
 **x Gemtext. Will have to be creative
-**x Telegraph markup? [[https://telegra.ph/api#Node]]. Gotta think about that
+**x Telegraph markup? [[https://telegra.ph/api#Node | Docs]]. Gotta think about that
 **x Fedwiki markup. [[idea/fedwiki outpost]]
+*x Investigate Opengraph generation. Something is wrong
 
 ### YunoHost things
 *v ARM binaries
