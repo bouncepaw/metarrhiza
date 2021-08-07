@@ -20,7 +20,9 @@ My suggestions are:
 ### The platform?
 Listed in alphabetical order:
 * **[[https://discord.com | Discord]]: ** a video and voice chat platform aimed at gamer communities. Good UI and UX, generally good compatibility with different setups, abysmal performance if you don't have an M1 Mac. No need to register.
-* **[[https://meet.jit.si | Jitsi]]: ** an open-source in-browser solution, quite easy to use.
+* {**[[https://meet.jit.si | Jitsi]]: ** an open-source in-browser solution, quite easy to use.
+[[u/DrCheems]]: Would work fine too, but in my experience it's really buggy and the UX is just a pain. A google-meet-like room join experience is an advantage.
+}
 * **[[https://mumble.info | Mumble]]: ** an open-source voice chat software suite. Both server and client implementations are open, is Qt so it's nice, great compatibility, works well on every potato. A bit dated and is not as shiny as other contenders, but does its job well. No need to register.
 * **[[https://telegram.org | Telegram]]: ** a proprietary instant messaging platform. Recently got support for video and voice chats. A little bit buggy, eats more resources than Discord on certain platforms (in voice chat), mostly used by Russian users of Mycorrhiza. Requires a phone number to register which is immediately a big no-no and a huge minus for newcomers.
 
