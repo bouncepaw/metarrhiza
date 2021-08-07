@@ -1,0 +1,26 @@
+There's [[https://communitywiki.org/wiki/WikiMeet | WikiMeet]] at [[https://communitywiki.org | CommunityWiki]] which is a regular meeting with no specific topic but usually devoted to wiki and information organization discussions. However, there's still no Mycorrhiza Wiki meeting. Thereby, I propose one.
+
+## 🍄 Grand Monthly MycoMeet Meeting 🍄
+
+### Why would it be useful?
+* to exchange ideas about the software;
+* to chat about the project's future, helpful for the users as well as for the maintainers;
+* to ask [[u/bouncepaw]] intimate questions.
+
+### Why is it a bad idea?
+* the community is too small, no one cares;
+* text chat > voice/video chat.
+
+### What are the coordinates?
+My suggestions are:
+* the 2nd day of every month: pretty nice 'cause it's directly after the release day;
+* the 15th day of every month: right in the middle of development process and before the release preparations.
+
+### The platform?
+Listed in alphabetical order:
+* **[[https://discord.com | Discord]]: ** a video and voice chat platform aimed at gamer communities. Good UI and UX, generally good compatibility with different setups, abysmal performance if you don't have an M1 Mac. No need to register.
+* **[[https://mumble.info | Mumble]]: ** an open-source voice chat software suite. Both server and client implementations are open, is Qt so it's nice, great compatibility, works well on every potato. A bit dated and is not as shiny as other contenders, but does its job well. No need to register.
+* **[[https://telegram.org | Telegram]]: ** a proprietary instant messaging platform. Recently got support for video and voice chats. A little bit buggy, eats more resources than Discord on certain platforms (in voice chat), mostly used by Russian users of Mycorrhiza. Requires a phone number to register which is immediately a big no-no and a huge minus for newcomers.
+
+### Opinions on the proposal
+Descibe your thoughts on this proposal right after this heading or after whichever part of the document you have questions about.
