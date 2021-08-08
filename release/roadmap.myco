@@ -11,11 +11,13 @@ The entries marked with 🐫 are what [[u/bouncepaw]] wants to have in [[../1.4]
 **v Fix top bar on mobiles
 *x Cool sidebar 🦦
 ** [[u/DrCheems]]: Please, make it optional. I've rewrote styles for my wiki two times already, I don't want to rewrite them for the new layout and possibly invent some workarounds again.
+*** [[u/bouncepaw]]: Optionality is for weaklings.
 
 ### Link things
 *x Outlinks 🐫
 **x Find backlinks 🐫
 ***x Find unlinked hyphae 🐫
+***x Tags
 *x Find orphaned hyphae
 
 ### Search things
@@ -27,6 +29,7 @@ The entries marked with 🐫 are what [[u/bouncepaw]] wants to have in [[../1.4]
 *v Put Telegram on lock
 *x Make ticks in todo list more contrast 🐫
 *x Get rid of the hypha tabs 🐫
+*x Make the editor toolbar more usable
 
 ### Recent changes things
 *x Return 100 cap
