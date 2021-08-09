@@ -1,47 +1,26 @@
 There's [[https://communitywiki.org/wiki/WikiMeet | WikiMeet]] at [[https://communitywiki.org | CommunityWiki]] which is a regular meeting with no specific topic but usually devoted to wiki and information organization discussions. However, there's still no Mycorrhiza Wiki meeting. Thereby, I ([[u/DrCheems]]) propose one.
 
-## 🍄 Grand Monthly MycoMeet Meeting 🍄
-
-### Why would it be useful?
+## Why would it be useful?
 * to exchange ideas about the software;
 * to chat about the project's future, helpful for the users as well as for the maintainers;
 * to ask [[u/bouncepaw]] intimate questions.
 
-### Why is it a bad idea?
+## Why is it a bad idea?
 * the community is too small, no one cares;
 * wikimeets are usually devoted to mycorrhiza wiki already;
 * text chat > voice/video chat.
 
-### What are the coordinates?
-My suggestions are:
-* the 2nd day of every month: pretty nice 'cause it's directly after the release day;
-* the 15th day of every month: right in the middle of development process and before the release preparations.
+## Coordinates
+**The 15th day of every month.**
 
-### The platform?
+## The platform
 Listed in alphabetical order:
-* **[[https://discord.com | Discord]] (rejected): ** a video and voice chat platform aimed at gamer communities. Good UI and UX, generally good compatibility with different setups, abysmal performance if you don't have an M1 Mac. No need to register.
-** [[u/bouncepaw]]: I would hate to have yet another chat for Mycorrhiza.
-*** [[u/DrCheems]]: Me neither. So, no to Discord.
 * {**[[https://meet.jit.si | Jitsi]]: ** an open-source in-browser solution, quite easy to use.
 [[u/DrCheems]]: Would work fine too, but in my experience it's really buggy and the UX is just a pain. A google-meet-like room join experience is an advantage. No need to register.
 * [[u/bouncepaw]]: btw, it would be cute to self-host it with a domain like [[https://meet.mycorrhiza.wiki]].
 ** [[u/DrCheems]]: the service itself is horrible and not cute at all, though.
 }
 * **[[https://mumble.info | Mumble]]: ** an open-source voice chat software suite. Both server and client implementations are open, is Qt so it's nice, great compatibility, works well on every potato. A bit dated and is not as shiny as other contenders, but does its job well. No need to register.
-* **[[https://telegram.org | Telegram]]: ** a proprietary instant messaging platform. Recently got support for video and voice chats. A little bit buggy, eats more resources than Discord on certain platforms (in voice chat), mostly used by Russian users of Mycorrhiza. Requires a phone number to register which is immediately a big no-no and a huge minus for newcomers.
 
-### Opinions on the proposal
-Descibe your thoughts on this proposal right after this heading or after whichever part of the document you have questions about.
-
-* [[u/bouncepaw]]: Why not? Let's try it once and see if it is needed. What language are we going to use? Cheems, will you even come yourself or will you be just lurking in the darkness like on WikiMeets?
-** [[u/DrCheems]]: Preferably English. Perhaps Russian if everyone on the meeting understands it. My ability to participate in voice chats depends on the suitability of the environment.
-*** [[u/bouncepaw]]: Let's hope you will make the environment suitable when the time comes.
-
-* [[u/bouncepaw]]" The name. //MycoMeet// would not work because of the way Mycorrhiza handles camel-case. //Mycomeet// is a meme. //Myco Meet//? //Vocal Fungi//?
-** [[u/DrCheems]]: MycoMeet works just fine. I don't see any problems with it.
-*** [[u/bouncepaw]]: I see one. Scroll up this page and see that ‘🍄: Mycomeet’ title.
-**** [[u/DrCheems]]: So what?
-***** [[u/bouncepaw]]: Cringe.
-****** [[u/DrCheems]]: Are your feelings about it. You created the problem, now live with it.
-******* [[u/bouncepaw]]: Huh. I'll just rename this hypha.
-******** [[u/DrCheems]]: Wise.
+## Opinions on the proposal
+Descibe your thoughts on this proposal right after this heading or after whichever part of the document you have questions about. //Resolved comments were removed//
