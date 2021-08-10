@@ -15,12 +15,8 @@ There's [[https://communitywiki.org/wiki/WikiMeet | WikiMeet]] at [[https://comm
 
 ## The platform
 Listed in alphabetical order:
-* {**[[https://meet.jit.si | Jitsi]]: ** an open-source in-browser solution, quite easy to use.
-[[u/DrCheems]]: Would work fine too, but in my experience it's really buggy and the UX is just a pain. A google-meet-like room join experience is an advantage. No need to register.
-* [[u/bouncepaw]]: btw, it would be cute to self-host it with a domain like [[https://meet.mycorrhiza.wiki]].
-** [[u/DrCheems]]: the service itself is horrible and not cute at all, though.
-}
-* **[[https://mumble.info | Mumble]]: ** an open-source voice chat software suite. Both server and client implementations are open, is Qt so it's nice, great compatibility, works well on every potato. A bit dated and is not as shiny as other contenders, but does its job well. No need to register.
+* **[[https://meet.jit.si | Jitsi]]: ** an open-source in-browser solution. The interface is just a pain. A google-meet-like room join experience is an advantage though. Gets my laptop hot a little bit and turns on the fans in my iMac. No need to register.
+* **[[https://mumble.info | Mumble]]: ** an open-source voice chat software suite. Both server and client implementations are open, is Qt so it's nice, great compatibility, works well on every potato. No need to register.
 
 ## Opinions on the proposal
 Descibe your thoughts on this proposal right after this heading or after whichever part of the document you have questions about. //Resolved comments were removed//
