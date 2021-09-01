@@ -1,1 +1,8 @@
-**Mycorrhiza Wiki 1.4** is the fourth release of Mycorrhiza Wiki. It is scheduled to be released on 2021-09-01, but this date is quite likely to change.
+**Mycorrhiza Wiki 1.4** is the fourth release of Mycorrhiza Wiki. It was released on 2021-09-01.
+
+## Changes
+* The old tabbed layout of hyphae was removed. Now, there is an //Edit// button beside the hypha title (if you have the privileges for doing so). The rest of the functions are located below the hypha content, displayed as simple gray links.
+** Additionally, arrow buttons were added for simpler jumping between top and bottom of the page.
+* Stopped using PT Sans, use browser's default sans-serif font.
+* The gap between lines in the editor is bigger.
+* The search results are now sorted.
