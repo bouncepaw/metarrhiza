@@ -1,3 +1,4 @@
+img { ./screenshot }
 **Mycorrhiza Wiki 1.4** is the fifth release of Mycorrhiza Wiki. It was released on 2021-09-01, one month after [[../1.3 | 1.3]].
 
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.4.0 GitHub release
@@ -10,6 +11,6 @@
 * Stopped using PT Sans, use browser's default sans-serif font.
 * The gap between lines in the editor is bigger.
 * The search results are now sorted.
-* Hotkeys like ⌘I or ⌘B now //toggle decorations//.
+* Hotkeys like ⌘I or ⌘B now //toggle// decorations.
 * After renaming hyphae, you are redirected to the new location.
 * //etc//
