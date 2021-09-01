@@ -1,6 +1,6 @@
 Collection of **guides** and instructions regarding Mycorrhiza Wiki
 
 The most important one is how to deploy it
-=> ../deployment
+=> ./deployment
 
 Also see [[contrib]] for less serious stuff.
