@@ -9,14 +9,15 @@ The entries marked with 🐫 are what [[u/bouncepaw]] wants to have in [[../1.4]
 
 ## Link things
 *x Outlinks 🐫
-**x Find backlinks 🐫
+**x Find backlinks 🐫 KINDA?
 ***x Find unlinked hyphae 🐫
 ***x Tags
 *x Find orphaned hyphae
 
 ## Search things
 *v Title search
-**x Better title search
+**v Sorted results
+**x Better title search (how better?)
 ***x Full text search
 
 ## HTML+CSS things
@@ -30,7 +31,7 @@ The entries marked with 🐫 are what [[u/bouncepaw]] wants to have in [[../1.4]
 
 ## Mycomarkup things
 *x There is something wrong with anchor links—investigate
-*x AST paragraphs (makes outlinks possible) 🐫
+*v AST paragraphs (makes outlinks possible) 🐫
 *x A better API with no global variables 🦦
 * New elements
 **x [[idea/ruby text]]
