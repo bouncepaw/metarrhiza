@@ -11,3 +11,5 @@ links {
 ```
 [[&shortlink]] -> [[https://veryveryveryverylonglink.org|shortlink]]
 ```
+
+**chekoopa**: Footnotes should literally be placed in the footer, ain't they? The thing described there is more like link aliases, as footnotes can also have a text form. Otherwise, if we stick to dan`s description, the implementation seems fair simple: have an AST visitor to scan `links` blocks and do the second pass to replace aliases with the proper links. If we transform it into the proper footnotes, replace aliases with anchor links, and generate the footer with anchors.
