@@ -3,13 +3,15 @@ A **backlink** is a link to a given hypha from a different hypha. Many systems h
 The list of backlinks will be accessed at `/backlinks/hypha`. It will be generated on request.
 
 ## Roadmap
-Perhaps, it will be done in [[release/1.4]].
-*x Mycomarkup: AST for paragraphs
-*x Hyphae: [[./#Outlinks]]
-*x Backlink collecting
-*x Done
+~~Perhaps, it will be done in [[release/1.4]].~~ Planned for [[release/1.5]], look comment below.
+*v Mycomarkup: AST for paragraphs
+*v Hyphae: [[./#Outlinks]]
+*v Backlink collecting
+*v Done
 
 ## Outlinks
 Parsing every Mycomarkup document on every backlink request is too much of a hassle (not impossible, though), so we will not do that. Instead, we will parse each document every time it is changed and on startup and save the **outlinks** somewhere.
 
 Why not save backlinks then? Well, it turned out to be quite complicated.
+
+**chekoopa**: Feature done and merged into `master`, onward to the 1.5 version release. It turned out to be easier, as we keep backlinks in an in-memory dictonary, which is populated on startup and then changed on edits, renames and deletions. All done in async fashion, using a Mycomarkup' brand new link visitor.
