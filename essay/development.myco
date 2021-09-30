@@ -1,0 +1,33 @@
+Mycorrhiza is developed by several people. We are always looking for more people, because it has turned out that software development is hard. Here are some principles and conventions we follow and newcomers should too.
+
+Of course, some parts of the project do not follow them. It is alright. It is planned to fix it someday.
+
+## General
+* Language: English. As of 2021-09-30, every contributor is a native Russian speaker, most of communication inside the team is done in Russian, the project is Russian overall. Nevertheless, write comments and documentation in English.
+* Go formatting: `gofmt`.
+* JavaScript formatting: not specified yet.
+* CSS formatting: mimic the bottom of the file, not the top.
+* Use tabs everywhere except for Mycomarkup documents.
+
+## Front-end
+* Avoid JavaScript. Only optional features shall require it.
+* It is fine to use the freshest JS or CSS features. But it's better if the page looks still good without them. Why is it fine though?
+** Test the engine on obscure environments like text browsers.
+* Semantics. Follow them.
+* Accessibility. Provide it.
+* Avoid on-hover, on-click elements at all costs. Do not override browser behavior. We already have enough ways to irritate the users.
+
+## Back-end
+* Keep the deployment easy.
+** {`go generate` is used. Do not be scared to add even more of it. But never exclude the generated files from the VCS, because people will have problems installing all these tools we use. See [[https://go.dev/blog/generate]]:
+> It’s important to understand that go generate is not part of go build. It contains no dependency analysis and must be run explicitly before running go build. It is intended to be used by the author of the Go package, not its clients.
+}
+* Try to not introduce too many dependencies. Each one of them is a vulnerability and a weight on our souls. We have enough vulnerabilities and weights on our souls already.
+* Some naming conventions:
+** `rq`, not `r`, for HTTP requests.
+** `h` for hypha.
+** `rev` for revision.
+** `hop` for history operation.
+** Keep the names honest.
+* Write documentation. Fix errors in documentation.
+* Mutate less. Immutability is a better choice in most cases.
