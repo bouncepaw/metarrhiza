@@ -1,5 +1,10 @@
-**Mycorrhiza Wiki 1.5** will be the sixth release of the engine. It is planned to release it on 2021-10-01.
+**Mycorrhiza Wiki 1.5** will be the sixth release of the engine. It is planned to release it on 2021-10-01. This release is not breaking, feel free to update.
 
-Its key features will likely be:
-* Backlinks
-* Russian translation
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.5.0 GitHub
+
+## Changes
+* Backlinks. Click on the link below a hypha to see all links to the hypha.
+* Russian translation almost everywhere. The language to use is determined by your browser's headers.
+** New translations can be added too in future releases. What we lack is the translators.
+* Search results are now sorted.
+* Some bugs fixed too.
