@@ -1,38 +1,18 @@
-It has been decided that a mycomarkup library is needed. You can read the original thoughts on the topic below; they shall be removed once they lose their value.
+Mycomarkup is developed as a separate Go library. Before that, it was part of Mycorrhiza source code. The first release that used this library is [[release/1.2]].
 
-The library is developed on [[https://github.com/bouncepaw/mycomarkup|GitHub]]. It has been used since [[release/1.2]].
+=> https://github.com/bouncepaw/mycomarkup
+=> https://godocs.io/github.com/bouncepaw/mycomarkup
 
 ## Reasons for development
-*. Having a library ready to use would help making mycomarkup more popular greatly.
-*. If it is a different go package, we will be able to make a distinct `mycomarkup` program which could be used in any project in any language. I, myself, would find many usages for such a program.
+*. Having a library ready to use would help making Mycomarkup more popular greatly.
+*. Creating a separate CLI program `mycomarkup`.
 *. Tearing it apart from the rest of the system would make the whole system's architecture better.
 *. Mycomarkup and Mycorrhiza could be developed in parallel.
 
-## Implementation caveats
-//Kinda outdated section//
+## Using with other projects
+Sure enough, Mycomarkup provides an API, both CLI and library. If you use CLI, you are not able to transclude anything. Whatever you use, Mycomarkup (as of v3) uses Mycorrhiza's link paths, so you are most likely unable to have local links with it.
 
-Myco{rrhiza, markup} are tied together greatly. For example, some links are colored red. A separate package would have no direct access to all the hyphae, therefore there will be a way to provide a way to check a hypha's existence. But for some use cases (and a separate package should cover more use cases than an embedded one) having such functionality is not needed.
+For example, link `[\[u]]` will point to `/hypha/u` always. There is currently no way to configure it. You are safe to use external links though.
 
-There should be options:
-```
-type MycoMarkupOptions struct {
-   // Return false when applied to a hypha name that exist. If it is not set, do not check for existence.
-   CheckForExistence func(string) bool
-
-   // Given current hypha name and link's hypha name, return the best representation of it, while also handling relative links. If it is not set, keep links as is.
-   CanonicalLink func(string, string) string
-
-   // Given current hypha name, link's hypha name and transclusion range, return a mycomarkup document. If the document is nil, it is assumed to not exist. If the function is not set, do not support transclusion.
-   Transclude func(string, string, XclRange) *MycoDocument
-}
-```
-
-This is the the whole mycomarkup document translation algorithm overview:
-*. User gives text and hypha's name
-*. Lex and parse the document
-*. User calls all link and transclusion resolving stuff, giving access to their hypha storage
-*. Transform the document to the target markup
-
-The target markup is, usually, HTML, but I'd love to also support Gemtext.
-
-But what about the `mycomarkup` program? How do we handle hypha existence detection stuff there? Via sockets, maybe. Or through files.
+## Versioning
+Mycomarkup uses SemVer for the packages you are supposed to use. Due to the fact that Mycomarkup is always being refactored, the major number (as in MAJOR.MINOR.PATCH) is changed quite often. You should always migrate to the newest version.
