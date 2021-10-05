@@ -2,10 +2,8 @@ This is a **roadmap** (a to-do list) of the features.
 => https://github.com/bouncepaw/mycorrhiza/issues GitHub issues
 => https://github.com/bouncepaw/mycorrhiza/projects/1 GitHub kanban
 
-The entries marked with 🐫 are what [[u/bouncepaw]] wants to have in [[../1.4]] among other changes. 🦦 is for things that are of lower priority but would be nice to have.
-
 ## Navigation things
-*x A sidebar 🦦
+*x A sidebar
 
 ## Link things
 *v Backlinks
@@ -20,26 +18,26 @@ The entries marked with 🐫 are what [[u/bouncepaw]] wants to have in [[../1.4]
 ***x Full text search
 
 ## HTML+CSS things
-*x Make ticks in todo list more contrast 🐫
-*v Get rid of the hypha tabs 🐫
+*x Make ticks in todo list more contrast
+*v Get rid of the hypha tabs
 *x Make the editor toolbar more usable
 
 ## Recent changes things
 *x Return 100 cap
-*x Group by days rather than by count 🦦
+*x Group by days rather than by count
 
 ## Mycomarkup things
 *x There is something wrong with anchor links—investigate
-*v AST paragraphs (makes outlinks possible) 🐫
-*x A better API with no global variables 🦦
+*v AST paragraphs (makes outlinks possible)
+*x A better API with no global variables
 * New elements
 **x [[idea/ruby text]]
 **x [[idea/noinclude]]
-**x [[idea/footnote references]]
+**x [[idea/link alias]]
 **x [[idea/broken rockets]]
-**x Message block 🦦
+**x Message block
 **x Notice block
-**x Column block 🦦
+**x Column block
 * Other output formats
 **x Markdown. CommonMark or GFM?
 **x Gemtext. Will have to be creative
