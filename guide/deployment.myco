@@ -9,9 +9,11 @@ First, you have to get an executable to run. There are several options available
 
 **Install.** Put it into your `$PATH` (paths like `/usr/bin/` or `/usr/local/bin/` work the best). You should also rename the file to `mycorrhiza`.
 
-## Arch Linux (AUR)
+## Distributions
 
-You can install Mycorrhiza Wiki from AUR using your favorite package manager on any Arch Linux-derivative distro (Arch, Manjaro, Garuda, etc):
+* **Nix.** [[https://github.com/chekoopa/mycorrhiza-nix | Git repository]]
+
+* {**AUR.** You can install Mycorrhiza Wiki from AUR using your favorite package manager on any Arch Linux-derivative distro (Arch, Manjaro, Garuda, etc):
 
 ```sh
 # Build from sources:
@@ -19,10 +21,8 @@ yay -S mycorrhiza
 # ...or use pre-built binaries from the Github Releases page:
 yay -S mycorrhiza-bin
 ```
-
-## Docker
-
-You can run Mycorrhiza Wiki in Docker using Dockerfile from the [[https://github.com/bouncepaw/mycorrhiza | Git repository]]:
+}
+* {**Docker.** You can run Mycorrhiza Wiki in Docker using Dockerfile from the [[https://github.com/bouncepaw/mycorrhiza | Git repository]]:
 
 ```sh
 git clone https://github.com/bouncepaw/mycorrhiza.git
@@ -34,12 +34,8 @@ docker build -t mycorrhiza .
 # Now create a new container:
 docker run -v /path/to/wiki:/wiki -p 8080:1737 mycorrhiza
 ```
-
-## Others
-
-Ebuilds are available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik’s repo]].
-
-There were nix packages for older version. [[https://github.com/bouncepaw/mycorrhiza | Find it in the repo’s history]].
+}
+* **Gentoo.** Ebuilds are available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik’s repo]].
 
 ## Building
 You can build Mycorrhiza yourself.
