@@ -11,7 +11,7 @@ First, you have to get an executable to run. There are several options available
 
 ## Distributions
 
-* **Nix.** [[https://github.com/chekoopa/mycorrhiza-nix | Git repository]]
+* **Nix.** [[https://github.com/chekoopa/mycorrhiza-nix | Git repository]] with package and Home-Manager module (NixOS module WIP). Also, as for 2021-10-14, the package is also in `staging` channel of Nixpkgs.
 
 * {**AUR.** You can install Mycorrhiza Wiki from AUR using your favorite package manager on any Arch Linux-derivative distro (Arch, Manjaro, Garuda, etc):
 
