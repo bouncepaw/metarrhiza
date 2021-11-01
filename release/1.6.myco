@@ -1,8 +1,10 @@
-**Mycorrhiza Wiki 1.6** will be the seventh release of the engine. It is planned to release it on 2021-11-01.
+**Mycorrhiza Wiki 1.6** is the seventh release of the engine. It was released on 2021-11-01, one month after [[../1.5]].
 
 ## Changes
 * User and hypha lists are now sorted.
 * The Russian translation is better.
 * Mycomarkup has been refactored: some bugs fixed, new bugs added. Some minor improvements in its behavior are done too.
+* Add item grouping in feeds. [[/help/en/feeds | Docs.]]
 * Minor visual changes.
+* Refactor a lot of stuff.
 * //etc.//
