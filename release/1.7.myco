@@ -1,0 +1,19 @@
+**Mycorrhiza Wiki 1.7** will be the eighth release of the engine. It is planned to release on 2021-12-01.
+
+## Changes
+* {
+   Experimental new heading syntax was introduced. For now, you can use both syntaxes. In the future, the `#` syntax will be deprecated and all the hyphae will forcibly migrate somehow.
+
+   table {
+      ! Old ! New
+      | `# h` | none
+      | `## h` | `= h`
+      | `### h` | `== h`
+      | `#### h` | `=== h`
+      | `##### h` | `==== h`
+      | `###### h` | none
+   }
+}
+* Transclusion shows an error when you request a description with selectors //description// or //overview// but there is no description.
+* Transclusion shows an error when you request a text with selectors //text// or //full// but there is no text.
+* A major refactoring of Mycomarkup was done, making the engine more stable. 
