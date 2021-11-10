@@ -1,50 +1,31 @@
-**Deploying** a Mycorrhiza wiki is quite simple. This article will guide you through the process of getting your wiki up and running.
-
-The rest of the instruction assumes you're using a POSIX-compatible operating system. If you're using Windows or other obscure OS, good luck, no one bears the knowledge of using Mycorrhiza Wiki on them. The process will be similar though.
-
-First, you have to get an executable to run. There are several options available.
-
-## Pre-built releases
-**Download.** Pick a release [[https://github.com/bouncepaw/mycorrhiza/releases | on GitHub]] and download the proper executable for you system.
-
-**Install.** Put it into your `$PATH` (paths like `/usr/bin/` or `/usr/local/bin/` work the best). You should also rename the file to `mycorrhiza`.
+This article will guide you through the process of getting your wiki up and running. It's assumed that you're using a POSIX-compatible operating system. Otherwise, you're on your own.
 
 ## Distributions
 
-* **Nix.** [[https://github.com/chekoopa/mycorrhiza-nix | Git repository]] with package and Home-Manager module (NixOS module WIP). Also, as for 2021-10-14, the package is also in `staging` channel of Nixpkgs.
-
-* {**AUR.** You can install Mycorrhiza Wiki from AUR using your favorite package manager on any Arch Linux-derivative distro (Arch, Manjaro, Garuda, etc):
-
-```sh
-# Build from sources:
-yay -S mycorrhiza
-# ...or use pre-built binaries from the Github Releases page:
-yay -S mycorrhiza-bin
-```
-}
+* **AUR.** You can install `mycorrhiza` to build it from scratch, or `mycorrhiza-bin` to use prebuilt binaries from GitHub Releases.
+* **Gentoo.** Ebuilds are available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik’s repo]].
+* **Nix.** [[https://github.com/chekoopa/mycorrhiza-nix | Git repository]] with package and Home-Manager module (NixOS module WIP). Also, as of 2021-10-14, the package is also in `staging` channel of Nixpkgs.
 * {**Docker.** You can run Mycorrhiza Wiki in Docker using Dockerfile from the [[https://github.com/bouncepaw/mycorrhiza | Git repository]]:
 
 ```sh
-git clone https://github.com/bouncepaw/mycorrhiza.git
-cd mycorrhiza
-
-# Build the image:
+git clone https://github.com/bouncepaw/mycorrhiza.git && cd mycorrhiza
 docker build -t mycorrhiza .
-
-# Now create a new container:
 docker run -v /path/to/wiki:/wiki -p 8080:1737 mycorrhiza
 ```
 }
-* **Gentoo.** Ebuilds are available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik’s repo]].
+
+If your distribution is missing a package for Mycorrhiza Wiki, you're highly encouraged to make one and send it upstream!
+
+## Pre-built releases
+Download an executable for your system for the [[https://github.com/bouncepaw/mycorrhiza/releases | latest release]] and put it into your `$PATH` (paths like `/usr/bin/` or `/usr/local/bin/` work the best). You should also rename the file to `mycorrhiza`.
 
 ## Building
 You can build Mycorrhiza yourself.
 
 ### Dependencies
-
-**Go** is a programming language Mycorrhiza Wiki is written in. You need a recent version of Go installed. Get it at [[https://golang.org/dl/|Go’s website]] or from your OS' software repos. Do not forget to set your `$GOPATH` (to `~/go`, for example) and put `$GOPATH/bin` in `$PATH`.
-
-**Git** is a version control system. You probably have it installed. If not, consult your OS' repos or download from [[https://git-scm.com/downloads | the official Git website]].
+You can get all of them from your distribution's repositories:
+* **[[https://golang.org/dl/ | Go 1.17]]**, a programming language Mycorrhiza Wiki is written in
+* **[[https://git-scm.com/downloads | Git]]**, a version control system
 
 ### Getting the source code
 
@@ -54,21 +35,14 @@ git clone https://github.com/bouncepaw/mycorrhiza.git
 ```
 
 ### Compiling
-Run `go build`. You will end up with an executable named `mycorrhiza`. This is the program you need. Put it in your `$PATH`.
+Run `make`. You will end up with an executable named `mycorrhiza`. This is the program you need. Put it in your `$PATH`.
 
 ## Usage
+### Running
+To start a wiki, run `mycorrhiza path/to/your/wiki`. The directory for your new wiki will be created automatically, and all relevant Git settings will be set.
+
 ### Example wiki
 There is an [[https://github.com/bouncepaw/example-wiki | example wiki]] with several simple hyphae. You can clone it and base your wiki from it.
-
-### Running
-To start a wiki, run:
-```sh
-mycorrhiza path/to/your/wiki
-```
-
-The directory for your new wiki will be created automatically, and all relevant Git settings will be set.
-
-Run `mycorrhiza -help` to see a short summary of [[configuration]] options.
 
 ## Further reading
 * [[Configuration]]
