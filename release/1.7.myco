@@ -1,4 +1,4 @@
-**Mycorrhiza Wiki 1.7** will be the eighth release of the engine. It is planned to release on 2021-12-01.
+**Mycorrhiza Wiki 1.7** is be the eighth release of the engine. It was released on 2021-12-01, a month after [[../1.6]].
 
 ## Changes
 * {
@@ -14,6 +14,6 @@
       | `###### h` | none
    }
 }
-* Transclusion shows an error when you request a description with selectors //description// or //overview// but there is no description.
-* Transclusion shows an error when you request a text with selectors //text// or //full// but there is no text.
+* Transclusion shows an error when you request a description with selector //description// but there is no description.
+* Transclusion shows an error when you request a text with selectors //text// but there is no text.
 * A major refactoring of Mycomarkup was done, making the engine more stable. 
