@@ -4,7 +4,7 @@ Run `mycorrhiza -help` to see all options.
 
 Since the 1.0 release, wiki administrators are able to configure their wikis using special configuration files. These files will have more capabilities and will be quite convenient to use.
 
-The file is written in the [[https://en.wikipedia.org/wiki/INI_file|.ini format]]. Here's an example configuration:
+The config file should be named `config.ini`. It is written in the [[https://en.wikipedia.org/wiki/INI_file|.ini format]]. Here's an example configuration:
 
 ```ini
 WikiName = My wiki
