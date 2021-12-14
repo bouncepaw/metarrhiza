@@ -1,11 +1,14 @@
 Many problems occur when you haven't configured a git repository. Do it.
 
-## Wrong names shown in recent changes!
+= Wrong names shown in recent changes!
 If you have non-ASCII characters look like `\\012\\305` or something, run this command:
 
 ```sh
 git config core.quotepath false
 ```
 
-## Can't rename hyphae with some names!
+= Can't rename hyphae with some names!
 It's a known bug. For the time being, administrators of wikis can move the hyphae manually from the server.
+
+= I've added a hypha outside of Mycorrhiza but it's not displayed on the wiki!
+Mycorrhiza cannot keep track of everything you do on your computer. Visit [[/reindex]] and the engine will reindex all hyphae, including the one you've added. The reindexation happens quickly.
