@@ -1,0 +1,19 @@
+**Mycorrhiza Wiki 1.8** will be the ninth release of the engine. It is planned to be released on 2022-01-01, one month after [[../1.7]], but the plans will change because there are other things with higher priority on the first day of the year.
+
+= Changes
+* Image galleries now have a special syntax for layouts: they can float to the left (`start`) or to the right (`end`), they can be stretched (`stretch`), items inside can be arranged in a `grid` or in a `column`. {
+```
+img grid {
+   image1
+   image2
+}
+
+img start column {
+   image1 | 200
+   image2 | 200
+}
+
+img end { image3 }
+```
+}
+
