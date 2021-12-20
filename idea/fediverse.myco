@@ -14,7 +14,7 @@ So, how can the idea of federated wikis be carried out?
 Perhaps, profiles from some federated networks could be used for editing Mycorrhiza wikis?
 
 ### Notifying about new content
-One could subscribe to notifications about new edits instead of looking at the [[feature/feeds]]. Also, wiki admins could set up Fediverse accounts that just broadcast all changes to the world.
+One could subscribe to notifications about new edits instead of looking at the feeds. Also, wiki admins could set up Fediverse accounts that just broadcast all changes to the world.
 
 ### Importing content
 MycorrhizaWiki will support importing content from different sources. The Fediverse could be one of them. Imagine [[feature/transclusion|transcluding]] a toot from Mastodon!
