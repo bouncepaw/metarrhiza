@@ -1,0 +1,35 @@
+The shell script for generating the two graphs is presented here.
+
+= Prerequisites
+* You have //Git of Theseus// installed. Good luck with that.
+* The Mycorrhiza repository is `./mycorrhiza`. Do not forget to pull the latest commits.
+
+= Script
+Generate the report per month and write it to `./monthly_report`:
+```sh
+git-of-theseus-analyze --cohortfm "%Y-%m" mycorrhiza/ --ignore '*.qtpl.go' --outdir monthly_report
+```
+
+Visualize the report per month and write it to `./monthly_report.png`:
+```sh
+git-of-theseus-stack-plot monthly_report/cohorts.json --outfile monthly_report.png --max-n 50
+```
+
+Generate the report per year and write it to `./yearly_report`:
+```sh
+git-of-theseus-analyze --cohortfm "%Y" mycorrhiza/ --ignore '*.qtpl.go' --outdir yearly_report
+```
+
+Visualize the report per year and write it to `./yearly_report.png`:
+```sh
+git-of-theseus-stack-plot yearly_report/cohorts.json --outfile yearly_report.png
+```
+
+Full script plus cleanup:
+```sh
+git-of-theseus-analyze --cohortfm "%Y-%m" mycorrhiza/ --ignore '*.qtpl.go' --outdir monthly_report
+git-of-theseus-stack-plot monthly_report/cohorts.json --outfile monthly_report.png --max-n 50
+git-of-theseus-analyze --cohortfm "%Y" mycorrhiza/ --ignore '*.qtpl.go' --outdir yearly_report
+git-of-theseus-stack-plot yearly_report/cohorts.json --outfile yearly_report.png
+rm -rf yearly_report monthly_report
+```
