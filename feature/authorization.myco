@@ -1,12 +1,4 @@
 By default, Mycorrhiza Wiki has no protection nor authorization, thus anyone who has access to your wiki can edit. You may want to turn on authorization.
 
-## Groups
+= Groups
 Every user is part of a group. The groups are `anon`, `editor`, `trusted`, `moderator`, `admin`. They have different rights. Anonymous users can only read hyphae, editors can edit hyphae, trusted editors can also rename them, moderators can delete them, and administrators can do everything.
-
-## Authorization types
-
-**Registration.** Just like elsewhere. Use it when you want your community to become larger. See [[./registration]].
-
-**HTTP Basic Auth.** This one is not actually part of Mycorrhiza Wiki, it is done by a reverse proxy. Use it for private wikis that you can hide from other people. See [[Guide/Basic auth]].
-
-Note that having no authorization is not a bad idea.
