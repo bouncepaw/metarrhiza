@@ -1,6 +1,4 @@
-**Mycorrhiza Wiki** is an open-source wiki engine developed by [[u/bouncepaw | Bouncepaw]], who is assisted by other open-source contributors.
-
-This website is an instance of the engine which runs one of the latest versions.
+**Mycorrhiza Wiki** is an open-source wiki engine developed by [[u/bouncepaw | Bouncepaw]], who is assisted by other open-source contributors. Use Mycorrhiza for personal wikis, digital gardens and wikis for small teams or communities.
 
 Here are some features of the engine:
 * **No database required**, everything is stored as simple files. It simplifies installation and makes it easy to modify the content using other means such as direct file editing.
@@ -12,7 +10,7 @@ Here are some features of the engine:
 * **Optional [[feature/authorization | authorization]].**
 * **[[standard/opengraph|Opengraph]] support.**
 
-## Quick start
+= Quick start
 
 One-liner:
 
@@ -27,7 +25,7 @@ It will:
 
 Simple as that. Want more? Learn more in the [[guide/deployment | deployment guide]]. By the way, this wiki runs Mycorrhiza, too.
 
-## Community and development
+= Community and development
 You can follow the development on [[https://github.com/bouncepaw/mycorrhiza|GitHub]]. There is a mirror on [[https://sr.ht/~handlerug/mycorrhiza|sourcehut]].
 
 There is an IRC channel [[irc://irc.libera.chat/#mycorrhiza | #mycorrhiza on irc.libera.chat]] and a group in Telegram [[https://t.me/mycorrhizadev|@mycorrhizadev]] where most of the stuff is discussed. Consider supporting the development on [[https://boosty.to/bouncepaw|Boosty]].
