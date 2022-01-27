@@ -1,6 +1,6 @@
 **Interwiki** consists of two things: interwiki links and interwiki transclusion. We can't do the second one without the first one, so let's do the first one first.
 
-## Classic interwiki map approach
+= Classic interwiki map approach
 We can copy the classic interwiki map approach, such as in MoinMoin: [[http://moinmo.in/InterWikiMap]]. It has a simple map format: each line is one entry. Wiki name comes before the space, the URL to which the page name is appended comes after the space. For example, we have a map like this:
 
 ```
@@ -15,12 +15,12 @@ And then, writing something like `Ubuntu:Teams` would result with a link to [[ht
 
 Good enough. In Mycorrhiza, the links would be enclosed in `[\[` `]]`. OK.
 
-## Colon overlapping
-And here we have a problem: this syntax overlaps with external URLs. We can't have a wiki named `mailto`, because there is `mailto` protocol? We can just accept that or use a different character for interwiki links. DokuWiki [[https://www.dokuwiki.org/interwiki | uses]] `>`. Cute.
+= Colon overlapping
+And here we have a problem: this syntax overlaps with external URLs. We can't have a wiki named `mailto`, because there is `mailto` protocol? We can just accept that or use a different character for interwiki links. DokuWiki [[https://www.dokuwiki.org/interwiki | uses]] `>`. Cute. Let's go with it.
 
 I suppose it is OK to give up the tradition of using `:` for this purpose to gain clarity. Furthermore, most of Mycorrhiza users have never written an interwiki link before, why care about the tradition?
 
-## What's wrong with space-delimited format?
+= What's wrong with space-delimited format?
 *. { The page name is //appended// to the URL.
 
 Some sites may have page paths like `http://site/pagename?action=view`. The page name is in the middle. We need format strings for that.
@@ -31,14 +31,14 @@ Gotta have a field for that.
 }
 *. I am kinda tired of having so many different formats. Let's reuse an existing format.
 
-## Why have a special syntax for interwiki?
-Why write `[\[CommunityWiki:ModerateRuthlessly]]` instead of `https://communitywiki.org/wiki/ModerateRuthlessly`?
+= Why have a special syntax for interwiki?
+Why write `[\[CommunityWiki>ModerateRuthlessly]]` instead of `https://communitywiki.org/wiki/ModerateRuthlessly`?
 
 *. Sites' addresses may change. It is easier to just change it in interwiki map than on every hypha this site is linked from.
-*. Hardcoding protocol doesn't always make sense. When I am reading a Mycorrhiza wiki linking to CommunityWiki from a gemini browser, I want the links to be gemini. CommunityWIki supports gemini, by the way.
+*. Hardcoding protocol doesn't always make sense.
 *. It's cuter this way.
 
-## [[u/bouncepaw]]'s interwiki map JSON format protocol proposal
+= [[u/bouncepaw]]'s interwiki map JSON format protocol proposal
 ```json
 [
   {
@@ -54,27 +54,35 @@ Why write `[\[CommunityWiki:ModerateRuthlessly]]` instead of `https://communityw
 
 Note how the `description` field workarounds the absence of comments in JSON. Also note how it is easy to add new fields in the future or deprecate the unneeded ones.
 
-Mycorrhiza shall know what engines it can and cannot transclude. Of course, for the time being it will only support Mycorrhiza wikis. ~~Perhaps, forever.~~ Mycorrhiza will work out what address to use for transclusion. For Mycorrhiza wikis you would have to extract the host, add `/text/` and the hypha name, GET that url and parse it as usual [[Mycomarkup]].
+Mycorrhiza shall know what engines it can and cannot transclude. Of course, for the time being it will only support Mycorrhiza wikis. Mycorrhiza will work out what address to use for transclusion. For Mycorrhiza wikis you would have to extract the host, add `/text/` and the hypha name, GET that url and parse it as usual [[Mycomarkup]].
 
 The problem is that wiki administrators would have to fill in quite a lot of information. We can help them with meaningful defaults (gemini url may be the same as the web one but with https replaced with gemini) and utilities (such as an interwiki panel or something). We may also ship some default interwiki map with the engine. MoinMoin does that, afaik.
 
-## Transclusion without interwiki links
+= Transclusion without interwiki links
 What if someone writes this?:
 ```
 <= https://www.dokuwiki.org/interwiki
 ```
 
-It will fail, of course. But we don't really want it to fail. The engine shall look up for a matching interwiki entry and then process it as `<= DokuWiki:interwiki`.
+It will fail, of course. But we don't really want it to fail. The engine shall look up for a matching interwiki entry and then process it as `<= DokuWiki>interwiki`.
 
 If there is no such address in the map, what do we do? Uh. We can try to transclude as a Mycorrhiza wiki and then gracefully fail.
 
-## Some considerations
+= Some considerations
 *. Wiki names shall be case-insensitive
 *. Page names shall be case-sensitive, but only for some wikis! OddMuse is case-sensitive, Mycorrhiza is not. I guess it should be case-sensitive by default.
-*. Only Mycorrhiza uses Mycomarkup, so transclusion from other engines will be more difficult to implement. But I do want to be able to do so.
+*. Only Mycorrhiza uses Mycomarkup as of now, so transclusion from other engines will be more difficult to implement. But I do want to be able to do so.
 
-## Caching transclusion
-Do we cache them? I suppose we should not have a separate mechanism for transclusions, let's just cache whole HTML.
+= Caching interwiki transclusion
+Do we cache them?
 
-## Link coloring
-Good news: both web and gemini support missing document error codes. So, if the site returns 404, we color the link to that site in red.
+= Link coloring
+Interwiki wiki should be green! Good news: both web and gemini support missing document error codes. So, if the site returns 404, we color the link to that site in red. Some green-shaded red?
+
+There also should be an icon depending on the engine of the site:
+* Mushroom for Mycorrhiza
+* Sunflower for MediaWiki
+* Wikipedia logo for Wikipedia. Yeah, it runs MediaWiki too
+* Paper and pencil for DokuWiki
+* That weird hexagonal M for MoinMoin
+* etc.
