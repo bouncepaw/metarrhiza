@@ -1,0 +1,10 @@
+An invisible element which has an ID used for anchor-linking and, maybe, transclusion in the future.
+
+= Possible syntax
+```
+text text
+
+!! anchor
+
+some other text 
+```
