@@ -8,3 +8,7 @@ text text
 
 some other text 
 ```
+
+```html
+<a href="#anchor"></a>
+```
