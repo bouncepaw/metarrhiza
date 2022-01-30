@@ -28,6 +28,6 @@ Simple as that. Want more? Learn more in the [[guide/deployment | deployment gui
 = Community and development
 You can follow the development on [[https://github.com/bouncepaw/mycorrhiza|GitHub]]. There is a mirror on [[https://sr.ht/~handlerug/mycorrhiza|sourcehut]].
 
-There is an IRC channel [[irc://irc.libera.chat/#mycorrhiza | #mycorrhiza on irc.libera.chat]] and a group in Telegram [[https://t.me/mycorrhizadev|@mycorrhizadev]] where most of the stuff is discussed. Consider supporting the development on [[https://boosty.to/bouncepaw|Boosty]].
+There is an IRC channel [[irc://irc.libera.chat/#mycorrhiza | #mycorrhiza on irc.libera.chat]] which is bridged to [[https://matrix.to/#/#mycorrhiza:matrix.org | Matrix]] and a Russian group in Telegram [[https://t.me/mycorrhizadev|@mycorrhizadev]] where a lot of the stuff is discussed. Consider supporting the development on [[https://boosty.to/bouncepaw|Boosty]].
 
 See [[instances]] for a list of publicly hosted wikis running Mycorrhiza Wiki.
