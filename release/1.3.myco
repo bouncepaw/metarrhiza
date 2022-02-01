@@ -3,8 +3,8 @@ img { ./screenshot }
 
 This release is breaking, see the migration guide below. You are recommended to upgrade from 1.2.
 
-=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.3.0 GitHub release
-=> https://t.me/bpblog/1213 Telegram announcement
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.3.0 | GitHub release
+=> https://t.me/bpblog/1213 | Telegram announcement
 
 ## New features
 * [[/help | Built-in documentation system]] added. It does not cover everything yet.

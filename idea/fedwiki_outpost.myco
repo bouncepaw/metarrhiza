@@ -1,9 +1,9 @@
 During 2021-06-16 FedWiki meeting, Ward and David came up with the idea of Mycorrhiza being an outpost of the FedWiki federation.
 
-=> http://ward.asia.wiki.org/view/outpost-thinking Outpost Thinking
+=> http://ward.asia.wiki.org/view/outpost-thinking | Outpost Thinking
 FedWiki community calls sites that can share their pages with the federation without running the FedWiki software themselves //outposts//. 
 
-=> http://ward.asia.wiki.org/view/json-schema JSON Schema
+=> http://ward.asia.wiki.org/view/json-schema | JSON Schema
 FedWiki has a special JSON-based format which seems simple enough for the [[Mycomarkup]] library to produce eventually. We can use the [[http://plugins.dojo.fed.wiki/view/about-html-plugin | HTML plugin]] to facilitate the task.
 
 Perhaps, Mycorrhiza will join this federation one day.

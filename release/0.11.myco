@@ -1,7 +1,7 @@
 **MycorrhizaWiki 0.11** is the sixth pre-release of Mycorrhiza Wiki. It was released on 2020-11-28, half a month after [[../0.10]]. Next pre-release is [[../0.12]].
 
-=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.11 GitHub release
-=> https://t.me/bpblog/1165 Telegram announcement
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.11 | GitHub release
+=> https://t.me/bpblog/1165 | Telegram announcement
 
 ## New features
 [[Feature/Authorization/fixed | Fixed authorization]] is introduced and is enabled using CLI options. Wiki administrators have to pre-register all users in a special file using the JSON format. Here's an example of such file:

@@ -1,7 +1,7 @@
 **MycorrhizaWiki 0.12** is the seventh pre-release of Mycorrhiza Wiki. It was released on 2021-01-24, two months after [[../0.11]]. The next pre-release is [[../0.13]]. At the time, it was the release with the biggest amount of commits.
 
-=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.12 GitHub release
-=> https://t.me/bpblog/1172 Telegram announcement
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.12 | GitHub release
+=> https://t.me/bpblog/1172 | Telegram announcement
 
 ## New features
 * Links to [[feature/next prev | next and previous]] sister hyphae were introduced.

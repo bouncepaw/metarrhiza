@@ -32,7 +32,7 @@ This feature is inspired by Notion. I want rocket links to display previews of l
 Currently, rocket links do not support spaces in hyphae. Well, it is by design, this is part of the gemtext compatibility. If you want to link such hypha, you can replace the spaces with `_`, `%20` and whatnot. But what if we combine rocket links and inline links? We end up with a syntax like that:
 
 ```myco
-=> [[ hypha with a lot of spaces | wonderful display text ]]
+=> [[ | hypha with a lot of spaces | wonderful display text ]]
 ```
 
 2021-03-24: This feature will be implented in [[../mycomarkup lib]]
