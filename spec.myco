@@ -1,0 +1,11 @@
+**Mycomarkup specification** is the document defining [[Mycomarkup]] in its entirety formally and precisely. This hypha along with other hyphae related to it form the specification draft. One day they will be compiled into a long document.
+
+=> https://github.com/bouncepaw/mycomarkup/issues/19 | Keep discussion in this GitHub issue
+
+= Contents
+=> ./prelude
+=> ./main definitions
+=> ./blocks
+=> ./implementation
+=> ./closing words
+
