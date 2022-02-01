@@ -35,3 +35,19 @@ Address [[/]] used to **redirect to the home hypha.** It was later changed so th
 **Mandatory wrapping** of paragraph spans was rejected for ideology reasons. Because of that, a single `/\/` on a line would italicise it whole.
 
 **Fixed authorization** was no longer really needed once proper registration was done. See [[./fixed authorization]].
+
+**Russian docs** were removed because no one maintained them.
+
+**Gemtext-compatible rocket link syntax** was removed because it did not rhyme with the rest of Mycomarkup and was hard to use:
+
+```
+=> target display text
+```
+
+**This alternative rocket link syntax** that was meant to be used alongside the Gemtext one was rejected because it is ugly:
+
+```
+=> [[ target | display text ]]
+```
+
+**Jump buttons** that let you click to scroll to top or bottom of the hypha were removed because scrolling ended up being easier.
