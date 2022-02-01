@@ -1,6 +1,6 @@
 **Mycorrhiza Wiki 1.8** is the ninth release of the engine. It is released on 2022-02-01, two months after [[../1.7]].
 
-=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.8.0 GitHub release
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.8.0 | GitHub release
 
 = Changes
 * Image galleries now have a special syntax for layouts: they can float to the right side (`side`), items inside can be arranged in a `grid`. {
