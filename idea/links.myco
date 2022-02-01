@@ -20,6 +20,8 @@ A good solution would be a link that tries to //guess// the full path of a hypha
 
 For example, there is a hypha named `Food/Apple`. It doesn't matter if `Food` exists, only `Food/Apple` is needed. A user writes such link: `[\[?Apple]]`. The engine will correctly assume it is same as `[\[Food/Apple]]`. If `Food/Apple` doesn't exist, hypha `Apple` is linked instead. But if there are both `Food/Apple` and `Fruit/Apple` on the wiki, a search query is linked instead. Unfortunately, searching is not implemented yet.
 
+2022-02-01 actually, it might not happen.
+
 ## Interwiki links
 See [[../interwiki]].
 
@@ -27,17 +29,3 @@ See [[../interwiki]].
 img { https://user-images.githubusercontent.com/22562024/100477733-144e2900-310b-11eb-9c09-06776e7aa51b.png }
 
 This feature is inspired by Notion. I want rocket links to display previews of links. External sites previews' data is provided by [[opengraph]] meta-tags.
-
-## Free-form rocket links
-Currently, rocket links do not support spaces in hyphae. Well, it is by design, this is part of the gemtext compatibility. If you want to link such hypha, you can replace the spaces with `_`, `%20` and whatnot. But what if we combine rocket links and inline links? We end up with a syntax like that:
-
-```myco
-=> [[ | hypha with a lot of spaces | wonderful display text ]]
-```
-
-2021-03-24: This feature will be implented in [[../mycomarkup lib]]
-
-## Autolinks
-You know, links like that: https://example.org
-
-When you don't write any brackets around them. They have bugs that have to be fixed one day.
