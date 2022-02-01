@@ -1,0 +1,9 @@
+**Mycomarkup** is a lightweight markup language, where //lightweight// means that you do not have to write many characters in order to get what you need. It was originally designed for Mycorrhiza, a wiki engine, and many design decisions were dictated by the nature of wikis.
+
+Mycomarkup strives to offer all building blocks you would need to build most documents but does it in a prescriptive way. For example, a writer might think they need to color a word in a sentence in the green color. Mycomarkup offers no capability for decorative text coloring and proclaims the will to color it wrong and unnecessary. In a similar fashion, you cannot freely choose a font, a font size, et cetera. All these limitations are there in order to liberate the writer from extra choice, enabling them to focus on the process of writing.
+
+Most lightweight markups agree that these limitations are necessary, so there is nothing particularly new in that approach.
+
+Mycomarkup is not extensible. Implementations of Mycomarkup do not offer mechanisms of adding new blocks to the markup. Similarly, you cannot embed HTML into Mycomarkup documents. These limitations bring compatibility and portability. If a markup system implements Mycomarkup blocks with HTML support, it is either considered a bug or not a Mycomarkup system.
+
+However, Mycomarkup is more open for having many blocks. Unlike many other systems, Mycomarkup has transclusion support, a feature you cannot find in, say, Creole or Markdown. Blocks like notes, annotations, messages and whatnot are planned to be added in the future, and the number of blocks is not limited. Mycomarkup will grow.
