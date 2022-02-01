@@ -5,13 +5,11 @@ Some ideas are stored as subhyphae of this hypha.
 => https://github.com/bouncepaw/mycorrhiza/projects/1 | Kanban board
 
 ## [[Mycomarkup]]-related
-=> ./mycomarkup_lib
 => ./links
 => ./wysiwyg
 => ./noinclude
 => ./ruby_text
 => ./link_alias
-=> ./broken_rockets
 
 ## [[Integration]]-related
 => ./import
