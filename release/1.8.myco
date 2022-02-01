@@ -21,13 +21,13 @@ img side {
 Before:
 ```
 => hypha_with_spaces
-=> hypha | display text
+=> hypha display text
 ```
 
 After:
 ```
-=> hypha | with spaces
-=> hypha | | display text
+=> hypha with spaces
+=> hypha | display text
 ```
 
 The new syntax is completely incompatible with Gemtext but makes more sense for Mycomarkup.
