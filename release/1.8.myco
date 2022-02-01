@@ -29,8 +29,12 @@ After:
 ```
 
 The new syntax is completely incompatible with Gemtext but makes more sense for Mycomarkup.
+
+The migration will happen automatically the first time you run Mycorrhiza 1.8.
 }
 * In your profile, the log out button is shown. Previously, you had to know the URL to do so.
 ** And if you are an admin, the administration button is shown too! Previously, it was in the top bar.
 * The Russian translation of the documentation was deleted because it was incomplete, unmaintained and wrong. We would love to see someone with dedication to support it in the future!
+* The toolbar was split into two parts. On wide screens, the two parts use the space more efficiently, as the list of actions is on the left.
+* The jump buttons were deleted.
 * Some bug fixes, etc whatnot.
