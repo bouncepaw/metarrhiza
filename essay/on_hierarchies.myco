@@ -1,0 +1,21 @@
+Since the very inception, Mycorrhiza had a major focus on **hierarchies**. You were meant to organize your hyphae into tree-like structures, having a strict logic on how things are placed. The user interface encouraged this behaviour:
+
+* The list of sibling hyphae prevented you from having too many root-level hyphae. Root hyphae shall be major topics which smaller hyphae are collected under. And you don't want to have too many of them, because the list would become long and ugly.
+* The list of subhyphae made it possible to see all subhyphae at once. MediaWiki and MoinMoin don't have that, you have to write lists of subhyphae (or subpages, that's what they call it) manually.
+
+Two years later, this practice proved to be harmful.
+
+Turned out, the whole idea of hierarchies is totally intuitive to people. We are all used to filesystems and stuff like that, right?
+
+But the classic problem of this approach emerged quickly.
+* What if an article fits two topics? Where do I save it? Dunno. Save it somewhere.
+* Creating hyphae that do not fit the established hierachies is complicated. What to do? Create it in a wrong place, yeah.
+* Also, linking is a big hassle because all hypha names are long.
+
+All in all, while it's all cute, it is going to be removed. How? Removing the list of siblings removed all that encouragement of deep nested hypha trees and turns Mycorrhiza into a more classic graph-like environment. Experiments on some wikis with the list being hidden were successful.
+
+But we cannot simply remove it, because wikis depend on it. We will disable it. Those who really need it (oldtimers), will be able to enable it. Newcomers will just not have it enabled.
+
+And someday in the future, we will delete it completely and forget it a nightmare.
+
+To the world without strict hierarchies 🚀
