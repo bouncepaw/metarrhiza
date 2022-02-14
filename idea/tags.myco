@@ -1,0 +1,33 @@
+**Tags** are wonderful. Or are they?
+
+= What is a tag?
+The way social media does it is not for Mycorrhiza. The way Obsidian does it is the same (and it doesn't fit it too, actually).
+
+A tag is a label that a hypha has. You can see all hyphae that have the given tag.
+
+That's the classic meaning many systems have. They may have different names, but the idea is the same.
+
+= Proposals
+There are different approachs to the problem. I'll list them here.
+
+== Proposal n° 1: primitive
+You can add any number of tags to a hypha. You can see all hyphae tagged with a tag. By definition.
+
+Simple, but lacks the vibe. There are no problems with it.
+
+== Proposal n° 2: hyphal
+You can add any number of tags to a hypha. You can see all hyphae tagged with a tag. Tags are hyphae too.
+
+**Problem n° 1.** What is a tag-hypha? Is it a different kind, just like media hyphae and textual hyphae? Can a tag-hypha be empty. Problems arise in different areas when we start answering these questions. They are left as an exercise to the reader.
+
+I do not list the rest of the problems, because they follow from the first one. Trust me, there are many of them.
+
+== Proposal n° 3: mixed
+You can add any number of tags to a hypha. You can see all hyphae tagged with a tag.
+
+You can optionally //bind// a hypha to a tag. Their names may not change. On the tag's page, the bound hypha is shown as description. Only textual and media hyphae can be such bound hyphae.
+
+= Comparison
+Proposal n° 2 is the cutest and most vibeful, but sadly, will be a source of annoyance if implemented. Proposals n° 1 and n° 3 will work. I like the third one more, we'll go with it unless a problem is found.
+
+There's still a problem with any proposal. How exactly tags are better than backlinking? When should they be used?
