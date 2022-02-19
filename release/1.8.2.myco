@@ -1,0 +1,10 @@
+**Mycorrhiza Wiki 1.8.2** is the eleventh release of the engine. It was released on 2022-02-19, two weeks after [[../1.8.1]].
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.8.2 | GitHub release
+
+= Fixes
+
+* XSS in table captions was fixed.
+* Content-Secutiry-Policy is set up.
+* Some other bugs fixed while doing a refactoring on the internal hypha sybsytem.
+* And new bugs were added.
