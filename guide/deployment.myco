@@ -2,34 +2,25 @@ This article will guide you through the process of getting your wiki up and runn
 
 ## Distributions
 
-* **AUR.** You can install `mycorrhiza` to build it from scratch, or `mycorrhiza-bin` to use prebuilt binaries from GitHub Releases.
-* **Gentoo.** Ebuilds are available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik’s repo]].
-* **Nix.** [[https://github.com/chekoopa/mycorrhiza-nix | Git repository]] with package and Home-Manager module (NixOS module WIP). Also, as of 2021-10-14, the package is also in `staging` channel of Nixpkgs.
-* {**Docker.** You can run Mycorrhiza Wiki in Docker using Dockerfile from the [[https://github.com/bouncepaw/mycorrhiza | Git repository]]:
+* **AUR:** `mycorrhiza` to build it from scratch, or `mycorrhiza-bin` to use prebuilt binaries
+* **Gentoo:** ebuilds available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik’s repo]]
+* **Nix:** `mycorrhiza` in Nixpkgs >= 21.11
+* **Docker:** see the provided [[https://github.com/bouncepaw/mycorrhiza/blob/master/Dockerfile | Dockerfile]]
 
-```sh
-git clone https://github.com/bouncepaw/mycorrhiza.git && cd mycorrhiza
-docker build -t mycorrhiza .
-docker run -v /path/to/wiki:/wiki -p 8080:1737 mycorrhiza
-```
-}
-
-If your distribution is missing a package for Mycorrhiza Wiki, you're highly encouraged to make one and send it upstream!
+If your distribution is missing a package for Mycorrhiza Wiki, you're encouraged to make one and send it upstream for inclusion!
 
 ## Pre-built releases
-Download an executable for your system for the [[https://github.com/bouncepaw/mycorrhiza/releases | latest release]] and put it into your `$PATH` (paths like `/usr/bin/` or `/usr/local/bin/` work the best). You should also rename the file to `mycorrhiza`.
+Download an executable for your system for the [[https://github.com/bouncepaw/mycorrhiza/releases | latest release]] and put it into your `$PATH` (paths like `/usr/bin/` or `/usr/local/bin/` work the best) with the name `mycorrhiza`.
 
 ## Building
 You can build Mycorrhiza yourself.
 
 ### Dependencies
-You can get all of them from your distribution's repositories:
-* **[[https://golang.org/dl/ | Go 1.17]]**, a programming language Mycorrhiza Wiki is written in
-* **[[https://git-scm.com/downloads | Git]]**, a version control system
+Mycorrhiza's only build-time dependency is **[[https://golang.org/dl/ | Go 1.17]]** toolchain to build the thing. You'll also need **[[https://git-scm.com/downloads | Git]]** to checkout the source code. You can get these programs from your distribution's repositories.
 
 ### Getting the source code
 
-Visit [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]. You can download a `.zip` archive by clicking Code » Download ZIP or use this command:
+Visit [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]. You can download a `.zip` archive by clicking Code » Download ZIP or by running:
 ```sh
 git clone https://github.com/bouncepaw/mycorrhiza.git
 ```
