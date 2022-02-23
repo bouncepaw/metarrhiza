@@ -26,8 +26,12 @@ It will:
 Simple as that. Want more? Learn more in the [[guide/deployment | deployment guide]]. By the way, this wiki runs Mycorrhiza, too.
 
 = Community and development
-You can follow the development on [[https://github.com/bouncepaw/mycorrhiza | GitHub]] or  [[https://sr.ht/~handlerug/mycorrhiza | SourceHut]].
+* [[https://github.com/bouncepaw/mycorrhiza | GitHub]]
+* [[https://sr.ht/~handlerug/mycorrhiza | SourceHut]]
+* [[irc://irc.libera.chat/#mycorrhiza | #mycorrhiza on irc.libera.chat]]
+* [[irc://irc.libera.chat/#mycorrhiza-ru | #mycorrhiza-ru (Russian) on irc.libera.chat]]
+* [[https://t.me/mycorrhizadev | @mycorrhizadev (Russian) in Telegram]]
 
-There is an IRC channel [[irc://irc.libera.chat/#mycorrhiza | #mycorrhiza on irc.libera.chat]] where you can discuss Mycorrhiza Wiki. There's also [[https://t.me/mycorrhizadev | a Russian group in Telegram]] where most of the stuff is currently discussed. Consider supporting the development on [[https://boosty.to/bouncepaw | Boosty]].
+Consider supporting the development on [[https://boosty.to/bouncepaw | Boosty]].
 
 See [[instances]] for a list of publicly hosted wikis running Mycorrhiza Wiki.
