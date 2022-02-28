@@ -36,5 +36,6 @@ To start a wiki, run `mycorrhiza path/to/your/wiki`. The directory for your new 
 There is an [[https://github.com/bouncepaw/example-wiki | example wiki]] with several simple hyphae. You can clone it and base your wiki from it.
 
 ## Further reading
+* [[/help]]
 * [[Configuration]]
 * [[Feature/Authorization]]
