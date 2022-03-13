@@ -25,7 +25,7 @@ I do not list the rest of the problems, because they follow from the first one. 
 == Proposal n° 3: mixed
 You can add any number of tags to a hypha. You can see all hyphae tagged with a tag.
 
-You can optionally //bind// a hypha to a tag. Their names may not change. On the tag's page, the bound hypha is shown as description. Only textual and media hyphae can be such bound hyphae.
+You can optionally //bind// a hypha to a tag. Their names may not match. On the tag's page, the bound hypha is shown as description. Only textual and media hyphae can be such bound hyphae.
 
 = Comparison
 Proposal n° 2 is the cutest and most vibeful, but sadly, will be a source of annoyance if implemented. Proposals n° 1 and n° 3 will work. I like the third one more, we'll go with it unless a problem is found.
