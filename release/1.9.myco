@@ -1,4 +1,4 @@
-img { screenshot }
+img { ./screenshot }
 **Mycorrhiza Wiki 1.9** is the twelfth release of the engine. It was released on 2022-04-01, two months after [[../1.8]], and 6 weeks after [[../1.8.2]].
 
 = New
