@@ -1,0 +1,15 @@
+img { screenshot }
+**Mycorrhiza Wiki 1.9** is the twelfth release of the engine. It was released on 2022-04-01, two months after [[../1.8]], and 6 weeks after [[../1.8.2]].
+
+= New
+* Implement categories. [[/help/en/category | Docs]].
+* The sibling sidebar is turned off by default now. If you need it, turn it on in the configuration file. You are encouraged to use a flat structure on your wikis.
+* Attachments are no longer called attachments, they are media now. Hyphae with attachments are media hyphae now.
+* A man file was written. Package maintainers should use it.
+
+= Fixes and changes
+* Fix dockerfile.
+* Some HTTP routes were changed.
+** `/backlinks-json/` and `/title-search-json` were removed.
+* Some backlinks bugs were fixed.
+* Some bugs with renaming and deletion were fixed.
