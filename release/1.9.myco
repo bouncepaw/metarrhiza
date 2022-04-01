@@ -3,6 +3,7 @@ img { ./screenshot }
 
 => https://git.sr.ht/~bouncepaw/mycorrhiza/refs/v1.9.0 | SourceHut ref
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.9.0 | GitHub release
+=> https://t.me/bpblog/1249 | Telegram announcement (in Russian)
 
 = New
 * Implement categories. [[/help/en/category | Docs]].
