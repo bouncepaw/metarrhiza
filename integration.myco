@@ -5,11 +5,11 @@ See [[Idea]] for planned features.
 
 ## Export
 ### Social media preview
-Nowadays, all major social media and messengers support the [[standard/opengraph | OpenGraph]] protocol. When given a link, they visit it and try to find special HTML `<meta>` tags with the data they need. MycorrhizaWiki provides these tags. Here's how a link to a hypha looks like in Telegram:
+Nowadays, all major social media and messengers support the [[OpenGraph]] protocol. When given a link, they visit it and try to find special HTML `<meta>` tags with the data they need. MycorrhizaWiki provides these tags. Here's how a link to a hypha looks like in Telegram:
 
-img { standard/opengraph/telegram preview }
+img { opengraph/telegram preview }
 
-### Get the mycomarkup source of any hypha
+### Get the [[mycomarkup]] source of any hypha
 For any hypha, click the //Raw text// tab to see the source. You can do some automation with that.
 
 ## Import
@@ -18,7 +18,7 @@ See [[guide/how to edit with any editor]]
 
 ## Misc
 ### Network
-MycorrhizaWiki does not do all the network stuff by design. If you need some advanced stuff, use `nginx` or any other web server.
+Mycorrhiza Wiki does not do all the network stuff by design. If you need some advanced stuff, use `nginx` or any other web server.
 
 There are recipes such as [[guide/how to set up HTTPS]] and [[guide/basic auth]] that offer you to use nginx.
 
