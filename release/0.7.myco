@@ -5,7 +5,7 @@
 
 This version is a major rewrite of [[../0.5]], almost zero code had been reused.
 
-[[https://communitywiki.org/wiki/GemText|Gemtext]] became the only available markup language starting with this version. The engine has extended the syntax by adding [[transclusion]], though:
+[[https://communitywiki.org/wiki/GemText|Gemtext]] became the only available markup language starting with this version. The engine has extended the syntax by adding, though:
 ```
 <= hypha_to_transclude
 ```
