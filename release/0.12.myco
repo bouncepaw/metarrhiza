@@ -6,9 +6,9 @@
 = New features
 * Links to next and previous sister hyphae were introduced.
 * These standards were implemented:
-** [[standard/opengraph]]
-** [[standard/robots.txt]]
-** [[standard/web feed]]
+** [[opengraph]]
+** [[robots.txt]]
+** [[web feed]]
 * [[Mycomarkup]] got tables and autolinks, relative hyphae support was added to image galleries.
 * Top bar and header links were introduced.
 * Preview was implemented.
