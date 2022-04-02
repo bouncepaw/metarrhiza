@@ -3,26 +3,26 @@
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.2.0 | GitHub release
 => https://t.me/bpblog/1209 | Telegram announcement [Russian]
 
-## Changes
-### The Structure
+= Changes
+== The Structure
 Before this release, you could just run Mycorrhiza on any git repo and get a working wiki. If you wanted any other files, beside the wiki contents, such as configs or user storage, you had to specify them explicitly.
 
 Now you don't. There is a fixed structure of wiki directories that every Mycorrhiza wiki has to follow. It makes both initial deployment and administration easier.
 
 ++If you were using an older version of Mycorrhiza, you will have to [[./migration guide | migrate]] to the Structure!++
 
-See [[feature/wiki structure]].
+See [[file structure]].
 
-### [[Mycomarkup]] changes
+== [[Mycomarkup]] changes
 * Mycomarkup is now being developed as a parallel project — [[https://github.com/bouncepaw/mycomarkup]]. A CLI interface is provided as well as a library. This way, you can include it in your projects. For now, this library is less stable than Mycorrhiza itself.
-* [[feature/transclusion]] changed dramatically.
+* Transclusion syntax changed dramatically.
 * Supertext syntax changed from `^` to `^\^`.
 * Highligh syntax changed from `!!` to `+\+`.
 * Underline syntax added: `_\_`.
 * {
 > Quotes
 >
-> can contain multiple paragraphs
+> can span multiple paragraphs
 > * and any markup inside
 }
 * { Similarly,
@@ -36,12 +36,12 @@ to table cells } | See this hypha's source to learn how to do so
 }}
 * In HTML, elements have different ID attributes.
 
-### Editor changes
-* There is a new button on the [[feature/tool bar | tool bar]] that inserts current UTC time.
+== Editor changes
+* There is a new button on the tool bar that inserts current UTC time.
 * Underline button.
 * You can describe your changes; the message will be shown in history.
 
-### Authorization changes
+== Authorization changes
 * If you are not logged in, there is the //Register// link beside the //Login// link.
 * ++Fixed authorization is deprecated.++
 ** The engine will attempt to turn all of your fixed users to registered users.
@@ -51,7 +51,7 @@ to table cells } | See this hypha's source to learn how to do so
 ### Visual changes
 * Dark theme improvements
 * The background pattern has been removed.
-* The [[/en/top_bar | top bar]] has changed its color to a brighter one.
+* The top bar has changed its color to a brighter one.
 * Login and register forms have become easier to find.
 * { Non-existent hyphae have gotten a better notice:
 img {
@@ -66,7 +66,7 @@ img {
 * The Recent changes page has edits grouped by day now.
 
 ### Various
-* The [[essay/name | name]] of the project has been changed from //MycorrhizaWiki// to //Mycorrhiza Wiki//.
+* The [[name]] of the project has been changed from //MycorrhizaWiki// to //Mycorrhiza Wiki//.
 * Less messages are printed on start.
 * Gemini protocol support is dropped.
 * [[/]] no longer redirects to the home hypha, it just shows it, resulting in a better-looking URL.
