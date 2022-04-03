@@ -1,6 +1,6 @@
 This article will guide you through the process of getting your wiki up and running. It's assumed that you're using a POSIX-compatible operating system. Otherwise, you're on your own.
 
-## Distributions
+= Distributions
 
 * **AUR:** `mycorrhiza` to build it from scratch, or `mycorrhiza-bin` to use prebuilt binaries
 * **Gentoo:** ebuilds available [[https://github.com/BratishkaErik/bratishkaerik-overlay/tree/main/www-apps | in BratishkaErik’s repo]]
@@ -9,33 +9,34 @@ This article will guide you through the process of getting your wiki up and runn
 
 If your distribution is missing a package for Mycorrhiza Wiki, you're encouraged to make one and send it upstream for inclusion!
 
-## Pre-built releases
-Download an executable for your system for the [[https://github.com/bouncepaw/mycorrhiza/releases | latest release]] and put it into your `$PATH` (paths like `/usr/bin/` or `/usr/local/bin/` work the best) with the name `mycorrhiza`.
+= Pre-built releases
+Download an executable for your system for the [[https://github.com/bouncepaw/mycorrhiza/releases | latest release]] and put it into your `$PATH` (paths like `/usr/local/bin/` work the best) with the name `mycorrhiza`.
 
-## Building
+= Building
 You can build Mycorrhiza yourself.
 
-### Dependencies
-Mycorrhiza's only build-time dependency is **[[https://golang.org/dl/ | Go 1.17]]** toolchain to build the thing. You'll also need **[[https://git-scm.com/downloads | Git]]** to checkout the source code. You can get these programs from your distribution's repositories.
+== Dependencies
+Mycorrhiza's only build-time dependency is **[[https://golang.org/dl/ | Go 1.18]]** toolchain. You'll also need **[[https://git-scm.com/downloads | Git]]** to checkout the source code. You can get these programs from your distribution's repositories.
 
-### Getting the source code
+== Getting the source code
 
 Visit [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]. You can download a `.zip` archive by clicking Code » Download ZIP or by running:
 ```sh
 git clone https://github.com/bouncepaw/mycorrhiza.git
 ```
 
-### Compiling
-Run `make`. You will end up with an executable named `mycorrhiza`. This is the program you need. Put it in your `$PATH`.
+== Compiling
+Run:
+```sh
+make
+make install
+```
+These commands build a `mycorrhiza` binary and install it in `/usr/local/bin`. A man page is also installed in `/usr/local/share/man`.
 
-## Usage
-### Running
+= Usage
 To start a wiki, run `mycorrhiza path/to/your/wiki`. The directory for your new wiki will be created automatically, and all relevant Git settings will be set.
 
-### Example wiki
-There is an [[https://github.com/bouncepaw/example-wiki | example wiki]] with several simple hyphae. You can clone it and base your wiki from it.
-
-## Further reading
+= Further reading
 * [[/help]]
 * [[Configuration]]
 * [[Feature/Authorization]]
