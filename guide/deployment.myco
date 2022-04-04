@@ -38,5 +38,5 @@ To start a wiki, run `mycorrhiza path/to/your/wiki`. The directory for your new 
 
 = Further reading
 * [[/help]]
-* [[Configuration]]
+* [[/help/en/config_file | Configuration]]
 * [[Feature/Authorization]]
