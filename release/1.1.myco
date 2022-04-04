@@ -5,7 +5,7 @@
 
 ## New features
 ### Registration
-You can let people register on your wiki without your manual intervention. To do so, you have to enable registration in your [[configuration]] file. In the `[Authorization]` section add these lines:
+You can let people register on your wiki without your manual intervention. To do so, you have to enable registration in your [[/help/en/config_file | configuration file]]. In the `[Authorization]` section add these lines:
 
 ```ini
 UseRegistration = true
