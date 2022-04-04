@@ -1,6 +1,6 @@
 The idea is simple: the admin of the wiki preconfigures all users before starting the wiki, that's it. Users can't create accounts by themselves.
 
-If you want to use this method, in your [[configuration]] file, in `[Authorization]` section, write:
+If you want to use this method, in your [[/help/en/config_file | configuration]] file, in `[Authorization]` section, write:
 ```
 ...
 [Authorization]
