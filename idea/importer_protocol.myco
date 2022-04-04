@@ -5,7 +5,7 @@ An **importer** is a thing that can import a piece of content pointed by an URL 
 ## Basic idea
 Importers are executables that are run by the engine. They are given input through environment variables. They save the output into temporary files. They print JSON documents with information about those temporary files that the engine uses and constructs hyphae from.
 
-## [[Configuration]]
+## [[/help/en/config_file | Configuration]]
 Wiki administrators should be able to somehow configure this stuff. A section called `[Importers]` in the config file:
 
 * `ImporterPath`: full rooted path to the executable.
