@@ -10,7 +10,7 @@ Originally, it was planned to release this version as 0.14 pre-release but [[u/b
 * Links with anchors are supported. For example, [[Release/1.0#New_features]].
 * In the admin panel, a button for reloading user configuration has been added.
 * Primitive diff is added.
-* Older CLI options have been deleted. From now on, wiki administrators are meant to do [[configuration]] using files.
+* Older CLI options have been deleted. From now on, wiki administrators are meant to do configuration using [[/help/en/config_file | config files]].
 
 ## Developers
 => u/bouncepaw
