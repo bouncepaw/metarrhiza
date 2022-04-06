@@ -1,4 +1,4 @@
-Mycorrhiza uses Git, but you're free to replace the executable Mycorrhiza uses with a shim that does nothing, such as `/bin/true`, or a more complex one that'll hand out errors smartly, [[contrib/no git | like this]]. Assuming it's in `$HOME/bin`, you can run Mycorrhiza with a custom `PATH`:
+Mycorrhiza uses Git, but you're free to replace the executable Mycorrhiza uses with a shim that does nothing, such as `/bin/true`. Assuming it's in `$HOME/bin`, you can run Mycorrhiza with a custom `PATH`:
 ```
 $ PATH=$HOME/bin:$PATH mycorrhiza path/to/wiki
 ```
