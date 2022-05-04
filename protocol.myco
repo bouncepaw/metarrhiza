@@ -1,0 +1,58 @@
+**NB.** This is a just a concept and is not going to happen any time soon.
+
+Inspired by things like Gemini, Gopher, Finger, Spartan, and possibly other ad-hoc smolweb protocols, we thought of a Mycorrhiza protocol. This protocol is meant to be used for interwiki federation, and efficient client implementation.
+
+The rest of this article uses present tense, as if the protocol exists. It does not.
+
+= Stack
+* TCP/IP {
+Sure, we could deliver blobs over HTTP, and be done with it. Instead, we deliver our own format over TCP/IP directly. This stack is chosen because it is widespread enough. Even Hare [[https://docs.harelang.org/net/tcp | has]] a TCP implementation.
+}
+* Gzip {
+It's a great compression format, because it is streamed. One can decompress on the go, as the data arrives.
+}
+* Optional (?) cryptography, not sure what exact cryptography
+
+= Caching
+Two main reasons for having the protocol is federation and client applications. What both of them need? Caching.
+
+When the server gives you some data, it also tells you how old is it. Each object in response has a UNIX timestamp, that corresponds to object modification date. For example, a hypha's timestamp changes after every edit. Recent changes list does it too. But, for example, revisions stay the same forever.
+
+Clients may cache the object. If they do so, they must also store the timestamp. When requesting something, they always tell how old their copy is. If they have no copy or they want to force redownload it, they can report a zero timestamp. Some simple clients many always report a zero timestamp. If the timestamp in the request is older than the copy on the server, the new version will be served. Otherwise, a special verbatim marker will be sent, with no content.
+
+I expect caching to help with transmission a lot.
+
+= Compression
+All responses and requests are gzip-compressed. It's not an option. All implementations are to support it. It is to help with transmission.
+
+= Cryptography
+One of the thing I dislike about Gemini is its mandatory encryption. It doesn't always make sense. For public world-readable data, it just imposes unneeded calculations.
+
+For some use-cases it is good, though. Thus, let it be optional.
+
+= Request
+The request starts with three letters `RRH`, followed by one ASCII character that represent the protocol version. The stable version will be represented with a space character to look good.
+
+If the next character is E, the rest of data is encrypted. I am not yet sure how it works. If the next character is U, the rest of data is unecrypted. You can't have only a part of request encrypted. The rest of the article assumes an unecrypted request.
+
+The next character is an ASCII character that is actually a numeric value that tells you how many objects are to be requested. The exact mapping between the characters and the number of requested objects is yet to be thought of. Some characters will not be allowed. Obviously, being it just one byte, you won't be able to have more than //n// objects.
+
+Then, a `\\n`. Not a `\\r\\n`, like many network protocols do, including Gemini and HTTP.
+
+Next //n// lines (all terminated with `\\n`) have the following format:
+* ASCII character that is a flag. {
+I had an idea of making a lack of flags value be `*`, and requiring a space character after the flag character, making it look like a Mycomarkup list, but whatever. I'll use `^` for lack of flag.
+}
+* Timestamp (ASCII numbers), a fixed number of characters
+* UTF-8-encoded object id. Hypha names do not have to be canonical.
+
+An example request header would be:
+```
+RRH U3
+^1234567890hypha-meta/Protocol
+^1234567890backlinks/Protocol
+^1234567890hypha-text-body/PROTOCOL
+```
+
+= Response
+The objects come in the same order. The header lists what are the offsets for the objects.
