@@ -1,0 +1,17 @@
+**NB.** This is a concept, an idea, a plan, a design. Not implemented yet.
+
+Currently, categories are all on the same level. You can't put a category into a category. But what if you could? This is basically the idea of **subcategories**.
+
+The idea is as follows. On category pages, there is the same category sidebar like on hypha pages. Thus, you can nest categories.
+
+= Questions
+* How to enforce the tree structure? I find it hard to do in UI.
+* Should the tree structure be enforced? [[Media Wiki]] does not do that. {
+=> https://www.mediawiki.org/wiki/Help:Categories#Managing_the_category_hierarchy
+> Categories may belong to other categories in a hierarchy. Since category pages are much like any other page, a Category tag may be added to the bottom of a category page.
+>
+> It is a good idea to organize all categories into a hierarchy with a single top level category. The category structure can take the form of a tree with separate branches, but more often will have a graph structure. Generally, there should be a contiguous chain of parent-child links between each category and the top level category.
+
+It allows graphs, and delegates the arborification to the users. Avoid responsibility.
+}
+* Wouldn't it repeat the problem of nested hyphae? What if we limit the maximum level of nesting to, maybe, three?
