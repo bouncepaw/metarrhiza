@@ -1,17 +1,17 @@
-Some ideas are stored as subhyphae of this hypha.
+Some ideas are stored as subhyphae of this hypha. Newer idea are separate root hyphae. Thanks categories.
 
-## See also
+= See also
 => Essay/Rejected_features | List of some rejected ideas
 => https://github.com/bouncepaw/mycorrhiza/projects/1 | Kanban board
 
-## [[Mycomarkup]]-related
+= [[Mycomarkup]]-related
 => ./links
 => ./wysiwyg
 => ./noinclude
 => ./ruby_text
 => ./link_alias
 
-## [[Integration]]-related
+= [[Integration]]-related
 => ./import
 => ./importer_protocol
 => ./fediverse
@@ -19,8 +19,10 @@ Some ideas are stored as subhyphae of this hypha.
 => ./fedwiki_outpost
 => ./mycorrhiza_2.0
 
-## Other features
+= Other features
 => ./search
 => ./dynamic_hyphae
 => ./svg_draw
 => ./tags
+=> Subcategory
+=> Protocol
