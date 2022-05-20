@@ -2,18 +2,18 @@ or **The Definitive Guide to Setting Up Systemd for Mycorrhizal Affairs**
 
 //**Disclaimer:** I hate systemd.//
 
-## Introduction
+= Introduction
 
 Okay, so you got your systemd-based distro on a server and Mycorrhiza running in a tmux. But with experience you realize that running software without persistent logging, no crash reporting and unreliable shell scripts for restarting (if you even have any) is not how you roll in production. Good news—I got your back. We'll walk through setting up a user service for systemd from scratch, with auto-restart, failure notifications and no root access for manipulating service state.
 
 //A hash symbol (`#`) in the beginning means you need to run the command as root. Similarly, a dollar sign (`$`) means you need to run the command as a normal user.//
 
-## Setting up
+= Setting up
 
 First, we need to create a separate user for the wiki. Using your own profile (or even worse, the superuser) is very insecure; you're not protected from hack attempts or vulnerabilities in the software, and you really don't want to compromise some of your more secure stuff. Creating a new user is as simple as running one command:
 
 ```sh
-# useradd -m myco
+= useradd -m myco
 ```
 
 If you're not planning to give anyone access to the server via this user, you could use `-s /usr/sbin/nologin` to disable shell access and prevent anyone from logging in. Then you would need to add `-s /bin/bash` to every `su` command that logs into the account in order to get a working shell.
@@ -21,7 +21,7 @@ If you're not planning to give anyone access to the server via this user, you co
 Now, let's login into our newly created account:
 
 ```sh
-# su - myco
+= su - myco
 ```
 
 At this point, you can add some SSH keys to `.ssh/authorized_keys` in order to be able to login using SSH directly into `myco` user without additional `su` hop.
@@ -52,7 +52,7 @@ export XDG_RUNTIME_DIR=/run/user/$UID
 
 Now the previous `systemctl` command should work fine! If it's not, try logging in via SSH. If it still doesn't work, well, you're on your own :)
 
-## Service file
+= Service file
 
 Let's create some directories:
 
@@ -91,7 +91,7 @@ $ journalctl --user -u mycorrhiza
 
 Your wiki should be running and be accessible at `127.0.0.1:8080` at the moment. It should also automatically start on boot, if your server gets rebooted or shut down.
 
-## Failure notifications in Telegram
+= Failure notifications in Telegram
 
 Now let's setup some sort of a notification if the wiki crashes anyway. It's not really comfortable to learn about your website being down from your users.
 
@@ -130,11 +130,11 @@ And modify `.config/systemd/user/mycorrhiza.service` appropriately:
 
 ```
 [Unit]
-# fields omitted
+= fields omitted
 OnFailure=failure-notification@%i
 
 [Service]
-# further contents omitted
+= further contents omitted
 ```
 
 Now reload the service files:
@@ -145,7 +145,7 @@ $ systemctl --user daemon-reload
 
 **You're incredible!**
 
-## Cheatsheet
+= Cheatsheet
 
 * Control the service: `systemctl --user start|stop|restart|status mycorrhiza`
 * View logs: `journalctl --user -u mycorrhiza`

@@ -5,7 +5,7 @@
 
 This is a small version bump from 0.8.
 
-## New features
+= New features
 * Recent changes page (/recent-changes).
 * Hyphae can be deleted. Their history can still be viewed.
 * Hyphae can be renamed. Recursive renaming of subhyphae is also supported.

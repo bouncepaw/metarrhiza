@@ -15,7 +15,7 @@ Transclusion lines start with a reverse-rocket symbol (`<=`) followed by zero or
 <= target hypha | selector
 ```
 
-## Selector
+= Selector
 The //selector// specifies what part of the //target// to transclude. The parser checks for these words:
 
 * **full.** Transclude the whole document.

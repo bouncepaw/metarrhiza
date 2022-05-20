@@ -1,14 +1,14 @@
 Mycorrhiza Wiki keeps track of all changes made on a wiki using git back-end. Every mutable operation result in a commit being made in the wiki repository.
 
-## Commiter and author
+= Commiter and author
 Git distinguishes between commiter and author. Author is a person who has created the changes for the commit and commiter is a person who has commited these changes into the repository. It fits MycorrhizaWiki well: usually users are authors and `wikimind`, the user that represents the wiki engine itself, is commiter of all edits made through wiki engine.
 
 If you edit wiki files directly, don't forget to commit with proper commiter and author values. You may want to set commiter to your real email and author to fake email used by MycorrhizaWiki.
 
-### Emails used
+== Emails used
 Git wants both names and emails for commits. Mycorrhiza sets the name to `anon` (if there is no authorization on your wiki) or your username and email to `<name>@mycorrhiza`.
 
-## Checking history
+= Checking history
 Every hypha page has History link. If you follow it, you'll see a table of all commits associated with this hypha. This is history of this hypha:
 => /history/feature/history
 

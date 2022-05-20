@@ -4,7 +4,7 @@ You can download all releases on [[https://github.com/bouncepaw/mycorrhiza/relea
 
 See [[./roadmap]].
 
-## 1.x releases
+= 1.x releases
 => ./1.0
 => ./1.1
 => ./1.2
@@ -14,7 +14,7 @@ See [[./roadmap]].
 => ./1.6
 => ./1.7
 
-## Pre-release (0.x)
+= Pre-release (0.x)
 => ./0.5
 Note that version 0.6 has never been released.
 => ./0.7

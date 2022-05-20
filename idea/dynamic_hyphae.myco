@@ -2,30 +2,30 @@ Obviously, there are cases when raw [[mycomarkup]] text will not be the best opt
 
 What makes dynamic hyphae dynamic? Their history is not stored in `git`, which is a version control system that can be called quite static because commits are tangled tightly. Edits on a dynamic hyphae may be //too// frequent for it.
 
-## Dynahyphae as part of the system
+= Dynahyphae as part of the system
 In the wiki directory there may be files with special file extensions. The presence of such files marks the hyphae as dynamic. More on these extensions later.
 
 These files shall be //ignored// by git. I suppose the engine will enforce that they are included in `.gitignore`.
 
-## Possible dynamic hyphae
+= Possible dynamic hyphae
 
-### Kanban `.mycokanban`
+== Kanban `.mycokanban`
 A Kanban board hypha consists of several columns, each of the columns has multiple cards in them.
 
 Each card is formatted in mycomarkup and has a marker. Wiki administrators can configure possible markers. Cards have IDs, making it possible to link and transclude them from other hyphae.
 
 An intuitive user interface like GitHub Projects should be made. Drag and drop, stuff like that. Maybe, import from GH Projects should be done too.
 
-### Microlog `.mycomicrolog`
+== Microlog `.mycomicrolog`
 Microlog is a chronological stream of cards. Each card is formatted in mycomarkup. Each card can be edited and deleted, but its position relative to other cards cannot be changed. Transclusion, linking, etc.
 
-### Maps `.mycomap`
+== Maps `.mycomap`
 Something inspired by [[https://communitywiki.org/wiki/MiniCubes]].
 
-## Implementation
+= Implementation
 There are several ways of implementing this idea:
 
-### Part of the engine
+== Part of the engine
 Just build the support in.
 
 **Pros:**
@@ -35,10 +35,10 @@ Just build the support in.
 * The code base will become really bloated and hard to maintain. It's not like it's easy to maintain //now//, but it will become even harder.
 * All dynamic hyphae would be mandatory, which is not needed for all users.
 
-### Build-time optional dependencies
+== Build-time optional dependencies
 The same, but the wiki could be compiled without some dynahypha support.
 
-### Run-time executables dependency
+== Run-time executables dependency
 Similar to [[../importer protocol]].
 
 **Pros:**

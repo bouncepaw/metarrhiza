@@ -6,7 +6,7 @@ This release is breaking, see the migration guide below. You are recommended to 
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.3.0 | GitHub release
 => https://t.me/bpblog/1213 | Telegram announcement
 
-## New features
+= New features
 * [[/help | Built-in documentation system]] added. It does not cover everything yet.
 * `-create-admin` CLI option was added.
 * Now admins can manage users right from the web UI.
@@ -17,31 +17,31 @@ This release is breaking, see the migration guide below. You are recommended to 
 * Telegram integration. [[/help/en/telegram | Docs]]
 * Whitelist. [[/help/en/whitelist | Docs]]
 
-## Changes
-### [[Mycomarkup]] changes
+= Changes
+== [[Mycomarkup]] changes
 * Some critical bugs were fixed.
 * Allow other spans inside monospace spans.
 
-### Config changes
+== Config changes
 * `UseAuth` toggles all kinds of authorization and registration
 * `UseRegistration` is now `AllowRegistration` to better reflect the meaning
 * `LimitRegistration` is now `RegistrationLimit` because it's not a boolean, it's a value (not "limit registration?", but "registration limit is ...")
 * `HTTPPort` was removed in favor of `ListenAddr`.
 * `ListenAddr` lets you set the address of the wiki with more freedom.
 
-### UI changes
+== UI changes
 * The old color of the top bar returns.
 * The transclusion target link does not take a whole line now.
 * New two-line top bar. [[/help/en/top-bar | Docs]]
 * Hamburger menu added for smaller screens.
 
-### Other changes
+== Other changes
 * Fixed authorization was removed.
 * `-print-example-config` was removed.
 * File `registered-users.json` is now named `users.json`.
 * The relative hyphae sidebar was renamed to the sister hyphae sidebar. [[/help/en/sibling_hyphae_section | Docs]]
 
-## Migration guide
+= Migration guide
 You might want to back up your config.
 
 Run this inside your wiki's directory:

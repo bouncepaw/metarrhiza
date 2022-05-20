@@ -3,8 +3,8 @@
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.1.0 | GitHub release
 => https://t.me/bpblog/1194 | Telegram announcement (in Russian)
 
-## New features
-### Registration
+= New features
+== Registration
 You can let people register on your wiki without your manual intervention. To do so, you have to enable registration in your [[/help/en/config_file | configuration file]]. In the `[Authorization]` section add these lines:
 
 ```ini
@@ -20,15 +20,15 @@ img { ./registration form }
 
 Later on, you can log in/out using `/login` and `/logout`.
 
-### Toolbar
+== Toolbar
 img { ./toolbar }
 There's now a toolbar on the edit page. It lets you quickly enter some [[mycomarkup]] elements, go to the documentation page, insert current date and (if authorization is enabled) insert a link to your user page.
 
-### Subhypha counter
+== Subhypha counter
 img { ./subhypha counter }
 The relative hyphae toolbar has changed. Now it shows you how many direct (first number) and indirect (second number, in parentheses) subhyphae the hypha has, instead of just showing that subhyphae exist.
 
-### Nested lists
+== Nested lists
 * You can now nest lists
 ** Like that!
 
@@ -43,6 +43,6 @@ The relative hyphae toolbar has changed. Now it shows you how many direct (first
 **. See!
 ```
 
-## Other changes
+= Other changes
 * The license has been changed from Apache v2.0 to GNU Affero General Public License v3.0. It means that if you fork Mycorrhiza and host a wiki running that fork, you are obliged to publish your changed version's source code.
 * A new background pattern is used instead of the bricks. People just got bored with them.

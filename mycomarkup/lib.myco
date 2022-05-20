@@ -3,16 +3,16 @@ Mycomarkup is developed as a separate Go library. Before that, it was part of My
 => https://github.com/bouncepaw/mycomarkup
 => https://godocs.io/github.com/bouncepaw/mycomarkup
 
-## Reasons for development
+= Reasons for development
 *. Having a library ready to use would help making Mycomarkup more popular greatly.
 *. Creating a separate CLI program `mycomarkup`.
 *. Tearing it apart from the rest of the system would make the whole system's architecture better.
 *. Mycomarkup and Mycorrhiza could be developed in parallel.
 
-## Using with other projects
+= Using with other projects
 Sure enough, Mycomarkup provides an API, both CLI and library. If you use CLI, you are not able to transclude anything. Whatever you use, Mycomarkup (as of v3) uses Mycorrhiza's link paths, so you are most likely unable to have local links with it.
 
 For example, link `[\[u]]` will point to `/hypha/u` always. There is currently no way to configure it. You are safe to use external links though.
 
-## Versioning
+= Versioning
 Mycomarkup uses SemVer for the packages you are supposed to use. Due to the fact that Mycomarkup is always being refactored, the major number (as in MAJOR.MINOR.PATCH) is changed quite often. You should always migrate to the newest version.

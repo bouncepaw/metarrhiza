@@ -2,13 +2,13 @@ This is the first public screenshot of MycorrhizaWiki. It is running what is soo
 
 [[u/bouncepaw]] posted it in his [[https://t.me/bpblog/1129 | Telegram channel]]. Here's a copy of the post:
 
-## The copy (in Russian)
+= The copy (in Russian)
 
 //2020-07-18//
 
 Я уже некоторое время разрабатываю новый вики-движок под названием //МикоризаВики//. На скриншоте пример страницы. Интерфейс не финальный.
 
-### Особенности
+== Особенности
 
 * Хранение данных в текстовых файлах.   
 * Простота установки. Достаточно просто запустить бинарник.

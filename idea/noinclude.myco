@@ -1,6 +1,6 @@
 `noinclude {}` is a tag that surrounds markup that will never be transcluded.
 
-## Examples
+= Examples
 On hypha `test`:
 ```
 noinclude {

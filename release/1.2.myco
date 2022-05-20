@@ -48,7 +48,7 @@ to table cells } | See this hypha's source to learn how to do so
 * There is a panel that lets wiki administrators manage users, i.e. change their groups.
 * Users' registration date is saved now.
 
-### Visual changes
+== Visual changes
 * Dark theme improvements
 * The background pattern has been removed.
 * The top bar has changed its color to a brighter one.
@@ -61,11 +61,11 @@ img {
 * Quotes have become cuter.
 * The design has become more consistent in some places, less consistent in others.
 
-### History changes
+== History changes
 * Web feeds now have diffs in them.
 * The Recent changes page has edits grouped by day now.
 
-### Various
+== Various
 * The [[name]] of the project has been changed from //MycorrhizaWiki// to //Mycorrhiza Wiki//.
 * Less messages are printed on start.
 * Gemini protocol support is dropped.

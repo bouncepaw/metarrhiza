@@ -1,6 +1,6 @@
 These are some ideas for the Todo list syntax. It all happened in March 2021 or so. In the end, a somewhat different syntax was chosen.
 
-## Discussion
+= Discussion
 A translated 🇷🇺➡🇬🇧 discussion from [[https://t.me/mycorrhizadev/6992|our Telegram chat]]:
 
 **Bouncepaw:** [[https://github.github.com/gfm/|GFM]] has an interesting syntax for TODO:
@@ -22,7 +22,7 @@ Interesting 🤔
 
 **Bouncepaw:** +
 
-## Possible syntax
+= Possible syntax
 GFM-like:
 ```myco
 * [ ] todo 1

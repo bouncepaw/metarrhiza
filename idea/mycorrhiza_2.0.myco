@@ -1,11 +1,11 @@
 We hope to drop git one day. When it happens, Mycorrhiza will transit to the 2.0 version.
 
-## Why
+= Why
 *. Git is slow when you want to do multiple async operations. In fact, git is not async at all.
 *. Git API is arcane and ridiculous. No one knows what is error 128.
 *. Git stores history on FS. You shall never trust FS.
 
-## Alternatives
+= Alternatives
 *. {
   A different external VCS, like hg or pijul.
 
@@ -24,7 +24,7 @@ We hope to drop git one day. When it happens, Mycorrhiza will transit to the 2.0
 
 So, a database it is, huh?
 
-## What database?
+= What database?
 Using an external database like Postgres would just ruin Mycorrhiza because it does not fit its ideology and goals. Who said that? [[u/bouncepaw]] did.
 
 An embedded database like SQLite seems perfect. We'll 90 % use it, when the time comes.

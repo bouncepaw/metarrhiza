@@ -5,7 +5,7 @@ img { ./screenshot }
 => https://git.sr.ht/~handlerug/mycorrhiza/refs/v1.4.0 | SourceHut ref
 => https://t.me/bpblog/1217 | Telegram announcement in Russian
 
-## Changes
+= Changes
 * The old tabbed layout of hyphae was removed. Now, there is an //Edit// button beside the hypha title (if you have the privileges for doing so). The rest of the functions are located below the hypha content, displayed as simple gray links.
 ** Additionally, arrow buttons were added for simpler jumping between top and bottom of the page.
 * Stopped using PT Sans, use browser's default sans-serif font.

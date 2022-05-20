@@ -1,9 +1,9 @@
 MycorrhizaWiki does not offer any advanced text editor, all it has is a simple textarea. It is enough for most use cases but it may be too basic for some tasks. This hypha collects ways to use other text editors.
 
-## Browser extensions
+= Browser extensions
 Some browser extensions let you use different editors. For example, //Surfing keys// lets you use some form of Vim instead of textareas. To activate it, press `I` and then select the textarea.
 
-## w3m
+= w3m
 `w3m` is a terminal text browser available for many platforms. MycorrhizaWiki supports it.
 
 *. Open `w3m`
@@ -14,7 +14,7 @@ Some browser extensions let you use different editors. For example, //Surfing ke
 
 Now, whenever you select textareas through the browser, your editor starts.
 
-## HTTP API
+= HTTP API
 You can automate editing procedures with HTTP API. For example, you want to add a line to hypha named //Apple//.
 
 Using `curl`, grab current text of the hypha using this command:

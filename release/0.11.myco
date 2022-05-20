@@ -3,7 +3,7 @@
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.11 | GitHub release
 => https://t.me/bpblog/1165 | Telegram announcement
 
-## New features
+= New features
 [[Feature/Authorization/fixed | Fixed authorization]] is introduced and is enabled using CLI options. Wiki administrators have to pre-register all users in a special file using the JSON format. Here's an example of such file:
 ```json
 [
@@ -37,5 +37,5 @@ In [[Mycomarkup]], ~~strike-through~~ is introduced and inline formatting is sup
 
 Also, some CSS fixed are made.
 
-## License
+= License
 This version is the first version to have an explicit license, the [[https://www.apache.org/licenses/LICENSE-2.0 | Apache 2.0 license]]. Legal status of the previous versions is unclear. Later, in [[../1.1]], the license has been changed to AGPLv3.

@@ -4,7 +4,7 @@ img { ./screenshot }
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.6.0 | GitHub release
 => https://t.me/bpblog/1223 | Telegram announcement (in Russian)
 
-## Changes
+= Changes
 * User and hypha lists are now sorted.
 * The Russian translation is better.
 * Mycomarkup has been refactored: some bugs fixed, new bugs added. Some minor improvements in its behavior are done too.

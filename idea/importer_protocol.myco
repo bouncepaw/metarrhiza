@@ -2,10 +2,10 @@ An **importer** is a thing that can import a piece of content pointed by an URL 
 
 //This protocol is inspired by CGI, the Common Gateway Interface.//
 
-## Basic idea
+= Basic idea
 Importers are executables that are run by the engine. They are given input through environment variables. They save the output into temporary files. They print JSON documents with information about those temporary files that the engine uses and constructs hyphae from.
 
-## [[/help/en/config_file | Configuration]]
+= [[/help/en/config_file | Configuration]]
 Wiki administrators should be able to somehow configure this stuff. A section called `[Importers]` in the config file:
 
 * `ImporterPath`: full rooted path to the executable.
@@ -14,17 +14,17 @@ Wiki administrators should be able to somehow configure this stuff. A section ca
 
 If the importers need their own configuration, the way it is implemented is up to them.
 
-## Interface
+= Interface
 When visiting a non-existent hypha, the user shall be offered to import. When they decide to do it, they are given a one-line form where they type in the URL of the content to import. Then they click `Submit` and everything works.
 
 Alternatively they can choose an importer explicitly.
 
-## Input environment variables
+= Input environment variables
 * `MYCORRHIZA_IMPORT_URL` is the url which the user asked to import. For example: `https://t.me/bpblog/1182`. Be liberal in what urls you accept, really liberal.
 * `MYCORRHIZA_TARGET_HYPHA` is the name of the hypha the user wants to import to; the hypha from which the user called the importer. If you end up creating additional hyphae (images, for example), create them as subhyphae of the given hypha.
 * `MYCORRHIZA_COPY_MEDIA` is whether images and other forms of media shall be copied to the wiki.
 
-## Output
+= Output
 Output is a JSON object:
 * `Error` //string//: error code. If empty, everything is ok.
 * `Record` //string//: what message to use for the history.
@@ -36,7 +36,7 @@ Output is a JSON object:
 * `MimeType`: MIME-type of the file. If it is [[mycomarkup]], use `text/mycomarkup`.
 * `FilePath`: Full rooted path to the temporary file.
 
-## Example
+= Example
 Alice has a wiki with such importer configuration:
 table {
 ! ImportTarget ! ImporterPath ! UrlPattern

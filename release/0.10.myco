@@ -3,7 +3,7 @@
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v0.10
 => https://t.me/bpblog/1161
 
-## New features
+= New features
 This is a major improvement over 0.9.
 
 * A new file structure. The folder structure is unchanged, it's the file names that have changed, they no longer require `&` in them. It's a breaking change making all previous hypha history lost. This structure is still being used.

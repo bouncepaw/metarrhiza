@@ -9,7 +9,7 @@ Transclusion lines start with a reverse-rocket symbol (`<=`) followed by any amo
 <= target hypha | selector
 ```
 
-## Target rules
+= Target rules
 
 If the //target// is empty, the transclusion is considered invalid. A text like below is returned:
 > No transclusion target specified.
@@ -22,7 +22,7 @@ The //target// is a hypha's name. If such hypha does not exist, this is returned
 
 Now, the hypha should be loaded and lexed.
 
-## Selector rules
+= Selector rules
 
 If the //selector// is empty, we think of it as of selector `start..end` and try again.
 

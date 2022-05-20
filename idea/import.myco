@@ -6,10 +6,10 @@ This hypha discusses the ways MycorrhizaWiki may import content in the future.
 
 Also see [[../fediverse]]. This hypha does not discuss federations.
 
-### Previews
+== Previews
 In many messengers and other social media links have previews. Why not have the same type of previews for rocket links?
 
-### Save page in [[mycomarkup]]
+== Save page in [[mycomarkup]]
 When creating a hypha, there should be a button `Import article from URL`. You press it, there's a dialog window where you put the URL. Then there's an attempt to convert it to mycomarkup and save it on the wiki.
 
 Supported protocols could be Gemini, Gopher, HTTP[S]. Converting content into mycomarkup and saving it is easy for the first two. The web protocols are harder. I guess I'll rely on [[https://github.com/advancedlogic/GoOse]] for extracting the main data and then convert HTML into mycomarkup somehow.
@@ -18,29 +18,29 @@ What about pictures used in web pages? Should they be fetched and copied for wik
 
 It's easy to guess that web page import will fail often for the same reasons why reader mode in browsers and applications like Pocket fail often too.
 
-### Tweet import
+== Tweet import
 Twitter is a mess. Guess what: it's impossible to just download a tweet. You need an API token which is hard to get. Just parsing HTML of the tweet is not easy because Twitter uses a lot of “modern” technologies like React. I think including a browser runtime into a wiki server is a bad idea, thus an alternative way is needed.
 
 [[https://nitter.net]] is a great service which lets you browser Twitter without making your computer fans spin. Mycorrhiza would fetch tweets from there. Since Nitter can also be self-hosted, it makes sense to allow selecting preferred Nitter instance.
 
 Yet again, what to do with pictures?
 
-### Telegram import
+== Telegram import
 I often find myself willing to copy something from a Telegram channel. That's why I want to support it. Telegram has a web view for public channels which is good enough for me.
 
 Perhaps importing whole chats using Telegram Desktop's export feature is something to consider too.
 
-### Email import
+== Email import
 I often find myself copying emails from a mail client to a wiki. Making it more automatic is a good idea.
 
-### Other social media import
+== Other social media import
 If needed, it can be considered. VK posts and articles, Facebook posts, Instagram posts.
 
 Importing from social media should be done with the same one button I mentioned earlier. When importing an URL from a social medium that MycorrhizaWiki recognises, it switches to a different algorithm for that site. Of course, the number of explicitly supported sites should be as minimal as possible or this functionality should be generalized.
 
-### Import a wikipage from a wiki
+== Import a wikipage from a wiki
 It could only be done together with [[../interwiki]]. Since you specify engines sister wikis run on, the engine may have a specific strategy for them ready. For example, fetching an Oddmuse page source is done this way and fetching a MediaWiki page source is done this way. But is this really needed? Why not just fetch with the general method?
 
-### Import Markdown files
+== Import Markdown files
 Drag-n-dropping Markdown file collections would be nice because many people seem to have them.
 
