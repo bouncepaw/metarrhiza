@@ -7,7 +7,7 @@ Here are some features of the engine:
 * **History of changes** for text parts of hyphae. Every change is safely stored in [[integration/git | Git]]. Web feeds for recent changes included!
 * **Keyboard-driven navigation.** Press `?` to see the list of shortcuts.
 * **[[Mycomarkup]], a custom-made markup language.**
-* **Optional [[feature/authorization | authorization]].**
+* **Optional [[authorization]].**
 * **[[Opengraph]] support.**
 
 = Quick start
@@ -23,7 +23,7 @@ It will:
 *. Prepopulate the config file
 *. Run a server on `:1737`
 
-Simple as that. Want more? Learn more in the [[guide/deployment | deployment guide]]. By the way, this wiki runs Mycorrhiza, too.
+Simple as that. Want more? Learn more in the [[deployment | deployment guide]]. By the way, this wiki runs Mycorrhiza, too.
 
 = Community and development
 * [[https://github.com/bouncepaw/mycorrhiza | GitHub]]
