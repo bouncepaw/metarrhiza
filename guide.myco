@@ -1,6 +1,11 @@
 Collection of **guides** and instructions regarding Mycorrhiza Wiki
 
-The most important one is how to deploy it
-=> ./deployment
+=> Deployment
+=> data-rrh-addr
+=> Basic auth
+=> How to edit with any editor
+=> How to set up HTTPS
+=> systemd 101
+=> Using without git
 
-Also see [[contrib]] for less serious stuff.
+Also see [[contrib]] for less serious stuff. Also see [[/help]] for documentation.
