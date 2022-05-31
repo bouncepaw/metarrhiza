@@ -1,0 +1,20 @@
+**Mycorrhiza Wiki 1.10** is the thirteenth release of the engine. Released on [[2022-06-01]], two months after [[../1.9]].
+
+= Changes
+* Mycomarkup:
+** ++The old heading syntax is deprecated for real, all hyphae using it will be migrated forcibly on the first run of this version.
+** Horizontal line is now named thematic break, to better reflect its semantics.
+** In normal image galleries, captions are on the right of images on bigger screens.
+** Image galleries are also not centered anymore. They are left-aligned now.
+** Image galleries' gray background was removed.
+* Categories:
+** List of categories for a hypha is now sorted alphabetically.
+** List of hyphae in a category is now sorted alphabetically.
+* The [[/about]] page is reworked, and is quite useful now.
+* In a lot of places, bulleted lists were replaced with numbered lists.
+* The text area in the editor is bigger now.
+* List of orphaned hyphae, i/e hyphae with not backlinks: [[/orphans]]. [[/help/en/orphans | Docs]].
+* Less CSS classes used. Your custom CSS themes might be affected.
+* Introduction of [[data-rrh-addr]].
+* [[/list]] is now allowed in `robots.txt`.
+* Some bugs fixed, some visual changes, &c. Work on [[interwiki]] has started.
