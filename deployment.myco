@@ -37,6 +37,6 @@ These commands build a `mycorrhiza` binary and install it in `/usr/local/bin`. A
 To start a wiki, run `mycorrhiza path/to/your/wiki`. The directory for your new wiki will be created automatically, and all relevant Git settings will be set.
 
 = Further reading
-* [[/help]]
+* [[/help | Built-in engine documentation]]
 * [[/help/en/config_file | Configuration]]
-* [[Feature/Authorization]]
+* [[Authorization]]
