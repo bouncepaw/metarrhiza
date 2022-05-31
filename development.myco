@@ -7,11 +7,12 @@ Of course, some parts of the project do not follow them. It is alright. It is pl
 * Go formatting: `gofmt`.
 * JavaScript formatting: not specified yet.
 * CSS formatting: mimic the bottom of the file, not the top.
-* Use tabs instead of spaces everywhere except for Mycomarkup documents.
+* Use tabs instead of spaces everywhere except for Mycomarkup documents. No consensus on the preferred number of spaces in Mycomarkup, probably 3.
 
 = Front-end
 * Avoid JavaScript. Only optional features shall require it.
-* It is fine to use the freshest JS or CSS features. But it's better if the page looks still good without them. Why is it fine though?
+* It is fine to use the freshest JS or CSS features. But it's better if the page still looks good without them.
+** Why is it fine though?
 ** Test the engine on obscure environments like text browsers.
 * Semantics. Follow them.
 * Accessibility. Provide it.
