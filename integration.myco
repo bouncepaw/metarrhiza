@@ -14,13 +14,13 @@ For any hypha, click the //Raw text// tab to see the source. You can do some aut
 
 = Import
 == Edit with other editors or automate editing
-See [[guide/how to edit with any editor]]
+See [[how to edit with any editor]]
 
 = Misc
 == Network
 Mycorrhiza Wiki does not do all the network stuff by design. If you need some advanced stuff, use `nginx` or any other web server.
 
-There are recipes such as [[guide/how to set up HTTPS]] and [[guide/basic auth]] that offer you to use nginx.
+There are recipes such as [[how to set up HTTPS]] and [[basic auth]] that offer you to use nginx.
 
 == Direct file operations
 Wiki administrators that have direct access to the wiki files can do stuff with `git` and other utilities. In fact, they are meant to.
