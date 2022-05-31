@@ -10,7 +10,7 @@ We are angry and rageful people, thus we reject a lot of features. Here we try t
 
 **Different markup support** was rejected due to ideology. [[https://github.com/bouncepaw/mycorrhiza/issues/12 | #12]]
 
-**Mycelia** were like namespaces in other wiki engines. There was an attempt to implement them in 0.6 but it turned out to be hard to implement and it didn't really fit the design. Bouncepaw decided to drop it and no one complained to this day. [[https://github.com/bouncepaw/mycorrhiza/issues/13 | #14]]
+**Mycelia** were like namespaces in other wiki engines. There was an attempt to implement them in 0.6 but it turned out to be hard to implement and it didn't really fit the design. Bouncepaw decided to drop it and no one complained to this day. [[https://github.com/bouncepaw/mycorrhiza/issues/13 | #13]]
 
 **Transcluded image resizing** was no more needed when `img {}` was made. [[https://github.com/bouncepaw/mycorrhiza/issues/23 | #23]]
 
@@ -26,7 +26,7 @@ We are angry and rageful people, thus we reject a lot of features. Here we try t
 
 **Other ideas of todo list syntax** were rejected because they were worse than the one we have now. See [[./todo syntax | the rejected ones]].
 
-**Wiki path in config** was rejected because the Structure is coming. [[https://github.com/bouncepaw/mycorrhiza/issues/56 | #56]]
+**Wiki path in config** was rejected because the Structure was coming. [[https://github.com/bouncepaw/mycorrhiza/issues/56 | #56]]
 
 Address [[/]] used to **redirect to the home hypha.** It was later changed so that it does not redirect the but still shows that hypha. There was a proposition of returning it, but it was rejected for ideology reasons.
 
@@ -51,3 +51,13 @@ Address [[/]] used to **redirect to the home hypha.** It was later changed so th
 ```
 
 **Jump buttons** that let you click to scroll to top or bottom of the hypha were removed because scrolling ended up being easier.
+
+**Markdown and Gemtext-compatible heading syntax** was removed because it is wrong:
+```
+# not meant to be used in wikis
+## first level
+### second
+#### third
+##### fourth
+###### fifth
+```
