@@ -1,5 +1,9 @@
 **Mycorrhiza Wiki 1.10** is the thirteenth release of the engine. Released on 2022-06-03, two months and two days after [[../1.9]].
 
+=> https://git.sr.ht/~bouncepaw/mycorrhiza/refs/v1.10.0 | SourceHut ref
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.10.0 | GitHub release
+=> https://t.me/bpblog/1255 | Telegram announcement (in Russian)
+
 = Changes
 * Mycomarkup:
 ** ++The old heading syntax is deprecated for real, all hyphae using it will be migrated forcibly on the first run of this version.
