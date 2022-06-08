@@ -6,7 +6,7 @@ FedWiki community calls sites that can share their pages with the federation wit
 => http://ward.asia.wiki.org/view/json-schema | JSON Schema
 FedWiki has a special JSON-based format which seems simple enough for the [[Mycomarkup]] library to produce eventually. We can use the [[http://plugins.dojo.fed.wiki/view/about-html-plugin | HTML plugin]] to facilitate the task.
 
-Perhaps, Mycorrhiza will join this federation one day.
+For some time, the idea of joining the federation was considered, but then we got disenchanted with FedWiki. We no longer consider it.
 
 = Some outposts
 => https://github.com/paul90/risks
