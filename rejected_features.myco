@@ -38,6 +38,8 @@ Address [[/]] used to **redirect to the home hypha.** It was later changed so th
 
 **Russian docs** were removed because no one maintained them.
 
+**Tags** were a different name for modern categories. See [[./tags]].
+
 **Stemlinks** were a syntactical sugar that let you write `[\[>a/stem]]` instead of `[\[a/stem | stem]]`. Afterwards, with deprecation and discouragement of the sibling tree, it made little sense. With introduction of interwiki, this syntax became conflicting. Overall, not needed. The `>` was chosen because it reminded ➡.
 
 **Gueeslinks** were a different approach to tackle the deep nesting problem. You would type `[\[?Apple]]`, and the engine would find a hypha that ended with `Apple` and link it. Problems would arise if there were multiple or no such hyphae. Anyway, not needed.
