@@ -1,0 +1,15 @@
+Mycorrhiza has multiple source-code repositories. This hypha lists them and explains what are their roles.
+
+=> https://github.com/bouncepaw/mycorrhiza | GitHub
+=> https://git.sr.ht/~bouncepaw/mycorrhiza | SourceHut
+=> https://codeberg.org/bouncepaw/mycorrhiza | Codeberg
+
+The main repo is GitHub. It is the most popular repository of the three, most people reach out for Mycorrhiza here. The development is actually held there. GitHub //releases// are made. Sadly, it is somewhat ideologically wrong, so we don't fully trust it. The code is mirrored //from// here to other places.
+
+SourceHut is ideologically closer to us, we even write git tag messages especially so they show up on SourceHut. It's not handy to use though.
+
+Codeberg is a newer addition to the collection. It is like a middle ground between the two others. Codeberg //releases// are not made.
+
+Each Mycorrhiza repo is accompanied by a Mycomarkup repo.
+
+There used to be a Gitea instance hosted by [[u/Bouncepaw]] that hosted a mirror too, but it's down. Even if it's still online, don't use it.
