@@ -2,6 +2,12 @@ This article will guide you through the process of getting your wiki up and runn
 
 = Distributions
 
+img float side {
+https://repology.org/badge/vertical-allrepos/mycorrhiza.svg {
+[[https://repology.org/project/mycorrhiza/versions | Packaging status]]
+}
+}
+
 * **Alpine Linux:** `mycorrhiza` package
 * **AUR:** `mycorrhiza` package
 * **Gentoo:** `mycorrhiza` and `mycorrhiza-bin` available in [[https://codeberg.org/BratishkaErik/bratishkaerik-overlay/src/branch/main/www-apps | BratishkaErik’s repo]]
