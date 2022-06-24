@@ -17,7 +17,7 @@ https://repology.org/badge/vertical-allrepos/mycorrhiza.svg {
 If your distribution is missing a package for Mycorrhiza Wiki, you're encouraged to make one and send it upstream for inclusion!
 
 = Pre-built releases
-Download an executable for your system for the [[https://github.com/bouncepaw/mycorrhiza/releases | latest release]] and put it into your `$PATH` (paths like `/usr/local/bin/` work the best) with the name `mycorrhiza`.
+Download an executable for your system for the [[https://github.com/bouncepaw/mycorrhiza/releases | latest release]] and put it into your `$PATH` (paths like `/usr/local/bin/` work the best) with the name `mycorrhiza`. Sometimes, when our executable building system fails, there are no executables published. They probably won't appear for that release anymore.
 
 = Building
 You can build Mycorrhiza yourself.
