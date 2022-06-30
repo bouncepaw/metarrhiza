@@ -96,7 +96,7 @@ Sample `/etc/httpd.conf`:
 ```
 server "changeme.com" {
         listen on * port 80
-        # Carve out an exception to support acme-client for Let's Encrypt Certificates
+        # Support acme-client for Let's Encrypt certificates
         location "/.well-known/acme-challenge/*" {
                 root "/acme"
                 request strip 2
@@ -124,7 +124,10 @@ http protocol https {
             value "$SERVER_ADDR:$SERVER_PORT"
         match request header set "Connection" value "close"
         tcp { sack, backlog 128 }
-        # This sets the prefix for the tls cert and key relayd looks for in the /etc/ssl directory. If you already have a cert following the acme-client.conf default template, you'll need to symlink /etc/ssl/changeme.com.fullchain.pem -> /etc/ssl/changeme.com.crt
+        # This sets the prefix for the tls cert and key relayd looks for
+        # in the /etc/ssl directory. If you already have a cert following
+        # the acme-client.conf default template, you'll need to
+        # symlink /etc/ssl/changeme.com.fullchain.pem -> /etc/ssl/changeme.com.crt
         tls { keypair $domain }
 }
 
