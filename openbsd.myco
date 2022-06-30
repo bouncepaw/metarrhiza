@@ -30,7 +30,7 @@ mkdir ~/bin # You can also copy the binary to another directory in your path
 cp /tmp/mycorrhiza.openbsd ~/bin/mycorrhiza
 ```
 
-Now you may continue with the [[https://mycorrhiza.wiki/hypha/mycorrhiza_wiki|quickstart]].
+Now you may continue with the [[mycorrhiza wiki|quickstart]].
 
 == Installation for public server use
 
