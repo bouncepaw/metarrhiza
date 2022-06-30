@@ -101,7 +101,8 @@ server "changeme.com" {
                 root "/acme"
                 request strip 2
         }
-        # Redirect other traffic to relayd for tls offload and privileged port access
+        # Redirect other traffic to relayd for tls offload and 
+        # privileged port access
         location * {
                 block return 302 "https://$HTTP_HOST$REQUEST_URI"
         }
