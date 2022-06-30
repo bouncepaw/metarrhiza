@@ -87,7 +87,8 @@ ftp -o - http://localhost:1737 # HTML output on console
 
 ```
 ssh -L1737:localhost:1737 <openbsd.hostname>
-# Now open browser on local machine and put http://localhost:1737/ in the URL bar
+# Leave the shell open
+# Open browser on local machine and point at http://localhost:1737/ 
 ```
 
 === httpd and relayd setup for port 80,443
