@@ -127,7 +127,8 @@ http protocol https {
         # This sets the prefix for the tls cert and key relayd looks for
         # in the /etc/ssl directory. If you already have a cert following
         # the acme-client.conf default template, you'll need to
-        # symlink /etc/ssl/changeme.com.fullchain.pem -> /etc/ssl/changeme.com.crt
+        # symlink /etc/ssl/changeme.com.fullchain.pem -> 
+        #    /etc/ssl/changeme.com.crt
         tls { keypair $domain }
 }
 
@@ -146,7 +147,7 @@ authority letsencrypt {
 	account key "/etc/acme/letsencrypt-privkey.pem"
 }
 
-domain provisoire.ca {
+domain changeme.com {
 	domain key "/etc/ssl/private/changeme.com.key"
 	domain full chain certificate "/etc/ssl/changeme.com.crt"
 	sign with letsencrypt
