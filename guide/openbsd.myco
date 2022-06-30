@@ -1,0 +1,151 @@
+= OpenBSD Installation and Setup Guide
+
+At the time of this writing, OpenBSD's release version is 7.1. OpenBSD 7.1 does not have golang 1.18 packaged, so it's not possible to compile mycorrhiza on an OpenBSD host. OpenBSD-current has golang 1.18 and the next OpenBSD release will as well.
+
+== Cross-compiling for OpenBSD
+
+You'll need another host with go 1.18. I used a shared machine at http://sdf.org. The current mycorrhiza makefile assumes that the building os/arch is the same as the target os/arch, so we have to run the generate and build separately:
+
+On your go 1.18 machine:
+
+```
+git clone http://git.sr.ht/~bouncepaw/mycorrhiza
+cd mycorrhiza
+# Generate must be run with current GOOS and GOARCH intact
+go generate
+# Compile a static binary that will run under OpenBSD, change GOARCH if your target isn't x86_64
+GOOS=openbsd GOARCH=amd64 CGO_ENABLED=0 go build -o mycorrhiza.openbsd .
+# Copy static binary to OpenBSD host
+scp mycorrhiza.openbsd <openbsd-host>:/tmp
+```
+
+
+== Installation  for personal use
+
+Login as your normal user on your OpenBSD machine:
+
+```
+mkdir ~/bin # You can also copy the binary to another directory in your path
+cp /tmp/mycorrhiza.openbsd ~/bin
+```
+
+Now you may continue with the [[normal documentation]].
+
+== Installation for public server use
+
+=== Add a Dedicated User
+
+On your OpenBSD machine, you'll want to create a new user to run mycorrhiza:
+
+```
+useradd -m wiki  # Add user
+doas -u wiki -s # Switch to new user
+cd # enter ~wiki directory
+mkdir bin # Move in the mycorrhiza binary to a location reachable by wiki user
+cp /tmp/mycorrhiza.openbsd bin/mycorrhiza
+# Generate a new wiki
+./bin/mycorrhiza wikidata
+```
+
+`CTRL-C` to quit mycorrhiza for now.
+
+=== Running mycorrhiza at startup
+
+To have mycorrhiza start at startup, you'll want to create an rc script. As the root user, create the file `/etc/rc.d/mycorrhiza` with the following contents:
+
+```
+#!/bin/ksh
+
+daemon="/home/wiki/bin/mycorrhiza"
+daemon_flags="/home/wiki/wikidata &"
+
+. /etc/rc.d/rc.subr
+
+rc_cmd $1
+```
+
+Then a few settings:
+
+```
+chmod +x /etc/rc.d/mycorrhiza # Make the script executable
+# Set the mycorrhiza binary to run as the user wiki
+rcctl set mycorrhiza user wiki
+# Enable starting mycorrhiza automatically at startup
+rcctl enable mycorrhiza
+# Start mycorrhiza now
+rcctl start mycorrhiza
+```
+
+You should be able to access mycorrhiza now. From the OpenBSD host:
+
+```
+ftp -o - http://localhost:1737 # HTML output on console
+```
+
+//or// from another machine, you can forward the port and access with a web browser;
+
+```
+ssh -L1737:localhost:1737 <openbsd.hostname>
+# Now open browser on local machine and put http://localhost:1737/ in the URL bar
+```
+
+=== httpd and relayd setup for port 80,443
+
+Sample `/etc/httpd.conf`:
+
+```
+server "provisoire.ca" {
+        listen on * port 80
+        # Carve out an exception to support acme-client for Let's Encrypt Certificates
+        location "/.well-known/acme-challenge/*" {
+                root "/acme"
+                request strip 2
+        }
+        # Redirect other traffic to relayd for tls offload and privileged port access
+        location * {
+                block return 302 "https://$HTTP_HOST$REQUEST_URI"
+        }
+}
+```
+
+Sample `/etc/relayd.conf`:
+
+```
+# Change to your external ip
+ip4="x.x.x.x"
+domain="changeme.com"
+
+table <wiki> { 127.0.0.1 }
+log connection
+
+http protocol https {
+        match request header append "X-Forwarded-For" value "$REMOTE_ADDR"
+        match request header append "X-Forwarded-By" \
+            value "$SERVER_ADDR:$SERVER_PORT"
+        match request header set "Connection" value "close"
+        tcp { sack, backlog 128 }
+        # This sets the prefix for the tls cert and key relayd looks for in the /etc/ssl directory. If you already have a cert following the acme-client.conf default template, you'll need to symlink /etc/ssl/changeme.com.fullchain.pem -> /etc/ssl/changeme.com.crt
+        tls { keypair $domain }
+}
+
+relay wwwtls {
+        listen on $ip4 port 443 tls
+        protocol https
+        forward to <wiki> port 1737
+}
+```
+
+Sample `/etc/acme-client.conf`:
+
+```
+authority letsencrypt {
+	api url "https://acme-v02.api.letsencrypt.org/directory"
+	account key "/etc/acme/letsencrypt-privkey.pem"
+}
+
+domain provisoire.ca {
+	domain key "/etc/ssl/private/changeme.com.key"
+	domain full chain certificate "/etc/ssl/changeme.com.crt"
+	sign with letsencrypt
+}
+```
