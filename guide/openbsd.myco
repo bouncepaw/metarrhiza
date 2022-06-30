@@ -13,7 +13,8 @@ git clone http://git.sr.ht/~bouncepaw/mycorrhiza
 cd mycorrhiza
 # Generate must be run with current GOOS and GOARCH intact
 go generate
-# Compile a static binary that will run under OpenBSD, change GOARCH if your target isn't x86_64
+# Compile a static binary that will run under OpenBSD.
+# Change GOARCH if your target isn't x86_64
 GOOS=openbsd GOARCH=amd64 CGO_ENABLED=0 go build -o mycorrhiza.openbsd .
 # Copy static binary to OpenBSD host
 scp mycorrhiza.openbsd <openbsd-host>:/tmp
