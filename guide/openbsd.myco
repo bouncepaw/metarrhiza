@@ -1,6 +1,6 @@
 = OpenBSD Installation and Setup Guide
 
-At the time of this writing, OpenBSD's release version is 7.1. OpenBSD 7.1 does not have golang 1.18 packaged, so it's not possible to compile mycorrhiza on an OpenBSD host. OpenBSD-current has golang 1.18 and the next OpenBSD release will as well.
+At the time of this writing, OpenBSD's release version is 7.1. OpenBSD 7.1 does not have golang 1.18 packaged, so it's not possible to compile mycorrhiza on a stable OpenBSD host. OpenBSD-current has golang 1.18 and the next OpenBSD release will as well.
 
 == Cross-compiling for OpenBSD
 
