@@ -26,10 +26,10 @@ Login as your normal user on your OpenBSD machine:
 
 ```
 mkdir ~/bin # You can also copy the binary to another directory in your path
-cp /tmp/mycorrhiza.openbsd ~/bin
+cp /tmp/mycorrhiza.openbsd ~/bin/mycorrhiza
 ```
 
-Now you may continue with the [[normal documentation]].
+Now you may continue with the [[https://mycorrhiza.wiki/hypha/mycorrhiza_wiki|quickstart]].
 
 == Installation for public server use
 
@@ -94,7 +94,7 @@ ssh -L1737:localhost:1737 <openbsd.hostname>
 Sample `/etc/httpd.conf`:
 
 ```
-server "provisoire.ca" {
+server "changeme.com" {
         listen on * port 80
         # Carve out an exception to support acme-client for Let's Encrypt Certificates
         location "/.well-known/acme-challenge/*" {
