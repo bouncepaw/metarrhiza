@@ -1,0 +1,16 @@
+I don't know much about **grammar**, so I made up my own.
+
+```
+Term ::= Definition
+```
+
+Operators are 
+| alteration 
+* 0 or more 
++ 1 or more 
+? 0 or 1 
+++ followed by (I made it up)
+
+Comments are started with #
+
+The rest is coined on the go
