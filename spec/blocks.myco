@@ -1,3 +1,20 @@
+```
+MycomarkupDocument ::=
+   Block*
+Block ::=
+   Formatted
+ | Paragraph
+ | Heading
+ | CodeBlock
+ | ThematicBreak
+ | ImageGallery
+ | List
+ | LaunchPad
+ | Quote
+ | Table
+ | Transclusion
+```
+
 Main blocks:
 * [[./formatted]]
 * [[./paragraph]]
