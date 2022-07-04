@@ -1,0 +1,9 @@
+**Codeblock** is a preformatted block of code.
+
+```
+CodeBlock ::=
+   LineBeginning "```" Language? NL CodeBlockContents (NL "```" IgnoredText | EOD)
+Language ::= (!NL)+
+CodeBlockContents ::= CodeBlockLine*
+CodeBlockLine ::= SomeText NL
+```
