@@ -20,4 +20,6 @@
 
 **Container** is a block that contains the given block we are discussing.
 
+**Writer** is an agent writing a Mycomarkup document.
+
 More definitions will be introduced when defining blocks.
