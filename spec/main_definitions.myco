@@ -16,4 +16,6 @@
 
 **Non-nesting block** is a block that cannot contain other blocks inside.
 
+**Container** is a block that contains the given block we are discussing.
+
 More definitions will be introduced when defining blocks.
