@@ -10,6 +10,8 @@
 
 **Character** is a Unicode codepoint that is not a control character, except for space, horizontal tab and line feed characters. When parsing, parsers shall only operate on Mycomarkup characters and ignore the rest.
 
+**LWS**, short for //Linear Whitespace//, is a sequence of linear whitespace characters, //id est// space and tab.
+
 **Block** is the structural unit of Mycomarkup. Documents are composed of blocks. There are two types of blocks:
 
 **Nesting block** is a block that can contain other blocks inside. The number and types of blocks a nesting block can nest might be limited, depending on the block.
