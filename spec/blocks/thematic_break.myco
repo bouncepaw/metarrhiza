@@ -1,0 +1,6 @@
+**Thematic break** introduces a new section without a heading, it breaks themes.
+
+```
+ThematicBreak ::= "----" ThematicBreakAnchor? NL
+ThematicBreakAnchor ::= (!NL)+
+```
