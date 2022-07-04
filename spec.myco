@@ -5,6 +5,7 @@
 = Contents
 => ./prelude
 => ./main definitions
+=> ./grammar
 => ./blocks
 => ./implementation
 => ./closing words
