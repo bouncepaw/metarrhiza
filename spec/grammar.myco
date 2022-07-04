@@ -9,7 +9,7 @@ Operators are
 * 0 or more 
 + 1 or more 
 ? 0 or 1 
-++ followed by (I made it up)
++\+ followed by (I made it up)
 
 Comments are started with #
 
