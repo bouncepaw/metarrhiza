@@ -1,0 +1,17 @@
+**Table** is a table.
+
+```
+Table ::=
+   "table" Modifer* "{" TableContents "}" IgnoredText EOL
+Modifier ::=
+   !NL
+TableContents ::= (EmptyLine | TableRow)*
+TableRow ::=
+   TableCellWithoutMarker? TableCell* NL
+ | TableCell+ NL
+TableCell ::=
+   ("|" | "!") TableCellWithoutMarker
+TableCellWithoutMarker ::=
+   LWS FormattedLine LWS
+ | LWS "{" ((Paragraph | ImageGallery | LaunchPad) NL?)* "}" LWS
+```
