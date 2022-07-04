@@ -2,13 +2,15 @@
 
 **Mycomarkup document** or simply //document// is a document written in Mycomarkup. Documents are encoded in UTF-8 and nothing else. Any UTF-8 sequence is a valid document.
 
-**Parser** is a program that turns Mycomarkup into a different representation, such as AST or a different markup language.
+**Parser** is a program that turns Mycomarkup into an AST.
 
-**Rendering** is the process of parsing a document into a representation that can be displayed to a user. For example, PDF, HTML or even PNG.
+**AST**, short for Abstract Syntax Tree, is an abstract tree representation of a Mycomarkup document.
+
+**Rendering** is the process of parsing an AST into a representation that can be displayed to a user. For example, PDF, HTML or even PNG.
 
 **Character** is a Unicode codepoint that is not a control character, except for space, horizontal tab and line feed characters. When parsing, parsers shall only operate on Mycomarkup characters and ignore the rest.
 
-**Block** is the structural unit of Mycomarkup. Documents are composed of blocks.
+**Block** is the structural unit of Mycomarkup. Documents are composed of blocks. There are two types of blocks:
 
 **Nesting block** is a block that can contain other blocks inside. The number and types of blocks a nesting block can nest might be limited, depending on the block.
 
