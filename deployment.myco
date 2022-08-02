@@ -1,6 +1,8 @@
-This article will guide you through the process of getting your wiki up and running. It's assumed that you're using a POSIX-compatible operating system. Otherwise, you're on your own.
+This article outlines different ways of deploying Mycorrhiza Wiki and the basics of running the wiki. It's assumed that you're using a POSIX operating system. Otherwise, you're on your own.
 
 = Distributions
+
+The preferred method of installation is to use your distribution's package repository. Here is the list of known packages in different distributions:
 
 img float side {
 https://repology.org/badge/vertical-allrepos/mycorrhiza.svg {
@@ -8,37 +10,26 @@ https://repology.org/badge/vertical-allrepos/mycorrhiza.svg {
 }
 }
 
-* **Alpine Linux:** `mycorrhiza` package
-* **AUR:** `mycorrhiza` package
-* **Gentoo:** `mycorrhiza` and `mycorrhiza-bin` available in [[https://codeberg.org/BratishkaErik/bratishkaerik-overlay/src/branch/main/www-apps | BratishkaErik’s repo]]
+* **Alpine Linux:** `mycorrhiza` in the community repository
+* **Arch Linux:** `mycorrhiza` in AUR
+* **Gentoo:** `mycorrhiza` in [[https://codeberg.org/BratishkaErik/bratishkaerik-overlay/src/branch/main/www-apps | BratishkaErik’s repo]]
 * **Nix:** `mycorrhiza` in Nixpkgs >= 21.11
-* **Docker:** see the provided [[https://github.com/bouncepaw/mycorrhiza/blob/master/Dockerfile | Dockerfile]]
 
-If your distribution is missing a package for Mycorrhiza Wiki, you're encouraged to make one and send it upstream for inclusion!
+You can also run Mycorrhiza in Docker using the [[https://github.com/bouncepaw/mycorrhiza/blob/master/Dockerfile | provided Dockerfile]]. Chances are you'll need to modify it to your needs.
 
-= Pre-built releases
-Download an executable for your system for the [[https://github.com/bouncepaw/mycorrhiza/releases | latest release]] and put it into your `$PATH` (paths like `/usr/local/bin/` work the best) with the name `mycorrhiza`. Sometimes, when our executable building system fails, there are no executables published. They probably won't appear for that release anymore.
+Using your distribution's package repository is strongly preferred. If your distribution is missing a package for Mycorrhiza Wiki, you're encouraged to make one and send it upstream for inclusion! Don't hesitate to [[community | ask for help]].
 
 = Building
-You can build Mycorrhiza yourself.
 
-== Dependencies
-Mycorrhiza's only build-time dependency is **[[https://golang.org/dl/ | Go 1.18]]** toolchain. You'll also need **[[https://git-scm.com/downloads | Git]]** to checkout the source code. You can get these programs from your distribution's repositories.
+Mycorrhiza's only build-time dependency is the **[[https://golang.org | Go 1.18]]** toolchain. The only run-time dependency is the **[[https://git-scm.com | Git]]** command-line program. You'll also need Git to check out the source code. You can usually get these programs from your distribution's repositories. Here is an example of how to build Mycorrhiza on a POSIX system:
 
-== Getting the source code
-
-Visit [[https://github.com/bouncepaw/mycorrhiza| the GitHub repository]]. You can download a `.zip` archive by clicking Code » Download ZIP or by running:
 ```sh
-git clone https://github.com/bouncepaw/mycorrhiza.git
-```
-
-== Compiling
-Run:
-```sh
+git clone https://codeberg.org/bouncepaw/mycorrhiza.git
+cd mycorrhiza
 make
 make install
 ```
-These commands build a `mycorrhiza` binary and install it in `/usr/local/bin`. A man page is also installed in `/usr/local/share/man`.
+These commands download the source code from the [[https://codeberg.org/bouncepaw/mycorrhiza | mirror on Codeberg]], build the `mycorrhiza` binary and install it in `/usr/local/bin`. A man page is also installed in `/usr/local/share/man`.
 
 = Usage
 To start a wiki, run `mycorrhiza path/to/your/wiki`. The directory for your new wiki will be created automatically, and all relevant Git settings will be set.
