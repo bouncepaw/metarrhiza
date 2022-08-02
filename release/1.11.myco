@@ -1,6 +1,13 @@
 **Mycorrhiza Wiki 1.11** is the fourteenth release of the engine. It was released on 2022-08-02, two months after [[../1.10]].
 
-= Change
+= Links
+=> https://git.sr.ht/~bouncepaw/mycorrhiza/refs/v1.11.0 | Sourcehut
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.11.0 | GitHub
+=> https://codeberg.org/bouncepaw/mycorrhiza/src/tag/v1.11.0 | Codeberg (tag)
+
+And, hopefully, in your operating system's repositories real soon!
+
+= Changes
 * Interwiki was finally implemented. [[/help/en/interwiki | Docs.]] You can link resources from other wikis using a syntax like this: {
 ```myco
 [[Wikipedia>Mycorrhiza]]
