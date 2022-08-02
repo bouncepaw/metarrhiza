@@ -1,6 +1,19 @@
-**Mycorrhiza Wiki 1.11** is the fourteenth release of the engine. It will probably release on 2022-07-01.
+**Mycorrhiza Wiki 1.11** is the fourteenth release of the engine. It was released on 2022-07-02, two months after [[../1.10]].
 
 = Change
-* Interwiki!
-** Links, images
-** No transclusion, error is shown instead
+* Interwiki was finally implemented. [[/help/en/interwiki | Docs.]] You can link resources from other wikis using a syntax like this: {
+```myco
+[[Wikipedia>Mycorrhiza]]
+```
+
+Here's how it would work: [[Wikipedia>Mycorrhiza]].
+}
+* Recent changes received a different look.
+* Links to the feeds and the count selector on Recent changes were moved to the bottom.
+* When you rename a hypha, its categories move as well.
+* When you rename a hypha, you can choose an option to leave a redirection behind.
+* The list of categories is sorted now.
+* Only trusted users can add hyphae to categories now.
+* The hypha count on [[/list]] is back.
+* Category editor was implemented. You can mass-remove hyphae from categories now.
+* Bug fixes, visual fixes, et cetera.
