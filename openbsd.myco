@@ -20,6 +20,9 @@ GOOS=openbsd GOARCH=amd64 CGO_ENABLED=0 go build -o mycorrhiza.openbsd .
 scp mycorrhiza.openbsd <openbsd-host>:/tmp
 ```
 
+== La_ninpre's port
+La_ninpre maintains a port:
+=> https://git.aaoth.xyz/ports.git/tree/misc/mycorrhiza
 
 == Installation  for personal use
 
