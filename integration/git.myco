@@ -1,4 +1,4 @@
-**Git** is the most popular version control system used by many major software projects. They use it for managing their source code. Mycorrhiza does that too but, also, most importantly, it uses it as the back-end for [[feature/history]].
+**Git** is the most popular version control system used by many major software projects. They use it for managing their source code. Mycorrhiza does that too but, also, most importantly, it uses it as the back-end for [[history]].
 
 Reasons for that:
 * Creating a brand-new VCS (like many wiki engines do) is hard, and we don't have that many people to maintain it. Less code to write — less work needed.
