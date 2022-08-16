@@ -4,7 +4,7 @@ Here are some features of the engine:
 * **No database required**, everything is stored as simple files. It simplifies installation and makes it easy to modify the content using other means such as direct file editing.
 * **Everything is hyphae.** A [[/help/en/hypha | hypha]] is a unit of content such as a picture, video or a text article. Hyphae can [[feature/transclusion|transclude]] and link each other resulting in a tight network of hypertext pages.
 * **Nesting of hyphae** is supported. A tree of related hyphae is shown on every page.
-* **History of changes** for text parts of hyphae. Every change is safely stored in [[integration/git | Git]]. Web feeds for recent changes included!
+* **History of changes** for text parts of hyphae. Every change is safely stored in [[Git]]. Web feeds for recent changes included!
 * **[[/help/en/category | Categories]]** help you organise information in a non-hierarchical way.
 * **Keyboard-driven navigation.** Press `?` to see the list of shortcuts.
 * **[[Mycomarkup]], a custom-made markup language.**
