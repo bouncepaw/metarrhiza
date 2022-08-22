@@ -1,0 +1,61 @@
+**NB.** This is just an idea. [[]]
+
+We need a column block
+
+= Way 1
+
+```
+columns {
+  column {
+    = Volume 1
+    🐟
+  }
+  column {
+    = Volume 2
+    🐠
+  }
+  column {
+    = Volume 3
+    🐡
+  }
+}
+```
+
+Another way:
+
+```
+columns {
+  {
+    = Volume 1
+    🐟
+  }
+  {
+    = Volume 2
+    🐠
+  }
+  {
+    = Volume 3
+    🐡
+  }
+}
+```
+
+= Way 3
+```
+column {
+  = Volume 1
+  🐟
+}
+column {
+  = Volume 2
+  🐠
+}
+column {
+  = Volume 3
+  🐡
+}
+```
+
+= Questions
+* What about column sizes? Should we be able to set their proportions? Like, the first column is 2fr, the second one is 1fr, like in CSS
+* Does `img side` make sense in column blocks?
