@@ -1,0 +1,44 @@
+**NB.** This is just an idea.
+
+Wikis encourage communication, right? They do not. Not Mycorrhiza, at least.
+
+A way to solve it is the Message block. I actually had ideas about it for like a year.
+
+Message block should have this:
+* Content (Mycomarkup, might be empty)
+* Link to author (might be empty)
+* Timestamp (might be empty)
+
+Well, we can actually live without timestamps. If you really need them, write them in the content part.
+
+So, content and author. This syntax is reasonable:
+
+```
+msg {
+  No author
+}
+
+msg bouncepaw {
+  An author is specified. When rendered, [[u/bouncepaw]] is linked there.
+}
+```
+
+They can be nested, encouraging branching discussion:
+
+```
+msg A { I hate the AC.
+  msg B { Why? This is stupid!!
+}}
+
+msg B {
+   Hello world! Did you know there are many benefits to loving the AC?
+
+   msg C {
+      No, I wouldn't have thought! Tell us more please
+   }
+}
+```
+
+Message blocks should look like chat bubbles 💬 I am still unsure how to determine what messages go to the left and what messages go to the right.
+
+[[u/drcheems]] and [[u/bouncepaw]] once thought that a multiline `quote {}` block would be nice. I don't think it makes sense to have both `msg {}` and `quote {}` together.
