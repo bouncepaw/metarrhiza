@@ -2,7 +2,8 @@
 
 We need a column block
 
-= Way 1
+= Proposals
+== Way 1
 
 ```
 columns {
@@ -21,7 +22,7 @@ columns {
 }
 ```
 
-Another way:
+== Way 2
 
 ```
 columns {
@@ -40,7 +41,7 @@ columns {
 }
 ```
 
-= Way 3
+== Way 3
 ```
 column {
   = Volume 1
