@@ -1,0 +1,68 @@
+**NB.** This is just an idea. [[]]
+
+No doubt, we need infoboxes in our life.
+
+An **infobox** is a special box located to the right of the content (usually) containing some important information. Wikipedia and other MediaWiki wikis use them heavily.
+
+On Mycorrhiza, infoboxes (or infoboces? hehe) shall:
+* Support titles
+* Support subtitles
+* Support images/videos/audios
+* Support key-value entries
+* Support prev-next-like entries (no idea how to explain that)
+
+I propose this syntax:
+```
+infobox {
+  <content>
+}
+```
+
+The <content> does not support all of Mycomarkup, only a part of it, i/e no transclusion, no other infoboces, no tables.
+
+Supported subset of Mycomarkup in infoboces:
+```
+= Infobox title
+== Section
+=== Subsection
+img { ... }
+Hypothetical: video { ... }, audio { ... }
+Hypothetical: collapse { ... }, spoiler { ... }
+Paragraph
+```
+
+Additional syntax:
+```
+! key | value (paragraph)
+| column 1 (paragraph) | column 2 (para) | column 3 (para)
+```
+
+An example infobox:
+```
+infobox {
+= Red gurnard
+img { red gurnard }
+== Scientific classification
+! Kingdom: | Animalia
+! Phylum: | Chordata
+! Class: | Actinopterygii
+! Order: | Scorpaeniformes
+! Family: | Triglidae
+! Genus: | Chelidonichthys
+! Species: | C. cuculus
+}
+```
+
+Another one:
+```
+infobox {
+= Chapter 13
+img { cool cat }
+== Chapter information
+! Release date | 2021-02-30
+== Chapter navigation
+| < [[chapter 12]] | [[chapter 14]] >
+}
+```
+
+Something like that.
