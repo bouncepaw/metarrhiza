@@ -8,6 +8,7 @@ Some ideas are stored as subhyphae of this hypha. Newer idea are separate root h
 => ./noinclude
 => ./ruby_text
 => ./link_alias
+=> Note block
 
 = [[Integration]]-related
 => ./import
