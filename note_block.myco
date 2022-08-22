@@ -1,0 +1,39 @@
+**NB.** This is just an idea.
+
+A **note block** is a little box with some text. It may be a reminder, a disclaimer, a warning, or whatever. It could replace that //nota bene// paragraph above.
+
+Many MediaWiki wikis have them implemented with templates and hacks. Well, it's considered idiomatic there.
+
+[[https://github.com/yandex-cloud/yfm-transform/blob/master/DOCS.md | Yandex Flavored Markdown]], yet another dialect of Markdown (which has 4 levels, just like Mycomarkup, by the way), introduces such note blocks. Yandex's idea is similar to mine. That's great.
+
+So, the syntax I purpose is as follows:
+
+```myco
+note <type> {
+   <body>
+}
+```
+
+Where:
+* `<type>` is an optional value. Possible values:
+** `important` for text that is so important everyone must read it.
+** `tip` for slightly related notes that may help readers. This is default.
+** `warning` for warnings. A good choice for marking sections deprecated.
+* `<body>` is a Mycomarkup-formatted text.
+
+Each type has its own colors and icons. Every aspect of it is granularly configurable with CSS.
+
+= Some questions
+
+* Do we allow all of Mycomarkup in body? The same question applies to table cells and image captions, by the way.
+** Maybe we should limit the subset of Mycomarkup in body.
+* Should the type set be like that? Maybe it should be larger?
+* Can custom types be introduced? It's all configured with CSS, why not?
+** I don't like the idea of custom types because having it ties Mycomarkup with HTML and CSS too much. Mycomarkup will have targets other than HTML, such as FB2 or PDF, for example.
+** And options are harmful.
+
+= GitHub's take
+
+GitHub decided to get it too. They have [[https://github.com/github/feedback/discussions/16925 | a discussion]] going on. One can scroll it through. These are all examples of syntaces Mycomarkup is not going to have. I like GitHub's design of note blocks though, those colored icons are cute
+
+img { https://user-images.githubusercontent.com/22562024/170312875-e9db802c-d1f7-4599-8463-b04d837fb328.png | 142 }
