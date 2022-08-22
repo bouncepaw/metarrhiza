@@ -9,6 +9,11 @@ Some ideas are stored as subhyphae of this hypha. Newer idea are separate root h
 => ./ruby_text
 => ./link_alias
 => Note block
+=> Video and audio blocks
+=> Message block
+=> Footnote block
+=> Infobox
+=> Column block
 
 = [[Integration]]-related
 => ./import
