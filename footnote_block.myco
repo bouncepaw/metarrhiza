@@ -1,0 +1,32 @@
+**NB.** This is just an idea. [[]]
+
+[[u/chekoopa]]:
+[[https://github.blog/changelog/2021-09-30-footnotes-now-supported-in-markdown-fields/ | Look, GFM has got footnotes!]]
+
+We actually have [[/rev/9b9705f/idea/footnote_references | an idea of that]], too. Let's implement it in similar fashion.
+
+```
+I like apples[[^about-apple]]. Let's bake charlotte pie[[^1]]!
+
+notes {
+  about-apple | { They are tasty.
+But you need to be aware of worms. }
+  1 | https://tasty-pies.org/charlotte.html
+}
+```
+
+Notes:
+* I've replaced `&` to `^`, like in [[https://bookdown.org/yihui/rmarkdown/markdown-syntax.html#inline-formatting | most]] [[https://www.markdownguide.org/extended-syntax/#footnotes | of]] Markdown dialects.
+* Also I've replaced `links` to `notes` to not mistake the idea with 'link aliases'. Possible alternatives are 'foot', 'footnotes', 'footer' etc.
+
+= Design
+
+Technically, it should be a two-pass process (scan for links, enumerate, and only then render both links and anchors). But we can force top-to-bottom declaration syntax and link-based enumeration. And also allow duplicate links (however, we would also need to implement anchor joining then).
+
+Also, it is possible to implement this with a visitor, which would collect `notes` blocks, enumerate and replace footnote links with anchors (like, `name="footnote-1" href="#footer-about-apple"`) on-the-fly, and then we would use it to render a separate footnotes section. But seemingly inline mycolinks can't have names (thus, anchors to them), so we'd have to add them for return links.
+
+Full Mycomarkup support in footnotes is seemingly possible, but I'd be careful with transclusions. Links and the section design is also a discussion point.
+
+= Possible problems
+* marking or hiding invalid/missing footnotes, if we stick to an one-pass algorithm, because HTML renderer doesn't take any context besides of recursion level and block counter.
+* hiding transclusion footlinks. But it seems that transclusions are rendered separately, so we could somehow invalidate these links with a special visitor.
