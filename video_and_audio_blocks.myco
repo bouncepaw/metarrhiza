@@ -4,7 +4,8 @@ There's an idea to add a tag for video embedding. It would look similar to img, 
 
 * From hypha: `video { ../kittens | 100 { Are smol } }`
 * { From external link:
-```video {
+```
+video {
    https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4 {Big Buck Bunny}
 }
 ```
