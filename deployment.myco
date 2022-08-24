@@ -12,7 +12,7 @@ https://repology.org/badge/vertical-allrepos/mycorrhiza.svg {
 
 * **Alpine Linux:** `mycorrhiza` in the community repository
 * **Arch Linux:** `mycorrhiza` in AUR
-* **Gentoo:** `mycorrhiza` in [[https://codeberg.org/BratishkaErik/bratishkaerik-overlay/src/branch/main/www-apps | BratishkaErik’s repo]]
+* **Gentoo:** `mycorrhiza` in [[https://wiki.gentoo.org/wiki/Project:GURU/Information_for_End_Users | GURU]]
 * **Nix:** `mycorrhiza` in Nixpkgs >= 21.11
 
 You can also run Mycorrhiza in Docker using the [[https://github.com/bouncepaw/mycorrhiza/blob/master/Dockerfile | provided Dockerfile]]. Chances are you'll need to modify it to your needs.
