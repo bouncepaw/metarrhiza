@@ -1,0 +1,9 @@
+**Mycorrhiza Wiki 1.12** is the fifteenth release of the engine.
+
+= Changes
+* ++No new features^^*^^.++
+* The sibling sidebar is finally gone. It is no longer available.
+* The new body attribute `rrh-cats` has a list of all categories of the current hypha which you can use to customize site styles heavily.
+* Now it works on Windows.
+* There is a shortcut for previewing in the editor.
+* The redirection hyphae are not created by default if the target hypha has no backlinks.
