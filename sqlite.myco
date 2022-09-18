@@ -1,0 +1,16 @@
+**NB.** This is just an idea, a concept, a design.
+
+For quite some time, the idea of using **SQLite** in Mycorrhiza makes [[u/Bouncepaw]] excited.
+
+= SQLite VS files VS other DB
+SQLite is an embedded database stored in one file. Compared to external databases, such as Postgres, they are much more simple and easier to maintain. Compared to text files, we have SQL and other stuff that make things easier and more reliable.
+
+= One-file wiki
+I see it as follows.
+
+There is one file, which contains all of wiki with `.mycorrhiza` extension. Mycorrhiza works with it. Cache might be there, might be somewhere else, not sure yet.
+
+Everything is there. Categories, interwiki, users, hyphae, history. All.
+
+= Backup
+[[Git]] can be backed up very well. There are so many forges. One could say that SQLite loses this advantage. Indeed, it does. But one should note that to have a full backup of a wiki, backing up git repo only is not enough, you would have to come with a full backup scheme anyway.
