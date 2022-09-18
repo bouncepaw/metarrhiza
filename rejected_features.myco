@@ -69,3 +69,5 @@ Address [[/]] used to **redirect to the home hypha.** It was later changed so th
 ```
 
 **FedWiki outpost** is not going to happen. See [[./fedwiki outpost]].
+
+**Non-wrapped text in codeblocks** is rejected do it being bad. [[https://github.com/bouncepaw/mycorrhiza/issues/183 | #183]]
