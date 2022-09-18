@@ -3,7 +3,7 @@ Mycorrhiza is developed by several people. We are always looking for more people
 Of course, some parts of the project do not follow them. It is alright. It is planned to fix it someday.
 
 = General
-* Language: English. As of 2021-09-30, every contributor is a native Russian speaker, most of communication inside the team is done in Russian, the project is Russian overall. Nevertheless, write comments and documentation in English.
+* Language: English. A lot of communication inside the team is done in Russian, the project is Russian overall. Nevertheless, issues, comments and documentation are in English. If you only know English, you will find no problems.
 * Go formatting: `gofmt`.
 * JavaScript formatting: not specified yet.
 * CSS formatting: mimic the bottom of the file, not the top.
@@ -27,6 +27,7 @@ Of course, some parts of the project do not follow them. It is alright. It is pl
 * Some naming conventions:
 ** `rq`, not `r`, for HTTP requests.
 ** `h` for hypha.
+** `hyphaName` for hypha names.
 ** `rev` for revision.
 ** `hop` for history operation.
 ** `xcl` for transclusion.
