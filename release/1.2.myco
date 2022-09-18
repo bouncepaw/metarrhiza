@@ -11,8 +11,6 @@ Now you don't. There is a fixed structure of wiki directories that every Mycorrh
 
 ++If you were using an older version of Mycorrhiza, you will have to [[./migration guide | migrate]] to the Structure!++
 
-See [[file structure]].
-
 == [[Mycomarkup]] changes
 * Mycomarkup is now being developed as a parallel project — [[https://github.com/bouncepaw/mycomarkup]]. A CLI interface is provided as well as a library. This way, you can include it in your projects. For now, this library is less stable than Mycorrhiza itself.
 * Transclusion syntax changed dramatically.
