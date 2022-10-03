@@ -13,6 +13,7 @@ https://repology.org/badge/vertical-allrepos/mycorrhiza.svg {
 * **Alpine Linux:** `mycorrhiza` in the community repository
 * **Arch Linux:** `mycorrhiza` in AUR
 * **Gentoo:** `www-apps/mycorrhiza` in [[https://wiki.gentoo.org/wiki/Project:GURU/Information_for_End_Users | GURU]]
+* **Homebrew:** `mycorrhiza`
 * **Nix:** `mycorrhiza` in Nixpkgs >= 21.11
 * **OpenBSD:** `www/mycorrhiza`
 
