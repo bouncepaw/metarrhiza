@@ -1,0 +1,10 @@
+**Mycorrhiza Wiki 1.13** is the seventeenth release of the engine. It was released on 2022-11-03, two months after [[../1.12.1]].
+
+This is a small release that only improves stuff, and breaks nothing.
+
+= Changes
+* The minimal Go version is 1.19 now.
+* A new user group was introduced: `reader`. They can read, but cannot edit. The difference with `anon` is that reader users can still access locked wikis, while anons cannot.
+* An old bug with links in image captions was finally fixed.
+* When creating new textual hyphae, a different title is shown.
+* When deleting a hypha, it also gets removed from all categories.
