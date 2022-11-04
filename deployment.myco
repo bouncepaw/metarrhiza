@@ -23,7 +23,7 @@ Using your distribution's package repository is strongly preferred. If your dist
 
 = Building
 
-Mycorrhiza's only build-time dependency is the **[[https://golang.org | Go 1.18]]** toolchain. The only run-time dependency is the **[[https://git-scm.com | Git]]** command-line program. You'll also need Git to check out the source code. You can usually get these programs from your distribution's repositories. Here is an example of how to build Mycorrhiza on a POSIX system:
+Mycorrhiza's only build-time dependency is the **[[https://golang.org | Go 1.18]]** toolchain. (Go 1.19 since [[release/1.13]]). The only run-time dependency is the **[[https://git-scm.com | Git]]** command-line program. You'll also need Git to check out the source code. You can usually get these programs from your distribution's repositories. Here is an example of how to build Mycorrhiza on a POSIX system:
 
 ```sh
 git clone https://codeberg.org/bouncepaw/mycorrhiza.git
