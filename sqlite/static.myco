@@ -1,0 +1,10 @@
+**NB.** This is just a concept.
+
+When we finally have [[SQLite]], where does the `static` directory go?! I see several ways.
+
+*. { All static files go to the database, and are managed with it. A web GUI of some sorts. This is the most portable, yet also the most ridiculous way. }
+*. { There is a `static` directory nearby every `.mycorrhiza` file. This is ridiculous, because we still have The Structure, just in less inodes. }
+*. { There is a setting that lets you specify any static directory. Cool stuff: you can set your `~/Photos` directory as such, and have them all available in Mycorrhiza without importing in any way. }
+*. { Just drop it. It's not used for any good any way. }
+
+Also, where do Favicon and `custom.css` go?..
