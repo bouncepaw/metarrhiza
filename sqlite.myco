@@ -12,5 +12,7 @@ There is one file, which contains all of wiki with `.mycorrhiza` extension. Myco
 
 Everything is there. Categories, interwiki, users, hyphae, history. All.
 
+Of course, it's not that easy. For example, there will be problems with [[./static]] files.
+
 = Backup
 [[Git]] can be backed up very well. There are so many forges. One could say that SQLite loses this advantage. Indeed, it does. But one should note that to have a full backup of a wiki, backing up git repo only is not enough, you would have to come with a full backup scheme anyway.
