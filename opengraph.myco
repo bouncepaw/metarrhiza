@@ -1,7 +1,11 @@
 **Open Graph** is a protocol which enables rich previews on social media. It is heavily used on the web and different messenger apps. See [[https://ogp.me]]
 
-MycorrhizaWiki supports it and outputs the needed meta tags to enable previews.
+Mycorrhiza Wiki supports it and outputs the needed meta tags to enable previews.
 
 * **The name** is hypha's name.
 * **The image** is the first image hypha embeds. If the hypha //is// an image, that image is shown. If there is no image, favicon is shown instead.
 * **The description** is hypha's first paragraph.
+
+= Links
+=> https://shkspr.mobi/blog/2022/11/is-open-graph-protocol-dead/ | Is Open Graph Protocol dead?
+The author suspects the protocol is not being developed anymore. We're fine with that.
