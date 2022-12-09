@@ -1,0 +1,10 @@
+**Mycorrhiza Wiki 1.14** will be the eighteenth release of the engine. It will probably be released in early January 2023.
+
+= Changes
+* {
+   The primitive diff pages have been vastly improved. Now they are easy to read.
+   img { ./primitive diff changes }
+}
+* In the title search, a link to a hypha with the given name is given. The link might be red, meaning such hypha does not yet exist. Thus, a new way of creating hyphae is introduced.
+* When creating redirection hyphae, a transclusion pointing to the new hypha is placed too.
+* Some visual changes and better wording.
