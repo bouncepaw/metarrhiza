@@ -1,1 +1,34 @@
 as I like to say, "//all hail jan6//" (referring to myself, the person, not any sort of political event, obviously
+[[Link]]
+[[Link | Title]]
+= Heading
+== Heading
+**bold** //italic// ++highlight++ __underline__
+`monospace` ^^supertext^^ ,,subtext,, ~~strikethrough~~
+
+=> Rocketlink
+
+<= Transclusion
+
+img {
+   image?
+}
+
+table {
+   lol | ye
+   lol2
+}
+
+----
+
+```
+code
+  block
+```
+normal
+  block
+* bullet
+* list
+*. number
+*. list
+
