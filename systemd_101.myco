@@ -13,7 +13,7 @@ Okay, so you got your systemd-based distro on a server and Mycorrhiza running in
 First, we need to create a separate user for the wiki. Using your own profile (or even worse, the superuser) is very insecure; you're not protected from hack attempts or vulnerabilities in the software, and you really don't want to compromise some of your more secure stuff. Creating a new user is as simple as running one command:
 
 ```sh
-= useradd -m myco
+# useradd -m myco
 ```
 
 If you're not planning to give anyone access to the server via this user, you could use `-s /usr/sbin/nologin` to disable shell access and prevent anyone from logging in. Then you would need to add `-s /bin/bash` to every `su` command that logs into the account in order to get a working shell.
@@ -21,7 +21,7 @@ If you're not planning to give anyone access to the server via this user, you co
 Now, let's login into our newly created account:
 
 ```sh
-= su - myco
+# su - myco
 ```
 
 At this point, you can add some SSH keys to `.ssh/authorized_keys` in order to be able to login using SSH directly into `myco` user without additional `su` hop.
@@ -130,11 +130,11 @@ And modify `.config/systemd/user/mycorrhiza.service` appropriately:
 
 ```
 [Unit]
-= fields omitted
+# fields omitted
 OnFailure=failure-notification@%i
 
 [Service]
-= further contents omitted
+# further contents omitted
 ```
 
 Now reload the service files:
