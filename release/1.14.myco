@@ -2,6 +2,9 @@
 
 img { ./screenshot }
 
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.14.0 | GitHub
+=> https://git.sr.ht/~bouncepaw/mycorrhiza/refs/v1.14.0 | Sourcehut
+
 = Changes
 * Implement category autocompletion.
 * {
