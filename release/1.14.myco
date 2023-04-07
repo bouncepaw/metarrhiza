@@ -1,6 +1,7 @@
 **Mycorrhiza Wiki 1.14** will be the eighteenth release of the engine. It will probably be released in early March 2023.
 
 = Changes
+* Implement category autocompletion.
 * {
    The primitive diff pages have been vastly improved. Now they are easy to read.
    img { ./primitive diff changes }
