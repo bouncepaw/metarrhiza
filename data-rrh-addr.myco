@@ -1,4 +1,4 @@
-`data-rrh-addr` is an HTML attribute Mycorrhiza uses on every page. Wiki administrators can benefit from it when customising their wikis with CSS and JS. It was added in [[release/1.10]] per request from a user. CSS may be customized via the `static/` directory as specified in the [[file structure documentation | https://mycorrhiza.wiki/help/en/file_structure]].
+`data-rrh-addr` is an HTML attribute Mycorrhiza uses on every page. Wiki administrators can benefit from it when customising their wikis with CSS and JS. It was added in [[release/1.10]] per request from a user. CSS may be customized via the `static/` directory as specified in the [[https://mycorrhiza.wiki/help/en/file_structure | file structure documentation]].
 
 `data-rrh-addr` is short for //Myco**rrh**iza **addr**ess.// `data` is an obligatory prefix all custom attributes must use, and means nothing in Mycorrhiza context. It is placed on `<body>`. For example, this is how it looks for [[/hypha/data-rrh-addr]]:
 
