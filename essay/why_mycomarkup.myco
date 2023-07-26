@@ -32,10 +32,12 @@ For a long time, Mycorrhiza Wiki used Gemtext with just one derivation: transclu
 = Design principles
 * Maintain a high degree of compatibility with Gemtext.
 ** This is exactly why headings start with octothorps and not with equal signs, as one would wish.
+** **UPD.** This principle stopped being important as the time went by, because Bouncepaw stopped caring about Gemini that much. Thus we got the equal signs instead of the ridiculous octothorps.
 * Work fine with proportional fonts.
 ** Thus no dependence on indentation.
 * Be dumb, because people are dumb too.
 ** See double slash? It means italic is toggled. No matter where in the paragraph. Compare with Markdown, where the amount of //spaces// around the italic token matters in some dialects.
+*** **UPD.** The example with toggling is bad, actually. But the point still stands. Be dumb.
 * Do not abuse the combinations of non-letter characters.
 ** Sure, there are many inventive ways of creating an image inclusion syntax, but why not just call it //img//? Same for //table//, etc.
 
@@ -70,4 +72,4 @@ People either love the curly braces or hate it. Whatever. Deal with it.
 
 There was some experimentation with that. It turned out to be hard to maintain, hard to design and hard to use with no real profit.
 
-And anyway, we would have to extend all the supported languages for features like transclusion and future features like tables of content, backlinks, et cetera. There are not enough developers for that.
+And anyway, we would have to extend all the supported languages for features like transclusion and future features like tables of content, backlinks, et cetera. There are not enough developers and users for that.
