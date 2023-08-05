@@ -16,7 +16,7 @@ Block ::=
 ```
 
 = Formatted
-**Formatted block** is the most fundamental block in Mycomarkup. It represents a formatted text.
+**Formatted block** is the most fundamental block in Mycomarkup. It represents a line formatted text.
 
 Formatted block does not appear by itself. It is always part of something else. The most common container for Formatted is Paragraph. This is how a Paragraph containing a Formatted might look:
 
@@ -34,24 +34,26 @@ Formatted has these types of elements inside. They are called **spans**, and are
 Grammar:
 ```
 Formatted ::=
-   FormattedLine+
-FormattedLine ::=
    Span+
 Span ::=
-   TextSpan | FormattingMarker | InlineLink
+   TextSpan | Code | FormattingMarker | InlineLink | AutoLink
+Code ::=
+   "`" Text "`"
 FormattingMarker ::=
    "**" | "//" | "++" | "__" | "^^" | ",," | "~~"
 InlineLink ::=
    "[[" LWS "]]" # empty link
  | "[[" LWS LinkTarget LWS "]]" # link with target only
  | "[[" LWS LinkTarget LWS "|" LWS LinkDisplayedText LWS "]]" # link with both target and displayed text
+AutoLink ::=
+   ...
 ```
 
 = Paragraph
-**Paragraph block** is the container of one [[../Formatted]] block.
+**Paragraph block** is the container of one Formatted block.
 
 ```
-Paragraph ::= LineBeginning Formatted
+Paragraph ::= ( LineBeginning Formatted LineEnding )*
 ```
 
 = Heading
