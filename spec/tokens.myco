@@ -1,0 +1,21 @@
+**Tokens** are defined sequences of characters. The Mycomarkup lexer reads them, lists them. The sequences of characters that did not match any token definition are called NonToken:s.
+
+= Tokens
+table {
+! Characters ! Tokens produced
+start of document | LineStart
+\ | Backslash
+\{ | Open
+\} | Close
+\==== | Heading4
+\=== | Heading3
+\== | Heading2
+\= | Heading1
+\=> | Rocket
+space, tab | Space
+newline | LineEnd LineStart
+\``` | TripleBacktick
+---- | FourHyphens
+}
+
+got tired
