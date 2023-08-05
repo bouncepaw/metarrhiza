@@ -15,18 +15,39 @@ Block ::=
  | Transclusion
 ```
 
-Main blocks:
+= Formatted
 * [[./formatted]]
+
+= Paragraph
 * [[./paragraph]]
+
 ** [[./inline link]]
 ** [[./automatic link]]
 ** [[./span]]
+
+= Heading
 * [[./heading]]
+
+= Codeblock
 * [[./codeblock]]
+
+= Thematic break
 * [[./thematic break]]
+
+= Image gallery
 * [[./image gallery]]
+
+= List
 * [[./list]]
+
+= Launchpad
 * [[./launch pad]]
+
+= Quote
 * [[./quote]]
+
+= Table
 * [[./table]]
+
+= Transclusion
 * [[./transclusion]]
