@@ -1,9 +1,8 @@
 ```
 MycomarkupDocument ::=
-   Block*
-Block ::=
-   Formatted
- | Paragraph
+   TopLevelBlock*
+TopLevelBlock ::=
+   Paragraph
  | Heading
  | CodeBlock
  | ThematicBreak
@@ -53,7 +52,7 @@ AutoLink ::=
 **Paragraph block** is the container of one Formatted block.
 
 ```
-Paragraph ::= ( LineBeginning Formatted LineEnding )*
+Paragraph ::= ( LineBeginning Formatted NL )*
 ```
 
 = Heading
