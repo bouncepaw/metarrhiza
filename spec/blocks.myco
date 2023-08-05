@@ -122,10 +122,16 @@ ThematicBreakAnchor ::= (!NL)+
 ```
 
 = Image gallery
-* [[./image gallery]]
+```
+ImageGallery = Img [ ImgDescriptor ] Open ImgEntry ( Close | EOD )
+ImgDescriptor = # not { or NL
+ImgEntry = ( LineStart LWS LineEnd ) * LineStart Target [ Pipe LWS Sizes ] LWS*
+
+got tired here
+```
 
 = List
-* [[./list]]
+...
 
 = Launchpad
 ```
@@ -186,4 +192,4 @@ TableCellWithoutMarker ::=
 ```
 
 = Transclusion
-Not written.
+...
