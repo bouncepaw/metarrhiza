@@ -16,9 +16,9 @@ Block ::=
 ```
 
 = Formatted
-**Formatted block** is the most fundamental block in Mycomarkup. It represents a formatted text of the same significance.
+**Formatted block** is the most fundamental block in Mycomarkup. It represents a formatted text.
 
-Formatted block does not appear by itself. It is always part of something else. The most common container for Formatted is [[../Paragraph]]. This is how a Paragraph containing a Formatted might look:
+Formatted block does not appear by itself. It is always part of something else. The most common container for Formatted is Paragraph. This is how a Paragraph containing a Formatted might look:
 
 ```myco
 This is Formatted inside Paragraph.
@@ -29,6 +29,7 @@ Formatted has these types of elements inside. They are called **spans**, and are
 * **Text span** is a sequence of unformatted text. A Formatted containing only one text span and nothing else is basically unformatted text.
 * **Formatting markers** that toggle formatting styles: italic, bold, highlight, underline, monospace, supertext, subtext, strike-through.
 * **Inline links** have a //target// and an optional //displayed text//. If there is no displayed text given by the writer, it is the same as target. Empty links are removed from the output.
+* **Automatic links**
 
 Grammar:
 ```
@@ -47,20 +48,45 @@ InlineLink ::=
 ```
 
 = Paragraph
-* [[./paragraph]]
+**Paragraph block** is the container of one [[../Formatted]] block.
 
-** [[./inline link]]
-** [[./automatic link]]
-** [[./span]]
+```
+Paragraph ::= LineBeginning Formatted
+```
 
 = Heading
-* [[./heading]]
+**Heading** introduces a new section. Headings go to the table of contents.
+
+```
+Heading ::=
+   (Heading1
+  | Heading2
+  | Heading3
+  | Heading4) NL
+Heading1 ::= "=" LWS FormattedLine
+Heading2 ::= "==" LWS FormattedLine
+Heading3 ::= "===" LWS FormattedLine
+Heading4 ::= "====" LWS FormattedLine
+```
 
 = Codeblock
-* [[./codeblock]]
+**Codeblock** is a preformatted block of code.
+
+```
+CodeBlock ::=
+   LineBeginning "```" Language? NL CodeBlockContents (NL "```" IgnoredText | EOD)
+Language ::= (!NL)+
+CodeBlockContents ::= CodeBlockLine*
+CodeBlockLine ::= SomeText NL
+```
 
 = Thematic break
-* [[./thematic break]]
+**Thematic break** introduces a new section without a heading, it breaks themes.
+
+```
+ThematicBreak ::= "----" ThematicBreakAnchor? NL
+ThematicBreakAnchor ::= (!NL)+
+```
 
 = Image gallery
 * [[./image gallery]]
