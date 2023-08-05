@@ -14,6 +14,38 @@ TopLevelBlock ::=
  | Transclusion
 ```
 
+= Keywords
+```
+Token =
+   Backslash
+ | LineEnd
+ | LineStart
+ | EOD # End Of Document
+ | Open
+ | Close
+ | HeadingToken1 | HeadingToken2 | HeadingToken3 | HeadingToken4
+ | TripleBacktick
+ | FourHyphens
+ | Img
+ | Rocket
+ | ListMarker
+
+Backslash = "\"
+LineStart = ? Found right after LineEnd, Open and Close ?
+LineEnd = "\n"
+Open = "{"
+Close = "}"
+HeadingToken1 = LineStart "=" LWS
+HeadingToken2 = LineStart "==" LWS
+HeadingToken3 = LineStart "===" LWS
+HeadingToken4 = LineStart "====" LWS
+TripleBacktick = LineStart "```"
+FourHyphens = LineStart "----"
+Img = LineStart "img" LWS
+Rocket = LineStart "=>"
+ListMarker = LineStart "*"+ ( "." | "v" | "x" )* LWS
+```
+
 = Formatted
 **Formatted block** is the most fundamental block in Mycomarkup. It represents a line formatted text.
 
@@ -96,7 +128,9 @@ ThematicBreakAnchor ::= (!NL)+
 * [[./list]]
 
 = Launchpad
-* [[./launch pad]]
+```
+Launchpad = Rocket LinkTarget [ Pipe [ !NL + ] ] LineEnd;
+```
 
 = Quote
 **Quote** is an excerpt from somewhere else.
