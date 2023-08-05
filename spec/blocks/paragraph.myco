@@ -1,5 +1,0 @@
-**Paragraph block** is the container of one [[../Formatted]] block.
-
-```
-Paragraph ::= LineBeginning Formatted
-```
