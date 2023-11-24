@@ -6,3 +6,15 @@
 = 2021-12-25
 <= ./2021-12-25 by year | full blend
 <= ./2021-12-25 by month | full blend
+
+= 2023-11-24
+img grid {
+./2023-11-24 By Month { By month. }
+./2023-11-24 By Year { By year. }
+}
+
+The 2023 was the quietest year. It is seen the best on the by year plot. Less code was added in 2020 than remains from the whole of 2020, and don't forget that one big refactoring that threw away the most of 2020 code. Also, the trend for the freshly added code is to remain there.
+
+What does it mean? Mycorrhiza is pretty stable and does not require often changes. The fact that [[release/1.14]] was released five months after the previous version highlights that. A lot of development attention has moved to [[Betula]] as well.
+
+I am longing for a big refactoring, though. Lend me power to perform that!
