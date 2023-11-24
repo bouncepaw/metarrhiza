@@ -2,3 +2,9 @@ By default, Mycorrhiza Wiki has no protection nor authorization, thus anyone who
 
 = Groups
 Every user is part of a group. The groups are `anon`, `editor`, `trusted`, `moderator`, `admin`. They have different rights. Anonymous users can only read hyphae, editors can edit hyphae, trusted editors can also rename them, moderators can delete them, and administrators can do everything.
+
+= Additional authorization techniques
+[[Basic Auth]] is provided by most web servers. You will probably want to use one for HTTPS, so you might as well consider using it, if you don't like Mycorrhiza's approach to authorization.
+
+There is a fork of Mycorrhiza with built-in support for Tailscale:
+=> https://git.sr.ht/~lewiscowper/mycorrhiza
