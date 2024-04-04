@@ -17,9 +17,9 @@ Mycorrhiza Wiki uses its own markup language called [[Mycomarkup]]. Why invent y
 And there's that wonderful language called **Gemtext** used with the Gemini protocol. Here are all the elements:
 
 ```
-= heading 1
-= heading 2
-== heading 3
+# heading 1
+## heading 2
+### heading 3
 * list entry
 > quote
 paragraph
