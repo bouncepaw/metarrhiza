@@ -1,0 +1,11 @@
+= User group
+
+var groups = []string{
+	"anon",
+	"reader",
+	"editor",
+	"trusted",
+	"moderator",
+	"admin",
+}
+
