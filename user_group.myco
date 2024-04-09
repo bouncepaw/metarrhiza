@@ -1,5 +1,7 @@
 = User group
 
+
+```go
 var groups = []string{
 	"anon",
 	"reader",
@@ -8,4 +10,6 @@ var groups = []string{
 	"moderator",
 	"admin",
 }
+
+```
 
