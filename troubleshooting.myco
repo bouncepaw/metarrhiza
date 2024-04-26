@@ -12,3 +12,6 @@ It's a known bug. For the time being, administrators of wikis can move the hypha
 
 = I've added a hypha outside of Mycorrhiza but it's not displayed on the wiki!
 Mycorrhiza cannot keep track of everything you do on your computer. Visit [[/reindex]] and the engine will reindex all hyphae, including the one you've added. The reindexation happens quickly.
+
+= Server crashes after commiting files manually
+Make sure your git email contains "@"
