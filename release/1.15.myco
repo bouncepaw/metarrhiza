@@ -1,0 +1,14 @@
+**Mycorrhiza Wiki 1.15** will be the nineteenth release of the engine.
+
+= Changes
+* /today and /edit-today
+* Clickable diffs
+* Password can be changed
+* JSON feed fixed
+* Commits no longer GPG signed
+* Betula interwiki target
+* Support for printers
+* The buttons in the categories bigger for mobile
+* Mycomarkup updated: img captions are fully functional now
+* Some bugs fixed, some critical
+** Including the famous renaming bug
