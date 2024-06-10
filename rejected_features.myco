@@ -73,3 +73,7 @@ Address [[/]] used to **redirect to the home hypha.** It was later changed so th
 **Non-wrapped text in codeblocks** is rejected do it being bad. [[https://github.com/bouncepaw/mycorrhiza/issues/183 | #183]]
 
 **Working in subpath** was rejected because Bouncepaw decided it's a wontfix. [[https://github.com/bouncepaw/mycorrhiza/issues/190 | #190]]
+
+**XMPP support** was rejected due to Bouncepaw not having the capacity nor will to devote the resources to it. [[https://codeberg.org/bouncepaw/mycorrhiza/issues/1 | #1 (Codeberg)]]
+
+Bouncepaw is open to having XMPP running as a separate binary though. Sounds fun.
