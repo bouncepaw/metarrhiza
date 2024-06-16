@@ -10,6 +10,8 @@ git config core.quotepath false
 = Can't rename hyphae with some names!
 It's a known bug. For the time being, administrators of wikis can move the hyphae manually from the server.
 
+It is fixed in the [[release/1.15 | 1.15 version]], which is not released yet.
+
 = I've added a hypha outside of Mycorrhiza but it's not displayed on the wiki!
 Mycorrhiza cannot keep track of everything you do on your computer. Visit [[/reindex]] and the engine will reindex all hyphae, including the one you've added. The reindexation happens quickly.
 
