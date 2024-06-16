@@ -1,5 +1,7 @@
 **Mycorrhiza Wiki 1.15** will be the nineteenth release of the engine.
 
+TODO before release: change all mentions of Go version on the wiki.
+
 = Changes
 * /today and /edit-today
 * Clickable diffs
