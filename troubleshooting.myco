@@ -1,4 +1,6 @@
-Many problems occur when you haven't configured a git repository. Do it.
+Some technical problems occur when using Mycorrhiza. This article lists some common problems and workarounds around them. Feel free to add your problems and solutions here!
+
+If you can't fix your problem yourself, consider [[https://github.com/bouncepaw/mycorrhiza/issues | opneing an issue on GitHub]], we'll try to help.
 
 = Wrong names shown in recent changes!
 If you have non-ASCII characters look like `\\012\\305` or something, run this command:
