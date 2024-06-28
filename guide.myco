@@ -8,6 +8,7 @@ Collection of **guides** and instructions regarding Mycorrhiza Wiki
 => openbsd | Installation on OpenBSD
 => Systemd 101
 => Using without git
+=> Development
 => /category/guide | All guides
 
 Also see [[contrib]] for less serious stuff. Also see [[/help]] for documentation.
