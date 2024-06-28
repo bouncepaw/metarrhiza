@@ -4,7 +4,7 @@
 => https://t.me/bpblog/1165 | Telegram announcement
 
 = New features
-[[Feature/Authorization/fixed | Fixed authorization]] is introduced and is enabled using CLI options. Wiki administrators have to pre-register all users in a special file using the JSON format. Here's an example of such file:
+Fixed authorization is introduced and is enabled using CLI options. Wiki administrators can pre-register all users in a special file using the JSON format. Here's an example of such file:
 ```json
 [
 	{
@@ -29,7 +29,7 @@
 	}
 ]
 ```
-There are five groups users can be part of: `anon`, `editor`, `trusted`, `moderator`, `admin`. See [[authorization/user groups]] for details.
+There are five groups users can be part of: `anon`, `editor`, `trusted`, `moderator`, `admin`.
 
 On the Recent changes page, each authored edit has a link to author's user page.
 
