@@ -17,8 +17,8 @@
 * The [[/about]] page is reworked, and is quite useful now.
 * In a lot of places, bulleted lists were replaced with numbered lists.
 * The text area in the editor is bigger now.
-* List of orphaned hyphae, i/e hyphae with not backlinks: [[/orphans]]. [[/help/en/orphans | Docs]].
+* List of orphaned hyphae, i/e hyphae with no backlinks: [[/orphans]]. [[/help/en/orphans | Docs]].
 * Less CSS classes used. Your custom CSS themes might be affected.
 * Introduction of [[data-rrh-addr]].
 * [[/list]] is now allowed in `robots.txt`.
-* Some bugs fixed, some visual changes, &c. Work on [[interwiki]] has started.
+* Some bugs fixed, some visual changes, &c. Work on interwiki was started.
