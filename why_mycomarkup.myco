@@ -6,11 +6,11 @@ Mycorrhiza Wiki uses its own markup language called [[Mycomarkup]]. Why invent y
 
 **HTML.** Obviously, this markup is too complex to be used on a wiki unironically. Same for L,,A,,T,,E,,X.
 
-**Creole.** One of the //standard// wiki markups. It was designed to reduce the incompatibilities between wikis. Indeed, it has good ideas, thus some parts of it are copied (such as lists and //emphasis//). Nevertheless, it lacks many crucial things, and we would have to make a derived language from it.
+**Creole.** One of the //standard// wiki markups. It was designed to reduce the incompatibilities between wikis. Indeed, it has good ideas, thus some parts of it are copied (such as lists and //emphasis//). Nevertheless, it lacks many bare minimum things, and we would have to make a derived language from it.
 
 **Markdown.** It's just bad. Starting from its high dependence on indentation (effectively making it impossible to edit Markdown in a proportional font) and finishing with its incomprehensible syntax rules (such as the syntax for links (which is basically not like all the others)). Moreover, we would still have to add new features, effectively making a derivate language, contributing to the mess of incompatible Markdown derivates.
 
-**Other languages.** Many of them are nice but all of them lack something or do not satisfy Bouncepaw's taste. Namely, [[feature/transclusion]] is missing almost everywhere. MediaWiki syntax has it, but MediaWiki has that stupid apostrophe-based emphasis syntax.
+**Other languages.** Many of them are nice but all of them lack something or do not satisfy Bouncepaw's taste. Namely, transclusion is missing almost everywhere. MediaWiki syntax has it, but MediaWiki has that unbearable apostrophe-based emphasis syntax.
 
 **Conclusion:** every language misses the point, we either have to derivate or create something from scratch. Since maintaining at least some sort of compatibility with something is good, derivating was chosen.
 
@@ -35,6 +35,7 @@ For a long time, Mycorrhiza Wiki used Gemtext with just one derivation: transclu
 ** **UPD.** This principle stopped being important as the time went by, because Bouncepaw stopped caring about Gemini that much. Thus we got the equal signs instead of the ridiculous octothorps.
 * Work fine with proportional fonts.
 ** Thus no dependence on indentation.
+** Dependence on indentation is bad anyway.
 * Be dumb, because people are dumb too.
 ** See double slash? It means italic is toggled. No matter where in the paragraph. Compare with Markdown, where the amount of //spaces// around the italic token matters in some dialects.
 *** **UPD.** The example with toggling is bad, actually. But the point still stands. Be dumb.
