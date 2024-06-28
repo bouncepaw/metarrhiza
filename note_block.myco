@@ -4,7 +4,7 @@ A **note block** is a little box with some text. It may be a reminder, a disclai
 
 Many MediaWiki wikis have them implemented with templates and hacks. Well, it's considered idiomatic there.
 
-[[https://github.com/yandex-cloud/yfm-transform/blob/master/DOCS.md | Yandex Flavored Markdown]], yet another dialect of Markdown (which has 4 levels, just like Mycomarkup, by the way), introduces such note blocks. Yandex's idea is similar to mine. That's great.
+[[https://github.com/yandex-cloud/yfm-transform/blob/master/DOCS.md | Yandex Flavored Markdown]], yet another dialect of Markdown (which has 4 levels of headings, just like Mycomarkup, by the way), introduces such note blocks. Yandex's idea is similar to mine. That's great.
 
 So, the syntax I purpose is as follows:
 
