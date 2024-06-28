@@ -1,3 +1,5 @@
+**N.B.** This memo was written long before [[Betula]] came to exist. There are new ideas about federated Mycorrhiza, consider this document outdated.
+
 **Fediverse** is a union of different federated services like social networks, video hostings, etc running different protocols. According to [[https://the-federation.info]], there are 48 projects in the network running 14 different protocols on more than 8000 nodes.
 
 = ActivityPub
