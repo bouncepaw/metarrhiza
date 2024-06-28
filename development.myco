@@ -3,6 +3,10 @@ Mycorrhiza is developed by several people. We are always looking for more people
 Of course, some parts of the project do not follow them. It is alright. It is planned to fix it someday.
 
 = General
+* The development of Mycorrhiza is done in [[https://github.com/bouncepaw/mycorrhiza | GitHub repo]]. We generally consider GitHub to be an unethical choice, but we have too much stars to disregard it.
+** Mycomarkup is developed on [[https://sr.ht/~bouncepaw/mycomarkup/ | SourceHut]].
+** There is also Codeberg mirror.
+** Mirrors might be outdated.
 * Language: English. A lot of communication inside the team is done in Russian, the project is Russian overall. Nevertheless, issues, comments and documentation are in English. If you only know English, you will find no problems.
 * Go formatting: `gofmt`.
 * JavaScript formatting: not specified yet.
@@ -34,3 +38,6 @@ Of course, some parts of the project do not follow them. It is alright. It is pl
 ** Keep the names honest.
 * Write documentation. Fix errors in documentation.
 * Mutate less. Immutability is a better choice in most cases.
+* Tests appreciated.
+* You should know that most of the codebase needs some refactoring.
+
