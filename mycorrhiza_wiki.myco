@@ -1,22 +1,23 @@
-**Mycorrhiza Wiki** is an open-source wiki engine for the independent web developed by [[u/bouncepaw | Bouncepaw]], who is assisted by other open-source contributors. Use Mycorrhiza for personal wikis, digital gardens and wikis for small teams or communities.
+**Mycorrhiza Wiki** is a free and open-source wiki engine for the independent web developed by [https://bouncepaw.com | Bouncepaw]], who is assisted by numerous contributors. Use Mycorrhiza for personal wikis, digital gardens, commonplace books and wikis for small teams or communities.
 
-Here are some features of the engine:
-* **No database required**, everything is stored as simple files. It simplifies installation and makes it easy to modify the content using other means such as direct file editing.
-* **Everything is hyphae.** A [[/help/en/hypha | hypha]] is a unit of content such as a picture, video or a text article. Hyphae can [[feature/transclusion|transclude]] and link each other resulting in a tight network of hypertext pages.
-* **Nesting of hyphae** is supported. A tree of related hyphae is shown on every page.
-* **History of changes** for text parts of hyphae. Every change is safely stored in [[Git]]. Web feeds for recent changes included!
+= Some features
+* **No database used**, everything is stored as simple files. It simplifies installation and makes it easy to modify the content using other means such as direct file editing.
+* **Everything is hyphae.** A [[/help/en/hypha | hypha]] is a unit of content such as a picture, video or a text article. Hyphae can [[feature/transclusion | transclude]] and link each other resulting in a tight network of hypermedia documents. They can also be nested.
+* **History of changes.** Every change is safely stored in [[Git]]. Web feeds for recent changes included!
+** **RSS**, Atom, JSON feed for recent changes.
 * **[[/help/en/category | Categories]]** help you organise information in a non-hierarchical way.
-* **Keyboard-driven navigation.** Press `?` to see the list of shortcuts.
-* **[[Mycomarkup]], a custom-made markup language.**
+* **Keyboard shortcuts.** Press `?` to see the list of shortcuts.
+* **[[Mycomarkup]]**, a custom-made markup language.
 * **Optional [[authorization]].**
-* **[[Opengraph]] support.**
-* **[[/help/en/interwiki | Interwiki support.]]**
+* **[[Opengraph]]** supported.
+* **[[/help/en/interwiki | Interwiki links]]** supported.
 
 = Quick start
+Mycorrhiza is available in some repositories thanks to third-party contributors. Consult [[https://repology.org/project/mycorrhiza/versions | Repology]].
 
 One-liner:
 
-```
+```sh
 mycorrhiza path/to/wiki
 ```
 
