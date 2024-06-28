@@ -8,12 +8,12 @@ Of course, some parts of the project do not follow them. It is alright. It is pl
 ** There is also Codeberg mirror.
 ** Mirrors might be outdated.
 * Language: English. A lot of communication inside the team is done in Russian, the project is Russian overall. Nevertheless, issues, comments and documentation are in English. If you only know English, you will find no problems.
-* Go formatting: `gofmt`.
-* JavaScript formatting: not specified yet.
-* CSS formatting: mimic the bottom of the file, not the top.
+* Only the last version of Mycorrhiza is supported. We dont backport anything.
 * Use tabs instead of spaces everywhere except for Mycomarkup documents. No consensus on the preferred number of spaces in Mycomarkup, probably 3.
 
 = Front-end
+* JavaScript formatting: not specified yet.
+* CSS formatting: mimic the bottom of the file, not the top.
 * Avoid JavaScript. Only optional features shall require it.
 * It is fine to use the freshest JS or CSS features. But it's better if the page still looks good without them.
 ** Why is it fine though?
@@ -23,6 +23,7 @@ Of course, some parts of the project do not follow them. It is alright. It is pl
 * Avoid on-hover, on-click elements at all costs. Do not override browser behavior. We already have enough ways to irritate the users.
 
 = Back-end
+* Go formatting: `gofmt`.
 * Keep the deployment easy.
 ** {`go generate` is used. Do not be scared to add even more of it. But never exclude the generated files from the VCS, because people will have problems installing all these tools we use. See [[https://go.dev/blog/generate]]:
 > It’s important to understand that go generate is not part of go build. It contains no dependency analysis and must be run explicitly before running go build. It is intended to be used by the author of the Go package, not its clients.
