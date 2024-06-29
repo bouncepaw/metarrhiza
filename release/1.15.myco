@@ -1,16 +1,21 @@
-**Mycorrhiza Wiki 1.15** will be the nineteenth release of the engine.
-
-TODO before release: change all mentions of Go version on the wiki.
+**Mycorrhiza Wiki 1.15** is the nineteenth release of the engine, released on 2024-06-29, almost 15 months after [[../1.14 | version 1.14]]. It features changed collected over the span of these 15 months, nothing ground breaking was introduced.
 
 = Changes
-* /today and /edit-today
-* Clickable diffs
-* Password can be changed
-* JSON feed fixed
-* Commits no longer GPG signed
-* Betula interwiki target
-* Support for printers
-* The buttons in the categories bigger for mobile
-* Mycomarkup updated: img captions are fully functional now
-* Some bugs fixed, some critical
-** Including the famous renaming bug
+*. {
+In Recent changes, diffs are linked.
+}
+*. {
+New special links were introduced! Many Mycorrhiza enthusiasts use it for keeping a diary. Link `[\[/today]]` redirects to the hypha named after today, so, if it's 29th of June 2024, the hypha will be named 2024-06-29. Similarly, `[\[/edit-today]]` will open the editor with the said hypha.
+
+We do recommend the ISO format.
+}
+*. You can change passwords now.
+*. Special CSS for PDF/printers was added. It's pretty cute.
+*. New interwiki target: [[betula]]. If you still don't have a Betula installed, you might want to give it a go.
+*. Mycomarkup updated: img captions are fully functional now
+*. Some bugs fixed, some critical
+** Including the infamous renaming bug
+** Commits no longer GPG signed
+** Mycomarkup img bug fixed
+*. Some little visual improvements
+*. Required Go version lifted to 1.22.
