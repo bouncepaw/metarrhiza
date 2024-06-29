@@ -11,7 +11,7 @@ We do recommend the ISO format.
 }
 *. You can change passwords now.
 *. Special CSS for PDF/printers was added. It's pretty cute.
-*. New interwiki target: [[betula]]. If you still don't have a Betula installed, you might want to give it a go.
+*. New interwiki target: [[Betula]]. If you still don't have a Betula installed, you might want to give it a go.
 *. Mycomarkup updated: img captions are fully functional now
 *. Some bugs fixed, some critical
 ** Including the infamous renaming bug
@@ -19,3 +19,13 @@ We do recommend the ISO format.
 ** Mycomarkup img bug fixed
 *. Some little visual improvements
 *. Required Go version lifted to 1.22.
+
+= Developers
+* [[https://bouncepaw.com | Timur Ismagilov]]
+* [[https://garden.danilax86.space | Danila Gorelko]]
+* [[https://github.com/decentral1se | decentral1se]]
+* [[https://github.com/shivrm | Shivram]]
+* [[https://jacksonchen666.com | Jackson Chen]]
+* [[https://github.com/handlerug | handlerug]]
+
+Thank you very much!
