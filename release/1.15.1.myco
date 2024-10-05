@@ -5,6 +5,7 @@ img { ./screenshot }
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.15.1 | On GitHub
 
 = Changes
+* The hotkey bug was fixed.
 * Windows bug with subhyphae fixed.
 * Safari issues with autocomplete fixed.
 * New log format.
