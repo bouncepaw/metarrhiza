@@ -3,6 +3,8 @@ img { ./screenshot }
 **Mycorrhiza Wiki 1.15.1** is the twentieth release of the engine, released on 2024-10-05, a little bit more than 3 months after [[../1.15 | version 1.15]]. It has bug fixes and internal refactorings.
 
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.15.1 | On GitHub
+=> https://floss.social/@mycorrhiza/113256497477422361 | On Fediverse
+=> https://t.me/bpblog/1322 | On Telegram (Russian)
 
 = Changes
 * The hotkey bug was fixed.
