@@ -11,6 +11,7 @@ img { ./screenshot }
 * Windows bug with subhyphae fixed.
 * Safari issues with autocomplete fixed.
 * New log format.
+* Minimum Go version reduced to 1.21.
 * Most HTML templates were rewritten to the standard Go template library.
 
 = Developers
