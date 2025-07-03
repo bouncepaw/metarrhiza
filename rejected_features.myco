@@ -80,3 +80,5 @@ Address [[/]] used to **redirect to the home hypha.** It was later changed so th
 **XMPP support** was rejected due to Bouncepaw not having the capacity nor will to devote the resources to it. [[https://codeberg.org/bouncepaw/mycorrhiza/issues/1 | #1 (Codeberg)]]
 
 Bouncepaw is open to having XMPP running as a separate binary though. Sounds fun.
+
+**A git push button** was rejected because it's not enough. [[https://github.com/bouncepaw/mycorrhiza/issues/146 | #146]]
