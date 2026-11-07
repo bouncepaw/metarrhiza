@@ -1,0 +1,38 @@
+ img { ./screenshot }
+
+**Mycorrhiza Wiki 1.16.0** is the thirteenth release of the engine, released on 2026-11-, a little bit more than 2 years after [[../1.15.1 | version 1.15.1]].
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.16.0 | On GitHub
+
+= Changes
+* The **New hypha** page is added. It's linked before header links for the authorized users.
+* The trusted editors user group is merged with regular editors user group.
+* On text editor page, the **Save and edit** button is added. It saves the text and lets you continue edit.
+* On hypha list page, entries are shown as a tree.
+* `tel:` links now have a small telephone icon.
+* We now provide builds of Mycorrhiza in GitHub releases, built automatically by CI for seven operating systems and two architectures. If your operating system of choice already has a maintained package of Mycorrhiza, you should use it. Package maintainers are recommended to build binaries themselves rather than rely on our builds.
+* Required Go version was bumped to 1.27.3. That includes over two years of security fixes, you really should upgrade.
+* `Alt+arrows` hotkeys were replaced with `Alt+Shift+arrows`.
+* New shortcuts: `1` to `9` on Backlink pages access the corresponding backlinks.
+* Cookies now set `HttpOnly: true` and `SameSite: Lax`.
+* Some visual adjustments, small bug fixes and internal refactoring were done. This also includes the very difficult qtpl refactoring; we no longer use that templating engine. 
+
+= Future direction
+We want to drop some features and rework others.
+
+The Russian translation will temporarily be removed, with English remaining as the only language for some time; the reason for that is internal difficulties in maintaining the translation system. In general, having translations is desired, we want it to be easy to have many languages supported.
+
+Anonymous wikis are to be removed entirely one day. This feature, which originally was a defining one for Mycorrhiza, ended up undesired in the modern web and brought a lot of complexity.
+
+We consider bringing SQLite into the program. Yes, it's a database, but not a server one. It would handle all non-Git-backed things, such as categories, users, etc. Textual and media hyphae would remain Git-backed for the foreseeable future.
+
+The project development will probably move from GitHub to Codeberg at some point. GitHub repo will certainly remain as a mirror.
+
+= Developers
+* [[https://bouncepaw.com | Timur Ismagilov]] worked on many things.
+* [[https://garden.danilax86.space | Danila Gorelko]] implemented automatic binary building.
+* Chris Sexton fixed OpenGraph.
+* Sunny fixed dialog close icon and refactored MIME-type handling.
+* novenary removed the socket-related crash.
+
+Thank you very much!
