@@ -5,7 +5,7 @@ img { ./screenshot }
 => https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.16.0 | On GitHub
 
 = Changes
-* The **New hypha** page is added. It's linked before header links for the authorized users.
+* The **New hypha** page is added. It's linked before header links for the authorized users. Shortcut: `g n`.
 * The trusted editors user group is merged with regular editors user group.
 * On text editor page, the **Save and edit** button is added. It saves the text and lets you continue edit.
 * On hypha list page, entries are shown as a tree.
