@@ -1,10 +1,11 @@
 Mycorrhiza has been through numerous **releases**. This hypha lists them in reverse chronological order (the most recent release is on the top).
 
-You can findall releases on [[https://github.com/bouncepaw/mycorrhiza/releases | GitHub]]. Announcements about new releases are also made on [[u/bouncepaw]]'s [[https://t.me/bpblog | Telegram channel]] (in Russian).
+You can find all releases on [[https://github.com/bouncepaw/mycorrhiza/releases | GitHub]]. Announcements about new releases are also made on [[https://floss.social/@mycorrhiza | @mycorrhiza@floss.social]] on Fediverse and [[u/bouncepaw]]'s [[https://t.me/bpblog | Telegram channel]] (in Russian).
 
 You should always stick to the latest version. Security and stability fixes are //never// back ported.
 
 = 1.x releases
+=> ./1.16.0
 => ./1.15.1
 => ./1.15
 => ./1.14
