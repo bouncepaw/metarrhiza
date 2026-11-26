@@ -1,0 +1,21 @@
+img { release/1.16.0/screenshot }
+
+**Mycorrhiza Wiki 1.16.1** is the fourteenth release of the engine, released on 2026-11-25, a little bit more than 2 weeks after [[../1.16.0 | version 1.16.0]]. This is a security release. Everyone running a public instance is advised to upgrade.
+
+=> https://github.com/bouncepaw/mycorrhiza/releases/tag/v1.16.1 | On GitHub (including builds)
+
+= Changes
+* Fixed critical security bugs, including:
+** Git RCE through careful hypha renaming
+** Hardened CSP for `/binary` endpoint
+** Fixed interwiki being editable by non-admins
+* Fixed a Git deadlock
+* **Dropped Telegram login support.** There were numerous security issues with the implementation. This was an experimental unmaintained feature, and we long considered to get rid of it, so we did.
+* **Dropped Russian translation.** This was done to aid the template refactoring, which went well. We want to return it in some form in the future.
+* Go version bumped to 1.27.4.
+
+= Developers
+* [[https://bouncepaw.com | Timur Ismagilov]] worked on many things.
+* [[https://github.com/iljasrb | iljasrb]] did the security audit. 
+
+Thank you very much!
